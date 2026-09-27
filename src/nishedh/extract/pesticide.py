@@ -24,7 +24,7 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 
 from rapidfuzz import fuzz, process
@@ -43,7 +43,8 @@ _STRENGTH_AFTER = re.compile(
     re.IGNORECASE,
 )
 # "Fipronil 80 WG", "Carbofuran 3G": Indian labels often drop the % before the formulation code.
-_STRENGTH_CODE_ONLY = re.compile(rf"^[\s:(\-]*(\d+(?:\.\d+)?)\s*({FORM_CODES})\b", re.IGNORECASE)
+# "Actara 5G X 10 Sachets" is a pack count, not 5% granules.
+_STRENGTH_CODE_ONLY = re.compile(rf"^[\s:(\-]*(\d+(?:\.\d+)?)\s*({FORM_CODES})\b(?!\s*[x×*]\s*\d)", re.IGNORECASE)
 _STRENGTH_BEFORE = re.compile(r"(\d+(?:\.\d+)?)\s*%\s*(?:w/w|w/v)?\s*$", re.IGNORECASE)
 _UNDISCLOSED_STRENGTH = re.compile(
     r"(\d+(?:\.\d+)?)\s*%\s*(?:active\s*(?:formula|ingredients?|content)?|a\.?\s?i\.?\b)", re.IGNORECASE
@@ -110,8 +111,21 @@ class Extraction:
 
     @property
     def is_pesticide(self) -> bool:
+        """A pesticide term, a chemical with a strength, a trade name, an unknown claimed chemical, or a
+        biological control agent (Trichoderma, Beauveria ...: names only ever sold for pest control)."""
         with_strength = any(c.strength_pct is not None or c.match == "brand" for c in self.chemicals)
-        return bool(self.pesticide_terms or with_strength or self.unrecognised)
+        biological = not self.excluded and any(c.key.startswith(BIOLOGICAL_AGENTS) for c in self.chemicals)
+        return bool(self.pesticide_terms or with_strength or self.unrecognised or biological)
+
+
+# Registered biological control agents used only for crop protection, so naming one puts a listing
+# in scope. Species also sold as probiotics or biofertilisers (Bacillus subtilis, Pseudomonas
+# fluorescens) are left out: for them a pesticide word is needed, as for any chemical.
+BIOLOGICAL_AGENTS = (
+    "trichoderma", "beauveria", "metarhizium", "verticillium", "lecanicillium", "paecilomyces",
+    "purpureocillium", "bacillusthuringiensis", "ampelomyces",
+    "hirsutella", "nomuraea", "npv", "nucleopolyhedrovirus",
+)
 
 
 @dataclass(frozen=True)
@@ -271,11 +285,11 @@ def _strength(text: str, start: int, end: int) -> tuple[float | None, str | None
         value = float(after.group(1))
         pct = value / 10 if after.group(2).lower().startswith("g") else value
         return pct, after.group(3), (start, end + after.end())
-    code_only = _STRENGTH_CODE_ONLY.match(text[end : end + 20])
-    if code_only and _code_only_strength(code_only):
+    code_only_m = _STRENGTH_CODE_ONLY.match(text[end : end + 20])
+    if code_only_m and _code_only_strength(code_only_m):
         # The code is not kept: without the % the label style is loose ("3G" for a registered 3% CG),
         # so only the strength is compared.
-        return float(code_only.group(1)), None, (start, end + code_only.end())
+        return float(code_only_m.group(1)), None, (start, end + code_only_m.end())
     window = max(0, start - 16)
     before = _STRENGTH_BEFORE.search(text[window:start])
     if before:
@@ -302,4 +316,11 @@ def _dedupe(claims: list[ChemicalClaim]) -> list[ChemicalClaim]:
         rank = (c.strength_pct is not None, c.match == "exact", c.score)
         if cur is None or rank > (cur.strength_pct is not None, cur.match == "exact", cur.score):
             best[c.key] = c
+    # "Thimet 10 G Phorate Granules": the chemical is named exactly, the strength follows the trade
+    # name. Keep the exact name (a stronger match) with the trade name's strength.
+    for k, b in best.items():
+        if b.match == "brand":
+            exact = next((c for c in claims if c.key == k and c.match == "exact"), None)
+            if exact is not None:
+                best[k] = replace(exact, strength_pct=b.strength_pct, form_code=exact.form_code or b.form_code)
     return list(best.values())

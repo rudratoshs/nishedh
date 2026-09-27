@@ -101,12 +101,14 @@ def report(
         public = ("pack", "reason", "confidence", "verdict", "marketplace", "title", "url", "listing_id", "checks", "notes")
         json.dump([{k: f[k] for k in public} for f in rows], sys.stdout, ensure_ascii=False, indent=1)
         return
+    from nishedh.web.app import csv_cell
+
     w = csv.writer(sys.stdout)
     w.writerow(["reason", "confidence", "marketplace", "title", "url", "why", "evidence"])
     for f in rows:
         why = " | ".join(c["explanation"] for c in f["checks"])
         evidence = "; ".join(f'{e["field"]}: "{e["text"]}"' for c in f["checks"] for e in c["evidence"])
-        w.writerow([f["reason"], f["confidence"], f["marketplace"], f["title"], f["url"], why, evidence])
+        w.writerow([csv_cell(x) for x in (f["reason"], f["confidence"], f["marketplace"], f["title"], f["url"], why, evidence)])
 
 
 @app.command()

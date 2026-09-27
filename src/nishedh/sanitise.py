@@ -13,6 +13,7 @@ import hashlib
 from typing import Any
 from urllib.parse import urlparse
 
+from nishedh.lens import clean_match_title
 from nishedh.listing import (
     MARKETPLACES,
     OTHER_STORE,
@@ -31,6 +32,7 @@ PRODUCT_DETAILS_DROP = ("contact_information", "best_sellers_rank", "customer_re
 
 
 LINKS = ("link", "product_link", "link_clean")
+PLACEHOLDER_HOST = "another-online-store.invalid"
 
 
 def safe_link(url: str) -> str:
@@ -41,14 +43,15 @@ def safe_link(url: str) -> str:
     """
     parsed = urlparse(url)
     host = parsed.netloc.lower().removeprefix("www.")
-    if not host or host.startswith("google.") or ".google." in host:
-        return url
+    if not host or host.startswith("google.") or ".google." in host or host == PLACEHOLDER_HOST:
+        return url   # already a placeholder: sanitising twice changes nothing
     # Marketplace product pages are kept; a seller's storefront inside a marketplace
     # ("indiamart.com/<company>/photos.html") names the seller.
-    storefront = host == "indiamart.com" and not parsed.path.startswith(("/proddetail/", "/impcat/"))
+    storefront = host.endswith("indiamart.com") and not (
+        host == "indiamart.com" and parsed.path.startswith(("/proddetail/", "/impcat/")))
     if marketplace_of(url) != OTHER_STORE and not storefront:
         return url
-    return f"https://another-online-store.invalid/{hashlib.sha256(url.encode()).hexdigest()[:16]}"
+    return f"https://{PLACEHOLDER_HOST}/{hashlib.sha256(url.encode()).hexdigest()[:16]}"
 
 
 def _pick(r: dict[str, Any], keep: tuple[str, ...]) -> dict[str, Any]:
@@ -56,8 +59,10 @@ def _pick(r: dict[str, Any], keep: tuple[str, ...]) -> dict[str, Any]:
     for k in LINKS:
         if k in out:
             out[k] = safe_link(str(out[k]))
+    if "immersive_product_page_token" in out:   # only its first 40 characters are used (a listing id)
+        out["immersive_product_page_token"] = str(out["immersive_product_page_token"])[:40]
     if "title" in out and "source" in r:
-        out["title"] = strip_seller(str(out["title"]), str(r["source"]))
+        out["title"] = clean_match_title(strip_seller(str(out["title"]), str(r["source"])))
     if "source" in r:
         out["source"] = display_site(str(r["source"]))
     return out

@@ -52,3 +52,17 @@ def test_hit_strength_counts_and_ranks_watchlist_matches():
     assert strong.hit_strength(item) == (4, 1, True)
     weak = LensEvidence("b", matches=other[:16] + hit, watchlist_hits=[(item, m) for m in hit])
     assert weak.hit_strength(item) == (4, 17, False)
+
+
+def test_directory_title_is_hidden_but_still_matched():
+    from nishedh.lens import DIRECTORY_TITLE, WatchItem, read_lens
+
+    class NoChemicals:
+        def extract(self, fields):
+            from nishedh.extract.pesticide import Extraction
+            return Extraction()
+
+    item = WatchItem("Cyclosinone", "f", "o", "ccpa_orders")
+    data = {"visual_matches": [{"title": "Cyclosinone 20% SC - Wholesaler in Pune", "link": "https://x.in/p", "source": "x"}]}
+    ev = read_lens(data, "s", NoChemicals(), [item])
+    assert ev.matches[0].title == DIRECTORY_TITLE and len(ev.watchlist_hits) == 1

@@ -20,6 +20,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, Res
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from nishedh.lens import DIRECTORY_TITLE, clean_match_title
 from nishedh.listing import marketplace_of
 from nishedh.registry.pesticides import load
 from nishedh.sanitise import ENGINES, sanitise
@@ -197,7 +198,7 @@ def create_app(cache_dir: Path, demo_note: str = "") -> FastAPI:
         buf = io.StringIO()
         w = csv.DictWriter(buf, fieldnames=[*PUBLIC_FIELDS, "why", "evidence", "sources", "notes"])
         w.writeheader()
-        w.writerows(public)
+        w.writerows({k: csv_cell(v) for k, v in row.items()} for row in public)
         return Response(buf.getvalue(), media_type="text/csv",
                         headers={"Content-Disposition": f'attachment; filename="nishedh-{pack}.csv"'})
 
@@ -252,6 +253,13 @@ def headline(f: dict[str, Any]) -> str:
     return "The chemical's strength does not match any registered product."
 
 
+def csv_cell(value: object) -> object:
+    """Listing text is untrusted: a cell starting =, +, -, @, tab or CR would run as a spreadsheet formula."""
+    if isinstance(value, str) and value[:1] in ("=", "+", "-", "@", "\t", "\r"):
+        return "'" + value
+    return value
+
+
 def web_url(url: str) -> str:
     """Only http(s) links from search data reach an href or src; anything else becomes "#"."""
     return url if isinstance(url, str) and url.lower().startswith(("https://", "http://")) else "#"
@@ -274,8 +282,9 @@ def lens_photos(cache_dir: Path, f: dict[str, Any]) -> list[dict[str, str]]:
     raw = json.loads(path.read_text())
     data = raw.get("data", raw)   # cache files wrap the response as {"params", "fetched_at", "data"}
     for v in data.get("visual_matches") or []:
-        if v.get("title") in cited and v.get("thumbnail"):
-            out.append({"title": str(v["title"]), "thumbnail": str(v["thumbnail"]),
+        title = clean_match_title(str(v.get("title", "")))
+        if title in cited and title != DIRECTORY_TITLE and v.get("thumbnail"):
+            out.append({"title": title, "thumbnail": str(v["thumbnail"]),
                         "site": marketplace_of(str(v.get("link", "")), str(v.get("source", "")))})
     return out[:3]
 

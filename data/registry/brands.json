@@ -1,5 +1,5 @@
 {
- "note": "Well-known Indian trade names of pesticides that are banned, restricted, frequently misused or widely sold, mapped to their active ingredient. A listing that names only the trade name is matched to the chemical with match type 'brand' (medium confidence): the trade name identifies the product, but only the label proves what is inside. Kept deliberately short; every entry is a long-established, widely documented trade name.",
+ "note": "Well-known Indian trade names of pesticides that are banned, restricted, frequently misused or widely sold, mapped to their active ingredient. A listing that names only the trade name is matched to the chemical with match type 'brand' (medium confidence): the trade name identifies the product, but only the label proves what is inside. Kept deliberately short; every entry is a long-established, widely documented trade name. Only distinctive names are listed (not ordinary words), since a trade name alone puts a listing in scope. Hitweed maps to Pyrithiobac Sodium, the ingredient common to Godrej's Hitweed products.",
  "brands": {
   "Nuvan": "Dichlorvos",
   "Thimet": "Phorate",
@@ -11,6 +11,8 @@
   "Furadan": "Carbofuran",
   "Dursban": "Chlorpyrifos",
   "Rogor": "Dimethoate",
-  "Roundup": "Glyphosate"
+  "Roundup": "Glyphosate",
+  "Actara": "Thiamethoxam",
+  "Hitweed": "Pyrithiobac Sodium"
  }
 }

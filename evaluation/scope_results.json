@@ -1,0 +1,3892 @@
+[
+ {
+  "case": 1,
+  "pack": "pesticides",
+  "title": "Triple Threat Selective Weed Killer Herbicide for Lawns and Turf - 1 Gallon Jug (Makes 64 Gallons)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": ""
+ },
+ {
+  "case": 2,
+  "pack": "pesticides",
+  "title": "Southern Ag Crossbow Specialty Herbicide 2 4 D & Triclopyr Weed & Brush Killer, 32oz - 1 Quart",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": ""
+ },
+ {
+  "case": 3,
+  "pack": "pesticides",
+  "title": "OrganicDews Neem Oil 1500 PPM (Water Soluble) Concentrate for Plants 250 ml with Measuring Cup 25 ml - Controls Garden I",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 4,
+  "pack": "pesticides",
+  "title": "Kraft Seeds Hand Weeder - 1 Pc (Orange Handle, Black Blade), Weed Remover Tool With Handle, Weed Cutter for Terrace Gard",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 5,
+  "pack": "pesticides",
+  "title": "DIVINE TREE Nicotox-D Tobacco Dust Powder for Plants (900g) | Natural Soil & Root Insecticide for Plants | Organic Pest ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "botanical",
+  "note": "tobacco dust; sold as natural insecticide, no registered active (nicotine) declared"
+ },
+ {
+  "case": 6,
+  "pack": "pesticides",
+  "title": "Chipku Organic Neem Oil for Plants 1 ltr With Free Spray Gun Concentrate Cold Pressed Water Soluble Formula for Garden &",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 7,
+  "pack": "pesticides",
+  "title": "Ugaoo Neem Oil Spray for Plants & Garden - Highly Effective on Plant Insects (250 ml)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 8,
+  "pack": "pesticides",
+  "title": "Bayer Cropscience Solomon Insecticide For Aphids | Jassids And Shoot | Fruit Borer Control - 100Ml, Pack Of 1",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "Bayer Solomon (beta-cyfluthrin+imidacloprid)"
+ },
+ {
+  "case": 9,
+  "pack": "pesticides",
+  "title": "Bayer Jump, Fipronil 80 WG (80% w/w), Insecticide (2gm x 10)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "fipronil 80 WG"
+ },
+ {
+  "case": 10,
+  "pack": "pesticides",
+  "title": "Syngenta Actara 5G X 10 Sachets, Quickly penetrates the leaf surface, Powder",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "Syngenta Actara (thiamethoxam)"
+ },
+ {
+  "case": 11,
+  "pack": "pesticides",
+  "title": "Exodus Plant Protector, Organic Pesticide for Insects - 100ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "sold as 'organic pesticide for insects'; no active named, no explicit herbal/neem claim; treated as hidden-ingredient insecticide"
+ },
+ {
+  "case": 12,
+  "pack": "pesticides",
+  "title": "Erwon® Herbicide, Wild Herbs Remover, Organic Essential Powerful Organic Herbicide for Removing all types of Wild Herbs ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 13,
+  "pack": "pesticides",
+  "title": "Erwon® Weeds- X, Premium Essential Powerful Weedicide Powder for removing all wild Weeds (100 gm)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 14,
+  "pack": "pesticides",
+  "title": "Erwon® Herbicide, Organic Essential Powerful Liquid Spray for Removing all types of Wild Herbs (100 ml)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 15,
+  "pack": "pesticides",
+  "title": "Erwon® Herbicide- X, Organic Essential Powerful Herbicide for Removing all Wild Herbs (50 gm)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 16,
+  "pack": "pesticides",
+  "title": "Erwon® Herbicide, Organic Powerful Liquid Herbicide for Removing Wild Herbs (100 ml)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 17,
+  "pack": "pesticides",
+  "title": "Sansar Green® Herbicide Powder, Premium Organic Powerful Herbicide for Removing Wild Herbs & Weeds (50 gm)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 18,
+  "pack": "pesticides",
+  "title": "Go Garden Neem Oil for Plants Insects Spray | Cold-Pressed Neem Oil for Healthy Growth | Ideal for Indoor & Outdoor Plan",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 19,
+  "pack": "pesticides",
+  "title": "IFFCO Urban Gardens Doctor Neem+ 500ml – Organic Pest Repellent - Triple Action of Neem Oil, Pongamia Oil, Lemongrass Oi",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 20,
+  "pack": "pesticides",
+  "title": "IFFCO Urban Gardens - Doctor Neem+ - 500ml – Mealy Bug & Fungus Repellent Spray - 3in1 Action of Neem, Pongamia, Lemongr",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 21,
+  "pack": "pesticides",
+  "title": "Plant Guard Natural Neem Oil Spray(400ml) | Ready to Use Organic Cold Pressed Natural Neem Oil Spray for Indoor and Outd",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 22,
+  "pack": "pesticides",
+  "title": "Hand Weeder with 4 Foot Handle, Manual Weeder for Agriculture, Horticulture, Gardening, Weed Cutting and Removing Tool, ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 23,
+  "pack": "pesticides",
+  "title": "OrganicDews Beauveria bassiana + Verticillium lecanii+ Metarhizium anisopliae Bio for Plants - 1 Kg Each",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Beauveria+Verticillium+Metarhizium"
+ },
+ {
+  "case": 24,
+  "pack": "pesticides",
+  "title": "Rimi Garden® Liquid Fungus remover, Essential Organic Liquid for removing all types of Fungal Infections from Plants. (5",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": false,
+  "outcome": "fn",
+  "category": "fungicide",
+  "note": "Rimi Garden 'organic' liquid fungus remover; no active named; same hidden-ingredient family as Erwon"
+ },
+ {
+  "case": 25,
+  "pack": "pesticides",
+  "title": "Go Garden Trichoderma Bio Fungicide for plants (2 x 10^8 CFU per Gram) Bio Fungicide - Prevents Fungal and Bacterial Dis",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 26,
+  "pack": "pesticides",
+  "title": "Bio Larvicide (Bacillus Thuringiensis Var Kurstaki) Liquid | Bio Pesticide | Insecticide for Plants 500ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Bacillus thuringiensis"
+ },
+ {
+  "case": 27,
+  "pack": "pesticides",
+  "title": "Bio Verticill (Verticillium Lecanii (2 x 10^8 spores/ml)) Liquid | Bio Pesticide | Insecticide for Plants (500ml)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Verticillium lecanii"
+ },
+ {
+  "case": 28,
+  "pack": "pesticides",
+  "title": "UGAOO MealyMagic Mealy Bug & Fungus Killer Spray For Plants - 100% Herbal Actives & No Chemicals - 250 ML",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "'100% herbal actives' mealybug spray"
+ },
+ {
+  "case": 29,
+  "pack": "pesticides",
+  "title": "UGAOO MealyMagic Mealy Bug & Fungus Killer Spray For Plants - 100% Herbal Actives & No Chemicals - 500 ML",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "'100% herbal actives' mealybug spray"
+ },
+ {
+  "case": 30,
+  "pack": "pesticides",
+  "title": "Bacillus Thuringiensis Kurstaki Liquid Insecticide for Plants (2×10⁹ CFU/ml) - 500 ml | Organic Pesticides for Plants fo",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Bacillus thuringiensis"
+ },
+ {
+  "case": 31,
+  "pack": "pesticides",
+  "title": "Metarhizium Anisopliae Liquid (2×10⁹ CFU/ml) - 500ml | Organic Bio Insecticide Pest Control for Plants for Soil & Foliar",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Metarhizium anisopliae"
+ },
+ {
+  "case": 32,
+  "pack": "pesticides",
+  "title": "Plant’s Buddy – Beauveria Bassiana + Verticillium Lecanii Liquid (2×10⁹ CFU/ml) – Bio-Insecticide for Chewing & Sucking ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Beauveria bassiana"
+ },
+ {
+  "case": 33,
+  "pack": "pesticides",
+  "title": "UGAOO Neemguard - Ready To Use Neem Oil Herbal Insect Repellent Spray (500 Ml) | Keeps Mealy Bug, Aphids, Spider Mites A",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 34,
+  "pack": "pesticides",
+  "title": "Garden Genie 100% Natural Diatomaceous Earth Powder for Pests, Insects 800g",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "diatomaceous earth"
+ },
+ {
+  "case": 35,
+  "pack": "pesticides",
+  "title": "Utkarsh Trichoderma Viride 1.5% W.P.: 2 x 10^6 CFU/gm min. for Plants, Crops and Home Gardening - Trichoz-P (1 Kg; Pack ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 36,
+  "pack": "pesticides",
+  "title": "Utkarsh Trichoderma Harzianum 1% WP 2 x 10^6 CFU/gm min. for Plants, Crops and Home Gardening - Trichoherz-P (1 Kg; Pack",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 37,
+  "pack": "pesticides",
+  "title": "Garden Genie Mealy Bug Spray for Plants, 250ml Plant Protection Spray",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "Garden Genie mealybug spray; no ingredient or herbal claim in listing text"
+ },
+ {
+  "case": 38,
+  "pack": "pesticides",
+  "title": "All insects Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of insects and pests from Plan",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 39,
+  "pack": "pesticides",
+  "title": "All insects Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of insects and pests from Plan",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 40,
+  "pack": "pesticides",
+  "title": "Pest Plant Remover, Essential Organic Powerful Liquid Pesticide for Removing All Types of Pests Infection from Plants. (",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 41,
+  "pack": "pesticides",
+  "title": "Red Ant Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of red ants and insects from Plant",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 42,
+  "pack": "pesticides",
+  "title": "Insecticide Plant Care Spray, Essential Organic Powerful Liquid for Removing all types of insects and pests from Plants ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 43,
+  "pack": "pesticides",
+  "title": "OrganicDews Metarhizium anisopliae 1 Kg (1x10^8 CFU/g) for Plants 1 Kg",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Metarhizium anisopliae"
+ },
+ {
+  "case": 44,
+  "pack": "pesticides",
+  "title": "Garden Genie Ready to Use Neem Oil Spray for Plants Home Garden, 250ml",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 45,
+  "pack": "pesticides",
+  "title": "Heranba Deltaflow Deltamethrin Insecticide Concentrate for Cockroaches, Mosquitoes & Houseflies | Professional Residual ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "household",
+  "note": "deltamethrin concentrate marketed for cockroaches/mosquitoes/houseflies (public-health use), not crop protection"
+ },
+ {
+  "case": 46,
+  "pack": "pesticides",
+  "title": "IFFCO Urban Gardens - Doctor Mealybug 200 ml - A Ready-to-Use Mealy Bug & Fungus Repellent Spray - 100% Organic plant sp",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "IFFCO Doctor Mealybug, '100% organic' spray"
+ },
+ {
+  "case": 47,
+  "pack": "pesticides",
+  "title": "Clodinafop Propargyl 15% WP Herbicide for Grassy Weed Control in Wheat Crops | Post-Emergence Selective Weed Killer |",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "clodinafop-propargyl 15 WP"
+ },
+ {
+  "case": 48,
+  "pack": "pesticides",
+  "title": "Beauveria Bassiana Liquid For Plants (2 * 10^9 CFU/ml) - Effective Against Leaf Eating Insects - Bio-Insecticide for All",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Beauveria bassiana"
+ },
+ {
+  "case": 49,
+  "pack": "pesticides",
+  "title": "Utkarsh Verticillium Lecanii 1.15% W.P. 1 x 10 ^ 8 CFU/gm min. for Plants, Crops and Home Gardening - Verticoz-P (250 gm",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Verticillium lecanii"
+ },
+ {
+  "case": 50,
+  "pack": "pesticides",
+  "title": "Garden Genie Trichoderma Viride Powder (2x106 CFU/gm) 500 Gm",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 51,
+  "pack": "pesticides",
+  "title": "Organic Neem Oil Based Plant Guard Concentate – Natural Pest Repellent for Indoor & Outdoor Plants | Eco-Friendly Insect",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 52,
+  "pack": "pesticides",
+  "title": "KATHAROS Herbal Fogging Liquid 5 Ltr | Citronella Mosquito Repellent Fogger",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "household",
+  "note": "citronella fogging liquid for mosquitoes"
+ },
+ {
+  "case": 53,
+  "pack": "pesticides",
+  "title": "EKKA Acetamiprid 20% SP Insecticide 100gm | Systemic Contact Insect Killer for Aphids, Jassids, Whiteflies & Thrips | (S",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "acetamiprid 20 SP"
+ },
+ {
+  "case": 54,
+  "pack": "pesticides",
+  "title": "Confidor Insecticide 50ml | 1Nos",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "Bayer Confidor (imidacloprid)"
+ },
+ {
+  "case": 55,
+  "pack": "pesticides",
+  "title": "Admire 2gm x 3Nos | Imidacloprid 70% WG insecticide | protect your plants from pests+ 2 Nos Gloves",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "imidacloprid 70 WG"
+ },
+ {
+  "case": 56,
+  "pack": "pesticides",
+  "title": "Chipku Pure Cold Pressed Water Soluble Neem Oil Concentrate For Plants & Garden For Indoor And Outdoor Removes Aphids Fu",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 57,
+  "pack": "pesticides",
+  "title": "Insecticide confidor for sucking pest 50ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "Bayer Confidor (imidacloprid)"
+ },
+ {
+  "case": 58,
+  "pack": "pesticides",
+  "title": "Actara Insecticide 5gm X 3 Nos(Thiamethoxam 25% WG) for Sucking & Chewing Pests+ 2 Nos Hand Gloves",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "Actara thiamethoxam 25 WG"
+ },
+ {
+  "case": 59,
+  "pack": "pesticides",
+  "title": "Weed & Root Killer – Ready-to-Use, Fast-Acting, Deep Penetrating Formula (Pack of 2)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 60,
+  "pack": "pesticides",
+  "title": "Weed Remover Tool with Handle, Narrow Metal Blade Hand Weeder for Gardening, Digging, Soil Loosening and Planting in Pot",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 61,
+  "pack": "pesticides",
+  "title": "Crop Warrior Herbicide, Metribuzin 70% WP, Premium Quality, Wettable Powder, Pack of (2)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "metribuzin 70 WP"
+ },
+ {
+  "case": 62,
+  "pack": "pesticides",
+  "title": "TRESOL 2,4-D Sodium Salt 80% WP Selective Post Emergence Herbicide 500gm",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "2,4-D"
+ },
+ {
+  "case": 63,
+  "pack": "pesticides",
+  "title": "Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden, Lawn, ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 64,
+  "pack": "pesticides",
+  "title": "Bacillus Thuringiensis (BT) Liquid Bio Insecticide | Effective Worm & Caterpillar Control for Vegetables, Fruits & Crops",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "biological",
+  "note": "Bacillus thuringiensis"
+ },
+ {
+  "case": 65,
+  "pack": "pesticides",
+  "title": "DHYANI Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden,",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 66,
+  "pack": "pesticides",
+  "title": "Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden, Lawn, ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 67,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Supports Root Development & Growth | Removes Weeds from Root for Garden, Lawn,",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "weed & root remover; listing contradictorily says 'supports root development'; still sold as weed killer, no active"
+ },
+ {
+  "case": 68,
+  "pack": "pesticides",
+  "title": "OM SHAKTI Weed and Root 100ml Ready to Use – Fast Acting Deep Penetrating Weed Remover – Kills Weeds from Root for Garde",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 69,
+  "pack": "pesticides",
+  "title": "LoveLeaf Organic Neem Oil Spray 250ml |3000 PPM Cold Pressed | Ready to Use",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 70,
+  "pack": "pesticides",
+  "title": "Safe Plant Spray for Indoor and Outdoor Plants, Pest Control Solution, 100ml, Pack of 02",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "unclear",
+  "note": "'Safe Plant Spray pest control solution'; no ingredient, no claim of insecticide or herbal"
+ },
+ {
+  "case": 71,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor S",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 72,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor S",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 73,
+  "pack": "pesticides",
+  "title": "Weed & Root Remover Spray 250ml | Fast Acting Ready-to-Use Weed & Root Control Formula | Helps Remove Unwanted Grass and",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 74,
+  "pack": "pesticides",
+  "title": "Weed and Root 250ml Ready to Use – Fast Acting Deep Penetrating Weed Remover – Kills Weeds from Root for Garden, Lawn, D",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 75,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 76,
+  "pack": "pesticides",
+  "title": "Generic 2,4-D Amine Salt 58% SL Herbicide - 48 Hour Weed Killer for Lawn/Garden/Outdoor - Non Selective",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "2,4-D amine 58 SL"
+ },
+ {
+  "case": 77,
+  "pack": "pesticides",
+  "title": "Weed & Root Remover | Ready-to-Use Spray | Helps Remove Unwanted Grass, Weeds & Plant from Gardens, Farm, Lawns, Drivewa",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 78,
+  "pack": "pesticides",
+  "title": "Utkarsh Mealy Bug Fix Spray for Plants - 200 ml | Organic Ready-to-Use Pest Control for Mealybugs, Aphids & Spider Mites",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "botanical",
+  "note": "Utkarsh Mealy Bug Fix, 'organic', 'pet safe' RTU spray, no active named"
+ },
+ {
+  "case": 79,
+  "pack": "pesticides",
+  "title": "Go Well Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Gar",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 80,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 81,
+  "pack": "pesticides",
+  "title": "3Pc Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden,",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 82,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 83,
+  "pack": "pesticides",
+  "title": "Weed & Grass Killer | Remove Weeds and Grass Down to the Root | Ready-to-Use | for Garden, Lawn, Driveways, Pathways & O",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 84,
+  "pack": "pesticides",
+  "title": "Weed Remover Spray for Unwanted Grass & Weeds | Ready to Use Weed Destroyer Spray | Plants Remover for Driveways, Pathwa",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 85,
+  "pack": "pesticides",
+  "title": "Weed Remover Spray 250ml for Unwanted Grass & Weeds | Fast Acting Weed Destroyer Liquid | Grass & Plant Remover For Gard",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 86,
+  "pack": "pesticides",
+  "title": "Solomon Insecticide For Aphids | Jassids And Shoot | Fruit Borer Control - 100Ml, Pack Of 1",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "insecticide",
+  "note": "Solomon (Bayer) relisting"
+ },
+ {
+  "case": 87,
+  "pack": "pesticides",
+  "title": "OM SHAKTI Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for G",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 88,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 89,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 90,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 91,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 92,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100gm Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, La",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 93,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 94,
+  "pack": "pesticides",
+  "title": "Power Weed Control Liquid 50ml | Ready-to-Use Herbicide | Outdoor Weed & Root Management for Gardens, Lawns, Pathways & ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 95,
+  "pack": "pesticides",
+  "title": "Ready-to-Use Weed & Root Remover Liquid | Fast-Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Areas | Easy Spr",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 96,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid | Fast Acting Herbicide for Gardens, Lawns, Driveways, Patios & Outdoor",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 97,
+  "pack": "pesticides",
+  "title": "TRESOL 2,4-D Amine Salt 58% SL Selective Systemic Herbicide (500ml)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "2,4-D"
+ },
+ {
+  "case": 98,
+  "pack": "pesticides",
+  "title": "Pack Of 1 Pest Guard Plant Protect Spray 50ml Ready Plant Protection Spray",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 99,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 100,
+  "pack": "pesticides",
+  "title": "Pest Guard Plant Protect Spray 50ml | Ready-to-Use Plant Protection Spray | Helps Maintain Healthy Indoor & Outdoor Plan",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 101,
+  "pack": "pesticides",
+  "title": "Pest Guard Plant Protect Spray 50ml | Ready-to-Use Plant Protection Spray | Helps Maintain Healthy Indoor & Outdoor Plan",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 102,
+  "pack": "pesticides",
+  "title": "PANCA 6-Claw Gardening Weeder Hand Tool with Steel Claws, 40 cm",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 103,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 104,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 105,
+  "pack": "pesticides",
+  "title": "Weed and Root 100ml Ready to Use – Fast Acting Deep Penetrating Weed Remover – Kills Weeds from Root for Garden, Lawn, D",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 106,
+  "pack": "pesticides",
+  "title": "Weed and Root 100ml Ready to Use – Fast Acting Deep Penetrating Weed Remover – Kills Weeds from Root for Garden, Lawn, D",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 107,
+  "pack": "pesticides",
+  "title": "Root Stop Herbicid Granular Weed With Active Ingredient Low Toxicity Formula For Lawn Garden And Farm Use Fast-Acting Sa",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "'Root Stop' granular herbicide 'with active ingredient' unnamed"
+ },
+ {
+  "case": 108,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 109,
+  "pack": "pesticides",
+  "title": "Pest Guard Plant Protect Spray 50ml | Ready-to-Use Plant Protection Spray | Helps Maintain Healthy Indoor & Outdoor Plan",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 110,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 111,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 112,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 113,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 114,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 115,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 116,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100g (Pack of 2) Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 117,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100g Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden (Pac",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 118,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100gm Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, La",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 119,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 120,
+  "pack": "pesticides",
+  "title": "Mealy Bug & Fungus Killer Spray For Plants | Mealybug Control Sprays for Indoor & Outdoor Plants, Leaves, Stems, Garden ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "mealybug & fungus killer spray; no ingredient stated, no herbal claim either"
+ },
+ {
+  "case": 121,
+  "pack": "pesticides",
+  "title": "Herbal Weed & Root Killer Liquid for Garden & Outdoor Use | Ready-to-Use Natural Weed Control Solution | Fast-Acting For",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 122,
+  "pack": "pesticides",
+  "title": "Lawn Weed Remover 200g | Ready to Use Weed Removal Powder | Fast-Acting Formula for Lawn, Garden, Driveway, Pathway & Ou",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "lawn weed remover powder; product_details say 'Plant Growth Booster' component, contradictory, but sold as weed killer"
+ },
+ {
+  "case": 123,
+  "pack": "pesticides",
+  "title": "Herbal Weed & Root Killer Liquid for Garden & Outdoor Use Ready-to-Use Natural Weed Control Solution Fast-Acting Formula",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 124,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 125,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 126,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 127,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 128,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 129,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 130,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 131,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 132,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 133,
+  "pack": "pesticides",
+  "title": "Lawn Weed Remover 200g | Ready to Use Weed Removal Powder | Fast-Acting Formula for Lawn, Garden, Driveway, Pathway & Ou",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "lawn weed remover powder; product_details say 'Plant Growth Booster' component, contradictory, but sold as weed killer"
+ },
+ {
+  "case": 134,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 135,
+  "pack": "pesticides",
+  "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn B",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 136,
+  "pack": "pesticides",
+  "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn B",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 137,
+  "pack": "pesticides",
+  "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn B",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 138,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor S",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 139,
+  "pack": "pesticides",
+  "title": "Weed & Root Remover Liquid | Systemic Action Weed Control Solution | Broad Spectrum Vegetation Control | 1 Litre",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 140,
+  "pack": "pesticides",
+  "title": "Paraquat Dichloride 24% SL Non-Selective Contact Herbicide for Vegetation Management, 500 ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "paraquat dichloride 24 SL"
+ },
+ {
+  "case": 141,
+  "pack": "pesticides",
+  "title": "Vedic SERA 71 Herbicide 100 g + Silstick Silicon Surfactant 5 ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glyphosate 71 SG + surfactant combo"
+ },
+ {
+  "case": 142,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 143,
+  "pack": "pesticides",
+  "title": "Go well Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for St",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 144,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 145,
+  "pack": "pesticides",
+  "title": "Weed & Root Remover Powerful Ready-to-Use, 50ml, Pack of 3",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 146,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 147,
+  "pack": "pesticides",
+  "title": "Kalnaar Parpam",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 148,
+  "pack": "pesticides",
+  "title": "Prataplankeshwar Ras (प्रतापलङ्केश्वर रस) – Ayurvedic Herbal-Mineral Formula for Vitality & Balance 100 Gms - 160 Tablet",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 149,
+  "pack": "pesticides",
+  "title": "Patanjali Divya Jwar Nashak Kwath – Immunity & Fever Care",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 150,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 151,
+  "pack": "pesticides",
+  "title": "Bonide 273142 1 gal BurnOut II Concentrate Weed & Grass Killer",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Bonide BurnOut II weed & grass killer (declared botanical actives citric acid/clove oil); sold as herbicide"
+ },
+ {
+  "case": 152,
+  "pack": "pesticides",
+  "title": "DIVYA JWAR NASHAK KWATH 100 GM",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 153,
+  "pack": "pesticides",
+  "title": "EXYLON BURST 24 HERBICIDE - 1000 ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Exylon Burst 24 = paraquat 24 SL (web)"
+ },
+ {
+  "case": 154,
+  "pack": "pesticides",
+  "title": "Bayer Roundup Herbicide – Glyphosate 41% SL Weed Killer - 2 ltr (pack of 1 ltr × 2)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 155,
+  "pack": "pesticides",
+  "title": "Sharangdhar Pharmaceuticals Raktadosh Nashak वती - 120 गोलियां, हरा",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 156,
+  "pack": "pesticides",
+  "title": "Sarv Rog Nashak Kit",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "spiritual healing kit (yantra/rudraksha), not a pesticide"
+ },
+ {
+  "case": 157,
+  "pack": "pesticides",
+  "title": "Ichigo Herbicide – Imazethapyr 10% SL – IFFCO",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "imazethapyr 10 SL"
+ },
+ {
+  "case": 158,
+  "pack": "pesticides",
+  "title": "Bayer Roundup Herbicide",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 159,
+  "pack": "pesticides",
+  "title": "D.A.V. Mhk Tablet",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 160,
+  "pack": "pesticides",
+  "title": "Device of S SKINGO Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 161,
+  "pack": "pesticides",
+  "title": "Excel Mera 71 Herbicide – Fast-Acting Glyphosate 71% SG - 100 gms",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 162,
+  "pack": "pesticides",
+  "title": "Ready-to-Use Weed & Root Remover Liquid | Fast-Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Areas | Easy Spr",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 163,
+  "pack": "pesticides",
+  "title": "Raktadosh Nashak Vati Tablets",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 164,
+  "pack": "pesticides",
+  "title": "Desh Rakshak Mahavat Nashak Vati (100 Tablets)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 165,
+  "pack": "pesticides",
+  "title": "Dawa-ush-Shifa",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 166,
+  "pack": "pesticides",
+  "title": "Weed & Root Killer Spray 500ml x 2 | Ready-to-Use Herbal Weed Remover | Fast-Acting Deep Root Weed Control Formula | For",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 167,
+  "pack": "pesticides",
+  "title": "Dhanuka WEEDMAR 38 2,4-D Ethyl Ester 38% EC Herbicide, Selective Broadleaf Weed Controller",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "2,4-D ethyl ester 38 EC"
+ },
+ {
+  "case": 168,
+  "pack": "pesticides",
+  "title": "Amlapitta Nashak Kadha",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 169,
+  "pack": "pesticides",
+  "title": "HPM All Clear Herbicide - Paraquat Dichloride 24% SL Non-Selective Contact Weed Killer - 250 ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "paraquat dichloride 24 SL"
+ },
+ {
+  "case": 170,
+  "pack": "pesticides",
+  "title": "Amlapit Nashak Kadha",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 171,
+  "pack": "pesticides",
+  "title": "RACER Herbicides with Pretilachlor 50% EC for Effective Weed Control",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "pretilachlor 50 EC"
+ },
+ {
+  "case": 172,
+  "pack": "pesticides",
+  "title": "रक्त धातु पाचक क्वाथ Rakt Dhatu pachak kwath",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 173,
+  "pack": "pesticides",
+  "title": "Sumitomo Glycel Herbicide (Glyphosate 41% SL IPA Salt ) – Broad spectrum Herbicide - 500 ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Glycel glyphosate 41 SL"
+ },
+ {
+  "case": 174,
+  "pack": "pesticides",
+  "title": "Mootradosh Nashak Vati",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 175,
+  "pack": "pesticides",
+  "title": "Sempra Herbicide (Halosulfuron Methyl 75% WG) for Weed Control - 3.6 gms",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "halosulfuron methyl 75 WG"
+ },
+ {
+  "case": 176,
+  "pack": "pesticides",
+  "title": "Sumitomo Excel Mera 71 Glyphosate 71% SG Herbicide – 100 gm",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 177,
+  "pack": "pesticides",
+  "title": "BASF Odyssey (Imazethapyr + Imazamox 35% WG) Herbicide 100 gm",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "imazethapyr + imazamox"
+ },
+ {
+  "case": 178,
+  "pack": "pesticides",
+  "title": "Sweep Power Herbicide – Glufosinate 13.5% SL - 500 ml",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glufosinate 13.5 SL"
+ },
+ {
+  "case": 179,
+  "pack": "pesticides",
+  "title": "Weed and Root Killer 50ml Ready-to-Use Spray | Fast-Acting Deep Penetrating Weed Remover for Garden, Lawn, Driveway & Pa",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 180,
+  "pack": "pesticides",
+  "title": "All Clear (Paraquat Dichloride 24% SL) Herbicides - 1 ltr",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "paraquat dichloride 24 SL"
+ },
+ {
+  "case": 181,
+  "pack": "pesticides",
+  "title": "Pathri Nashak Ayurvedic Medicine for Kidney Stones | Herbal Remedy with Pashan Bhed, Gokhru, Punarnava & Varun | Support",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 182,
+  "pack": "pesticides",
+  "title": "Katyayani Weed Killer Liquid Weedicide | 1 L (250 ML x 4 )",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Katyayani weed killer; active not in title but sold as weedicide/herbicide"
+ },
+ {
+  "case": 183,
+  "pack": "pesticides",
+  "title": "Mahavat Nashak Vati",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 184,
+  "pack": "pesticides",
+  "title": "Vinash Power Glyphosate 71% SG Herbicide – 100 gm",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 185,
+  "pack": "pesticides",
+  "title": "Namo Nakshatra Ashmarihar Kadha || Pack Of 450 Ml || Useful For Kidney Health",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 186,
+  "pack": "pesticides",
+  "title": "Pathri Nashak Pathri Ki Dawai Stone Medicine Ayurvedic Pack of 2",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 187,
+  "pack": "pesticides",
+  "title": "Patanjali Divya Jwar Nashak Kwath (Pack of 2) 100 g",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 188,
+  "pack": "pesticides",
+  "title": "ALLQUIT HERBICIDE - 1 ltr",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Allquit = Crystal paraquat 24 SL (web)"
+ },
+ {
+  "case": 189,
+  "pack": "pesticides",
+  "title": "Katyayani 250ml Weed Killer Concentrate Herbicide for Lawn & Garden, K-586 (Pack of 12)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Katyayani weed killer; active not in title but sold as weedicide/herbicide"
+ },
+ {
+  "case": 190,
+  "pack": "pesticides",
+  "title": "Sharangdhar Pharmaceuticals Mootra Dosh Nashak Vati, White, Tablets, 120 Count, Pack of 2",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 191,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 50ml | Fast-Acting Herbicide | Easy Spray Formula for Gardens, Lawns, D",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 192,
+  "pack": "pesticides",
+  "title": "Pushp Dhanwa Ras",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 193,
+  "pack": "pesticides",
+  "title": "Nahar Pharmaceuticals Chandraprabha Vati || Useful For Urinary Care",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 194,
+  "pack": "pesticides",
+  "title": "DHYANI Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden,",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 195,
+  "pack": "pesticides",
+  "title": "Excel Mera 71 Herbicide ( Glyphosate 71% Sg) - 100 GM",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 196,
+  "pack": "pesticides",
+  "title": "Vatrog Nashak Yog",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 197,
+  "pack": "pesticides",
+  "title": "IMEJASAFE 10",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'IMEJASAFE 10' -- title only; name resembles an imazethapyr 10 SL brand but no product could be verified on the web; not labelled in-scope on a guess"
+ },
+ {
+  "case": 198,
+  "pack": "pesticides",
+  "title": "Ortho GroundClear Weed & Grass Killer with Comfort Wand 1.1 gal",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Ortho GroundClear"
+ },
+ {
+  "case": 199,
+  "pack": "pesticides",
+  "title": "Topper 77 Herbicide – Glyphosate 71% SG (Ammonium Salt) Weed Killer - 100 gms",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 200,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid | Fast Acting Herbicide for Gardens, Lawns, Driveways, Patios & Outdoor",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 201,
+  "pack": "pesticides",
+  "title": "Katyayani Weed Killer Liquid",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Katyayani weed killer; active not in title but sold as weedicide/herbicide"
+ },
+ {
+  "case": 202,
+  "pack": "pesticides",
+  "title": "DHYANI Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 203,
+  "pack": "pesticides",
+  "title": "Syngenta Calaris Xtra (Mesotrione 2.27% W/W + Atrazine 22.7% W/W SC) Herbicide",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "mesotrione + atrazine"
+ },
+ {
+  "case": 204,
+  "pack": "pesticides",
+  "title": "Spectracide Weed And Grass Killer 1.33 Gallon",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Spectracide weed & grass killer"
+ },
+ {
+  "case": 205,
+  "pack": "pesticides",
+  "title": "Pro Crabgrass & Grassy Weed Killer - 18.92% Quinclorac (Compare to Drive XLR8) Concentrated Professional Crabgrass Herbi",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "quinclorac 18.92%"
+ },
+ {
+  "case": 206,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor S",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 207,
+  "pack": "pesticides",
+  "title": "Saathi Herbicide – Effective Pre-Emergence Weed Control for Rice - 160 gms (pack of 80 gms × 2)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Saathi (pyrazosulfuron) pre-emergence rice herbicide"
+ },
+ {
+  "case": 208,
+  "pack": "pesticides",
+  "title": "Bayer Roundup Herbicide (Glyphosate 41% SL)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 209,
+  "pack": "pesticides",
+  "title": "Namo Nakshatra SD-Kavach, 30 Capsules",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 210,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 211,
+  "pack": "pesticides",
+  "title": "Roundup Herbicide 41% SL for Weed Control | Buy Online 3 ltr ( 1 ltr x 3)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 212,
+  "pack": "pesticides",
+  "title": "Bayer Roundup (Glyphosate 41% SL) Herbicide 1 L",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 213,
+  "pack": "pesticides",
+  "title": "Council Active Herbicide – Triafamone 20% + Ethoxysulfuron 10% WG - 60 gms",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "triafamone + ethoxysulfuron"
+ },
+ {
+  "case": 214,
+  "pack": "pesticides",
+  "title": "Namo Nakshatra Chhardi Shamak, 30 Tablets",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 215,
+  "pack": "pesticides",
+  "title": "Daan Dwara Kasht Nivaran [Hindi]",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "book",
+  "note": "Hindi book"
+ },
+ {
+  "case": 216,
+  "pack": "pesticides",
+  "title": "Vaidya Patankar Ayurvedic Kadha",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 217,
+  "pack": "pesticides",
+  "title": "Nisakathakadi Kwath Tablet",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 218,
+  "pack": "pesticides",
+  "title": "Shwashar Kadha for Respiratory Wellness | 450 ml",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 219,
+  "pack": "pesticides",
+  "title": "Quali-Pro 2-D Herbicide Controls Annual and Perennial Broadleaf Weeds Including Chickweed",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Quali-Pro 2-D (2,4-D)"
+ },
+ {
+  "case": 220,
+  "pack": "pesticides",
+  "title": "Hitweed Maxx 1ltr (Godrej)",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "Godrej Hitweed Maxx"
+ },
+ {
+  "case": 221,
+  "pack": "pesticides",
+  "title": "Kanak Vasaka",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 222,
+  "pack": "pesticides",
+  "title": "Alligare Triclopyr 4 Herbicide 1 QT",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "triclopyr 4"
+ },
+ {
+  "case": 223,
+  "pack": "pesticides",
+  "title": "Weed and Root Killer 100ml Ready-to-Use Fast Acting Deep Penetrating Formula | Powerful Weed Remover for Garden Lawn Dri",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 224,
+  "pack": "pesticides",
+  "title": "Patanjali Divya Jwar Nashak Kwath",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 225,
+  "pack": "pesticides",
+  "title": "BUY SURETY New Collection Backpack Pressure Sprayer ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "tool",
+  "note": "backpack sprayer"
+ },
+ {
+  "case": 226,
+  "pack": "pesticides",
+  "title": "GREENSEA Zinnia Mixed color Flower seed for Gardening ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 227,
+  "pack": "pesticides",
+  "title": "KANAYA Chrysanthamum Mix/Chamanti Seed Price in India",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 228,
+  "pack": "pesticides",
+  "title": "Lorvox Lupin (Gallery Series) Flower Plant Seed Price in ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 229,
+  "pack": "pesticides",
+  "title": "phizller Flower Seed Price in India",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 230,
+  "pack": "pesticides",
+  "title": "VibeX ® VMR-29 Blue Rare Lily Seeds Seed Price in India",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 231,
+  "pack": "pesticides",
+  "title": "VOBI Universal High-Efficiency & Safe Fly Control Agent ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "household",
+  "note": "VOBI fly control agent: cypermethrin 5% per web listing, but sold as household/floor fly control, not crop protection"
+ },
+ {
+  "case": 232,
+  "pack": "pesticides",
+  "title": "Buy Weed Management by Dr. Surinder Singh Rana ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "book",
+  "note": "Weed Management textbook"
+ },
+ {
+  "case": 233,
+  "pack": "pesticides",
+  "title": "XOLDAA balsam frower Seed Price in India",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 234,
+  "pack": "radio",
+  "title": "TP-Link TL-WA850RE N300 Wireless Range Extender, Broadband/Wi-Fi Extender, Wi-Fi Booster/Hotspot with 1 Ethernet Port, P",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 235,
+  "pack": "radio",
+  "title": "TP-Link TL-WA855RE, Single Band 300Mbps RJ45 Wireless Range Extender, Wi-Fi Booster, Broadband/Wi-Fi Extender, Hotspot w",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 236,
+  "pack": "radio",
+  "title": "TP-Link AC750 WiFi Range Extender | Up to 750Mbps | Dual Band WiFi Extender, Repeater, WiFi Signal Booster, Access Point",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 237,
+  "pack": "radio",
+  "title": "TP-Link | AC1200 WiFi Range Extender | Up to 1200Mbps Speed | Dual Band Wireless Extender, Repeater, Signal Booster, Acc",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 238,
+  "pack": "radio",
+  "title": "3in1 Multi-Function Universal Pouch Bag Holster Case for GPS PMR446 Motorola Kenwood Midland ICOM Yaesu Two Way Radio Tr",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 239,
+  "pack": "radio",
+  "title": "LUITON 3 in1 Multi-Function Radio Holder Holster Case Pouch Bag for GPS Kenwood Yaesu Icom Motorola baofeng UV5R UV82 TY",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 240,
+  "pack": "radio",
+  "title": "Two User Wireless Intercom ISM900",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "intercom",
+  "note": "Thodukonics ISM900 900 MHz full-duplex wireless intercom (mains-powered base units), not a walkie-talkie/booster/jammer"
+ },
+ {
+  "case": 241,
+  "pack": "radio",
+  "title": "4G/3G LTE Antenna, 28dbi High Gain 4G 3G Network Ethernet Outdoor Signal Amplifier for WiFi Router Mobile for Huawei E39",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 242,
+  "pack": "radio",
+  "title": "LUITON Radio Holder Radio Holster Baofeng Case Two Way Radio Pouch for Walkie Talkies Nylon Holster for Motorola Kenwood",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 243,
+  "pack": "radio",
+  "title": "Portronics Harmonics Klip 4 Retractable Bluetooth Music & Calling Earphone with Long Playtime, Vibration Prompt (Black)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "Bluetooth earphone, unrelated"
+ },
+ {
+  "case": 244,
+  "pack": "radio",
+  "title": "BAOFENG Two Way Radio Earpiece Ham Radio K Port Headset | Walkie Talkie Headphone for UV-5R BF-F8HP PRO 5RM GM21 UV-5G P",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 245,
+  "pack": "radio",
+  "title": "3G 4G LTE Antenna Mount 3.5dBi Omni Antenna with SMA Male Connector 3m Cable 2PCS",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 246,
+  "pack": "radio",
+  "title": "Original BF-A58S A58S Two Way Radio Walkie Talkies Belt Clip -10 Pack",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "belt clip"
+ },
+ {
+  "case": 247,
+  "pack": "radio",
+  "title": "RENMAX 3.7V 1500mAh Li-ion Rechargeable Battery Pack BL-1 Compatible with Radio Long Range FB-888 (Pack of 2)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "replacement battery"
+ },
+ {
+  "case": 248,
+  "pack": "radio",
+  "title": "Smars® Earphone Microphone for Walkie Talkie Two Way Radio Earphones 2-Pin Mic Headset Earpiece (2 Pair)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 249,
+  "pack": "radio",
+  "title": "Smars® Earphone Microphone for Walkie Talkie Two Way Radio Earphones 2-Pin Mic Headset Earpiece (1 Pair)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 250,
+  "pack": "radio",
+  "title": "5 PCS Phone Signal Boosters, Universal Cellphone Signal Stickers for Outdoor Camping Suburbs, Improved Mobile Phone Sign",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "sticker",
+  "note": "signal-booster stickers"
+ },
+ {
+  "case": 251,
+  "pack": "radio",
+  "title": "LUITON Universal Radio Case Two Way Radio Holder Universal Pouch for Walkie Talkies Nylon Holster Accessories for MOTORO",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 252,
+  "pack": "radio",
+  "title": "Tactical MOLLE Radio Pouch with Shoulder Strap for Radios",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 253,
+  "pack": "radio",
+  "title": "Melbon® WiFi Range Extender Router to Enhance Coverage & Signal Strength, Wireless Signal Booster & Repeater with Compac",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 254,
+  "pack": "radio",
+  "title": "Niwlix Wooden Russian Blocks Puzzles for Kids Adults, Wood Intelligence Kids Toys for 2-5 Years Boy,Wooden Puzzles Brain",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "toy",
+  "note": "wooden puzzle, not a radio"
+ },
+ {
+  "case": 255,
+  "pack": "radio",
+  "title": "Electronic Spices 3DBI GSM Magnetic Mount Spring Antenna",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 256,
+  "pack": "radio",
+  "title": "Walkie Talkie Bag Pouch, Black Camouflage Nylon Portable Radio Mount, DJJB-054",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 257,
+  "pack": "radio",
+  "title": "Walkie Talkie Microphone Headset with K-Type Connector and Earpiece – Compatible with Two-Way Radios (Pack of 1)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 258,
+  "pack": "radio",
+  "title": "GSM 2dBi/3dBi Magnetic Base Antenna with SMA Connector | 900/1800MHz External Antenna | 3M RG174 Cable | Compatible with",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 259,
+  "pack": "radio",
+  "title": "Mirana Mr. Robot | Smart Interactive Talkback Toy for Kids | USB Rechargeable Type-C | in-Built Music | Best Gift for Bo",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "toy",
+  "note": "talkback robot toy, not a radio"
+ },
+ {
+  "case": 260,
+  "pack": "radio",
+  "title": "Magnetic Radio Holster Belt Mounting or Hang on Shoulder Walkie Mount Compatible with All Kinds of Walkie-Talkies Super ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 261,
+  "pack": "radio",
+  "title": "M416 Gel Blaster Gun |10K Gel Balls|for Kid & Adults Electric Operated Gun High Speed Upto 50 Feet Range|Rechargeable|Sa",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "toy",
+  "note": "gel blaster"
+ },
+ {
+  "case": 262,
+  "pack": "radio",
+  "title": "14dBi LPDA Directional WiFi Passive Antenna with 10 Meter HLF-400 Cable | High-Gain 50 Ohm Outdoor Antenna | No Power Re",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 263,
+  "pack": "radio",
+  "title": "Belt Clip for BaoFeng BF-666s 777S 888s Portable Two-way Radio Walkie Talkie",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "belt clip"
+ },
+ {
+  "case": 264,
+  "pack": "radio",
+  "title": "Enakshi® Universal 5G LTE 18dBi High Gain | Wireless Module Router Signal Booster for Enhanced Connectivity | Stable ABS",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 265,
+  "pack": "radio",
+  "title": "MYADDICTION 3G 4G 5G LTE Antenna 18dBi Universal for Wireless Module Router (Black)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 266,
+  "pack": "radio",
+  "title": "Outdoor 4G 5G LTE Antenna High Gain 10-12dBi OmniDirectional WiFi Antenna with Dual SMA Male Cables and TS9 Adapters 698",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 267,
+  "pack": "radio",
+  "title": "Sounce 8x40 Binoculars, HD BAK4 Porro Prism FMC Optics for Wildlife, Green",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "binoculars"
+ },
+ {
+  "case": 268,
+  "pack": "radio",
+  "title": "PunnkFunnk WiFi Range Extender | 2.4GHz 300Mbps Wireless Signal Booster | Supports 10 Devices, 10m Coverage | Repeater w",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 269,
+  "pack": "radio",
+  "title": "PunnkFunnk WiFi Extender 2.4GHz | 300Mbps Wireless Repeater & Signal Booster | Dual LAN Port, 4 Antennas | Router & Acce",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 270,
+  "pack": "radio",
+  "title": "PunnkFunnk WiFi Range Extender | 300Mbps High Speed Signal Booster | 2.4GHz Repeater with 2 LAN Ports | Router & Access ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 271,
+  "pack": "radio",
+  "title": "HI-Focus 300 Mbps Wi-Fi Range Extender (2.4 GHz) | Dual-Antenna Wireless Booster + Ethernet Port | Plug-and-Play Wi-Fi R",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 272,
+  "pack": "radio",
+  "title": "40x60 High Power Monocular Telescope",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "monocular"
+ },
+ {
+  "case": 273,
+  "pack": "radio",
+  "title": "ADU Tronix Technologies 4G LTE 5dBi Magnetic Spring Antenna with 3m RG174 Cable & SMA Male Connector | High Gain Externa",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 274,
+  "pack": "radio",
+  "title": "ZORBES 2 Pack Walkie Talkie 2-Pin Acoustic Tube Earpiece Headset with Mic",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 275,
+  "pack": "radio",
+  "title": "Handheld Kids Pretend Play Phone Toy Set of 2, Educational Role Play Mobile Toy for Kids, Interactive Learning Toy Phone",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "toy",
+  "note": "pretend-play phone toy, not a radio"
+ },
+ {
+  "case": 276,
+  "pack": "radio",
+  "title": "AAC Communication Device for Non-Verbal Kids, 16 Expression Buttons, Hindi-English Speech Aid, with Velvet Carry Pouch",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "AAC speech aid"
+ },
+ {
+  "case": 277,
+  "pack": "radio",
+  "title": "7DBi High Gain Outdoor Antenna 4G LTE / 5G Compatible,Weatherproof Directional Antenna for Router, Gateway & IoT Applica",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 278,
+  "pack": "radio",
+  "title": "GIANAC Single Band WiFi Extender with Ethernet Port, WiFi Repeater Signal Booster 2.4GHz, Wireless Internet Range Extend",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 279,
+  "pack": "radio",
+  "title": "Softer Screen Guard for Blackview Xplore 1 Walkie Talkie Easy Installation | Case Friendly | Not a Glass | No Black Bord",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "screen guard"
+ },
+ {
+  "case": 280,
+  "pack": "radio",
+  "title": "NOVEL BL-1 2800mAh 3.7V Li-ion Rechargeable Battery Compatible with Baofeng BF-888S Walkie Talkie, Replacement Battery P",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "replacement battery"
+ },
+ {
+  "case": 281,
+  "pack": "radio",
+  "title": "300Mbps WiFi Signal Booster, 2.4GHz Wireless WiFi Repeater with 6 Antennas, Dual LAN Ports, WiFi Range Extender, Router ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 282,
+  "pack": "radio",
+  "title": "Baofeng Bf888s Uhf Fm Transceiver High Illumination Flashlight Walkie BF-888S",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 283,
+  "pack": "radio",
+  "title": "Maizic Smarthome Portable Walkie Talkie Set | 5 KM Long Range Two-Way Radio | 16 Channel 27MHz CB Radio | Rechargeable H",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Maizic 27 MHz CB handheld set"
+ },
+ {
+  "case": 284,
+  "pack": "radio",
+  "title": "NPC Tri Band 3G 4G LTE Cell Phone/Mobile Signal/Network Enhancer Antenna Jio Support EMI available",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'Mobile Signal/Network Enhancer Antenna' -- text does not say repeater/amplifier; cannot tell if powered"
+ },
+ {
+  "case": 285,
+  "pack": "radio",
+  "title": "Midland XT30 PMR-446 twin pack",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Midland XT30 PMR446"
+ },
+ {
+  "case": 286,
+  "pack": "radio",
+  "title": "ICOM IC-4310R Red Low-Power Two-Way Radio",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "ICOM licence-free two-way radio"
+ },
+ {
+  "case": 287,
+  "pack": "radio",
+  "title": "Ultra Boost 3G & 4G Signal Amplifier",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "3G/4G signal amplifier"
+ },
+ {
+  "case": 288,
+  "pack": "radio",
+  "title": "Portronics Tune Prime CarPlay & Android Auto Adapter Stream YouTube Netflix",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "Portronics car adapter/charger"
+ },
+ {
+  "case": 289,
+  "pack": "radio",
+  "title": "Portronics Freedom 6 15W Wireless Charger with 6-in-1 Function",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "Portronics car adapter/charger"
+ },
+ {
+  "case": 290,
+  "pack": "radio",
+  "title": "4GL Long Range Walkie Talkies-Above 6 Kms",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": ""
+ },
+ {
+  "case": 291,
+  "pack": "radio",
+  "title": "Xiaomi Walkie Talkie 3 Chat Version Support 1-5km Intercom Distance 3W Transmission Power",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Xiaomi Walkie Talkie 3, 3 W"
+ },
+ {
+  "case": 292,
+  "pack": "radio",
+  "title": "Full Band 4g Lte/gprs Signal Booster For Cars Compatible 4g/gsm/3g/lte/gprs Cell Phones 700/850/1700/1900/2100 Mhz 5g Wi",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "in-car LTE/GSM signal booster"
+ },
+ {
+  "case": 293,
+  "pack": "radio",
+  "title": "RJLINK 2G/3G/4G/5G quad band mobile phone network booster all sim working jio/airtel/vi/bsnl boost network & data comple",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 294,
+  "pack": "radio",
+  "title": "Samsung Galaxy S25 5G",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "phone",
+  "note": "Samsung Galaxy S25"
+ },
+ {
+  "case": 295,
+  "pack": "radio",
+  "title": "Walkie Talkie Kids communication Toy Durable two-way Radios",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 296,
+  "pack": "radio",
+  "title": "5 PCS Phone Signal Boosters, Universal Cellphone Signal Stickers for Outdoor Camping Suburbs, Improved Mobile Phone Sign",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "sticker",
+  "note": "signal-booster stickers"
+ },
+ {
+  "case": 297,
+  "pack": "radio",
+  "title": "Motorola T62",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": false,
+  "outcome": "fn",
+  "category": "walkie_talkie",
+  "note": "Motorola T62 PMR446"
+ },
+ {
+  "case": 298,
+  "pack": "radio",
+  "title": "Retevis RT622 2 Way Radio, PMR446 Professional Walkie Talkie Mini Long Distance, Clear Sound, VOX Hands Free, Walkie Tal",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Retevis RT622 PMR446"
+ },
+ {
+  "case": 299,
+  "pack": "radio",
+  "title": "Top Mobile Signal Booster by More Tech",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "'Top Mobile Signal Booster' -- title-only but sold as booster"
+ },
+ {
+  "case": 300,
+  "pack": "radio",
+  "title": "DeHMY जीएसएम शटर सायरन सुरक्षा अलार्म सिस्टम 2 मोबाइल नंबर कॉलिंग सुविधाओं के साथ (अनधिकृत प्रविष्टि बंद करो)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "GSM shutter siren alarm dialer"
+ },
+ {
+  "case": 301,
+  "pack": "radio",
+  "title": "SIGNAL ENHENCER ANTENNA FOR AIRTEL & JIO Band 40",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'Signal enhancer antenna for Airtel & Jio Band 40' -- unclear whether passive antenna or powered repeater"
+ },
+ {
+  "case": 302,
+  "pack": "radio",
+  "title": "BAOFENG UV-5R Walkie Talkie VHF 136-174hz UHF 400-470hz Handheld Radio (4W) pack-of-1",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-5R"
+ },
+ {
+  "case": 303,
+  "pack": "radio",
+  "title": "Cell Phone Signal Booster for Car Truck and RV, 5G Ready 4G LTE Verzion AT&T T-Mobile Compatible, Integrated Indoor Ante",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "vehicle cell booster, 50 dB gain"
+ },
+ {
+  "case": 304,
+  "pack": "radio",
+  "title": "5G signal enhencer KIt for Airtel Voda JIO",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'5G signal enhancer kit' -- kit, but text doesn't state amplifier/repeater"
+ },
+ {
+  "case": 305,
+  "pack": "radio",
+  "title": "BAOFENG GT-68 Walkie Talkies for Adults",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng GT-68"
+ },
+ {
+  "case": 306,
+  "pack": "radio",
+  "title": "WAVEX PT 100 WALKIE TALKIE",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Wavex PT-100"
+ },
+ {
+  "case": 307,
+  "pack": "radio",
+  "title": "RJLINK 2G/3G/4G/5G quad band mobile phone network booster all sim working jio/airtel/vi/bsnl boost network & data comple",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 308,
+  "pack": "radio",
+  "title": "Punnk Funnk WiFi Range Extender | Up to 300Mbps | Dual LAN Port WiFi Extender, Repeater, WiFi Signal Booster, Access Poi",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 309,
+  "pack": "radio",
+  "title": "DMR VHF walkie-talkie with transceiver licence",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "DMR VHF handheld"
+ },
+ {
+  "case": 310,
+  "pack": "radio",
+  "title": "MERISHOPP 3G 4G 5G LTE Antenna 18Dbi Universal for Wireless Module Router Black|Computers/Tablets & Networking|Home Netw",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 311,
+  "pack": "radio",
+  "title": "Kidywolf Kidytalk Talkie-Walkies",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 312,
+  "pack": "radio",
+  "title": "Maxbell Walkie Talkies Radio Adults Kids''Vox Box''Voice Activated Walkie Talkie EU",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "VOX walkie-talkie"
+ },
+ {
+  "case": 313,
+  "pack": "radio",
+  "title": "Mobile network booster",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "title-only 'Mobile network booster'"
+ },
+ {
+  "case": 314,
+  "pack": "radio",
+  "title": "Walkie talkie Hyundai GP 666LV",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Hyundai GP-666LV"
+ },
+ {
+  "case": 315,
+  "pack": "radio",
+  "title": "Walkie Talkies with 22 FRS Channels MOICO Walkie Talkies for Adults with LED Flashlight VOX Scan LCD Display Long Range ",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "22-ch FRS"
+ },
+ {
+  "case": 316,
+  "pack": "radio",
+  "title": "ICOM IC-4120 Low-Power Two-Way Radio",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "ICOM licence-free two-way radio"
+ },
+ {
+  "case": 317,
+  "pack": "radio",
+  "title": "Elecbee 7Dbi 3G/4G Lte Wcdma Omni Directional Antenna with Magnetic Stand Base 5M RG174 Cable for Wifi Router Mobile Bro",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 318,
+  "pack": "radio",
+  "title": "SHIDU S611 Portable Wireless Voice Amplifier with LED",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "portable voice amplifier / PA speaker, not radio"
+ },
+ {
+  "case": 319,
+  "pack": "radio",
+  "title": "Chip for Mobile & WiFi Router EMF Protection Chip 1 X Mobile Chip Black Color, 1 X WiFi-Router Chip- Silver Color",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "sticker",
+  "note": "EMF 'protection chip'"
+ },
+ {
+  "case": 320,
+  "pack": "radio",
+  "title": "Cuzor Mini UPS Pro 12V 3A",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "mini UPS"
+ },
+ {
+  "case": 321,
+  "pack": "radio",
+  "title": "Lenovo CC100 (PMR 446) Walkie Talkie Basic price",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Lenovo CC100 PMR446"
+ },
+ {
+  "case": 322,
+  "pack": "radio",
+  "title": "MIDLAND WALKIE-TALKIE PAIR,2-4 KMS OF RANGE",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Midland pair"
+ },
+ {
+  "case": 323,
+  "pack": "radio",
+  "title": "4g Mobile Signal Booster 2g 3g 5g Lte Cell Phone Amplifier Repeater Enhanced Cellular Signal Coverage Signal Amplifier",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "cellular signal repeater/amplifier"
+ },
+ {
+  "case": 324,
+  "pack": "radio",
+  "title": "BAOFENG 4 Pack Long Range Walkie Talkies",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng multi-pack UHF"
+ },
+ {
+  "case": 325,
+  "pack": "radio",
+  "title": "RJLINK 3G/4G/5G triband mobile phone signal booster all sim working jio/airtel/vi/bsnl boost network & data complete kit",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 326,
+  "pack": "radio",
+  "title": "Winnie the Pooh Walkie Talkie Kids communication Toy Durable two-way Radios",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 327,
+  "pack": "radio",
+  "title": "UV-5R 5W Dual Band Walkie Talkie Radio – High Power Handheld Transceiver",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-5R"
+ },
+ {
+  "case": 328,
+  "pack": "radio",
+  "title": "TIDRADIO TD-M11 Plus Walkie Talkies",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "TIDRADIO TD-M11 Plus"
+ },
+ {
+  "case": 329,
+  "pack": "radio",
+  "title": "Portronics UFO Home Charger 6 Ports 8A Charging Station",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "Portronics car adapter/charger"
+ },
+ {
+  "case": 330,
+  "pack": "radio",
+  "title": "Cell Phone Booster Network Extender Amplifier for 3G, DIY Mobile Phone Repeater Enhancer for CDMA 210MHz for Home Office",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "3G repeater/amplifier"
+ },
+ {
+  "case": 331,
+  "pack": "radio",
+  "title": "Motorla GP 328 UHF walkie talkie Ref",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Motorola GP328 UHF"
+ },
+ {
+  "case": 332,
+  "pack": "radio",
+  "title": "Everest EWD 500 5 KVA Voltage Stabilizer",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "voltage stabilizer"
+ },
+ {
+  "case": 333,
+  "pack": "radio",
+  "title": "3dBi RP-SMA Antenna for Wireless Card or Router 4.25\" 1PCS",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 334,
+  "pack": "radio",
+  "title": "Wireless Walkie Talkie",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "title-only 'Wireless Walkie Talkie'"
+ },
+ {
+  "case": 335,
+  "pack": "radio",
+  "title": "BAOFENG 6-Pack Long Range Walkie Talkies – Rechargeable UHF Two-Way Radios with Charging Base – Professional Handheld Co",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng multi-pack UHF"
+ },
+ {
+  "case": 336,
+  "pack": "radio",
+  "title": "Midland R1 Mesh",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "intercom",
+  "note": "Midland R1 Mesh is a motorcycle helmet Bluetooth/mesh intercom, not a walkie-talkie"
+ },
+ {
+  "case": 337,
+  "pack": "radio",
+  "title": "Wireless HI-FI circuit modules with in-Built bluetooth and 5 watt amplifier for direct speaker mm",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "Bluetooth audio amplifier module"
+ },
+ {
+  "case": 338,
+  "pack": "radio",
+  "title": "TIDRADIO TD-H9 10W APRS GPS Ham GMRS Radio 2 Pack 4 Pack Walkie Talkie",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "TIDRADIO TD-H9 GMRS/ham 10 W"
+ },
+ {
+  "case": 339,
+  "pack": "radio",
+  "title": "TP-LINK TL-MR3420 3G/4G Wireless N Router",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "router",
+  "note": "3G/4G/5G router"
+ },
+ {
+  "case": 340,
+  "pack": "radio",
+  "title": "USB kids premium walkie talkie with long range connectivity",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 341,
+  "pack": "radio",
+  "title": "2g 3g 4g 5g Gsm Tri-band Signal Repeater 900 1800 2100 Mhz Network Booster Mobile Phones 3g 4g Lte Repeater",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "cellular signal repeater/amplifier"
+ },
+ {
+  "case": 342,
+  "pack": "radio",
+  "title": "BOAFENG Walkie Talkie BF-888S – 5Km Long Range Two-Way Radio with 16 Channels",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 343,
+  "pack": "radio",
+  "title": "Baofeng BF-358 Walkie Talkie",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-358"
+ },
+ {
+  "case": 344,
+  "pack": "radio",
+  "title": "Wireless Antenna 6dBi 2.4GHz Single Band WiFi Antenna Boost Bluetooth Audio Range",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 345,
+  "pack": "radio",
+  "title": "Tenda W311mi USB Adapter",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "USB Wi-Fi adapter"
+ },
+ {
+  "case": 346,
+  "pack": "radio",
+  "title": "Lintratek jio/2G/3G/4G triband mobile phone signal booster & data complete kit area coverage 6500 sq.feet GST included",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "Lintratek repeater complete kit"
+ },
+ {
+  "case": 347,
+  "pack": "radio",
+  "title": "The Baofeng Radio Revolution",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "book",
+  "note": "'The Baofeng Radio Revolution' is a paperback guide (Morse Code Publishing)"
+ },
+ {
+  "case": 348,
+  "pack": "radio",
+  "title": "BAOFENG 12-Pack Long Range Walkie Talkies – Rechargeable UHF Two-Way Radios with Charging Bases",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng multi-pack UHF"
+ },
+ {
+  "case": 349,
+  "pack": "radio",
+  "title": "TP-Link RE200 AC750 Dual Band Wi-Fi Range Extender",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 350,
+  "pack": "radio",
+  "title": "RJLINK 3G/4G/5G triband mobile phone signal booster all sim working jio/airtel/vi/bsnl boost network & data complete kit",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 351,
+  "pack": "radio",
+  "title": "Midland Btx2 Pro S Dual Intercom",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "intercom",
+  "note": "Midland BTX2 Pro S motorcycle Bluetooth intercom"
+ },
+ {
+  "case": 352,
+  "pack": "radio",
+  "title": "Lintratek 2G/3G/4G/5G mobile phone network booster & data complete kit area coverage 4500 sq.feet GST included",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "Lintratek repeater complete kit"
+ },
+ {
+  "case": 353,
+  "pack": "radio",
+  "title": "Wavlink WN588HX3 AX3000 Dual-Band Wi-Fi 6 Outdoor Access Point",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi 6 outdoor access point"
+ },
+ {
+  "case": 354,
+  "pack": "radio",
+  "title": "TP-Link RE315 V1",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 355,
+  "pack": "radio",
+  "title": "Bf-888 Walkie Talkie 3-Pack with Earphone, Built-in LED Torch, Wall Charger, Rechargeable Battery",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 356,
+  "pack": "radio",
+  "title": "Baofeng UV5R Walkie Talkie , FM Radio, 1 year replacement waranty",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-5R"
+ },
+ {
+  "case": 357,
+  "pack": "radio",
+  "title": "dee vee Easy Wireless intercom 3 Lines with Speaker Phone & Caller id Black",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "intercom",
+  "note": "3-line wireless intercom with caller id (phone-style), not walkie-talkie"
+ },
+ {
+  "case": 358,
+  "pack": "radio",
+  "title": "RJLINK 2G/3G/4G/5G quad band mobile phone network booster all sim working jio/airtel/vi/bsnl boost network & data comple",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 359,
+  "pack": "radio",
+  "title": "Cellexxa 2g/3g/4g/5g Quad Band Signal Booster All Sim Supported Booster Network Boosts & Data Also Complete Kit Area Cov",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "Cellexxa quad-band booster kit"
+ },
+ {
+  "case": 360,
+  "pack": "radio",
+  "title": "Superbat SMA Splitter Cable SMA Male to Dual SMA Female Cable (V Type,12 inches) for SMA 4G LTE Antenna Splitter 2 in 1 ",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "SMA splitter cable"
+ },
+ {
+  "case": 361,
+  "pack": "radio",
+  "title": "Qiwa Wifi Extender Repeater Signal Booster, 300mbps Router Antenna Booster",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 362,
+  "pack": "radio",
+  "title": "2pcs Practical Baofeng bf-888s UHF Long Range Walkie Talkie Two-Way Radio",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 363,
+  "pack": "radio",
+  "title": "Tenda 4G180 4G LTE-Advanced Pocket Mobile Wi-Fi Router",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "router",
+  "note": "3G/4G/5G router"
+ },
+ {
+  "case": 364,
+  "pack": "radio",
+  "title": "Acer Connect Enduro M4 5G Router",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "router",
+  "note": "3G/4G/5G router"
+ },
+ {
+  "case": 365,
+  "pack": "radio",
+  "title": "Baofeng Uv-82 Dual Band Vhf Uhf Two Way Radio Walkie Talkie",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-82"
+ },
+ {
+  "case": 366,
+  "pack": "radio",
+  "title": "H30 Long Range UHF Waterproof Two-way Radio",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "H30 UHF waterproof"
+ },
+ {
+  "case": 367,
+  "pack": "radio",
+  "title": "हीलियम एचएसपी छोटा प्लेटफ़ॉर्म; ट्री डिगर दांत; हीलियम स्टिक्स के शीर्ष पर माउंट, मल्टीकलर (HWK-HHSP)",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "beekeeping/hive tool platform, unrelated"
+ },
+ {
+  "case": 368,
+  "pack": "radio",
+  "title": "TIDRADIO TD-M15 Global Long Range Walkie PoC Radio",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "poc",
+  "note": "TIDRADIO TD-M15 PoC (cellular push-to-talk) radio"
+ },
+ {
+  "case": 369,
+  "pack": "radio",
+  "title": "Jgstkcity डेस्क क्लैंप पावर स्ट्रिप यूएसबी सी, 40W कुल फास्ट चार्जिंग स्टेशन, 4 पीडी 20W यूएसबी सी पोर्ट, डेस्क एज माउंट",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "desk power strip"
+ },
+ {
+  "case": 370,
+  "pack": "radio",
+  "title": "RYBG211Lite 24GHz BLE 51 High Power Module 20dBm 300M rang",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "BLE module"
+ },
+ {
+  "case": 371,
+  "pack": "radio",
+  "title": "Hamleys Wireless Walkie Talkie Set with 100m Range",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 372,
+  "pack": "radio",
+  "title": "Tri Band Mobile signal booster 2G 3G 4G - 1 yr waranty EMI available",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "tri-band mobile signal booster"
+ },
+ {
+  "case": 373,
+  "pack": "radio",
+  "title": "Triband Mobile signal enhencer antenna kit 1 year waranty Make in India",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "unclear",
+  "note": "'signal enhancer antenna kit' -- text does not say amplifier/repeater"
+ },
+ {
+  "case": 374,
+  "pack": "radio",
+  "title": "Baofeng BF-888S UHF 400-470MHz Walkie Talkie Long Range VOX Two Way Radio With Earpiece Pack-of-1",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 375,
+  "pack": "radio",
+  "title": "Male Plug 6dBi 2.4GHz Single Band WiFi Antenna Adopt for Home Office Wireless Network Router/IP Camera/Wireless Range Ex",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 376,
+  "pack": "radio",
+  "title": "TP-Link CPE610 5GHz 300Mbps 23dBi Outdoor CPE",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "wifi",
+  "note": "5 GHz outdoor CPE"
+ },
+ {
+  "case": 377,
+  "pack": "radio",
+  "title": "H15 High Power Long Range Walkie Talkie",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "H15 handheld"
+ },
+ {
+  "case": 378,
+  "pack": "radio",
+  "title": "Cube IV Mini UPS for Router with 4000mAh Battery",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "mini UPS"
+ },
+ {
+  "case": 379,
+  "pack": "radio",
+  "title": "SECRET DESIRE हैंडहेल्ड इनहेलर नेब्युलाइज़र तेजी से नेबुलाइज्ड यूएसबी चार्जिंग पोर्टेबल नेबुलाइज़र ग्रे | प्राकृतिक और व",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "other",
+  "note": "nebulizer"
+ },
+ {
+  "case": 380,
+  "pack": "radio",
+  "title": "GSM 900MHz Cell Phone Signal Repeater Booster Amplifier",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "booster",
+  "note": "cellular signal repeater/amplifier"
+ },
+ {
+  "case": 381,
+  "pack": "radio",
+  "title": "imtion 2 in 1 ( 1 Pcs Chipkali toy+ Walkie talkie ) 6 miter ...",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "bundle of lizard toy + kids walkie-talkie (6 m); the walkie-talkie is a toy two-way radio"
+ },
+ {
+  "case": 382,
+  "pack": "radio",
+  "title": "Inext 2-pin K Type Earphone with Mic for Walkie Talkie (4 Piece) ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 383,
+  "pack": "radio",
+  "title": "KGS Red Walkie Talkie with 2 Player System Toy for Kids ...",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 384,
+  "pack": "radio",
+  "title": "PICSTAR Belt Clip for Two Way Radio Walkie Talkie UHF ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "belt clip"
+ },
+ {
+  "case": 385,
+  "pack": "radio",
+  "title": "Planet of Toys Transistors Walkie Talkie Radiometer",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "Planet of Toys 'Army Walkie Talkie Radiometer' -- toy walkie-talkie per Flipkart listing"
+ },
+ {
+  "case": 386,
+  "pack": "radio",
+  "title": "Spy Gear Ultra Range Walkie Talkies (2) Price in India",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 387,
+  "pack": "radio",
+  "title": "Buy Teddify Walkie Talkie Spy Toy for kids Baby's Yellow ...",
+  "reviewer_in_scope": true,
+  "nishedh_in_scope": true,
+  "outcome": "tp",
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 388,
+  "pack": "radio",
+  "title": "TrueBucks smart Genz generation walkie talkie inertphone ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": true,
+  "outcome": "fp",
+  "category": "unclear",
+  "note": "'TrueBucks smart GenZ walkie talkie inertphone' -- truncated title, product not findable; likely a kids toy walkie-talkie but unverified"
+ },
+ {
+  "case": 389,
+  "pack": "radio",
+  "title": "Buy uhf helical Antenna for Aspera v7 License Free walkie ...",
+  "reviewer_in_scope": false,
+  "nishedh_in_scope": false,
+  "outcome": "tn",
+  "category": "accessory",
+  "note": "UHF helical antenna for Aspera V7"
+ }
+]

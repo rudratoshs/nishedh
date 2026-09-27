@@ -6,6 +6,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "medium",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "not_in_registry"
   ],
@@ -20,6 +21,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "low",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "not_in_registry",
    "information_missing"
@@ -35,6 +37,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -49,6 +52,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -63,6 +67,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -77,6 +82,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -91,6 +97,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -105,6 +112,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -119,6 +127,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -133,6 +142,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "high",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "not_in_registry",
    "information_missing"
@@ -148,6 +158,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -162,6 +173,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -176,6 +188,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "medium",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "not_in_registry"
   ],
@@ -190,6 +203,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "medium",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "not_in_registry"
   ],
@@ -204,6 +218,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "medium",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "not_in_registry"
   ],
@@ -218,6 +233,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -232,6 +248,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "medium",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "not_in_registry"
   ],
@@ -246,6 +263,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "medium",
   "reviewer": "information_missing",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -260,6 +278,7 @@
   "nishedh": "not_in_registry",
   "nishedh_confidence": "medium",
   "reviewer": "not_in_registry",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "not_in_registry"
   ],
@@ -274,6 +293,7 @@
   "nishedh": "registry_mismatch",
   "nishedh_confidence": "low",
   "reviewer": "registry_mismatch",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "registry_mismatch"
   ],
@@ -288,6 +308,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -302,6 +323,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -316,6 +338,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -330,6 +353,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing",
    "clear"
@@ -345,6 +369,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -359,6 +384,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -373,6 +399,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -387,6 +414,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "clear",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "clear",
    "information_missing"
@@ -402,6 +430,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -416,6 +445,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -430,6 +460,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -444,6 +475,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "medium",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -458,6 +490,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "medium",
   "reviewer": "clear",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -472,6 +505,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -486,6 +520,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -500,6 +535,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -514,6 +550,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "high",
   "reviewer": "clear",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "clear"
   ],
@@ -528,6 +565,7 @@
   "nishedh": "clear",
   "nishedh_confidence": "medium",
   "reviewer": "clear",
+  "reviewer_confidence": "medium",
   "reviewer_acceptable": [
    "clear",
    "registry_mismatch"
@@ -543,6 +581,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -557,6 +596,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -571,6 +611,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -585,6 +626,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -599,6 +641,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -613,6 +656,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -627,6 +671,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -641,6 +686,7 @@
   "nishedh": "banned_item",
   "nishedh_confidence": "high",
   "reviewer": "banned_item",
+  "reviewer_confidence": "high",
   "reviewer_acceptable": [
    "banned_item"
   ],
@@ -655,6 +701,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -669,6 +716,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing",
    "out_of_scope"
@@ -684,6 +732,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -698,6 +747,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -712,6 +762,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],
@@ -726,6 +777,7 @@
   "nishedh": "information_missing",
   "nishedh_confidence": "low",
   "reviewer": "information_missing",
+  "reviewer_confidence": "low",
   "reviewer_acceptable": [
    "information_missing"
   ],

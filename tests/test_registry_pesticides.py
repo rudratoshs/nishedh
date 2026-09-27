@@ -110,3 +110,30 @@ def test_restricted_transcription(reg):
 def test_round_trip(reg):
     again = P.PesticideRegistry.from_json(reg.to_json())
     assert again == reg
+
+
+def test_an_altered_source_pdf_is_refused_even_with_a_snapshot(tmp_path):
+    import shutil
+
+    from nishedh.registry import pesticides as P
+
+    reg_dir = tmp_path / "registry"
+    shutil.copytree(P.REGISTRY_DIR, reg_dir)
+    pdf = next((reg_dir / "raw").glob("list_of_pesticides_as_on_*.pdf"))
+    data = bytearray(pdf.read_bytes())
+    data[-10] ^= 0xFF
+    pdf.write_bytes(bytes(data))
+    with pytest.raises(ValueError, match="does not match sources.json"):
+        P.load(reg_dir)
+
+
+def test_a_missing_source_pdf_is_a_clear_error(tmp_path):
+    import shutil
+
+    from nishedh.registry import pesticides as P
+
+    reg_dir = tmp_path / "registry"
+    shutil.copytree(P.REGISTRY_DIR, reg_dir)
+    next((reg_dir / "raw").glob("*.pdf")).unlink()
+    with pytest.raises(ValueError, match="is missing"):
+        P.load(reg_dir)

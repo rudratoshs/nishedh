@@ -1,0 +1,2333 @@
+[
+ {
+  "case": 1,
+  "in_scope": true,
+  "category": "herbicide"
+ },
+ {
+  "case": 2,
+  "in_scope": true,
+  "category": "herbicide"
+ },
+ {
+  "case": 3,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 4,
+  "in_scope": false,
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 5,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "tobacco dust; sold as natural insecticide, no registered active (nicotine) declared"
+ },
+ {
+  "case": 6,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 7,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 8,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "Bayer Solomon (beta-cyfluthrin+imidacloprid)"
+ },
+ {
+  "case": 9,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "fipronil 80 WG"
+ },
+ {
+  "case": 10,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "Syngenta Actara (thiamethoxam)"
+ },
+ {
+  "case": 11,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "sold as 'organic pesticide for insects'; no active named, no explicit herbal/neem claim; treated as hidden-ingredient insecticide"
+ },
+ {
+  "case": 12,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 13,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 14,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 15,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 16,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 17,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Erwon/Sansar Green 'organic' herbicide; non-selective, no active named; hidden-ingredient weed killer"
+ },
+ {
+  "case": 18,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 19,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 20,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 21,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 22,
+  "in_scope": false,
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 23,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Beauveria+Verticillium+Metarhizium"
+ },
+ {
+  "case": 24,
+  "in_scope": true,
+  "category": "fungicide",
+  "note": "Rimi Garden 'organic' liquid fungus remover; no active named; same hidden-ingredient family as Erwon"
+ },
+ {
+  "case": 25,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 26,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Bacillus thuringiensis"
+ },
+ {
+  "case": 27,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Verticillium lecanii"
+ },
+ {
+  "case": 28,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "'100% herbal actives' mealybug spray"
+ },
+ {
+  "case": 29,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "'100% herbal actives' mealybug spray"
+ },
+ {
+  "case": 30,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Bacillus thuringiensis"
+ },
+ {
+  "case": 31,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Metarhizium anisopliae"
+ },
+ {
+  "case": 32,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Beauveria bassiana"
+ },
+ {
+  "case": 33,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 34,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "diatomaceous earth"
+ },
+ {
+  "case": 35,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 36,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 37,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "Garden Genie mealybug spray; no ingredient or herbal claim in listing text"
+ },
+ {
+  "case": 38,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 39,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 40,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 41,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 42,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "'Essential Organic Powerful Liquid Insecticide' (Erwon-style); no active named; hidden-ingredient insecticide sold for plants/soil"
+ },
+ {
+  "case": 43,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Metarhizium anisopliae"
+ },
+ {
+  "case": 44,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 45,
+  "in_scope": false,
+  "category": "household",
+  "note": "deltamethrin concentrate marketed for cockroaches/mosquitoes/houseflies (public-health use), not crop protection"
+ },
+ {
+  "case": 46,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "IFFCO Doctor Mealybug, '100% organic' spray"
+ },
+ {
+  "case": 47,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "clodinafop-propargyl 15 WP"
+ },
+ {
+  "case": 48,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Beauveria bassiana"
+ },
+ {
+  "case": 49,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Verticillium lecanii"
+ },
+ {
+  "case": 50,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Trichoderma"
+ },
+ {
+  "case": 51,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 52,
+  "in_scope": false,
+  "category": "household",
+  "note": "citronella fogging liquid for mosquitoes"
+ },
+ {
+  "case": 53,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "acetamiprid 20 SP"
+ },
+ {
+  "case": 54,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "Bayer Confidor (imidacloprid)"
+ },
+ {
+  "case": 55,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "imidacloprid 70 WG"
+ },
+ {
+  "case": 56,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 57,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "Bayer Confidor (imidacloprid)"
+ },
+ {
+  "case": 58,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "Actara thiamethoxam 25 WG"
+ },
+ {
+  "case": 59,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 60,
+  "in_scope": false,
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 61,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "metribuzin 70 WP"
+ },
+ {
+  "case": 62,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "2,4-D"
+ },
+ {
+  "case": 63,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 64,
+  "in_scope": true,
+  "category": "biological",
+  "note": "Bacillus thuringiensis"
+ },
+ {
+  "case": 65,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 66,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 67,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "weed & root remover; listing contradictorily says 'supports root development'; still sold as weed killer, no active"
+ },
+ {
+  "case": 68,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 69,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "neem-oil based; no pesticide active named"
+ },
+ {
+  "case": 70,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Safe Plant Spray pest control solution'; no ingredient, no claim of insecticide or herbal"
+ },
+ {
+  "case": 71,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 72,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 73,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 74,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 75,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 76,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "2,4-D amine 58 SL"
+ },
+ {
+  "case": 77,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 78,
+  "in_scope": false,
+  "category": "botanical",
+  "note": "Utkarsh Mealy Bug Fix, 'organic', 'pet safe' RTU spray, no active named"
+ },
+ {
+  "case": 79,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 80,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 81,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 82,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 83,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 84,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 85,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 86,
+  "in_scope": true,
+  "category": "insecticide",
+  "note": "Solomon (Bayer) relisting"
+ },
+ {
+  "case": 87,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 88,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 89,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 90,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 91,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 92,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 93,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 94,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 95,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 96,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 97,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "2,4-D"
+ },
+ {
+  "case": 98,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 99,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 100,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 101,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 102,
+  "in_scope": false,
+  "category": "tool",
+  "note": "manual weeder"
+ },
+ {
+  "case": 103,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 104,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 105,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 106,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 107,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "'Root Stop' granular herbicide 'with active ingredient' unnamed"
+ },
+ {
+  "case": 108,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 109,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Pest Guard Plant Protect Spray' -- text only says 'helps maintain healthy plants'; no pest-control active or claim"
+ },
+ {
+  "case": 110,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 111,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 112,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 113,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 114,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 115,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 116,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 117,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 118,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 119,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 120,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "mealybug & fungus killer spray; no ingredient stated, no herbal claim either"
+ },
+ {
+  "case": 121,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 122,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "lawn weed remover powder; product_details say 'Plant Growth Booster' component, contradictory, but sold as weed killer"
+ },
+ {
+  "case": 123,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 124,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 125,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 126,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 127,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 128,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 129,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 130,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 131,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 132,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 133,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "lawn weed remover powder; product_details say 'Plant Growth Booster' component, contradictory, but sold as weed killer"
+ },
+ {
+  "case": 134,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 135,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 136,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 137,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 138,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 139,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 140,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "paraquat dichloride 24 SL"
+ },
+ {
+  "case": 141,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glyphosate 71 SG + surfactant combo"
+ },
+ {
+  "case": 142,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 143,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "bamboo killer granules '5% active formula', active unnamed"
+ },
+ {
+  "case": 144,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 145,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 146,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 147,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 148,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 149,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 150,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 151,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Bonide BurnOut II weed & grass killer (declared botanical actives citric acid/clove oil); sold as herbicide"
+ },
+ {
+  "case": 152,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 153,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Exylon Burst 24 = paraquat 24 SL (web)"
+ },
+ {
+  "case": 154,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 155,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 156,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "spiritual healing kit (yantra/rudraksha), not a pesticide"
+ },
+ {
+  "case": 157,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "imazethapyr 10 SL"
+ },
+ {
+  "case": 158,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 159,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 160,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 161,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 162,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 163,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 164,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 165,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 166,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "weed & root killer claiming 'herbal'; no active named; sold as herbicide, so treated as hidden-ingredient weed killer rather than botanical"
+ },
+ {
+  "case": 167,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "2,4-D ethyl ester 38 EC"
+ },
+ {
+  "case": 168,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 169,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "paraquat dichloride 24 SL"
+ },
+ {
+  "case": 170,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 171,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "pretilachlor 50 EC"
+ },
+ {
+  "case": 172,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 173,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Glycel glyphosate 41 SL"
+ },
+ {
+  "case": 174,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 175,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "halosulfuron methyl 75 WG"
+ },
+ {
+  "case": 176,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 177,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "imazethapyr + imazamox"
+ },
+ {
+  "case": 178,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glufosinate 13.5 SL"
+ },
+ {
+  "case": 179,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 180,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "paraquat dichloride 24 SL"
+ },
+ {
+  "case": 181,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 182,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Katyayani weed killer; active not in title but sold as weedicide/herbicide"
+ },
+ {
+  "case": 183,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 184,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 185,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 186,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 187,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 188,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Allquit = Crystal paraquat 24 SL (web)"
+ },
+ {
+  "case": 189,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Katyayani weed killer; active not in title but sold as weedicide/herbicide"
+ },
+ {
+  "case": 190,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 191,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 192,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 193,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 194,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 195,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 196,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 197,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'IMEJASAFE 10' -- title only; name resembles an imazethapyr 10 SL brand but no product could be verified on the web; not labelled in-scope on a guess"
+ },
+ {
+  "case": 198,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Ortho GroundClear"
+ },
+ {
+  "case": 199,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "glyphosate 71 SG"
+ },
+ {
+  "case": 200,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 201,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Katyayani weed killer; active not in title but sold as weedicide/herbicide"
+ },
+ {
+  "case": 202,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 203,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "mesotrione + atrazine"
+ },
+ {
+  "case": 204,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Spectracide weed & grass killer"
+ },
+ {
+  "case": 205,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "quinclorac 18.92%"
+ },
+ {
+  "case": 206,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 207,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Saathi (pyrazosulfuron) pre-emergence rice herbicide"
+ },
+ {
+  "case": 208,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 209,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 210,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 211,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 212,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Roundup glyphosate 41 SL"
+ },
+ {
+  "case": 213,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "triafamone + ethoxysulfuron"
+ },
+ {
+  "case": 214,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 215,
+  "in_scope": false,
+  "category": "book",
+  "note": "Hindi book"
+ },
+ {
+  "case": 216,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 217,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 218,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 219,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Quali-Pro 2-D (2,4-D)"
+ },
+ {
+  "case": 220,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "Godrej Hitweed Maxx"
+ },
+ {
+  "case": 221,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 222,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "triclopyr 4"
+ },
+ {
+  "case": 223,
+  "in_scope": true,
+  "category": "herbicide",
+  "note": "generic ready-to-use weed & root killer; no active named (hidden-ingredient weed killer)"
+ },
+ {
+  "case": 224,
+  "in_scope": false,
+  "category": "medicine",
+  "note": "ayurvedic/siddha/unani medicine ('nashak' = destroyer, not a pesticide)"
+ },
+ {
+  "case": 225,
+  "in_scope": false,
+  "category": "tool",
+  "note": "backpack sprayer"
+ },
+ {
+  "case": 226,
+  "in_scope": false,
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 227,
+  "in_scope": false,
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 228,
+  "in_scope": false,
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 229,
+  "in_scope": false,
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 230,
+  "in_scope": false,
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 231,
+  "in_scope": false,
+  "category": "household",
+  "note": "VOBI fly control agent: cypermethrin 5% per web listing, but sold as household/floor fly control, not crop protection"
+ },
+ {
+  "case": 232,
+  "in_scope": false,
+  "category": "book",
+  "note": "Weed Management textbook"
+ },
+ {
+  "case": 233,
+  "in_scope": false,
+  "category": "seed",
+  "note": "flower seeds"
+ },
+ {
+  "case": 234,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 235,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 236,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 237,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 238,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 239,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 240,
+  "in_scope": false,
+  "category": "intercom",
+  "note": "Thodukonics ISM900 900 MHz full-duplex wireless intercom (mains-powered base units), not a walkie-talkie/booster/jammer"
+ },
+ {
+  "case": 241,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 242,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 243,
+  "in_scope": false,
+  "category": "other",
+  "note": "Bluetooth earphone, unrelated"
+ },
+ {
+  "case": 244,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 245,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 246,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "belt clip"
+ },
+ {
+  "case": 247,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "replacement battery"
+ },
+ {
+  "case": 248,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 249,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 250,
+  "in_scope": false,
+  "category": "sticker",
+  "note": "signal-booster stickers"
+ },
+ {
+  "case": 251,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 252,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 253,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 254,
+  "in_scope": false,
+  "category": "toy",
+  "note": "wooden puzzle, not a radio"
+ },
+ {
+  "case": 255,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 256,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 257,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 258,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 259,
+  "in_scope": false,
+  "category": "toy",
+  "note": "talkback robot toy, not a radio"
+ },
+ {
+  "case": 260,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "radio holster/pouch"
+ },
+ {
+  "case": 261,
+  "in_scope": false,
+  "category": "toy",
+  "note": "gel blaster"
+ },
+ {
+  "case": 262,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 263,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "belt clip"
+ },
+ {
+  "case": 264,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 265,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 266,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 267,
+  "in_scope": false,
+  "category": "other",
+  "note": "binoculars"
+ },
+ {
+  "case": 268,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 269,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 270,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 271,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 272,
+  "in_scope": false,
+  "category": "other",
+  "note": "monocular"
+ },
+ {
+  "case": 273,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 274,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 275,
+  "in_scope": false,
+  "category": "toy",
+  "note": "pretend-play phone toy, not a radio"
+ },
+ {
+  "case": 276,
+  "in_scope": false,
+  "category": "other",
+  "note": "AAC speech aid"
+ },
+ {
+  "case": 277,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 278,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 279,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "screen guard"
+ },
+ {
+  "case": 280,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "replacement battery"
+ },
+ {
+  "case": 281,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 282,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 283,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Maizic 27 MHz CB handheld set"
+ },
+ {
+  "case": 284,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Mobile Signal/Network Enhancer Antenna' -- text does not say repeater/amplifier; cannot tell if powered"
+ },
+ {
+  "case": 285,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Midland XT30 PMR446"
+ },
+ {
+  "case": 286,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "ICOM licence-free two-way radio"
+ },
+ {
+  "case": 287,
+  "in_scope": true,
+  "category": "booster",
+  "note": "3G/4G signal amplifier"
+ },
+ {
+  "case": 288,
+  "in_scope": false,
+  "category": "other",
+  "note": "Portronics car adapter/charger"
+ },
+ {
+  "case": 289,
+  "in_scope": false,
+  "category": "other",
+  "note": "Portronics car adapter/charger"
+ },
+ {
+  "case": 290,
+  "in_scope": true,
+  "category": "walkie_talkie"
+ },
+ {
+  "case": 291,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Xiaomi Walkie Talkie 3, 3 W"
+ },
+ {
+  "case": 292,
+  "in_scope": true,
+  "category": "booster",
+  "note": "in-car LTE/GSM signal booster"
+ },
+ {
+  "case": 293,
+  "in_scope": true,
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 294,
+  "in_scope": false,
+  "category": "phone",
+  "note": "Samsung Galaxy S25"
+ },
+ {
+  "case": 295,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 296,
+  "in_scope": false,
+  "category": "sticker",
+  "note": "signal-booster stickers"
+ },
+ {
+  "case": 297,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Motorola T62 PMR446"
+ },
+ {
+  "case": 298,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Retevis RT622 PMR446"
+ },
+ {
+  "case": 299,
+  "in_scope": true,
+  "category": "booster",
+  "note": "'Top Mobile Signal Booster' -- title-only but sold as booster"
+ },
+ {
+  "case": 300,
+  "in_scope": false,
+  "category": "other",
+  "note": "GSM shutter siren alarm dialer"
+ },
+ {
+  "case": 301,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'Signal enhancer antenna for Airtel & Jio Band 40' -- unclear whether passive antenna or powered repeater"
+ },
+ {
+  "case": 302,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-5R"
+ },
+ {
+  "case": 303,
+  "in_scope": true,
+  "category": "booster",
+  "note": "vehicle cell booster, 50 dB gain"
+ },
+ {
+  "case": 304,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'5G signal enhancer kit' -- kit, but text doesn't state amplifier/repeater"
+ },
+ {
+  "case": 305,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng GT-68"
+ },
+ {
+  "case": 306,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Wavex PT-100"
+ },
+ {
+  "case": 307,
+  "in_scope": true,
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 308,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 309,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "DMR VHF handheld"
+ },
+ {
+  "case": 310,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 311,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 312,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "VOX walkie-talkie"
+ },
+ {
+  "case": 313,
+  "in_scope": true,
+  "category": "booster",
+  "note": "title-only 'Mobile network booster'"
+ },
+ {
+  "case": 314,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Hyundai GP-666LV"
+ },
+ {
+  "case": 315,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "22-ch FRS"
+ },
+ {
+  "case": 316,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "ICOM licence-free two-way radio"
+ },
+ {
+  "case": 317,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "passive LTE/GSM antenna sold alone (some titled 'signal amplifier/booster' but are dBi antennas for routers/modules)"
+ },
+ {
+  "case": 318,
+  "in_scope": false,
+  "category": "other",
+  "note": "portable voice amplifier / PA speaker, not radio"
+ },
+ {
+  "case": 319,
+  "in_scope": false,
+  "category": "sticker",
+  "note": "EMF 'protection chip'"
+ },
+ {
+  "case": 320,
+  "in_scope": false,
+  "category": "other",
+  "note": "mini UPS"
+ },
+ {
+  "case": 321,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Lenovo CC100 PMR446"
+ },
+ {
+  "case": 322,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Midland pair"
+ },
+ {
+  "case": 323,
+  "in_scope": true,
+  "category": "booster",
+  "note": "cellular signal repeater/amplifier"
+ },
+ {
+  "case": 324,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng multi-pack UHF"
+ },
+ {
+  "case": 325,
+  "in_scope": true,
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 326,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 327,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-5R"
+ },
+ {
+  "case": 328,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "TIDRADIO TD-M11 Plus"
+ },
+ {
+  "case": 329,
+  "in_scope": false,
+  "category": "other",
+  "note": "Portronics car adapter/charger"
+ },
+ {
+  "case": 330,
+  "in_scope": true,
+  "category": "booster",
+  "note": "3G repeater/amplifier"
+ },
+ {
+  "case": 331,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Motorola GP328 UHF"
+ },
+ {
+  "case": 332,
+  "in_scope": false,
+  "category": "other",
+  "note": "voltage stabilizer"
+ },
+ {
+  "case": 333,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 334,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "title-only 'Wireless Walkie Talkie'"
+ },
+ {
+  "case": 335,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng multi-pack UHF"
+ },
+ {
+  "case": 336,
+  "in_scope": false,
+  "category": "intercom",
+  "note": "Midland R1 Mesh is a motorcycle helmet Bluetooth/mesh intercom, not a walkie-talkie"
+ },
+ {
+  "case": 337,
+  "in_scope": false,
+  "category": "other",
+  "note": "Bluetooth audio amplifier module"
+ },
+ {
+  "case": 338,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "TIDRADIO TD-H9 GMRS/ham 10 W"
+ },
+ {
+  "case": 339,
+  "in_scope": false,
+  "category": "router",
+  "note": "3G/4G/5G router"
+ },
+ {
+  "case": 340,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 341,
+  "in_scope": true,
+  "category": "booster",
+  "note": "cellular signal repeater/amplifier"
+ },
+ {
+  "case": 342,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 343,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-358"
+ },
+ {
+  "case": 344,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 345,
+  "in_scope": false,
+  "category": "other",
+  "note": "USB Wi-Fi adapter"
+ },
+ {
+  "case": 346,
+  "in_scope": true,
+  "category": "booster",
+  "note": "Lintratek repeater complete kit"
+ },
+ {
+  "case": 347,
+  "in_scope": false,
+  "category": "book",
+  "note": "'The Baofeng Radio Revolution' is a paperback guide (Morse Code Publishing)"
+ },
+ {
+  "case": 348,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng multi-pack UHF"
+ },
+ {
+  "case": 349,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 350,
+  "in_scope": true,
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 351,
+  "in_scope": false,
+  "category": "intercom",
+  "note": "Midland BTX2 Pro S motorcycle Bluetooth intercom"
+ },
+ {
+  "case": 352,
+  "in_scope": true,
+  "category": "booster",
+  "note": "Lintratek repeater complete kit"
+ },
+ {
+  "case": 353,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi 6 outdoor access point"
+ },
+ {
+  "case": 354,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 355,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 356,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-5R"
+ },
+ {
+  "case": 357,
+  "in_scope": false,
+  "category": "intercom",
+  "note": "3-line wireless intercom with caller id (phone-style), not walkie-talkie"
+ },
+ {
+  "case": 358,
+  "in_scope": true,
+  "category": "booster",
+  "note": "RJLINK repeater complete kit"
+ },
+ {
+  "case": 359,
+  "in_scope": true,
+  "category": "booster",
+  "note": "Cellexxa quad-band booster kit"
+ },
+ {
+  "case": 360,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "SMA splitter cable"
+ },
+ {
+  "case": 361,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "Wi-Fi range extender"
+ },
+ {
+  "case": 362,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 363,
+  "in_scope": false,
+  "category": "router",
+  "note": "3G/4G/5G router"
+ },
+ {
+  "case": 364,
+  "in_scope": false,
+  "category": "router",
+  "note": "3G/4G/5G router"
+ },
+ {
+  "case": 365,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng UV-82"
+ },
+ {
+  "case": 366,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "H30 UHF waterproof"
+ },
+ {
+  "case": 367,
+  "in_scope": false,
+  "category": "other",
+  "note": "beekeeping/hive tool platform, unrelated"
+ },
+ {
+  "case": 368,
+  "in_scope": false,
+  "category": "poc",
+  "note": "TIDRADIO TD-M15 PoC (cellular push-to-talk) radio"
+ },
+ {
+  "case": 369,
+  "in_scope": false,
+  "category": "other",
+  "note": "desk power strip"
+ },
+ {
+  "case": 370,
+  "in_scope": false,
+  "category": "other",
+  "note": "BLE module"
+ },
+ {
+  "case": 371,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 372,
+  "in_scope": true,
+  "category": "booster",
+  "note": "tri-band mobile signal booster"
+ },
+ {
+  "case": 373,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'signal enhancer antenna kit' -- text does not say amplifier/repeater"
+ },
+ {
+  "case": 374,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Baofeng BF-888S UHF"
+ },
+ {
+  "case": 375,
+  "in_scope": false,
+  "category": "antenna",
+  "note": "Wi-Fi antenna"
+ },
+ {
+  "case": 376,
+  "in_scope": false,
+  "category": "wifi",
+  "note": "5 GHz outdoor CPE"
+ },
+ {
+  "case": 377,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "H15 handheld"
+ },
+ {
+  "case": 378,
+  "in_scope": false,
+  "category": "other",
+  "note": "mini UPS"
+ },
+ {
+  "case": 379,
+  "in_scope": false,
+  "category": "other",
+  "note": "nebulizer"
+ },
+ {
+  "case": 380,
+  "in_scope": true,
+  "category": "booster",
+  "note": "cellular signal repeater/amplifier"
+ },
+ {
+  "case": 381,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "bundle of lizard toy + kids walkie-talkie (6 m); the walkie-talkie is a toy two-way radio"
+ },
+ {
+  "case": 382,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "walkie-talkie earpiece/headset"
+ },
+ {
+  "case": 383,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 384,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "belt clip"
+ },
+ {
+  "case": 385,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "Planet of Toys 'Army Walkie Talkie Radiometer' -- toy walkie-talkie per Flipkart listing"
+ },
+ {
+  "case": 386,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 387,
+  "in_scope": true,
+  "category": "walkie_talkie",
+  "note": "kids/toy walkie-talkie set"
+ },
+ {
+  "case": 388,
+  "in_scope": false,
+  "category": "unclear",
+  "note": "'TrueBucks smart GenZ walkie talkie inertphone' -- truncated title, product not findable; likely a kids toy walkie-talkie but unverified"
+ },
+ {
+  "case": 389,
+  "in_scope": false,
+  "category": "accessory",
+  "note": "UHF helical antenna for Aspera V7"
+ }
+]

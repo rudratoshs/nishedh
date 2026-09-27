@@ -152,3 +152,9 @@ def test_licensed_band_near_433_is_still_flagged():
 def test_mains_rating_is_not_a_radio_band():
     ex = extract_radio({"title": "Motorola T82 PMR446 446.0-446.2 MHz", "specifications": "Charger input: 100-240V 50/60Hz"})
     assert [(b.low_mhz, b.high_mhz) for b in ex.bands] == [(446.0, 446.2)]
+
+
+def test_a_booster_gets_no_walkie_talkie_band_checks():
+    t = "Mobile Signal Booster 400-470MHz UHF Repeater GSM 900 MHz"
+    f = assess_radio(extract_radio({"title": t}), {}, t)
+    assert f is not None and f.reason is Reason.BANNED_ITEM and len(f.checks) == 1

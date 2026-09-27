@@ -35,7 +35,7 @@ def replay(tmp_path_factory):
 
 def test_pesticide_numbers_match_the_readme(replay):
     results, findings = replay
-    assert (results["pesticides"].listings, results["pesticides"].judged) == (233, 160)
+    assert (results["pesticides"].listings, results["pesticides"].judged) == (233, 165)
     counts = Counter((f["reason"], f["confidence"]) for f in findings["pesticides"])
     assert counts[("not_in_registry", "medium")] + counts[("not_in_registry", "low")] == 7
     assert counts[("information_missing", "high")] == 1 and counts[("information_missing", "medium")] == 11
@@ -46,9 +46,9 @@ def test_pesticide_numbers_match_the_readme(replay):
 
 def test_radio_numbers_match_the_readme(replay):
     results, findings = replay
-    assert (results["radio"].listings, results["radio"].judged) == (156, 59)
+    assert (results["radio"].listings, results["radio"].judged) == (156, 64)
     banned = [f for f in findings["radio"] if f["reason"] == "banned_item"]
-    assert len(banned) == 15 and sum("booster" in f["checks"][0]["explanation"] for f in banned) == 13
+    assert len(banned) == 20 and sum("booster" in f["checks"][0]["explanation"] for f in banned) == 18
 
 
 def test_snapshot_links_never_name_a_small_store():
@@ -85,3 +85,28 @@ def test_snapshot_holds_only_allowlisted_fields():
                     yield from sources(v)
 
         assert set(sources(json.loads(text))) <= allowed, path.name
+
+
+def test_readme_numbers_come_from_the_snapshot(replay):
+    """The README's results table is checked against the replay, so the prose cannot drift."""
+    results, findings = replay
+    readme = (DEMO.parent / "README.md").read_text()
+    pest, radio = findings["pesticides"], findings["radio"]
+    counts = Counter((f["reason"], f["confidence"]) for f in pest)
+    lens = [f for f in pest if f["lens_search_id"] and "Cyclosinone" in f["checks"][0]["explanation"]]
+    nir = sum(n for (r, _), n in counts.items() if r == "not_in_registry")
+    banned = [f for f in radio if f["reason"] == "banned_item"]
+    boosters = sum("booster" in f["checks"][0]["explanation"] for f in banned)
+    expected = [
+        f"{results['pesticides'].listings} listings, {results['pesticides'].judged} of them pesticides",
+        f"{results['radio'].listings} listings, {results['radio'].judged} of them radio equipment",
+        (f"**{nir}** not on the official list ({len(lens)} linked by photo to Cyclosinone, "
+         f"{sum(f['confidence'] == 'medium' for f in lens)} of them strongly)"),
+        f"**{counts[('information_missing', 'high')]}** claiming an \"active\" strength",
+        f"**{counts[('information_missing', 'medium')]}** more naming no chemical",
+        f"**{boosters}** mobile signal boosters detected",
+        f"**{len(banned) - boosters}** walkie-talkies stating frequencies",
+        f"The findings use {results['pesticides'].cached + results['radio'].cached} of them",
+    ]
+    for text in expected:
+        assert text in readme, text

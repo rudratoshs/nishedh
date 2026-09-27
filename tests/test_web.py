@@ -155,3 +155,41 @@ def test_raw_view_hides_small_store_links(tmp_path):
     assert "tinyagroshop" not in hidden and hidden == safe_link("https://www.tinyagroshop.in/products/weed-killer")
     assert "gldg" not in safe_link("https://www.indiamart.com/gldg/photos.html")
     assert safe_link("https://www.indiamart.com/proddetail/x-1.html").endswith("/proddetail/x-1.html")
+
+
+def test_csv_cells_never_start_a_formula(tmp_path):
+    from nishedh.web.app import csv_cell
+
+    assert csv_cell('=HYPERLINK("http://x","y")') == '\'=HYPERLINK("http://x","y")'
+    assert csv_cell("-5% off") == "'-5% off" and csv_cell("Glyphosate 41% SL") == "Glyphosate 41% SL"
+    store = Store(tmp_path / "nishedh.sqlite")
+    run = store.start_run("pesticides")
+    listing = Listing(id="amazon:B0EVIL0001", marketplace="Amazon.in", title='=HYPERLINK("http://evil","x") Weed killer',
+                      url="https://www.amazon.in/dp/B0EVIL0001", engine="amazon", search_id="ab" * 32)
+    check = Check(Reason.INFORMATION_MISSING, "low", "names no chemical", (Found("title", "Weed killer"),), "labelling_rule")
+    store.add(run, "pesticides", listing, Finding(Verdict.UNREGISTERED_OR_HIDDEN, Reason.INFORMATION_MISSING, "low", [check]))
+    store.finish_run(run, live=0, cached=1)
+    store.close()
+    text = TestClient(create_app(tmp_path)).get("/export/pesticides.csv").text
+    assert "'=HYPERLINK" in text and ',=HYPERLINK' not in text
+
+
+def test_sanitising_twice_changes_nothing():
+    import glob
+    import json as _json
+    from pathlib import Path
+
+    from nishedh.sanitise import sanitise
+
+    files = glob.glob(str(Path(__file__).resolve().parents[1] / "demo" / "serpapi" / "*" / "*.json"))
+    assert files
+    for f in files:
+        data = _json.loads(Path(f).read_text())["data"]
+        assert sanitise(Path(f).parent.name, data) == data, f
+
+
+def test_indiamart_storefront_subdomains_are_hidden():
+    from nishedh.sanitise import safe_link
+
+    for url in ("https://m.indiamart.com/acme-agro/", "https://acmeagro.indiamart.com/", "https://dir.indiamart.com/x/"):
+        assert "indiamart" not in safe_link(url), url

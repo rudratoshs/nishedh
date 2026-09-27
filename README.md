@@ -10,7 +10,7 @@
 **Nishedh searches India's online stores, checks what listings claim against the government's own rulebooks, and shows a human reviewer exactly what doesn't add up.**
 
 [![CI](https://github.com/rudratoshs/nishedh/actions/workflows/ci.yml/badge.svg)](https://github.com/rudratoshs/nishedh/actions/workflows/ci.yml)
-![tests](https://img.shields.io/badge/tests-213%20passing-2ea44f)
+![tests](https://img.shields.io/badge/tests-284%20passing-2ea44f)
 ![python](https://img.shields.io/badge/python-3.12-3776ab)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![powered by SerpApi](https://img.shields.io/badge/data-SerpApi-orange)
@@ -57,8 +57,8 @@ The listing called itself *"Herbicide Plus Bamboo Killer Granules – 5% Active 
 
 | | Checked | Flagged for review |
 | --- | --- | --- |
-| 🧪 **Pesticides** | 233 listings, 160 of them pesticides | **7** not on the official list (5 linked by photo to Cyclosinone, 4 of them strongly), **1** claiming an "active" strength but naming no chemical, **11** more naming no chemical anywhere in the listing |
-| 📻 **Radio equipment** | 156 listings, 59 of them radio equipment | **13** mobile signal boosters, which the 2025 rules say may not be listed at all ([PIB](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132575)); **2** walkie-talkies stating frequencies that need a government licence |
+| 🧪 **Pesticides** | 233 listings, 165 of them pesticides | **7** not on the official list (5 linked by photo to Cyclosinone, 4 of them strongly), **1** claiming an "active" strength but naming no chemical, **11** more naming no chemical anywhere in the listing |
+| 📻 **Radio equipment** | 156 listings, 64 of them radio equipment | **18** mobile signal boosters detected, which the 2025 rules say may not be listed at all ([PIB](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132575)); **2** walkie-talkies stating frequencies that need a government licence |
 
 Total cost: **44 searches** from SerpApi's free plan. The findings use 41 of them (35 for pesticides, 6 for radio equipment); all 44 are in the demo snapshot.
 
@@ -101,13 +101,13 @@ A tool that accuses people has to be right. Nishedh is built so that it is caref
 - **Rules, not guesses.** Every verdict comes from written rules applied to the listing's own words. No AI model decides anything. The same input always gives the same answer.
 - **Shows its working.** Each finding links the exact words, where they appeared, the official source, and the raw SerpApi response they came from.
 - **Real government data.** The pesticide lists are parsed from the government's own PDFs, each pinned by its SHA-256 fingerprint. Those PDFs skip serial numbers, repeat others and misspell 56 chemical names; every case is handled and tested.
-- **Checked blind.** On 52 real listings, an independent reviewer that could not see Nishedh's code or output agreed with it on all 52 (50 exactly, 2 on genuinely ambiguous cases), with no false flags ([evaluation](evaluation/README.md)). The reviewer is an AI model, not a legal expert.
+- **Checked blind.** An independent reviewer that could not see Nishedh's code or output labelled 52 sampled in-scope listings: it agreed with Nishedh's reason code on all 52 (50 exactly, 2 on genuinely ambiguous cases), with no false flags. On all 389 listings, Nishedh found 99.4% of the pesticides and 98.4% of the radio equipment the reviewer did, at about 97% precision ([evaluation](evaluation/README.md)). The reviewer is an AI model, not a legal expert.
 - **Precision first.** Independent code reviews hunted for wrong flags. A copper water bottle, a cotton tunic, a football jersey, a mouthwash, Wi-Fi extenders, phone cases and a book are all pinned as "must not flag" tests.
 - **Honest about certainty.** Every finding says how sure it is: *strong evidence*, *good lead*, or *weak signal* (only the search title was read). A listing that passes is marked *no mismatch found*, never "legal".
 - **Evidence receipts.** Every SerpApi response a verdict used is recorded with its fetch time and the SHA-256 of the saved response file, so anyone can check it with `sha256sum`. In the demo, that is the reduced public copy in `demo/`.
 - **Respects privacy.** Sellers and small shops are never named, only major marketplaces. The public demo data keeps only the fields Nishedh reads: no reviewer names, no contact details.
 - **Cheap to run.** Every search result is cached and never paid for twice, and a monthly cap protects the free plan. The API key never touches disk, logs or error messages.
-- **Tested.** 213 tests, `ruff`, `mypy --strict`, CI on every push.
+- **Tested.** 284 tests, `ruff`, `mypy --strict`, CI on every push.
 
 ## Run it live
 
@@ -153,6 +153,8 @@ src/nishedh/
 - **A targeted sweep, not a full audit.** Each category is a fixed set of searches, so Nishedh sees what those searches surface. In the 27 Sep 2026 run that was mostly Amazon.in, some Flipkart, and no JioMart listings.
 - **A listing is not a label.** Rule 19 of the Insecticides Rules applies to the physical pack. A listing that hides its chemical is a reason to check the label, not proof that the label is wrong.
 - **"No mismatch found" is not "legal".** It means the stated chemical, strength and formulation appear on an official list, not that this seller or manufacturer holds the registration.
+- **Some products are out of scope by design.** Botanical and herbal sprays that name no pesticide ingredient (neem oil, "100% herbal" mealybug sprays) are not checked unless they call themselves an insecticide or pest control: whether they need registration depends on their claims and contents. Cellular push-to-talk radios and passive antennas are not checked either.
+- **A brand can share a seller's name.** A store name that a search engine appends to a title is removed, but a brand at the start of a title is kept, even when the seller has the same name.
 - **Photo matches are leads.** Google Lens returns visually similar images. The Cyclosinone link comes from a hand-maintained watchlist of products named in regulator orders.
 - **Radio rules are partly covered.** Nishedh checks frequencies and approval (ETA) numbers, not transmit power or antenna conditions, and not the Radio Equipment Possession Authorisation Rules, 2026, which cover dealers.
 - **Snapshots.** The registered-pesticide lists are dated 31 Mar 2026, the latest published (dates in `data/registry/sources.json`). A product registered since can look unregistered.
@@ -161,7 +163,12 @@ src/nishedh/
 
 ## AI tools
 
-Built with Claude Code (Anthropic) as a coding assistant for research, implementation, tests and independent code reviews.
+As the hackathon rules require, every AI tool used is listed here:
+
+- **Claude Code** (Anthropic; Claude Opus and Claude Fable models): research, implementation, tests, independent code reviews, and the blind evaluation reviewer (a separate Claude Fable instance that could not see the code).
+- **ChatGPT** (OpenAI): external code and claim reviews, and the logo image.
+
+No AI model makes any verdict at run time: every finding comes from the written rules.
 
 ## License
 

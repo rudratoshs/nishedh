@@ -154,7 +154,9 @@ def assess_radio(
             "or sale of mobile signal boosters and wireless jammers.",
             tuple(ex.jammer or ex.booster), SOURCE,
         ))
-    outside = [b for b in ex.bands if not _exempt(b)]
+    # Band rules are for handheld radios; a booster or jammer is already banned outright, and the
+    # network bands it lists (900/1800 MHz) are not walkie-talkie bands.
+    outside = [] if ex.booster or ex.jammer else [b for b in ex.bands if not _exempt(b)]
     for b in outside:
         shown = f"{b.low_mhz:g} MHz" if b.low_mhz == b.high_mhz else f"{b.low_mhz:g}–{b.high_mhz:g} MHz"
         condition = next((c for band, c in CONDITIONAL_BANDS.items() if _in_conditional(b, band)), None)

@@ -47,7 +47,7 @@ def main() -> None:
             kind = "missed_or_understated"
         rows.append({
             "case": n, "pack": case["pack"], "title": case["title"][:120], "nishedh": reason,
-            "nishedh_confidence": conf, "reviewer": expected, "reviewer_acceptable": label.get("acceptable_reasons"),
+            "nishedh_confidence": conf, "reviewer": expected, "reviewer_confidence": label.get("expected_confidence", ""), "reviewer_acceptable": label.get("acceptable_reasons"),
             "exact": exact, "outcome": kind, "reviewer_rationale": label.get("rationale", ""),
         })
     (ROOT / "evaluation" / "results.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1) + "\n")

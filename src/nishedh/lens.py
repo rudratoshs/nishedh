@@ -25,6 +25,21 @@ from nishedh.extract.pesticide import Found, PesticideExtractor
 from nishedh.listing import OTHER_STORE, marketplace_of
 from nishedh.registry.pesticides import REGISTRY_DIR
 
+# Business-directory pages ("Photos from Gldg, Surat - Trader - Retailer of Soil ...") name the
+# seller in the title itself, so such a title is replaced before it is stored or shown.
+_DIRECTORY = re.compile(
+    r"^photos\s+from\b|\b(?:trader|retailer|wholesaler|manufacturer|supplier|dealer|distributor|exporter)s?\b"
+    r"(?:\s+(?:of|in)\b|\s*[-|,]|\s*\.\.\.|\s*$)",
+    re.IGNORECASE,
+)
+DIRECTORY_TITLE = "(a seller's business-directory page)"
+
+
+def clean_match_title(title: str) -> str:
+    """A visual match's title, unless it is a business-directory page that names the seller."""
+    return DIRECTORY_TITLE if _DIRECTORY.search(title) else title
+
+
 STRONG_HITS = 3    # matches naming the watchlist product
 STRONG_RANK = 15   # the best of them within the top matches
 
@@ -81,12 +96,14 @@ def read_lens(data: dict[str, Any], search_id: str, extractor: PesticideExtracto
     ev = LensEvidence(search_id=search_id)
     for v in data.get("visual_matches") or []:
         link = str(v.get("link", ""))
-        m = Match(title=str(v.get("title", "")), site=marketplace_of(link, str(v.get("source", ""))), link=link)
+        raw = str(v.get("title", ""))
+        # Matching reads the full title; what is stored and shown hides a seller's directory page.
+        m = Match(title=clean_match_title(raw), site=marketplace_of(link, str(v.get("source", ""))), link=link)
         ev.matches.append(m)
         for item in watchlist:
-            if re.search(rf"\b{re.escape(item.name)}\b", m.title, re.IGNORECASE):
+            if re.search(rf"\b{re.escape(item.name)}\b", raw, re.IGNORECASE):
                 ev.watchlist_hits.append((item, m))
-        for c in extractor.extract({"lens_match": m.title}).chemicals:
+        for c in extractor.extract({"lens_match": raw}).chemicals:
             if c.strength_pct is not None or c.match == "exact":
                 ev.chemicals_elsewhere.append((c.official_name, m))
     return ev

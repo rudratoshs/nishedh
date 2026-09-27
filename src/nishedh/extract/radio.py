@@ -35,18 +35,27 @@ NOT_RADIO = re.compile(
     r"\bsfp\b|\bmodule\b|\bnrf24|\bleash\b|\bdog\b|\bapp\b|\bgame\b|\bsticker\b|\bposter\b|\bt-?shirt\b",
     _I,
 )
+# A booster, repeater or amplifier named right after a mobile-network word ("mobile phone network
+# booster", "2g/3g/4g/5g Quad Band Signal Booster", "4G LTE Amplifier", "GSM 900MHz Cell Phone Signal
+# Repeater"), or one "for mobile/cell phones". A booster word elsewhere in a title about phones
+# ("Phone Cooling Fan Booster", "5G Phone with Signal Booster Feature") does not count.
+_NET = r"(?:mobile|cell(?:ular)?|phones?|gsm|[2345]g|lte|network|signal|jio|airtel|bsnl|sim|(?:tri|quad|dual|full)[\s-]?band)"
 BOOSTER = re.compile(
-    r"(?:mobile|cell(?:ular|\s+phone)?|gsm|2g|3g|4g|5g|lte|network)\s+(?:signal\s+|network\s+)?"
-    r"(?:booster|repeater|amplifier)",
+    rf"\b{_NET}\b(?:[\s/&,-]+[\w.]+){{0,2}}?[\s/&,-]+(?:boosters?|repeaters?|amplifiers?)\b|"
+    r"\b(?:boosters?|repeaters?|amplifiers?)\s+for\s+(?:all\s+)?(?:mobile|cell)",
     _I,
 )
 NOT_BOOSTER = re.compile(
-    r"wi-?fi|range\s+extender|router|\btv\b|\bdth\b|set[\s-]?top|sticker|\bcase\b|\bcover\b|\bapp\b|download|"
-    r"immunity|\bantenna\s+for\s+(?:tv|dth)",
+    r"wi-?fi\s+(?:range\s+|signal\s+|dual\s+band\s+)?(?:extender|booster|repeater)|wireless\s+(?:range\s+)?extender|"
+    r"range\s+extender|router|access\s+point|\btv\b|\bdth\b|set[\s-]?top|sticker|\bcase\b|\bcover\b|\bapp\b|download|"
+    r"immun|\bantenna\s+for\s+(?:tv|dth)|\bspeakers?\b|\baudio\b|\bsound\b|\bvoice\b|\bmusic\b|\bbattery\b|"
+    r"power\s*bank|\bcharger\b|\bseat\b|\bbass\b|ethernet|\brj45\b|\bpoe\b|\bswitch\b|\bcable\b|\bmesh\b|"
+    r"\bgam(?:e|ing)\b|\bfan\b|supplement|capsules?|testosterone|\bplan\b|recharge|\bgps\b|microphone|vibration|"
+    r"\bfeature\b|\bmotor\b|\bspring\b|\btray\b|pedal|guitar|\bmbps\b|wireless\s+repeater|range\s+booster|\bram\b",
     _I,
 )
 JAMMER = re.compile(
-    r"(?:mobile|signal|gps|drone|cell(?:ular)?|network|wi-?fi|rf|gsm|4g|5g)\s+(?:signal\s+)?(?:jammers?|blockers?)|"
+    r"(?:mobile|signal|gps|drone|cell(?:ular)?|network|wi-?fi|rf|gsm|4g|5g)(?:[\s-]+phones?)?\s+(?:signal\s+)?(?:jammers?|blockers?)|"
     r"\bjammers?\s+for\s+(?:mobile|gps|drone|cell|phone|signal)",
     _I,
 )
@@ -61,10 +70,10 @@ ACCESSORY_STRONG = re.compile(
     r"protector)\b",
     _I,
 )
-ACCESSORY_WEAK = re.compile(r"\b(?:case|cover|strap|clip|belt|stand|bag)\b", _I)
+ACCESSORY_WEAK = re.compile(r"\b(?:case|cover|strap|clip|belt|stand|bag|cable)\b", _I)
 # "Walkie Talkie 3-Pack with Earphone, Wall Charger" is a radio sold with accessories, and
 # "Walkie Talkie 1800mAh Battery 5W" states the radio's battery, not a battery for sale.
-_BUNDLED = re.compile(r"\bwith\b|\bincl\w*|\bplus\b|\+", _I)
+_BUNDLED = re.compile(r"\bwith\b|\bincl\w*|\bplus\b|\+|\bintegrated\b|\bbuilt[\s-]?in\b|\bkit\b", _I)
 _SPEC = re.compile(r"\d+\s*mah\s+(?:li-?ion\s+)?batter(?:y|ies)", _I)
 TOY = re.compile(r"\btoys?\b|\bkids?\b|\bchildren\b|\bspy\s+gear\b", _I)
 LICENCE_FREE = re.compile(r"licen[cs]e[\s-]?free|no\s+licen[cs]e|100\s*%\s*legal|fully\s+legal|legal\s+to\s+use", _I)
@@ -107,7 +116,7 @@ class RadioExtraction:
     @property
     def is_radio_equipment(self) -> bool:
         """A walkie-talkie, mobile booster or jammer; accessories and other products are not."""
-        if self.booster or self.jammer:
+        if (self.booster or self.jammer) and not self.accessory:
             return True
         return bool(self.device) and not self.accessory and not self.not_radio
 
@@ -137,7 +146,10 @@ def extract_radio(fields: dict[str, str]) -> RadioExtraction:
                 out.booster.extend(Found(name, m.group(0)) for m in BOOSTER.finditer(text))
             if not NOT_JAMMER.search(text):
                 out.jammer.extend(Found(name, m.group(0)) for m in JAMMER.finditer(text))
-            first_device = next((m.start() for m in DEVICE.finditer(text)), len(text))
+            # Where the product itself is named: a walkie-talkie or a booster. Accessory words after it
+            # describe what comes in the box ("Signal Booster ... Integrated Indoor Antenna").
+            first_device = min(next((m.start() for m in DEVICE.finditer(text)), len(text)),
+                               next((m.start() for m in BOOSTER.finditer(text)), len(text)))
             specs = [m.span() for m in _SPEC.finditer(text)]
             for m in ACCESSORY_STRONG.finditer(text):
                 bundled = m.start() > first_device and _BUNDLED.search(text[first_device : m.start()])

@@ -362,11 +362,18 @@ SNAPSHOT = REGISTRY_DIR / "pesticides.snapshot.json"
 def load(registry_dir: Path = REGISTRY_DIR) -> PesticideRegistry:
     """The parsed registry, from a snapshot when it was built from exactly the current source files.
 
-    The snapshot records the SHA-256 of every source PDF it was parsed from; if sources.json lists
-    different files or hashes, the PDFs are parsed again and the snapshot rewritten.
+    Every source PDF is hashed on load and must match the SHA-256 in sources.json (an altered or
+    replaced PDF is an error, never silently trusted). The snapshot records the hashes it was
+    parsed from; if they differ from sources.json, the PDFs are parsed again and the snapshot rewritten.
     """
     snapshot = registry_dir / SNAPSHOT.name
     wanted = [Source(**s) for s in json.loads((registry_dir / "sources.json").read_text())["pesticides"]]
+    for s in wanted:
+        if not (registry_dir / "raw" / s.file).exists():
+            raise ValueError(f"{s.file} is missing from {registry_dir / 'raw'}; download it from {s.url}")
+        actual = _sha256(registry_dir / "raw" / s.file)
+        if actual != s.sha256:
+            raise ValueError(f"{s.file}: SHA-256 {actual} does not match sources.json ({s.sha256})")
     if snapshot.exists():
         reg = PesticideRegistry.from_json(snapshot.read_text())
         if reg.sources == wanted:
