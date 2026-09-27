@@ -1,6 +1,9 @@
 <div align="center">
 
-# Nishedh · निषेध
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.png">
+  <img src="docs/logo.png" alt="निषेध Nishedh: Investigate before it harms" width="420">
+</picture>
 
 ### Is it legal to sell this online?
 

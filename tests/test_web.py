@@ -137,3 +137,10 @@ def test_only_web_links_reach_the_page():
 
     assert web_url("https://www.amazon.in/dp/B0") == "https://www.amazon.in/dp/B0"
     assert web_url("javascript:alert(1)") == "#" and web_url("data:text/html,x") == "#"
+
+
+def test_logo_and_favicon_are_served(client):
+    for name in ("mark.png", "mark-dark.png", "favicon.png"):
+        r = client.get(f"/static/{name}")
+        assert r.status_code == 200 and r.headers["content-type"] == "image/png", name
+    assert "/static/mark.png" in client.get("/faq").text

@@ -17,6 +17,7 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, Response
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from nishedh.listing import marketplace_of
@@ -54,6 +55,7 @@ PUBLIC_FIELDS = ("pack", "reason", "confidence", "marketplace", "title", "url", 
 def create_app(cache_dir: Path, demo_note: str = "") -> FastAPI:
     app = FastAPI(title="Nishedh", docs_url=None, redoc_url=None)
     templates = Jinja2Templates(directory=str(Path(__file__).parent / "templates"))
+    app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
     templates.env.globals.update(REASON_LABEL=REASON_LABEL, REASON_HELP=REASON_HELP, CONF_LABEL=CONF_LABEL,
                                  CONF_HELP=CONF_HELP, REASON_ORDER=REASON_ORDER, headline=headline,
                                  DEMO_NOTE=demo_note)

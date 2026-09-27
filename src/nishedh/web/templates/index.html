@@ -4,6 +4,8 @@
 <style>
 .hero > *, .story > *, .filters > * { min-width: 0; }
 .hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; align-items: center; margin-bottom: 28px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.eyebrow::before { content: ""; width: 22px; height: 3px; background: var(--accent); border-radius: 2px; }
 .hero h1 { font-size: 30px; margin: 0 0 10px; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero p { margin: 0; color: var(--ink-2); font-size: 16px; max-width: 560px; }
@@ -67,6 +69,7 @@
 
 <section class="hero">
   <div>
+    <div class="eyebrow">Investigate before it harms</div>
     <h1>We checked <em>{{ overview.checked }}</em> products on India's online stores. <em>{{ overview.strong }}</em> need a closer look.</h1>
     <p>Nishedh reads what online sellers say about pesticides and walkie-talkies, and compares it with the government's own lists and rules. When something doesn't add up, it shows you exactly why.</p>
   </div>

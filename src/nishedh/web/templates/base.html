@@ -3,25 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}Nishedh – is it legal to sell this online?{% endblock %}</title>
+<title>{% block title %}Nishedh – investigate before it harms{% endblock %}</title>
+<link rel="icon" type="image/png" href="/static/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
 :root {
-  --bg: #f6f5f1; --panel: #ffffff; --panel-2: #faf9f6; --ink: #191917; --ink-2: #3d3c38; --muted: #6f6e68;
-  --line: #e5e3dc; --line-2: #d6d4cb;
-  --red: #b42318; --red-bg: #fdecea; --amber: #9a5708; --amber-bg: #fdf1dc;
-  --green: #1d7a46; --green-bg: #e5f4ea; --blue: #1f5fbf; --blue-bg: #e8f0fb;
-  --accent: #c2410c; --accent-bg: #fff1e8;
-  --shadow: 0 1px 2px rgba(20, 20, 15, .05), 0 4px 16px rgba(20, 20, 15, .05);
+  /* Brand: the logo's navy ink and its red strike-through bar */
+  --navy: #0a1928; --brand-red: #e03825;
+  --bg: #f4f6f9; --panel: #ffffff; --panel-2: #f7f9fb; --ink: #0a1928; --ink-2: #2c3a4d; --muted: #5d6b7e;
+  --line: #e1e6ed; --line-2: #cfd6e0;
+  --red: #c42b1c; --red-bg: #fdebe8; --amber: #9a5708; --amber-bg: #fdf1dc;
+  --orange: #c2410c; --orange-bg: #fff0e6;
+  --green: #1d7a46; --green-bg: #e5f4ea; --blue: #1f5fbf; --blue-bg: #e9f0fa;
+  --accent: #e03825; --accent-bg: #fdecea; --on-accent: #ffffff;
+  --shadow: 0 1px 2px rgba(10, 25, 40, .05), 0 4px 16px rgba(10, 25, 40, .06);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #131312; --panel: #1c1c1a; --panel-2: #222220; --ink: #efeee9; --ink-2: #d4d3cc; --muted: #a09f98;
-    --line: #302f2b; --line-2: #3d3c37;
-    --red: #f39a90; --red-bg: #3b1f1b; --amber: #f2b865; --amber-bg: #3a2b15;
-    --green: #7dd09e; --green-bg: #183021; --blue: #93b8f2; --blue-bg: #1b2940;
-    --accent: #fb923c; --accent-bg: #3a2415;
+    --bg: #07111c; --panel: #0e1b2b; --panel-2: #132336; --ink: #eef1f6; --ink-2: #c9d2de; --muted: #8e9bad;
+    --line: #1d2d42; --line-2: #2a3d55;
+    --red: #ff8a7a; --red-bg: #3a1714; --amber: #f2b865; --amber-bg: #372912;
+    --orange: #fb923c; --orange-bg: #3a2213;
+    --green: #7dd09e; --green-bg: #12301f; --blue: #93b8f2; --blue-bg: #14253d;
+    --accent: #ff5a45; --accent-bg: #3a1714; --on-accent: #ffffff;
     --shadow: none;
   }
 }
@@ -35,19 +40,20 @@ h1, h2, h3 { line-height: 1.25; letter-spacing: -.01em; }
 .small { font-size: 13px; }
 
 /* Header */
-header.top { background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
-header.top .wrap { display: flex; align-items: center; gap: 20px; height: 60px; }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-.brand .mark { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 15px; }
-.brand b { font-size: 17px; }
-.brand span { color: var(--muted); font-size: 13px; }
+header.top { background: var(--panel); border-top: 3px solid var(--accent); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+header.top .wrap { display: flex; align-items: center; gap: 20px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
+.brand img { height: 38px; width: auto; display: block; }
+.brand .tagline { padding-left: 14px; border-left: 1px solid var(--line-2); color: var(--muted); font-size: 13px; line-height: 1.25; }
+.brand .tagline b { display: block; color: var(--ink); font-size: 12px; letter-spacing: .28em; font-weight: 600; }
 .mainnav { display: flex; gap: 4px; margin-left: auto; min-width: 0; overflow-x: auto; scrollbar-width: none; }
 .mainnav::-webkit-scrollbar { display: none; }
 .mainnav a { flex: none; white-space: nowrap; padding: 7px 12px; border-radius: 8px; color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 14px; }
 .mainnav a:hover { background: var(--panel-2); }
 .mainnav a.on { background: var(--ink); color: var(--bg); }
 @media (max-width: 720px) {
-  .brand span, .brand b { display: none; }
+  .brand .tagline { display: none; }
+  .brand img { height: 30px; }
   .wrap { padding: 0 16px; }
   header.top .wrap { gap: 10px; }
   .mainnav a { padding: 6px 8px; font-size: 13px; }
@@ -60,7 +66,7 @@ main { padding: 28px 0 56px; }
 .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
 .badge::before { content: ""; width: 7px; height: 7px; border-radius: 2px; background: currentColor; }
 .banned_item { color: var(--red); background: var(--red-bg); }
-.not_in_registry { color: var(--accent); background: var(--accent-bg); }
+.not_in_registry { color: var(--orange); background: var(--orange-bg); }
 .information_missing, .registry_mismatch { color: var(--amber); background: var(--amber-bg); }
 .clear { color: var(--green); background: var(--green-bg); }
 .conf { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); }
@@ -69,7 +75,8 @@ main { padding: 28px 0 56px; }
 .dots i.on { background: var(--ink-2); }
 .btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border: 1px solid var(--line-2); border-radius: 8px; background: var(--panel); color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 500; cursor: pointer; font-family: inherit; }
 .btn:hover { background: var(--panel-2); }
-.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.06); background: var(--accent); }
 .tip { position: relative; display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 5px; border: 1px solid var(--line-2); color: var(--muted); font-size: 11px; font-weight: 600; cursor: help; vertical-align: middle; }
 .tip:hover::after, .tip:focus::after { content: attr(data-tip); position: absolute; left: 50%; bottom: 125%; transform: translateX(-50%); width: 240px; padding: 8px 10px; background: var(--ink); color: var(--bg); font-size: 12px; font-weight: 400; line-height: 1.45; border-radius: 8px; z-index: 5; white-space: normal; text-align: left; }
 .thumb { width: 100%; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: 8px; display: block; }
@@ -86,7 +93,10 @@ footer label { margin-left: auto; display: inline-flex; gap: 6px; align-items: c
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="brand" href="/"><span class="mark">N</span><b>Nishedh</b><span>Is it legal to sell this online?</span></a>
+  <a class="brand" href="/" aria-label="Nishedh home">
+    <picture><source srcset="/static/mark-dark.png" media="(prefers-color-scheme: dark)"><img src="/static/mark.png" alt="निषेध Nishedh"></picture>
+    <span class="tagline"><b>NISHEDH</b>Investigate before it harms</span>
+  </a>
   <nav class="mainnav">
     <a href="/?pack=pesticides" class="{{ 'on' if pack == 'pesticides' and not page_name }}">Pesticides</a>
     <a href="/?pack=radio" class="{{ 'on' if pack == 'radio' and not page_name }}">Walkie-talkies</a>
