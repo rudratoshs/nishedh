@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ f.title[:60] }} – Nishedh{% endblock %}
+{% block body %}
+<p><a href="/?pack={{ pack }}">&larr; All findings</a></p>
+<h2 style="margin:8px 0 4px">{{ f.title }}</h2>
+<p><span class="badge {{ f.reason }}">{{ REASON_LABEL[f.reason] }}</span> <span class="conf">{{ f.confidence }} confidence &middot; {{ f.marketplace }}{{ ' · ' + f.price if f.price }}</span></p>
+
+<h3>Why was this flagged?</h3>
+<ol class="chain">
+  <li><div class="step">1 &middot; The listing</div>
+    <a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.title }}</a><br>
+    <span class="muted" style="font-size:13px">Found through SerpApi ({{ f.engine }}) on {{ f.run.started_at[:10] if f.run.started_at }} &middot;
+      <a href="/raw/{{ f.engine }}/{{ f.search_id }}">raw search result</a>
+      {% if f.details_search_id %} &middot; <a href="/raw/amazon_product/{{ f.details_search_id }}">raw product page</a>{% endif %}
+      {% if f.lens_search_id %} &middot; <a href="/raw/google_lens/{{ f.lens_search_id }}">raw Lens label check</a>{% endif %}</span></li>
+  {% for c in f.checks %}
+  <li><div class="step">{{ loop.index + 1 }} &middot; {{ 'What the same product photo is called elsewhere (Google Lens)' if c.evidence and c.evidence[0].field.startswith('same photo') else 'What the listing says' }}</div>
+    {% for e in c.evidence %}<blockquote>“{{ e.text }}” <span class="muted" style="font-size:13px">({{ e.field }})</span></blockquote>{% endfor %}
+    <div class="step" style="margin-top:8px">Checked against</div>
+    {% set s = sources.get(c.source) %}
+    {% if s %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.as_on %} <span class="muted">(as on {{ s.as_on }})</span>{% endif %}{% else %}{{ c.source }}{% endif %}
+    <div class="step" style="margin-top:8px">Result</div>
+    <span class="badge {{ c.reason }}">{{ REASON_LABEL[c.reason] }}</span> <span class="conf">{{ c.confidence }}</span>
+    <p style="margin:6px 0 0">{{ c.explanation }}</p></li>
+  {% endfor %}
+</ol>
+{% if f.notes %}<h3>Notes for the reviewer</h3><ul>{% for n in f.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
+{% if f.reason != 'clear' %}<p><a class="btn" href="/complaint/{{ pack }}/{{ f.listing_id }}">Draft a request for review</a></p>{% endif %}
+{% endblock %}

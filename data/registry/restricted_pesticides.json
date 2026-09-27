@@ -1,0 +1,21 @@
+{
+ "source": "Section III, 'Pesticides restricted for use in the country', in list_of_pesticides_which_are_banned_refused_registration_and_restricted_in_use.pdf (updated 31.07.2026). Transcribed by hand because the PDF interleaves names and conditions across columns; each restriction is summarised with its notification.",
+ "entries": [
+  {"name": "Aluminium Phosphide", "restriction": "Pest control only by Government bodies or approved pest control operators under expert supervision, except 15% 12 g tablets and 6% tablets; 10- and 20-tablet tube packs of 3 g tablets banned (G.S.R. 371(E) 20.05.1999; S.O. 677(E) 17.07.2001)"},
+  {"name": "Captafol", "restriction": "Foliar spray banned; seed dresser use only; 80% powder for dry seed treatment only for export (S.O. 569(E) 25.07.1989; S.O. 679(E) 17.07.2001)"},
+  {"name": "Carbofuran", "restriction": "All formulations except 3% encapsulated granule (CG) stopped from use (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Chlorpyriphos", "restriction": "Banned for use on ber, citrus and tobacco (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Cypermethrin", "restriction": "3% smoke generator only through pest control operators, not the general public (Delhi High Court, WP(C) 10052/2009)"},
+  {"name": "Dazomet", "restriction": "Not permitted on tea (S.O. 3006(E) 31.12.2008)"},
+  {"name": "DDT", "restriction": "Public health use capped at 10,000 tonnes a year; agricultural use withdrawn except under Government supervision (S.O. 295(E) 08.03.2006; S.O. 378(E) 26.05.1989)"},
+  {"name": "Dimethoate", "restriction": "Banned on fruits and vegetables consumed raw (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Fenitrothion", "restriction": "Banned in agriculture except locust control in scheduled desert areas and public health (S.O. 706(E) 03.05.2007)"},
+  {"name": "Malathion", "restriction": "Banned on sorghum, pea, soybean, castor, sunflower, bhindi, brinjal, cauliflower, radish, turnip, tomato, apple, mango and grape (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Mancozeb", "restriction": "Banned on guava, jowar and tapioca (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Methyl Bromide", "restriction": "Only Government bodies or approved pest control operators under expert supervision (G.S.R. 371(E) 20.05.1999)"},
+  {"name": "Monocrotophos", "restriction": "Banned on vegetables; 36% SL discontinued, sale only to clear existing stock (S.O. 1482(E) 10.10.2005; S.O. 4294(E) 03.10.2023)"},
+  {"name": "Oxyfluorfen", "restriction": "Banned on potato and groundnut (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Quinalphos", "restriction": "Banned on jute, cardamom and sorghum (S.O. 4294(E) 03.10.2023)"},
+  {"name": "Trifluralin", "restriction": "All uses except in wheat prohibited from 08.08.2018; aquatic-toxicity caution required on label (S.O. 3951(E) 08.08.2018)"}
+ ]
+}

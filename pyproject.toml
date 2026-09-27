@@ -1,0 +1,36 @@
+[project]
+name = "nishedh"
+version = "0.1.0"
+description = "Flags Indian marketplace listings for regulatory review by checking them against official registries, using live search data from SerpApi."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Rudra", email = "181361442+rudratoshs@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "pdfplumber>=0.11.10",
+    "rapidfuzz>=3.14.6",
+    "typer>=0.27.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+nishedh = "nishedh.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient` is deprecated"]

@@ -1,0 +1,10 @@
+.env
+*.key
+.venv/
+__pycache__/
+.cache/
+*.sqlite
+pilot/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/

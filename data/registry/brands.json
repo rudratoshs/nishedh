@@ -1,0 +1,15 @@
+{
+ "note": "Well-known Indian trade names of pesticides that are banned, restricted or frequently misused, mapped to their active ingredient. A listing that names only the trade name is matched to the chemical with match type 'brand' (medium confidence): the trade name identifies the product, but only the label proves what is inside. Kept deliberately short; every entry is a long-established, widely documented trade name.",
+ "brands": {
+  "Nuvan": "Dichlorvos",
+  "Thimet": "Phorate",
+  "Metacid": "Methyl Parathion",
+  "Thiodan": "Endosulfan",
+  "Endocel": "Endosulfan",
+  "Monocil": "Monocrotophos",
+  "Nuvacron": "Monocrotophos",
+  "Furadan": "Carbofuran",
+  "Dursban": "Chlorpyrifos",
+  "Rogor": "Dimethoate"
+ }
+}

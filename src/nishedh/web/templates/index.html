@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block body %}
+<nav>
+  <a href="/?pack=pesticides" class="{{ 'on' if pack == 'pesticides' }}">Pesticides</a>
+  <a href="/?pack=radio" class="{{ 'on' if pack == 'radio' }}">Radio equipment</a>
+</nav>
+{% if not run %}
+  <p class="muted">No sweep yet for this pack. Run <code>nishedh sweep {{ pack }}</code>.</p>
+{% else %}
+  <p class="muted">Run {{ run }} &middot; {{ run_info.started_at[:16].replace('T', ' ') if run_info.started_at }} UTC &middot;
+    {{ total }} listings in scope &middot; searches: {{ run_info.live_searches }} live, {{ run_info.cached_searches }} cached</p>
+  <div class="cards">
+    {% for r in reason_order %}
+      <a class="card {{ 'sel' if reason == r }}" href="/?pack={{ pack }}&reason={{ r }}{{ '&show_clear=1' if r == 'clear' }}">
+        <span class="badge {{ r }}">{{ REASON_LABEL[r] }}</span><b>{{ counts.get(r, 0) }}</b></a>
+    {% endfor %}
+  </div>
+  <div class="filters">
+    <span class="muted">Confidence:</span>
+    {% for c in ['', 'high', 'medium', 'low'] %}
+      <a class="btn" href="/?pack={{ pack }}&reason={{ reason }}&confidence={{ c }}{{ '&show_clear=1' if show_clear }}">{{ c or 'any' }}</a>
+    {% endfor %}
+    <span style="flex:1"></span>
+    <a class="btn" href="/export/{{ pack }}.csv">Export CSV</a>
+    <a class="btn" href="/export/{{ pack }}.json">Export JSON</a>
+  </div>
+  <p class="muted" style="font-size:13px">Flagged by marketplace:
+    {% for m, n in marketplaces %}{{ m }} {{ n }}{{ ' · ' if not loop.last }}{% endfor %}</p>
+  <table>
+    <tr><th>Result</th><th>Listing</th><th>Why</th></tr>
+    {% for f in rows %}
+    <tr>
+      <td><span class="badge {{ f.reason }}">{{ REASON_LABEL[f.reason] }}</span><br><span class="conf">{{ f.confidence }} confidence</span></td>
+      <td><a href="/finding/{{ pack }}/{{ f.listing_id }}">{{ f.title[:110] }}</a><br><span class="muted" style="font-size:13px">{{ f.marketplace }}{{ ' · ' + f.price if f.price }}</span></td>
+      <td style="font-size:14px">{{ f.checks[0].explanation[:180] }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="3" class="muted">Nothing matches these filters.</td></tr>
+    {% endfor %}
+  </table>
+{% endif %}
+{% endblock %}

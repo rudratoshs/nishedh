@@ -1,0 +1,32 @@
+{
+ "pesticides": [
+  {
+   "name": "registered_molecules",
+   "url": "https://ppqs.gov.in/sites/default/files/list_of_pesticides_as_on_31.03.2026.pdf",
+   "file": "list_of_pesticides_as_on_31.03.2026.pdf",
+   "as_on": "2026-03-31",
+   "sha256": "5a6c0344500739ddbad8ac3f0031a73d815f83289bf9eb41681f61aca4efe4d2"
+  },
+  {
+   "name": "registered_formulations",
+   "url": "https://ppqs.gov.in/sites/default/files/list_pf_pesticide_formulations_registered_as_on_31.03.2026.pdf",
+   "file": "list_pf_pesticide_formulations_registered_as_on_31.03.2026.pdf",
+   "as_on": "2026-03-31",
+   "sha256": "10e51a1ffa1f672bd4d1c633cb04c88cff8c854cdf8fc4ff53d82f9108251f0e"
+  },
+  {
+   "name": "banned_refused_restricted",
+   "url": "https://ppqs.gov.in/sites/default/files/list_of_pesticides_which_are_banned_refused_registration_and_restricted_in_use.pdf",
+   "file": "list_of_pesticides_which_are_banned_refused_registration_and_restricted_in_use.pdf",
+   "as_on": "2026-07-31",
+   "sha256": "6bdd966bcbc1901503cfb0f91b740221016856a6923c5688602fdbbe29a3afe4"
+  },
+  {
+   "name": "schedule",
+   "url": "https://ppqs.gov.in/sites/default/files/insecticides_in_the_schedule_as_on_31.07.2026.pdf",
+   "file": "insecticides_in_the_schedule_as_on_31.07.2026.pdf",
+   "as_on": "2026-07-31",
+   "sha256": "0f9c253c5fdaa2c2a06a965203a049fec95c0b13eab7b2d1ab2b060b5e4bf230"
+  }
+ ]
+}

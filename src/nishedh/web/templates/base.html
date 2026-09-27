@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Nishedh{% endblock %}</title>
+<style>
+:root {
+  --bg: #fbfbf9; --panel: #ffffff; --ink: #1c1c1a; --muted: #6b6b66; --line: #e4e3de;
+  --red: #b42318; --red-bg: #fdecea; --amber: #a15c07; --amber-bg: #fdf3e2;
+  --green: #1d7a46; --green-bg: #e7f5ec; --blue: #1f5fbf; --blue-bg: #e8f0fb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #a09f98; --line: #34332f;
+    --red: #f08b80; --red-bg: #3a1f1c; --amber: #f0b35a; --amber-bg: #3a2c16;
+    --green: #74c995; --green-bg: #1b3325; --blue: #8fb5f0; --blue-bg: #1c2a40;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, "Segoe UI", system-ui, sans-serif; }
+header { border-bottom: 1px solid var(--line); background: var(--panel); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+header .wrap { display: flex; align-items: baseline; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+header h1 { font-size: 18px; margin: 0; }
+header .tag { color: var(--muted); font-size: 13px; }
+nav a { margin-right: 14px; color: var(--ink); text-decoration: none; font-weight: 500; }
+nav a.on { border-bottom: 2px solid var(--ink); }
+main { padding: 24px 0 48px; }
+a { color: var(--blue); }
+.muted { color: var(--muted); }
+.cards { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 20px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; min-width: 150px; text-decoration: none; color: var(--ink); }
+.card b { display: block; font-size: 22px; }
+.card.sel { outline: 2px solid var(--ink); }
+table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+.badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.banned_item { color: var(--red); background: var(--red-bg); }
+.not_in_registry, .information_missing, .registry_mismatch { color: var(--amber); background: var(--amber-bg); }
+.clear { color: var(--green); background: var(--green-bg); }
+.conf { font-size: 12px; color: var(--muted); }
+.filters { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+.chain { list-style: none; padding: 0; margin: 0; }
+.chain li { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; position: relative; }
+.chain li + li::before { content: "\2193"; position: absolute; top: -21px; left: 22px; color: var(--muted); }
+.step { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
+blockquote { margin: 6px 0; padding: 4px 10px; border-left: 3px solid var(--line); }
+.btn { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--ink); text-decoration: none; font-size: 14px; }
+.foot { margin-top: 28px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Nishedh</h1><span class="tag">marketplace listings checked against India's official registries</span>
+</div></header>
+<main><div class="wrap">{% block body %}{% endblock %}
+<p class="foot">Every result is a prompt for human review, never a legal finding. Sources: CIB&amp;RC pesticide lists, CCPA radio-equipment guidelines, DoT Equipment Type Approval certificates. Data via SerpApi.</p>
+</div></main>
+</body>
+</html>
