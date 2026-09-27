@@ -27,7 +27,7 @@ details.q div p { margin: 0 0 8px; }
   <p>Both are real, recent problems that the regulator has already acted on. In September 2026 the Central Consumer Protection Authority (CCPA) fined Amazon, Flipkart and JioMart for selling "Cyclosinone" weed killer, a chemical on no official list. In January 2026 it penalised platforms for selling walkie-talkies on frequencies that need a licence. Both have clear written rules that a computer can check.</p>
 </div></details>
 <details class="q panel"><summary>Who is this for?</summary><div>
-  <p>Regulators and consumer groups looking for listings to review, marketplaces auditing their own catalogues (as the regulator ordered), journalists, and anyone curious whether what they're buying is legal.</p>
+  <p>Regulators and consumer groups looking for listings to review, marketplaces checking their own catalogues (the regulator ordered a self-audit), journalists, and anyone curious whether what they're buying is legal.</p>
 </div></details>
 
 <h2>Reading the results</h2>
@@ -43,10 +43,11 @@ details.q div p { margin: 0 0 8px; }
   <p>The law says a pesticide label must state the chemical inside and its strength. Many listings only say "weed killer" or "5% active formula". Most of these are "Weak signal", because only the title was read. The full product page might name the chemical. Filter by "Strong evidence" or "Good lead" to see the most important ones.</p>
 </div></details>
 <details class="q panel"><summary>How does the photo match work?</summary><div>
-  <p>For listings that hide their chemical, Nishedh sends the product photo to Google Lens (through SerpApi) and looks at what the same photo is called on other sites. If another seller calls it by a name the regulator has already acted on, like Cyclosinone, that's a strong lead. A matching photo is still not proof: a person should confirm it is the same product.</p>
+  <p>For listings that hide their chemical, Nishedh sends the product photo to Google Lens (through SerpApi) and looks at what visually matching photos are called on other sites. If other sellers call it by a name the regulator has already acted on, like Cyclosinone, that's a strong lead. Nishedh checks those names against a watchlist of products named in regulator orders. A visual match is still not proof: a person should confirm it is the same product.</p>
 </div></details>
 <details class="q panel"><summary>Why are walkie-talkies flagged?</summary><div>
-  <p>In India, walkie-talkies are licence-free only on 446.0–446.2 MHz. Many imported radios use 136–174 MHz or 400–470 MHz, which need a licence from the government. The 2025 rules also require every listing to show its frequency and its government approval (ETA) number.</p>
+  <p>The regulator's January 2026 release says only walkie-talkies in 446.0–446.2 MHz are licence-exempt. Many imported radios use 136–174 MHz or 400–470 MHz, bands that need a frequency licence, and the 2025 rules say such radios may not be listed online. A few other bands (433 MHz, 865–868 MHz) are exempt only for very low-power devices under conditions a listing rarely shows, so Nishedh marks those "needs review", not banned. The 2025 rules also require every listing to show its frequency and its government approval (ETA) number.</p>
+  <p>Nishedh checks frequencies and approval numbers. It does not check transmit power or antenna conditions, or the Radio Equipment Possession Authorisation Rules, 2026, which cover dealers of radio equipment.</p>
 </div></details>
 
 <h2>Data and privacy</h2>
@@ -57,7 +58,14 @@ details.q div p { margin: 0 0 8px; }
   <p>No. Nishedh shows only major marketplaces by name (Amazon.in, Flipkart, JioMart…). Individual sellers and small shops appear as "another online store". This is a screening tool, not a name-and-shame list.</p>
 </div></details>
 <details class="q panel"><summary>How fresh are the results?</summary><div>
-  <p>Each category page shows when it was last checked. Listings change daily, so always open the listing before acting on a result.</p>
+  <p>Each category page shows when its listings were fetched and the dates of the government lists it was checked against. The registered-pesticide lists are dated 31 Mar 2026, the latest the government has published; a product registered after that can look unregistered. Listings change daily, so always open the listing before acting on a result.</p>
+</div></details>
+<details class="q panel"><summary>What can Nishedh not tell you?</summary><div>
+  <p><b>It runs targeted searches, not a full catalogue audit.</b> Each category is a fixed set of searches, so it sees the listings those searches surface: in the 27 Sep 2026 run, mostly Amazon.in, some Flipkart, and none from JioMart.</p>
+  <p><b>"No mismatch found" is not "legal".</b> It means the chemical, strength and formulation the listing states match an official list. It does not prove that this seller or manufacturer holds the registration, or that the product inside matches its listing.</p>
+  <p><b>A listing is not a label.</b> The law's labelling rule applies to the physical pack. A listing that hides the chemical is a strong reason to check the label, not proof that the label is wrong.</p>
+  <p><b>Photo matches are leads.</b> Google Lens finds visually similar photos. The Cyclosinone link comes from a hand-maintained watchlist of products named in regulator orders; Nishedh does not discover new orders by itself.</p>
+  <p><b>Google Shopping links</b> open Google's product page, not always the seller's own page.</p>
 </div></details>
 
 <h2>Taking action</h2>

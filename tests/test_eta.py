@@ -123,3 +123,17 @@ def test_model_match_ignores_hyphens_and_spacing():
     for title in ("MotorolaT82 PMR446 446.0-446.2 MHz", "Motorola T-82 PMR446 446.0-446.2 MHz"):
         f = judge(f"{title} {GOOD}", {GOOD: c})
         assert f.reason is Reason.CLEAR, title
+
+
+# ---- A certificate must cover the frequency the listing states (external review, 27 Sep 2026) ----
+
+def test_certificate_for_another_band_is_a_mismatch():
+    c = parse_certificate(GOOD, page(GOOD))            # certifies 446.006-446.19 MHz (PMR446 channels)
+    f = judge(f"Motorola T82 walkie talkie 2400 MHz {GOOD}", {GOOD: c})
+    assert f.reason is Reason.REGISTRY_MISMATCH and "does not cover the stated frequency" in f.checks[-1].explanation
+
+
+def test_band_edges_match_certified_channel_centres():
+    c = parse_certificate(GOOD, page(GOOD))
+    f = judge(f"Motorola T82 PMR446 446.0-446.2 MHz {GOOD}", {GOOD: c})
+    assert f.reason is Reason.CLEAR

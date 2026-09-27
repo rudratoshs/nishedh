@@ -93,8 +93,8 @@ def test_plain_headlines():
                 "checks": [{"reason": reason, "explanation": explanation, "evidence": []}]}
 
     booster = f("radio", "banned_item", "Listed as a mobile signal booster; ... boosters and wireless jammers.")
-    assert headline(booster).startswith("Mobile signal boosters")
-    lens = f("pesticides", "not_in_registry", 'The same product photo is sold on X as "Y". Cyclosinone is named in the CCPA orders')
+    assert headline(booster).startswith("Listed as a mobile signal booster")
+    lens = f("pesticides", "not_in_registry", 'A visually matching product photo is sold on X as "Y". Cyclosinone is named in the CCPA orders')
     assert "Cyclosinone" in headline(lens)
     assert "chemical" in headline(f("pesticides", "information_missing", "Claims an active strength but names no chemical"))
     unknown = f("pesticides", "information_missing",
@@ -144,3 +144,14 @@ def test_logo_and_favicon_are_served(client):
         r = client.get(f"/static/{name}")
         assert r.status_code == 200 and r.headers["content-type"] == "image/png", name
     assert "/static/mark.png" in client.get("/faq").text
+
+
+def test_raw_view_hides_small_store_links(tmp_path):
+    from nishedh.sanitise import safe_link
+
+    assert safe_link("https://www.amazon.in/dp/B0TEST") == "https://www.amazon.in/dp/B0TEST"
+    assert safe_link("https://www.google.co.in/search?ibp=oshop") == "https://www.google.co.in/search?ibp=oshop"
+    hidden = safe_link("https://www.tinyagroshop.in/products/weed-killer")
+    assert "tinyagroshop" not in hidden and hidden == safe_link("https://www.tinyagroshop.in/products/weed-killer")
+    assert "gldg" not in safe_link("https://www.indiamart.com/gldg/photos.html")
+    assert safe_link("https://www.indiamart.com/proddetail/x-1.html").endswith("/proddetail/x-1.html")

@@ -272,7 +272,7 @@ def _strength(text: str, start: int, end: int) -> tuple[float | None, str | None
         pct = value / 10 if after.group(2).lower().startswith("g") else value
         return pct, after.group(3), (start, end + after.end())
     code_only = _STRENGTH_CODE_ONLY.match(text[end : end + 20])
-    if code_only and 0 < float(code_only.group(1)) <= 100:   # "500 G" is grams, not a strength
+    if code_only and _code_only_strength(code_only):
         # The code is not kept: without the % the label style is loose ("3G" for a registered 3% CG),
         # so only the strength is compared.
         return float(code_only.group(1)), None, (start, end + code_only.end())
@@ -281,6 +281,17 @@ def _strength(text: str, start: int, end: int) -> tuple[float | None, str | None
     if before:
         return float(before.group(1)), None, (window + before.start(), end)
     return None, None, (start, end)
+
+
+def _code_only_strength(m: re.Match[str]) -> bool:
+    """"Fipronil 80 WG" and "Phorate 10 G" are strengths; "Thiamethoxam 100 g" and "500 G" are pack sizes.
+
+    Granules (G, GR) are written in capitals and are never stronger than 30%; a lower-case "g" is grams.
+    """
+    value, code = float(m.group(1)), m.group(2)
+    if code.upper() in ("G", "GR"):
+        return code.isupper() and 0 < value <= 30
+    return 0 < value <= 100
 
 
 def _dedupe(claims: list[ChemicalClaim]) -> list[ChemicalClaim]:

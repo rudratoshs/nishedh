@@ -8,6 +8,7 @@ title alone, up to `max_live` live searches in total.
 
 from __future__ import annotations
 
+import hashlib
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
@@ -73,6 +74,8 @@ class SweepResult:
     skipped_searches: list[str] = field(default_factory=list)
     by_reason: dict[str, int] = field(default_factory=dict)
     data_as_of: str = ""          # when the newest search result used was fetched (a replay keeps the original date)
+    # search id -> (engine, fetched_at, SHA-256 of the saved response file the verdicts were computed from)
+    searches: dict[str, tuple[str, str, str]] = field(default_factory=dict)
 
 
 class Sweeper:
@@ -114,6 +117,10 @@ class Sweeper:
             result.skipped_searches.append(f"{params.get('q') or params.get('k') or params.get('asin')}: {e}")
             return None
         result.data_as_of = max(result.data_as_of, r.fetched_at)
+        # Receipt: SHA-256 of the saved response file, checkable with `sha256sum <cache>/<engine>/<id>.json`.
+        saved = self.client.cache_dir / params["engine"] / f"{params_hash(params)}.json"
+        digest = hashlib.sha256(saved.read_bytes()).hexdigest() if saved.exists() else ""
+        result.searches[params_hash(params)] = (params["engine"], r.fetched_at, digest)
         if r.cached:
             result.cached += 1
         else:
@@ -121,7 +128,7 @@ class Sweeper:
         return r.data
 
     def label_check(self, listing: Listing, finding: Finding, result: SweepResult, max_live: int) -> Finding:
-        """Google Lens on the listing's photo: what is the same product called elsewhere?"""
+        """Google Lens on the listing's photo: what are visually matching products called elsewhere?"""
         params = {"engine": "google_lens", "url": listing.thumbnail, "country": "in", "hl": "en"}
         data = self._search(params, result, max_live)
         if data is None:
@@ -131,21 +138,24 @@ class Sweeper:
         checks: list[Check] = []
         notes: list[str] = []
         for item, match in ev.watchlist_hits[:1]:
+            hits, first, strong = ev.hit_strength(item)
             checks.append(Check(
-                Reason.NOT_IN_REGISTRY, "medium",
-                f'The same product photo is sold on {match.site} as "{match.title}". {item.name} is named in the '
-                f"{item.order}: {item.finding}. A matching photo is a lead for review, not proof.",
+                Reason.NOT_IN_REGISTRY, "medium" if strong else "low",
+                f'A visually matching product photo is sold on {match.site} as "{match.title}" '
+                f"({hits} of {len(ev.matches)} visual matches name {item.name}, the highest-ranked at #{first}"
+                f"{'' if strong else '; a weak match'}). {item.name} is named in the "
+                f"{item.order}; {item.finding}. A visual match is a lead for review, not proof.",
                 lens_found(ev), item.source,
             ))
         if ev.chemicals_elsewhere and not ev.watchlist_hits:
             name, match = ev.chemicals_elsewhere[0]
-            notes.append(f'The same photo is sold on {match.site} as "{match.title}", which names {name}; '
+            notes.append(f'A visually matching photo is sold on {match.site} as "{match.title}", which names {name}; '
                          "this listing itself does not name it.")
         others = [site for site in ev.named_sites if site != listing.marketplace]
         small = len({m.link for m in ev.matches if m.site not in ev.named_sites})
         if others or small:
             where = ", ".join(others) + (f" and {small} other online stores" if small else "")
-            notes.append(f"The same product photo also appears on {where.removeprefix(', ')}.")
+            notes.append(f"Visually matching photos also appear on {where.removeprefix(', ')}.")
         return with_extra(finding, checks, notes) if checks or notes else finding
 
     def run(self, pack: str, max_live: int = 40, max_details: int = 20, max_lens: int = 10) -> SweepResult:
@@ -188,5 +198,6 @@ class Sweeper:
                 result.judged += 1
                 result.by_reason[f.reason.value] = result.by_reason.get(f.reason.value, 0) + 1
         result.listings = len(listings)
+        self.store.add_searches(result.run_id, result.searches)
         self.store.finish_run(result.run_id, result.live, result.cached, result.data_as_of)
         return result

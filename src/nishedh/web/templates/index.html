@@ -18,7 +18,10 @@
 
 .packhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 8px 0 4px; }
 .packhead h2 { margin: 0; font-size: 22px; }
-.packintro { margin: 0 0 16px; color: var(--ink-2); max-width: 760px; }
+.packintro { margin: 0 0 10px; color: var(--ink-2); max-width: 760px; }
+.rulebooks { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin: 0 0 16px; font-size: 12px; color: var(--muted); }
+.rulebooks a { color: var(--ink-2); text-decoration: none; padding: 3px 8px; border: 1px solid var(--line-2); border-radius: 6px; background: var(--panel); }
+.rulebooks a:hover { border-color: var(--muted); }
 
 .story { display: grid; grid-template-columns: 110px 1fr auto; gap: 18px; align-items: center; padding: 16px; margin-bottom: 18px; border-left: 4px solid var(--accent); }
 .story .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); }
@@ -71,7 +74,7 @@
   <div>
     <div class="eyebrow">Investigate before it harms</div>
     <h1>We checked <em>{{ overview.checked }}</em> products on India's online stores. <em>{{ overview.strong }}</em> need a closer look.</h1>
-    <p>Nishedh reads what online sellers say about pesticides and walkie-talkies, and compares it with the government's own lists and rules. When something doesn't add up, it shows you exactly why.</p>
+    <p>Nishedh runs targeted searches of India's online stores, reads what sellers say about pesticides and walkie-talkies, and compares it with the government's own lists and rules. When something doesn't add up, it shows you exactly why.</p>
   </div>
   <div class="steps">
     <div class="step panel"><span class="n">1</span><div><b>Find</b><span>Search Amazon, Flipkart, JioMart and other stores through SerpApi.</span></div></div>
@@ -88,10 +91,15 @@
 {% if pack == 'pesticides' %}
   In India every pesticide must be registered, and its label must name the chemical inside and how strong it is. Banned chemicals cannot be sold at all.
 {% else %}
-  Online stores may not sell mobile signal boosters or jammers. Walkie-talkies are only licence-free on 446 MHz, and every listing must show its frequency and its government approval (ETA) number.
+  Online stores may not list mobile signal boosters or jammers, or radios that need a frequency licence. The regulator says only walkie-talkies in 446.0–446.2 MHz are licence-exempt, and every listing must show its frequency and its government approval (ETA) number.
 {% endif %}
   <a href="/how-it-works">How we check →</a>
 </p>
+
+<div class="rulebooks"><span>Checked against:</span>
+  {% for s in rulebooks %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title.split(' – ')[-1] if ' – ' in s.title else s.title }}{% if s.as_on %} · as on {{ s.as_on }}{% endif %}</a>{% endfor %}
+  <span>Newer registrations are not covered until these lists are refreshed.</span>
+</div>
 
 {% if not run %}
   <div class="panel empty">No results yet for this category. Run <code>nishedh sweep {{ pack }}</code> to fetch them.</div>
@@ -103,7 +111,7 @@
   <div>
     <div class="label">{{ 'Case to look at first' }}</div>
     <h3>{{ headline(story) }}</h3>
-    <p>{% if pack == 'pesticides' %}In September 2026 the regulator fined Amazon, Flipkart and JioMart for selling "Cyclosinone" weed killer, whose chemical is on no official list. This {{ (story.marketplace + ' ') if story.marketplace != 'another online store' }}listing never names its chemical, but Google Lens finds the same photo sold as Cyclosinone.{% else %}The regulator's 2025 rules say online stores "shall not allow listing or sale of mobile signal boosters". These were on sale when we checked ({{ (run_info.data_as_of or run_info.started_at or '')[:10] }}).{% endif %}</p>
+    <p>{% if pack == 'pesticides' %}In September 2026 the regulator fined Amazon, Flipkart and JioMart for selling "Cyclosinone" weed killer, whose chemical is on no official list. This {{ (story.marketplace + ' ') if story.marketplace != 'another online store' }}listing never names its chemical, but Google Lens finds visually matching photos sold as Cyclosinone.{% else %}The regulator's 2025 rules say online stores "shall not allow listing or sale of mobile signal boosters". These were on sale when we checked ({{ (run_info.data_as_of or run_info.started_at or '')[:10] }}).{% endif %}</p>
   </div>
   <a class="btn primary" href="/finding/{{ pack }}/{{ story.listing_id }}">See the evidence →</a>
 </div>

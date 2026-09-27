@@ -34,9 +34,21 @@ def test_chemicals_named_elsewhere(ex):
 def test_evidence_puts_watchlist_first(ex):
     ev = read_lens(LENS, "id", ex, load_watchlist())
     found = lens_found(ev)
-    assert found[0].text.startswith("Cyclosinone") and found[0].field == "same photo on another online store"
+    assert found[0].text.startswith("Cyclosinone") and found[0].field == "visual match on another online store"
 
 
 def test_no_matches(ex):
     ev = read_lens({}, "id", ex, load_watchlist())
     assert not ev.matches and not ev.watchlist_hits and not lens_found(ev)
+
+
+def test_hit_strength_counts_and_ranks_watchlist_matches():
+    from nishedh.lens import LensEvidence, Match, WatchItem
+
+    item = WatchItem("Cyclosinone", "f", "o", "ccpa_orders")
+    other = [Match(f"Weed killer {i}", "another online store", f"https://x/{i}") for i in range(20)]
+    hit = [Match(f"Cyclosinone Herbicide {i}", "another online store", f"https://y/{i}") for i in range(4)]
+    strong = LensEvidence("a", matches=hit[:1] + other[:5] + hit[1:], watchlist_hits=[(item, m) for m in hit])
+    assert strong.hit_strength(item) == (4, 1, True)
+    weak = LensEvidence("b", matches=other[:16] + hit, watchlist_hits=[(item, m) for m in hit])
+    assert weak.hit_strength(item) == (4, 17, False)

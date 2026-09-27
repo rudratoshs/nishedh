@@ -38,6 +38,14 @@ CREATE TABLE IF NOT EXISTS listings (
     search_id TEXT, details_search_id TEXT, lens_search_id TEXT, fields TEXT,
     PRIMARY KEY (run_id, listing_id)
 );
+CREATE TABLE IF NOT EXISTS searches (
+    run_id INTEGER NOT NULL REFERENCES runs(id),
+    search_id TEXT NOT NULL,
+    engine TEXT NOT NULL,
+    fetched_at TEXT NOT NULL,
+    response_sha256 TEXT NOT NULL,
+    PRIMARY KEY (run_id, search_id)
+);
 CREATE TABLE IF NOT EXISTS findings (
     run_id INTEGER NOT NULL REFERENCES runs(id),
     listing_id TEXT NOT NULL,
@@ -74,6 +82,18 @@ class Store:
         self.db.execute("UPDATE runs SET live_searches = ?, cached_searches = ?, data_as_of = ? WHERE id = ?",
                         (live, cached, data_as_of, run_id))
         self.db.commit()
+
+    def add_searches(self, run_id: int, searches: dict[str, tuple[str, str, str]]) -> None:
+        """Record each SerpApi response a run used: when it was fetched and a SHA-256 of its data."""
+        self.db.executemany(
+            "INSERT OR REPLACE INTO searches VALUES (?, ?, ?, ?, ?)",
+            [(run_id, sid, engine, fetched, digest) for sid, (engine, fetched, digest) in searches.items()],
+        )
+        self.db.commit()
+
+    def searches(self, run_id: int) -> dict[str, dict[str, str]]:
+        rows = self.db.execute("SELECT * FROM searches WHERE run_id = ?", (run_id,)).fetchall()
+        return {r["search_id"]: dict(r) for r in rows}
 
     def add(self, run_id: int, pack: str, listing: Listing, finding: Finding | None) -> None:
         self.db.execute(

@@ -104,9 +104,9 @@ def report(
     w = csv.writer(sys.stdout)
     w.writerow(["reason", "confidence", "marketplace", "title", "url", "why", "evidence"])
     for f in rows:
-        top = f["checks"][0]
+        why = " | ".join(c["explanation"] for c in f["checks"])
         evidence = "; ".join(f'{e["field"]}: "{e["text"]}"' for c in f["checks"] for e in c["evidence"])
-        w.writerow([f["reason"], f["confidence"], f["marketplace"], f["title"], f["url"], top["explanation"], evidence])
+        w.writerow([f["reason"], f["confidence"], f["marketplace"], f["title"], f["url"], why, evidence])
 
 
 @app.command()
@@ -127,6 +127,8 @@ def _serve(cache: Path, host: str, port: int, demo_note: str = "") -> None:
 
     from nishedh.web.app import create_app
 
+    if host not in ("127.0.0.1", "localhost", "::1"):
+        typer.echo(f"Warning: serving on {host} makes the dashboard reachable from other machines.", err=True)
     typer.echo(f"Dashboard: http://{host}:{port}")
     uvicorn.run(create_app(cache, demo_note=demo_note), host=host, port=port, log_level="warning")
 

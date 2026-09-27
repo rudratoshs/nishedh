@@ -37,10 +37,11 @@ def test_pesticide_numbers_match_the_readme(replay):
     results, findings = replay
     assert (results["pesticides"].listings, results["pesticides"].judged) == (233, 160)
     counts = Counter((f["reason"], f["confidence"]) for f in findings["pesticides"])
-    assert counts[("not_in_registry", "medium")] == 7
-    assert counts[("information_missing", "high")] == 1
+    assert counts[("not_in_registry", "medium")] + counts[("not_in_registry", "low")] == 7
+    assert counts[("information_missing", "high")] == 1 and counts[("information_missing", "medium")] == 11
     cyclosinone = [f for f in findings["pesticides"] if f["lens_search_id"] and "Cyclosinone" in f["checks"][0]["explanation"]]
     assert len(cyclosinone) == 5
+    assert sum(f["confidence"] == "medium" for f in cyclosinone) == 4   # one is a weak visual match
 
 
 def test_radio_numbers_match_the_readme(replay):
@@ -48,6 +49,22 @@ def test_radio_numbers_match_the_readme(replay):
     assert (results["radio"].listings, results["radio"].judged) == (156, 59)
     banned = [f for f in findings["radio"] if f["reason"] == "banned_item"]
     assert len(banned) == 15 and sum("booster" in f["checks"][0]["explanation"] for f in banned) == 13
+
+
+def test_snapshot_links_never_name_a_small_store():
+    import re
+    from urllib.parse import urlparse
+
+    allowed = ("amazon.in", "flipkart.com", "jiomart.com", "meesho.com", "indiamart.com", "snapdeal.com",
+               "shopclues.com", "tatacliq.com", "myntra.com", "ebay.com", "tradeindia.com", "google.co.in",
+               "google.com", "gstatic.com", "serpapi.com", "media-amazon.com", "another-online-store.invalid")
+    for path in (DEMO / "serpapi").glob("*/*.json"):
+        for url in re.findall(r'https?://[^"\s]+', path.read_text()):
+            parsed = urlparse(url)
+            host = parsed.netloc.lower().removeprefix("www.")
+            assert any(host == d or host.endswith("." + d) for d in allowed), (path.name, url)
+            if host == "indiamart.com":   # a seller's storefront page names the seller
+                assert parsed.path.startswith(("/proddetail/", "/impcat/")), (path.name, url)
 
 
 def test_snapshot_holds_only_allowlisted_fields():

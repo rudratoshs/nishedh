@@ -76,7 +76,8 @@ _RANGE = rf"{_NUM}\s*(?:[kmg]?hz)?\s*(?:-|–|~|to)\s*{_NUM}"
 # misprint of MHz), "2.4-2.4835 GHz".
 _GROUP = re.compile(rf"({_RANGE}(?:\s*(?:/|,|and|&)\s*{_RANGE})*)\s*{_UNIT}\b", _I)
 _RANGE_ONE = re.compile(rf"({_NUM})\s*(?:[kmg]?hz)?\s*(?:-|–|~|to)\s*({_NUM})", _I)
-_SINGLE = re.compile(rf"({_NUM})\s*{_UNIT}\b", _I)
+# A single frequency needs an explicit kHz/MHz/GHz: a bare "50/60Hz" is a charger's mains rating.
+_SINGLE = re.compile(rf"({_NUM})\s*([kmg])hz\b", _I)
 _BAND_WORD = re.compile(r"\b(uhf|vhf|frs|gmrs|pmr[\s-]?446|cb\s+radio)\b", _I)
 ETA = re.compile(r"\bETA[\s:-]*SD[\s:-]*\d{11}\b", _I)
 ETA_CLAIM = re.compile(r"\bETA\b|\bWPC\b|type\s+approv", _I)

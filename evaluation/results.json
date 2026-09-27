@@ -1,0 +1,736 @@
+[
+ {
+  "case": 1,
+  "pack": "pesticides",
+  "title": "Southern Ag Crossbow Specialty Herbicide 2 4 D & Triclopyr Weed & Brush Killer, 32oz - 1 Quart",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "medium",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Title and specifications name '2 4 D & Triclopyr' / 'active ingredients: Triclopyr'. Triclopyr appears only in the Schedule (schedule key 'triclopyr') and in no registered-molecule or formulation entry; 2,4-D is registered but the unregistered Triclopyr is the more serious finding."
+ },
+ {
+  "case": 2,
+  "pack": "pesticides",
+  "title": "Erwon® Herbicide, Wild Herbs Remover, Organic Essential Powerful Organic Herbicide for Removing all types of Wild Herbs ",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "low",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry",
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Full page read: 'Organic Essential Powerful Organic Herbicide', 'non-selective broad spectrum coverage' — no active ingredient named. The full Lens list (60 matches) contains watchlist hits at positions 17, 18, 25 and 44 ('ELHAE Cyclosinone Herbicid Granular Weed Killer', 'Price History of Cyclosinone Herbicide Granules 10% Active'); the first 16 matches are all Erwon's own listings, so the lead is weak and a reviewer could reasonably stay at information_missing."
+ },
+ {
+  "case": 3,
+  "pack": "pesticides",
+  "title": "Sansar Green® Herbicide Powder, Premium Organic Powerful Herbicide for Removing Wild Herbs & Weeds (50 gm)",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Full page read: 'Premium Organic Powerful Herbicide', 'non-selective broad spectrum' — no chemical or strength stated."
+ },
+ {
+  "case": 4,
+  "pack": "pesticides",
+  "title": "Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden, Lawn, ",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula' with no active ingredient in any field; page fully read."
+ },
+ {
+  "case": 5,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor S",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "OM SHAKTI 'Fast Acting Herbicide' names no chemical; lens matches (Katyayani, LYBST) are other unnamed weed killers, none on the watchlist."
+ },
+ {
+  "case": 6,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Generic 'Weed & Root Remover Liquid' — description and bullets never name an active ingredient; page fully read."
+ },
+ {
+  "case": 7,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Identical Generic listing to case 6 (same text, different ASIN); no chemical named."
+ },
+ {
+  "case": 8,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces ",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Rucira Herbal Weed & Root Killer ... Formulated with a herbal blend' — a herbicide whose 'natural herbal formula' is never identified; no chemical or strength."
+ },
+ {
+  "case": 9,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Wixger granule weed remover with only 'Fast Acting Formula' language; no active ingredient in any field."
+ },
+ {
+  "case": 10,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "high",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry",
+   "information_missing"
+  ],
+  "exact": false,
+  "outcome": "agree",
+  "reviewer_rationale": "Listing text gives only 'included components: 5% active formulation' (no chemical), but a Lens visual match is titled 'Cyclosinonie Herbicide Granules | 5% Active Ingredient' — the watchlist product Cyclosinone (CCPA orders) under a one-letter misspelling; a visual lead only, so medium. A reviewer who does not accept the misspelled match would land on information_missing."
+ },
+ {
+  "case": 11,
+  "pack": "pesticides",
+  "title": "Lawn Weed Remover 200g | Ready to Use Weed Removal Powder | Fast-Acting Formula for Lawn, Garden, Driveway, Pathway & Ou",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "UFO Enterprise 'Lawn Weed Remover 200g' — no chemical named ('included components: Plant Growth Booster'); Lens matches are other '5% Active Formula' weed removers, none named Cyclosinone."
+ },
+ {
+  "case": 12,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "GO WELL 'Weed and Root Killer 100G Ready to Use' — no active ingredient in any field; Lens matches ('Weed & Root Remover Plus 5% Active Formula', Wixger) do not carry a watchlist name."
+ },
+ {
+  "case": 13,
+  "pack": "pesticides",
+  "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn B",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "medium",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Text names only the brand 'CYCLORA' with 'an active 5% original formula' (matches no official chemical), and Lens visual matches include 'Cyclosinone Herbicide Granules 🔥 LIMITED TIME OFFER' and 'Cyclosinone Herbicide Granules | Agricultural Weed Control' — the watchlist product the Department of Agriculture says is not in the Schedule. Visual match is a lead, so medium."
+ },
+ {
+  "case": 14,
+  "pack": "pesticides",
+  "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn B",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "medium",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Same Coslasy/CYCLORA '5% Active Formula' text as case 13; Lens matches include 'Cyclosinone Herbicide Granules' and 'Buy Cyclosinone Granular Herbicide Weed Killer' (watchlist). Medium because the link is visual."
+ },
+ {
+  "case": 15,
+  "pack": "pesticides",
+  "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn B",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "medium",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Same Coslasy/CYCLORA text; Lens matches include 'Cyclosinone Herbicide Granules 🔥 LIMITED TIME OFFER' and 'Buy Cyclosinone Granular Herbicide Weed Killer' (watchlist). Medium because the link is visual."
+ },
+ {
+  "case": 16,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor S",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "OM SHAKTI 3-count 'Fast Acting Herbicide' — description and bullets name no chemical; no Lens matches."
+ },
+ {
+  "case": 17,
+  "pack": "pesticides",
+  "title": "Go well Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for St",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "medium",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Go well 'Herbicide Plus Bamboo Killer Granules – 5% Active Formula' names no chemical, and Lens visual matches include 'Cyclosinone Herbicide Granules 🔥 LIMITED TIME OFFER' and 'Buy Cyclosinone Granular Herbicide Weed Killer' (watchlist). Visual lead, so medium."
+ },
+ {
+  "case": 18,
+  "pack": "pesticides",
+  "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Law",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "medium",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "GO WELL 200G 'Weed and Root Remover' with 'included components: Weed Killer' — no active ingredient stated; no Lens matches."
+ },
+ {
+  "case": 19,
+  "pack": "pesticides",
+  "title": "Alligare Triclopyr 4 Herbicide 1 QT",
+  "nishedh": "not_in_registry",
+  "nishedh_confidence": "medium",
+  "reviewer": "not_in_registry",
+  "reviewer_acceptable": [
+   "not_in_registry"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Title 'Alligare Triclopyr 4 Herbicide' names Triclopyr, which is in the Schedule but has no entry in the registered molecules list or any registered formulation."
+ },
+ {
+  "case": 20,
+  "pack": "pesticides",
+  "title": "Pro Crabgrass & Grassy Weed Killer - 18.92% Quinclorac (Compare to Drive XLR8) Concentrated Professional Crabgrass Herbi",
+  "nishedh": "registry_mismatch",
+  "nishedh_confidence": "low",
+  "reviewer": "registry_mismatch",
+  "reviewer_acceptable": [
+   "registry_mismatch"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Title names '18.92% Quinclorac'. Quinclorac is registered but the only formulation is 'Quinclorac 250 g/l SC' (serial 397); 18.92% w/w (a US Drive XLR8 clone, ~1.5 lb/gal) does not correspond to 250 g/l. Medium: title only, and the unit conversion is approximate."
+ },
+ {
+  "case": 21,
+  "pack": "pesticides",
+  "title": "Katyayani Weed Killer Liquid Weedicide | 1 L (250 ML x 4 )",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Katyayani Weed Killer Liquid Weedicide | 1 L' — only the search title was seen and it names no chemical."
+ },
+ {
+  "case": 22,
+  "pack": "pesticides",
+  "title": "Herbal Weed & Root Killer Liquid for Garden & Outdoor Use Ready-to-Use Natural Weed Control Solution Fast-Acting Formula",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Herbal Weed & Root Killer Liquid ... Natural Weed Control Solution' — title only, no active ingredient."
+ },
+ {
+  "case": 23,
+  "pack": "pesticides",
+  "title": "Powerful Ready-to-Use Weed & Root Remover Liquid | Fast Acting Herbicide for Gardens, Lawns, Driveways, Patios & Outdoor",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Powerful Ready-to-Use Weed & Root Remover Liquid | Fast Acting Herbicide' — title only, no chemical named."
+ },
+ {
+  "case": 24,
+  "pack": "pesticides",
+  "title": "Solomon Insecticide For Aphids | Jassids And Shoot | Fruit Borer Control - 100Ml, Pack Of 1",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing",
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Solomon Insecticide For Aphids | Jassids ...' names only a trade name that is not in brands.json and no active ingredient or strength; title only. A reviewer who knows Solomon as Bayer's Beta-cyfluthrin 8.49% + Imidacloprid 19.81% OD (registered, serial 699) could reasonably call it clear."
+ },
+ {
+  "case": 25,
+  "pack": "pesticides",
+  "title": "OM SHAKTI Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for G",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'OM SHAKTI Weed and Root Remover 100G Ready to Use' — title only, no chemical."
+ },
+ {
+  "case": 26,
+  "pack": "pesticides",
+  "title": "Weed & Root Remover Spray 250ml | Fast Acting Ready-to-Use Weed & Root Control Formula | Helps Remove Unwanted Grass and",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Weed & Root Remover Spray 250ml | Fast Acting Ready-to-Use' — title only, no active ingredient."
+ },
+ {
+  "case": 27,
+  "pack": "pesticides",
+  "title": "All insects Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of insects and pests from Plan",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Essential Organic Powerful Liquid Insecticide for Removing all types of insects' — an insecticide with no chemical named; title only."
+ },
+ {
+  "case": 28,
+  "pack": "pesticides",
+  "title": "Go Garden Trichoderma Bio Fungicide for plants (2 x 10^8 CFU per Gram) Bio Fungicide - Prevents Fungal and Bacterial Dis",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear",
+   "information_missing"
+  ],
+  "exact": false,
+  "outcome": "agree",
+  "reviewer_rationale": "'Trichoderma Bio Fungicide (2 x 10^8 CFU per Gram)' names a registered biopesticide genus (registered: Trichoderma harzianum, Trichoderma viride; Schedule: 'Trichoderma Species') and states no % strength or code to mismatch. Medium because the species is not given and only the title was seen; a stricter reviewer could call the missing species information_missing."
+ },
+ {
+  "case": 29,
+  "pack": "pesticides",
+  "title": "TRESOL 2,4-D Sodium Salt 80% WP Selective Post Emergence Herbicide 500gm",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'2,4-D Sodium Salt 80% WP' matches registered formulation '2,4-D Sodium Salt 80% min.' (serial 300); the registry string carries no formulation code so 'WP' cannot mismatch. Medium because title only."
+ },
+ {
+  "case": 30,
+  "pack": "pesticides",
+  "title": "Vinash Power Glyphosate 71% SG Herbicide – 100 gm",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Glyphosate 71% SG' matches 'Glyphosate Ammonium Salt 71%SG' (serial 353); 71% SG exists for no other glyphosate salt."
+ },
+ {
+  "case": 31,
+  "pack": "pesticides",
+  "title": "Bayer Roundup Herbicide – Glyphosate 41% SL Weed Killer - 2 ltr (pack of 1 ltr × 2)",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Roundup Herbicide – Glyphosate 41% SL' matches 'Glyphosate 41% SL (IPA Salt)' (serial 349); Roundup is in brands.json as glyphosate."
+ },
+ {
+  "case": 32,
+  "pack": "pesticides",
+  "title": "Council Active Herbicide – Triafamone 20% + Ethoxysulfuron 10% WG - 60 gms",
+  "nishedh": "clear",
+  "nishedh_confidence": "medium",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Triafamone 20% + Ethoxysulfuron 10% WG' matches the registered combination 'Triafamone 20%+ Ethoxysulfuron l0%WG' (serial 1150) exactly."
+ },
+ {
+  "case": 33,
+  "pack": "pesticides",
+  "title": "Bayer Roundup Herbicide",
+  "nishedh": "clear",
+  "nishedh_confidence": "medium",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Bayer Roundup Herbicide' — Roundup is a known trade name for glyphosate (brands.json), a registered molecule; no strength or code is stated so nothing can mismatch. Medium because only the brand identifies the chemical and only the title was seen."
+ },
+ {
+  "case": 34,
+  "pack": "pesticides",
+  "title": "Dhanuka WEEDMAR 38 2,4-D Ethyl Ester 38% EC Herbicide, Selective Broadleaf Weed Controller",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'2,4-D Ethyl Ester 38% EC' matches registered '2,4-D Ethyl Ester 38% EC' (serial 298)."
+ },
+ {
+  "case": 35,
+  "pack": "pesticides",
+  "title": "Utkarsh Verticillium Lecanii 1.15% W.P. 1 x 10 ^ 8 CFU/gm min. for Plants, Crops and Home Gardening - Verticoz-P (250 gm",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Verticillium Lecanii 1.15% W.P. 1 x 10 ^ 8 CFU/gm min.' matches 'Verticillium lecanii 1.15% WP, (1x108CFU/gm min)' (serial 639)."
+ },
+ {
+  "case": 36,
+  "pack": "pesticides",
+  "title": "Crop Warrior Herbicide, Metribuzin 70% WP, Premium Quality, Wettable Powder, Pack of (2)",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Metribuzin 70% WP' matches registered 'Metribuzin70% WP' (serial 369)."
+ },
+ {
+  "case": 37,
+  "pack": "pesticides",
+  "title": "Bayer Roundup (Glyphosate 41% SL) Herbicide 1 L",
+  "nishedh": "clear",
+  "nishedh_confidence": "high",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Bayer Roundup (Glyphosate 41% SL)' matches 'Glyphosate 41% SL (IPA Salt)' (serial 349)."
+ },
+ {
+  "case": 38,
+  "pack": "pesticides",
+  "title": "BASF Odyssey (Imazethapyr + Imazamox 35% WG) Herbicide 100 gm",
+  "nishedh": "clear",
+  "nishedh_confidence": "medium",
+  "reviewer": "clear",
+  "reviewer_acceptable": [
+   "clear",
+   "registry_mismatch"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Odyssey (Imazethapyr + Imazamox 35% WG)' corresponds to the registered combination 'Imazethapyr 35%+Imazamox35%WG' (serial 1091), the only Imazethapyr+Imazamox WG. Medium: the title's compressed '35% WG' could be read as a 35% total, which matches no registered formulation, so a strict reviewer could call registry_mismatch."
+ },
+ {
+  "case": 39,
+  "pack": "radio",
+  "title": "Baofeng BF-888S UHF 400-470MHz Walkie Talkie Long Range VOX Two Way Radio With Earpiece Pack-of-1",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Title states 'UHF 400-470MHz' — a band requiring a licence (400–520 MHz outside the conditional 433.05–434.79 sliver); only 446.0–446.2 MHz walkie-talkies are licence-exempt."
+ },
+ {
+  "case": 40,
+  "pack": "radio",
+  "title": "RJLINK 2G/3G/4G/5G quad band mobile phone network booster all sim working jio/airtel/vi/bsnl boost network & data comple",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'RJLINK 2G/3G/4G/5G quad band mobile phone network booster' — a mobile signal booster, which platforms must not list under the CCPA radio-equipment guidelines."
+ },
+ {
+  "case": 41,
+  "pack": "radio",
+  "title": "RJLINK 2G/3G/4G/5G quad band mobile phone network booster all sim working jio/airtel/vi/bsnl boost network & data comple",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Same RJLINK 'mobile phone network booster' kit (4500 sq ft variant) — mobile signal booster."
+ },
+ {
+  "case": 42,
+  "pack": "radio",
+  "title": "Lintratek 2G/3G/4G/5G mobile phone network booster & data complete kit area coverage 4500 sq.feet GST included",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Lintratek 2G/3G/4G/5G mobile phone network booster ... complete kit' — mobile signal booster."
+ },
+ {
+  "case": 43,
+  "pack": "radio",
+  "title": "2g 3g 4g 5g Gsm Tri-band Signal Repeater 900 1800 2100 Mhz Network Booster Mobile Phones 3g 4g Lte Repeater",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Gsm Tri-band Signal Repeater 900 1800 2100 Mhz Network Booster' — a mobile signal repeater/booster operating in licensed cellular bands."
+ },
+ {
+  "case": 44,
+  "pack": "radio",
+  "title": "GSM 900MHz Cell Phone Signal Repeater Booster Amplifier",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'GSM 900MHz Cell Phone Signal Repeater Booster Amplifier' — mobile signal repeater/amplifier."
+ },
+ {
+  "case": 45,
+  "pack": "radio",
+  "title": "Mobile network booster",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "Title is exactly 'Mobile network booster' — the product category itself is prohibited from listing, so the terse title is sufficient."
+ },
+ {
+  "case": 46,
+  "pack": "radio",
+  "title": "Cell Phone Booster Network Extender Amplifier for 3G, DIY Mobile Phone Repeater Enhancer for CDMA 210MHz for Home Office",
+  "nishedh": "banned_item",
+  "nishedh_confidence": "high",
+  "reviewer": "banned_item",
+  "reviewer_acceptable": [
+   "banned_item"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Cell Phone Booster Network Extender Amplifier for 3G, DIY Mobile Phone Repeater Enhancer for CDMA' — mobile signal booster/repeater."
+ },
+ {
+  "case": 47,
+  "pack": "radio",
+  "title": "ICOM IC-4310R Red Low-Power Two-Way Radio",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'ICOM IC-4310R Red Low-Power Two-Way Radio' — a walkie-talkie whose title states neither frequency nor ETA number; only the title was seen."
+ },
+ {
+  "case": 48,
+  "pack": "radio",
+  "title": "Buy Teddify Walkie Talkie Spy Toy for kids Baby's Yellow ...",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing",
+   "out_of_scope"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Teddify Walkie Talkie Spy Toy for kids' — a walkie-talkie (toy walkie-talkies still transmit RF and were part of the CCPA action) with no frequency or ETA stated; title only. A reviewer treating a children's toy as outside the radio-equipment pack could call it out_of_scope."
+ },
+ {
+  "case": 49,
+  "pack": "radio",
+  "title": "Baofeng BF-358 Walkie Talkie",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Baofeng BF-358 Walkie Talkie' — no frequency band or ETA in the text; title only."
+ },
+ {
+  "case": 50,
+  "pack": "radio",
+  "title": "Motorla GP 328 UHF walkie talkie Ref",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Motorla GP 328 UHF walkie talkie' — 'UHF' alone is not a frequency (it spans both the exempt 446 MHz and licensed bands) and no ETA is given; title only."
+ },
+ {
+  "case": 51,
+  "pack": "radio",
+  "title": "Baofeng Bf888s Uhf Fm Transceiver High Illumination Flashlight Walkie BF-888S",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'Baofeng Bf888s Uhf Fm Transceiver' — unlike case 39, this title gives no frequency figure and no ETA; title only."
+ },
+ {
+  "case": 52,
+  "pack": "radio",
+  "title": "BAOFENG 12-Pack Long Range Walkie Talkies – Rechargeable UHF Two-Way Radios with Charging Bases",
+  "nishedh": "information_missing",
+  "nishedh_confidence": "low",
+  "reviewer": "information_missing",
+  "reviewer_acceptable": [
+   "information_missing"
+  ],
+  "exact": true,
+  "outcome": "agree",
+  "reviewer_rationale": "'BAOFENG 12-Pack Long Range Walkie Talkies – Rechargeable UHF Two-Way Radios' — no frequency or ETA stated; title only."
+ }
+]

@@ -1,10 +1,10 @@
 {
- "note": "Products named in consumer-regulator orders. A listing whose product photo also appears elsewhere under one of these names is escalated for review. Image similarity is a lead, not proof.",
+ "note": "Products named in consumer-regulator orders, maintained by hand. A listing whose product photo visually matches a listing elsewhere under one of these names is escalated for review. A visual match is a lead, not proof.",
  "products": [
   {
    "name": "Cyclosinone",
-   "finding": "unregistered agro-chemical: no chemical named Cyclosinone is in the Schedule to the Insecticides Act, 1968",
-   "order": "CCPA orders of 16 Sep 2026 (Amazon) and 22 Sep 2026 (Flipkart, JioMart): stop sale and advertising, self-audit within 15 days",
+   "finding": "the Department of Agriculture told the CCPA that no chemical named Cyclosinone is in the Schedule to the Insecticides Act, 1968",
+   "order": "CCPA orders of 16 Sep 2026 (Amazon) and 22 Sep 2026 (Flipkart, JioMart): stop sale, self-audit of the platform, compliance report within 15 days",
    "source": "ccpa_orders"
   }
  ]

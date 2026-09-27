@@ -59,14 +59,14 @@ details.tech ul { margin: 10px 0 0; padding-left: 20px; }
     </div>
     <p class="muted small" style="margin:0 0 14px">{{ REASON_HELP[f.reason] }}</p>
     <div class="actions">
-      <a class="btn primary" href="{{ f.url | web_url }}" target="_blank" rel="noopener">Open the listing ↗</a>
+      <a class="btn primary" href="{{ f.url | web_url }}" target="_blank" rel="noopener">{{ 'Open on Google Shopping ↗' if f.engine == 'google_shopping' else 'Open the listing ↗' }}</a>
       {% if f.reason != 'clear' %}<a class="btn" href="/complaint/{{ pack }}/{{ f.listing_id }}">Draft a request for review</a>{% endif %}
     </div>
   </div>
 </section>
 
 {% if photos %}
-<h2 class="sec">Same photo, different name</h2>
+<h2 class="sec">Visual match, different name</h2>
 <div class="compare panel">
   <div class="row">
     <figure class="this">{{ photo(f.thumbnail, f.title) }}<figcaption><b>This listing</b>{{ f.marketplace[0] | upper }}{{ f.marketplace[1:] }}</figcaption></figure>
@@ -74,7 +74,7 @@ details.tech ul { margin: 10px 0 0; padding-left: 20px; }
     <figure>{{ photo(p.thumbnail, p.title) }}<figcaption><b>Found by Google Lens</b>"{{ p.title[:70] }}" · {{ p.site }}</figcaption></figure>
     {% endfor %}
   </div>
-  <p class="note">Google Lens (through SerpApi) looked for the same product photo on other websites. A matching photo is a strong lead, but a person should confirm it is the same product.</p>
+  <p class="note">Google Lens (through SerpApi) looked for visually matching product photos on other websites. A visual match is a lead, not proof: a person should confirm it is the same product.</p>
 </div>
 {% endif %}
 
@@ -88,10 +88,10 @@ details.tech ul { margin: 10px 0 0; padding-left: 20px; }
     </div>
   </li>
   {% for c in f.checks %}
-  {% set lens = c.evidence and c.evidence[0].field.startswith('same photo') %}
+  {% set lens = c.evidence and c.evidence[0].field.startswith(('visual match', 'same photo')) %}
   {% set s = sources.get(c.source) %}
   <li>
-    <h3>{{ 'We checked what the same photo is called elsewhere' if lens else 'We read what the listing says' }}</h3>
+    <h3>{{ 'We checked what visually matching photos are called elsewhere' if lens else 'We read what the listing says' }}</h3>
     <div class="card panel">
       {% for e in c.evidence %}
       <p class="quote">“{{ e.text }}” <small>— {{ e.field | replace('_', ' ') }}</small></p>
@@ -116,16 +116,17 @@ details.tech ul { margin: 10px 0 0; padding-left: 20px; }
 <div class="next">
   <div class="card panel"><b>1. Check it yourself</b>Open the listing and look at the pack photo and label. Things change, and a person should confirm.</div>
   <div class="card panel"><b>2. Report it</b>Use "Draft a request for review" for ready-made text, then file it at the National Consumer Helpline (call 1915 or consumerhelpline.gov.in).</div>
-  <div class="card panel"><b>3. For marketplaces</b>The regulator asked stores to audit their own catalogues. Download the full list as CSV from the results page.</div>
+  <div class="card panel"><b>3. For marketplaces</b>The regulator ordered marketplaces to audit their own catalogues. Nishedh's results are a starting list: download them as CSV from the results page.</div>
 </div>
 {% endif %}
 
 <details class="tech panel">
   <summary>Technical details and raw data</summary>
   <ul>
-    <li><a href="/raw/{{ f.engine }}/{{ f.search_id }}">Raw SerpApi search result</a> (the exact data this came from)</li>
-    {% if f.details_search_id %}<li><a href="/raw/amazon_product/{{ f.details_search_id }}">Raw product page data</a></li>{% endif %}
-    {% if f.lens_search_id %}<li><a href="/raw/google_lens/{{ f.lens_search_id }}">Raw Google Lens result</a></li>{% endif %}
+    <li><a href="/raw/{{ f.engine }}/{{ f.search_id }}">SerpApi search result</a> (the fields Nishedh read)</li>
+    {% if f.details_search_id %}<li><a href="/raw/amazon_product/{{ f.details_search_id }}">Product page data</a></li>{% endif %}
+    {% if f.lens_search_id %}<li><a href="/raw/google_lens/{{ f.lens_search_id }}">Google Lens result</a></li>{% endif %}
+    {% for r in f.receipts %}<li>{{ r.engine | replace('_', ' ') }} response fetched {{ r.fetched_at[:19].replace('T', ' ') }} UTC · SHA-256 of the saved file <code>serpapi/{{ r.engine }}/{{ r.search_id }}.json</code>{{ ' (the reduced demo copy)' if DEMO_NOTE }}: <code style="word-break:break-all">{{ r.response_sha256 }}</code></li>{% endfor %}
     <li>Listing ID: <code>{{ f.listing_id }}</code> · result code: <code>{{ f.reason }}</code> · confidence: <code>{{ f.confidence }}</code></li>
   </ul>
 </details>

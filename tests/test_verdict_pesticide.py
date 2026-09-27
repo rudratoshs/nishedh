@@ -191,3 +191,75 @@ def test_generic_schedule_bracket_words_are_not_trade_names(judge):
     # Schedule entry "Serratia marcescens GPS 5 (Bacteria)" must not turn "Bacterial" into a chemical.
     f = judge(title="Go Garden Trichoderma Bio Fungicide for plants - Prevents Fungal and Bacterial Diseases")
     assert all("Serratia" not in c.explanation for c in f.checks)
+
+
+# ---- Combination formulations must match chemicals, strengths and code (external review, 27 Sep 2026) ----
+
+def test_registered_combination_is_clear(judge):
+    f = judge(title="Acephate 25% + Fenvalerate 3% EC insecticide")
+    assert (f.reason, f.confidence) == (Reason.CLEAR, "high") and len(f.checks) == 1
+
+
+@pytest.mark.parametrize("title", [
+    "Acephate 1% + Fenvalerate 1% EC insecticide",       # wrong strengths
+    "Acephate 99% + Fenvalerate 99% EC insecticide",     # impossible strengths
+    "Acephate 25% + Fenvalerate 3% WP insecticide",      # right strengths, wrong formulation code
+])
+def test_same_chemicals_at_other_strengths_or_code_are_a_mismatch(judge, title):
+    f = judge(title=title)
+    assert f.reason is Reason.REGISTRY_MISMATCH and "registered together only as" in f.checks[0].explanation, title
+
+
+def test_combination_without_strengths_is_clear_but_says_so(judge):
+    f = judge(title="Acephate + Fenvalerate insecticide")
+    assert (f.reason, f.confidence) == (Reason.CLEAR, "medium") and "could be compared" in f.checks[0].explanation
+
+
+def test_combination_with_a_banned_chemical_stays_banned(judge):
+    f = judge(title="Combo pack: Glyphosate 41% SL and Phorate 10% CG")
+    assert f.reason is Reason.BANNED_ITEM
+
+
+def test_grams_per_litre_combination(judge):
+    assert judge(title="Azoxystrobin 120 g/l + Tebuconazole 240 g/l SC fungicide").reason is Reason.CLEAR
+
+
+def test_registry_typo_in_a_strength_is_never_guessed(judge):
+    # The PDF prints "Triafamone 20%+ Ethoxysulfuron l0%WG" (a letter for a digit): Bayer's Council Active.
+    f = judge(title="Council Active Herbicide – Triafamone 20% + Ethoxysulfuron 10% WG - 60 gms")
+    assert (f.reason, f.confidence) == (Reason.CLEAR, "medium")
+
+
+def test_name_split_before_its_last_letter_is_not_a_typo(judge):
+    # "Acephate 50%+ Fiproni l5% WDG" is Fipronil 5%.
+    assert judge(title="Acephate 50% + Fipronil 5% WDG").reason is Reason.CLEAR
+    assert judge(title="Acephate 50% + Fipronil 15% WDG").reason is Reason.REGISTRY_MISMATCH
+
+
+# ---- Registry text that cannot be read cleanly never causes a flag (second review, 27 Sep 2026) ----
+
+@pytest.mark.parametrize("title", [
+    "Vitavax Power Carboxin 17.5% + Thiram 17.5% FF",                          # PDF: "Thiram1 7.5%"
+    "Triticonazole 8% + Pyraclostrobin 4% FS",                                  # PDF: "40% g/l"
+    "Syngenta Miravis Duo Pydiflumetofen 7.5% + Difenoconazole 12.5% SC",       # w/v given in brackets
+    "Sedaxane 2.5% + Fludioxonil 2.5% FS",                                      # same
+    "Fluroxypyr 13.8% + Metribuzin 5.6% EC",                                    # PDF: "Fluroxpyr + (Meptyl 20%)"
+    "Acephate 50% + Fipronil 5% WG",                                            # registered as WDG
+    "BASF Opera Pyraclostrobin 12.5% + Epoxiconazole 4.7% w/w SE",              # registered in g/l
+    "Sulphur 84% + Azoxystrobin 6% SC",                                         # w/v given in brackets
+    "Solomon Betacyfluthrin 8.49% + Imidacloprid 19.81% OD",                    # PDF: "Imidacloprid1 9.81%"
+    "Iprodione 25% + Carbendazim 25% WP",                                       # PDF: "Iprodion"
+])
+def test_registered_products_written_oddly_in_the_registry_are_clear(judge, title):
+    f = judge(title=title)
+    assert f.reason is Reason.CLEAR, (title, f.checks[0].explanation)
+
+
+@pytest.mark.parametrize("title", ["Thiamethoxam 100 g insecticide", "Bifenthrin 50 g insecticide"])
+def test_pack_size_in_grams_is_not_a_strength(judge, title):
+    f = judge(title=title)
+    assert f.reason is Reason.CLEAR and "states no strength" in f.checks[0].explanation
+
+
+def test_granule_strengths_are_still_read(judge):
+    assert judge(title="Carbofuran 3G granules insecticide").checks[0].explanation.startswith("Carbofuran 3%")

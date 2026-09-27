@@ -15,10 +15,11 @@ The verdict is the most serious reason across all chemicals in the listing.
 from __future__ import annotations
 
 import re
+from dataclasses import dataclass
 
 from nishedh.extract.pesticide import FORM_CODES, ChemicalClaim, Extraction
-from nishedh.registry.names import is_salt_suffix
-from nishedh.registry.pesticides import PesticideRegistry
+from nishedh.registry.names import is_salt_suffix, key
+from nishedh.registry.pesticides import PesticideRegistry, _component_name
 from nishedh.verdict.base import (  # noqa: F401  (re-exported for callers of this module)
     CONFIDENCE_ORDER,
     SEVERITY,
@@ -41,12 +42,16 @@ class PesticideRules:
         self._refused = {k: x for x in reg.refused for k in x.keys}
         self._withdrawn = {k: x for x in reg.withdrawn for k in x.keys}
         self._restricted = {k: x for x in reg.restricted for k in x.keys}
-        # component key -> [(strength %, formulation code)] from single-chemical registered formulations
-        self._forms: dict[str, list[tuple[float | None, str | None]]] = {}
+        # component key -> [(strength %, formulation code, stated in g/l?)] from single-chemical formulations
+        self._forms: dict[str, list[tuple[float | None, str | None, bool]]] = {}
         for f in reg.formulations:
             if len(f.components) == 1:
-                self._forms.setdefault(f.components[0], []).append(_strength_code(f.raw))
-        self._combos = [f for f in reg.formulations if len(f.components) >= 2]
+                pct, code = _strength_code(f.raw)
+                self._forms.setdefault(f.components[0], []).append((pct, _code(code), _is_gl(f.raw)))
+        # Registered combinations, parsed component by component (see _combo_variants).
+        known = set(reg.registered) | set(self._forms)
+        self._combos = [(f, comps, code, clean) for f in reg.formulations if len(f.components) >= 2
+                        for comps, code, clean in _combo_variants(f.raw, known)]
 
     def family(self, k: str) -> set[str]:
         """Keys that name the same active substance in another salt or ester form.
@@ -72,15 +77,12 @@ class PesticideRules:
         if not ex.is_pesticide:
             return None
         checks = [self._check_claim(c) for c in ex.chemicals]
-        combo = self._registered_combination(ex.chemicals)
+        combo = self._combination_check(ex.chemicals)
         if combo is not None:
-            conf = "high" if all(c.match == "exact" for c in ex.chemicals) else "medium"
-            checks = [
-                Check(Reason.CLEAR, conf, f"Registered combination formulation: {combo}.", ch.evidence,
-                      "registered_formulations")
-                if ch.reason in (Reason.CLEAR, Reason.REGISTRY_MISMATCH) else ch
-                for ch in checks
-            ]
+            # One check for the whole combination replaces the per-chemical formulation checks
+            # (banned, refused and other serious checks stay).
+            serious = [ch for ch in checks if ch.reason not in (Reason.CLEAR, Reason.REGISTRY_MISMATCH)]
+            checks = serious + [combo]
         # A name with a strength that no official list knows ("Cyclosinone 20% SC") may be a brand or
         # an unregistered chemical. It is ignored only when it repeats the strength and code of a
         # chemical the listing does name ("Roundup 41% SL ... Glyphosate 41% SL"): that is the brand.
@@ -100,15 +102,17 @@ class PesticideRules:
             if with_strength:
                 checks.append(Check(
                     Reason.INFORMATION_MISSING, "high",
-                    "Claims an active strength but names no chemical; Rule 19 of the Insecticides Rules, 1971 "
-                    "requires the label to state the active ingredient and its percentage.",
+                    "Claims an active strength but names no chemical: "
+                    "the online listing does not show the active ingredient, which Rule 19 of the Insecticides Rules, 1971 "
+                    "requires on the product label; check the physical label before concluding anything.",
                     tuple(with_strength) + tuple(ex.pesticide_terms[:1]), "labelling_rule",
                 ))
             elif ex.undisclosed:
                 checks.append(Check(
                     Reason.INFORMATION_MISSING, "low" if title_only else "medium",
-                    "Mentions an active ingredient but never names it; Rule 19 of the Insecticides Rules, 1971 "
-                    "requires the label to state the active ingredient and its percentage.",
+                    "Mentions an active ingredient but never names it: "
+                    "the online listing does not show the active ingredient, which Rule 19 of the Insecticides Rules, 1971 "
+                    "requires on the product label; check the physical label before concluding anything.",
                     tuple(ex.undisclosed) + tuple(ex.pesticide_terms[:1]), "labelling_rule",
                 ))
             else:
@@ -154,16 +158,58 @@ class PesticideRules:
             conf = "medium"   # registered only in a specific salt or ester form the listing does not name
         return self._check_formulation(c, conf)
 
-    def _registered_combination(self, claims: list[ChemicalClaim]) -> str | None:
-        """The registered combination formulation containing every named chemical, if the listing names 2+."""
+    def _combination_check(self, claims: list[ChemicalClaim]) -> Check | None:
+        """Compare a listing naming 2+ chemicals with the registered combination formulations.
+
+        A registered combination with exactly the listing's chemicals is compared component by
+        component: each stated strength and the formulation code. The registry PDF is irregular
+        (typos, strengths given twice, names glued to digits), so a registry value that cannot be
+        read cleanly can confirm a match but never causes a mismatch. Returns None when no
+        registered combination has these chemicals (each chemical is then judged on its own).
+        """
         if len(claims) < 2:
             return None
         families = [self.family(c.key) for c in claims]
-        for f in self._combos:
-            comps = set(f.components)
-            if all(fam & comps for fam in families):
-                return f.raw
-        return None
+        evidence = tuple(c.evidence for c in claims)
+        conf = "high" if all(c.match == "exact" for c in claims) else "medium"
+        codes = {x for c in claims if (x := _code(c.form_code))}
+        matched: str | None = None
+        matched_conf = conf
+        uncertain: str | None = None
+        differ: list[str] = []
+        for f, comps, code, clean in self._combos:
+            order = _assign(families, [c.key for c in comps])
+            if order is None:
+                continue
+            states = [_compare(c.strength_pct, comps[i]) for c, i in zip(claims, order, strict=True)]
+            if code is not None and codes:
+                states.append("match" if codes == {code} else "differ")
+            if not clean:
+                states = ["unknown" if st == "differ" else st for st in states]
+            if "differ" in states:
+                differ.append(f.raw)
+            elif all(st == "match" for st in states) and all(c.strength_pct is not None for c in claims):
+                if matched is None or (matched_conf == "medium" and clean and all(x.certain for x in comps)):
+                    matched = f.raw
+                    matched_conf = conf if clean and all(comps[i].certain for i in order) else "medium"
+            else:
+                uncertain = uncertain or f.raw
+        if matched:
+            return Check(Reason.CLEAR, matched_conf, f"Matches the registered combination formulation {matched}.",
+                         evidence, "registered_formulations")
+        if uncertain:
+            return Check(Reason.CLEAR, "medium",
+                         f"These chemicals are registered together as {uncertain}; not every strength could be "
+                         "compared (unstated in the listing, or unclear in the registry).", evidence,
+                         "registered_formulations")
+        if not differ:
+            return None
+        shown = " + ".join(
+            f"{c.official_name}" + (f" {c.strength_pct:g}%" if c.strength_pct is not None else "") for c in claims
+        ) + "".join(f" {x}" for x in sorted(codes))
+        return Check(Reason.REGISTRY_MISMATCH, "low",
+                     f"{shown} does not match a registered combination. These chemicals are registered together "
+                     f"only as: {'; '.join(dict.fromkeys(differ[:3]))}.", evidence, "registered_formulations")
 
     def _check_formulation(self, c: ChemicalClaim, conf: str) -> Check:
         fam = self.family(c.key)
@@ -176,21 +222,155 @@ class PesticideRules:
             return Check(Reason.CLEAR, conf, f"{name} is registered; the listing states no strength to compare.",
                          (c.evidence,), "registered_molecules")
         forms = [sc for f in fam for sc in self._forms.get(f, [])]
-        same = [
-            (s, code) for s, code in forms
-            if s is not None and abs(s - c.strength_pct) < 0.05
-            and (c.form_code is None or code is None or code == c.form_code)   # an unstated code matches any
-        ]
-        if same:
-            shown = f"{c.strength_pct:g}%" + (f" {c.form_code}" if c.form_code else "")
+        stated_code = _code(c.form_code)
+        code_ok = [(s, gl) for s, code, gl in forms
+                   if s is not None and (stated_code is None or code is None or code == stated_code)]
+        shown = f"{c.strength_pct:g}%" + (f" {c.form_code}" if c.form_code else "")
+        if any(abs(s - c.strength_pct) < 0.05 for s, _ in code_ok):
             return Check(Reason.CLEAR, conf, f"{name} {shown} matches a registered formulation.",
+                         (c.evidence,), "registered_formulations")
+        near = [s for s, gl in code_ok if gl and _density_ratio(s, c.strength_pct)]
+        if near:
+            return Check(Reason.CLEAR, "medium",
+                         f"{name} is registered at {near[0] * 10:g} g/l; the listing's {shown} may be the same "
+                         "product measured by weight, so the strengths could not be compared exactly.",
                          (c.evidence,), "registered_formulations")
         # Registered molecule, no single-chemical formulation at this strength/code. The formulation
         # PDF is irregular, so this is a low-confidence prompt for review, never a strong flag.
-        shown = f"{c.strength_pct:g}%" + (f" {c.form_code}" if c.form_code else "")
         return Check(Reason.REGISTRY_MISMATCH, "low",
                      f"{name} is registered, but no registered single-chemical formulation matches {shown}.",
                      (c.evidence,), "registered_formulations")
+
+
+CODE_SYNONYMS = {"WDG": "WG", "DF": "WG"}   # water-dispersible granules are written three ways
+
+
+def _code(code: str | None) -> str | None:
+    return CODE_SYNONYMS.get(code.upper(), code.upper()) if code else None
+
+
+def _is_gl(raw: str) -> bool:
+    return re.search(r"\d\s*g\s*/\s*l", raw, re.IGNORECASE) is not None
+
+
+def _density_ratio(registered_wv: float, stated: float) -> bool:
+    """A % w/v (from g/l) and a % w/w of the same product differ by the liquid's density, 0.8-1.3."""
+    return stated > 0 and 0.8 <= registered_wv / stated <= 1.3
+
+
+@dataclass(frozen=True)
+class _Comp:
+    key: str
+    values: tuple[float, ...]   # every strength the registry gives for it (w/w and w/v), in %
+    gl: bool                    # stated in g/l
+    certain: bool               # False: the registry text is garbled here; a difference is not a mismatch
+
+
+def _compare(stated: float | None, comp: _Comp) -> str:
+    """"match", "differ" or "unknown" for one listing strength against one registered component."""
+    if stated is None or not comp.values:
+        return "unknown"
+    if any(abs(v - stated) < 0.05 for v in comp.values):
+        return "match"
+    if not comp.certain or (comp.gl and any(_density_ratio(v, stated) for v in comp.values)):
+        return "unknown"
+    return "differ"
+
+
+def _assign(families: list[set[str]], components: list[str]) -> list[int] | None:
+    """Pair each listing chemical (by its family of keys) with a distinct combination component.
+
+    Returns, for each chemical, the index of its component; None unless the combination has
+    exactly these chemicals.
+    """
+    if len(families) != len(components):
+        return None
+    order: list[int] = []
+    for fam in families:
+        i = next((j for j, k in enumerate(components) if k in fam and j not in order), None)
+        if i is None:
+            return None
+        order.append(i)
+    return order
+
+
+def _resolve(k: str, known: set[str]) -> tuple[str | None, bool]:
+    """The registry key a garbled combination component stands for, and whether it was clean.
+
+    The PDF glues digits to names ("Imidacloprid1 9.81%" is 19.81%), truncates or misspells names
+    ("Iprodion", "MEtribuzine"), prefixes trade codes ("CF-1020 (Fluopicolide") and splits esters
+    ("Fluroxpyr + (Meptyl 20%)"). Returns (None, False) for a component that is not a chemical.
+    """
+    if k in known:
+        return k, True
+    if k.endswith("1") and k[:-1] in known:
+        return k[:-1], False
+    salt = [x for x in known if k.startswith(x) and len(x) >= 5 and is_salt_suffix(k[len(x):])]
+    ester = [x for x in known if x.startswith(k) and len(k) >= 5 and is_salt_suffix(x[len(k):])]
+    if ester and not salt:   # "Fluroxypyr" split from its ester "(Meptyl ...)": the registered form
+        return min(ester, key=len), False
+    if salt:
+        return max(salt, key=len), True
+    near = [x for x in known if len(k) >= 6 and (x.startswith(k) or k.startswith(x)) and abs(len(x) - len(k)) <= 2]
+    if near:
+        return min(near, key=lambda x: abs(len(x) - len(k))), True
+    suffix = [x for x in known if len(x) >= 6 and k.endswith(x)]
+    if suffix:
+        return max(suffix, key=len), True
+    return None, False
+
+
+def _combo_variants(raw: str, known: set[str]) -> list[tuple[list[_Comp], str | None, bool]]:
+    """Parse a registered combination into components with strengths, its code, and whether it is clean.
+
+    "Acephate 25%+ Fenvalerate 3% EC" -> [acephate 25, fenvalerate 3], "EC". A row that gives the
+    whole combination twice ("A 6.89% + B 11.49% SC (A 7.5% + B 12.5% SC)", w/w then w/v) yields
+    both. A row with a component that is not a chemical, or a garbled strength, is not clean.
+    """
+    texts = [raw]
+    m = re.search(r"\(([^)]*\+[^)]*)\)", raw)
+    if m:
+        texts = [raw[: m.start()] + raw[m.end():], m.group(1)]
+    out = []
+    for text in texts:
+        comps: list[_Comp] = []
+        clean = True
+        parts = [p.strip() for p in text.split("+") if p.strip()]
+        for part in parts:
+            name = _component_name(part.strip("() "))
+            if not name or not re.search(r"[A-Za-z]{3}", name):
+                clean = False
+                continue
+            k, ok = _resolve(key(name), known)
+            if k is None:
+                clean = False
+                continue
+            if not ok and k + "1" == key(name):            # "Imidacloprid1 9.81%": the 1 is the strength's
+                part = re.sub(r"1\s+(?=\d)", " 1", part, count=1)
+            # "Ethoxysulfuron l0%": a letter typed for a digit (10 or 0?) is not guessed. "Fiproni l5%"
+            # is Fipronil 5%: the letter ends the name, which is not a typo.
+            lm = re.search(r"\s([lIO])(?=\d)", part)
+            typo = lm is not None and key(part[: lm.start()] + lm.group(1)) != k
+            values = tuple(float(v) / (10 if u.lower().startswith("g") else 1)
+                           for v, u in re.findall(r"(\d+(?:\.\d+)?)\s*(%|g\s*/\s*l)", part, re.IGNORECASE))
+            garbled_unit = re.search(r"(\d+(?:\.\d+)?)\s*%\s*g\s*/\s*l", part, re.IGNORECASE)
+            if garbled_unit:   # "Pyraclostrobin 40% g/l": % or g/l? Both readings, neither certain.
+                values = (*values, float(garbled_unit.group(1)) / 10)
+                ok = False
+            if not values and not typo:   # "Hexythiazox 3.5 + ...": a strength without "%"
+                bare = re.match(r"\s*(\d+(?:\.\d+)?)\s*(?:w/w\s*%?)?\s*(?:[A-Z]{1,3})?\s*$", part[len(name):])
+                values = (float(bare.group(1)),) if bare else ()
+            comps.append(_Comp(k, () if typo else values, _is_gl(part), ok and not typo))
+        code = None
+        if parts:
+            last = parts[-1]
+            code = _strength_code(last)[1]
+            if code is None:
+                cm = re.search(rf"(?<![A-Za-z])({FORM_CODES})\s*\)?\s*$", last)
+                code = cm.group(1) if cm else None
+        if len(comps) >= 2:
+            out.append((comps, _code(code), clean))
+    return out
 
 
 def _strength_code(raw: str) -> tuple[float | None, str | None]:
@@ -200,7 +380,7 @@ def _strength_code(raw: str) -> tuple[float | None, str | None]:
     "2,4-D Sodium Salt 80% min." -> (80, None).
     """
     m = re.search(
-        rf"(\d+(?:\.\d+)?)\s*(%|g\s*/\s*l)\s*(?:w/w|w/v)?\s*(?:\([^)]*\)\s*)?(?:({FORM_CODES})\b)?", raw, re.IGNORECASE
+        rf"(\d+(?:\.\d+)?)\s*(%|g\s*/\s*l)\s*(?:w/w|w/v)?\s*(?:\([^)]*\)\s*)?(?:({FORM_CODES})\b(?!\s*/))?", raw, re.IGNORECASE
     )
     if not m:
         return None, None

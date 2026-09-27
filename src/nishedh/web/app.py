@@ -22,21 +22,22 @@ from fastapi.templating import Jinja2Templates
 
 from nishedh.listing import marketplace_of
 from nishedh.registry.pesticides import load
+from nishedh.sanitise import ENGINES, sanitise
 from nishedh.sources import source_map
 from nishedh.store import Store
 
 REASON_ORDER = ["banned_item", "not_in_registry", "information_missing", "registry_mismatch", "clear"]
 REASON_LABEL = {
     "banned_item": "Banned item", "not_in_registry": "Not in registry", "information_missing": "Information missing",
-    "registry_mismatch": "Registry mismatch", "clear": "Clear",
+    "registry_mismatch": "Registry mismatch", "clear": "No mismatch found",
 }
 # What each result means, for someone who has never read the rules.
 REASON_HELP = {
-    "banned_item": "The product itself is not allowed to be sold online in India.",
+    "banned_item": "The listing names something on an official banned list, or a product the rules say may not be listed online.",
     "not_in_registry": "The chemical or product is not on the government's approved list.",
     "information_missing": "The listing leaves out something the law says it must show.",
     "registry_mismatch": "The listing's details do not match the official record.",
-    "clear": "Nothing wrong was found.",
+    "clear": "What the listing states matches the official lists. This is not proof the product itself is legal.",
 }
 CONF_LABEL = {"high": "Strong evidence", "medium": "Good lead", "low": "Weak signal"}
 CONF_HELP = {
@@ -47,6 +48,10 @@ CONF_HELP = {
 CONF_ORDER = {"high": 0, "medium": 1, "low": 2}
 PER_PAGE = 24
 PACKS = ("pesticides", "radio")
+RULEBOOKS = {   # the official sources each category is checked against, shown with their dates
+    "pesticides": ("registered_formulations", "registered_molecules", "banned_refused_restricted", "schedule"),
+    "radio": ("ccpa_radio_guidelines_2025", "wpc_eta"),
+}
 SORTS = {"serious": "Most serious first", "price_low": "Price: low to high", "price_high": "Price: high to low",
          "title": "Name (A–Z)"}
 PUBLIC_FIELDS = ("pack", "reason", "confidence", "marketplace", "title", "url", "listing_id")
@@ -70,11 +75,14 @@ def create_app(cache_dir: Path, demo_note: str = "") -> FastAPI:
         try:
             run = s.latest_run(pack)
             rows = s.findings(run) if run else []
+            searches = s.searches(run) if run else {}
             runs = {r["id"]: dict(r) for r in s.db.execute("SELECT * FROM runs").fetchall()}
         finally:
             s.close()
         for r in rows:
             r["run"] = runs.get(r["run_id"], {})
+            r["receipts"] = [searches[sid] for sid in (r["search_id"], r["details_search_id"], r["lens_search_id"])
+                             if sid and sid in searches]
         rows.sort(key=lambda f: (REASON_ORDER.index(f["reason"]), CONF_ORDER[f["confidence"]], f["title"]))
         return run, rows
 
@@ -111,6 +119,7 @@ def create_app(cache_dir: Path, demo_note: str = "") -> FastAPI:
             "rows": shown[(page_no - 1) * PER_PAGE : page_no * PER_PAGE], "matched": len(shown), "counts": counts,
             "page": page_no, "pages": pages, "params": params, "sorts": SORTS, "overview": overview(),
             "markets": sorted({r["marketplace"] for r in rows}),
+            "rulebooks": [sources[k] for k in RULEBOOKS[pack] if k in sources],
             "strong": sum(1 for r in rows if r["reason"] != "clear" and r["confidence"] != "low"),
             "story": next((r for r in rows if r["lens_search_id"] and r["reason"] == "not_in_registry"), None)
             if pack == "pesticides" else next((r for r in rows if r["reason"] == "banned_item"), None),
@@ -155,25 +164,38 @@ def create_app(cache_dir: Path, demo_note: str = "") -> FastAPI:
 
     @app.get("/raw/{engine}/{search_id}")
     def raw(engine: str, search_id: str) -> Any:
-        if not engine.isidentifier() or not all(c in "0123456789abcdef" for c in search_id):
+        if engine not in ENGINES or not search_id or not all(c in "0123456789abcdef" for c in search_id):
             raise HTTPException(400, "bad id")
         path = cache_dir / "serpapi" / engine / f"{search_id}.json"
         if not path.exists():
             raise HTTPException(404, "not cached")
-        return JSONResponse(json.loads(path.read_text()))
+        stored = json.loads(path.read_text())
+        # Only the fields Nishedh reads: the full response can name sellers and reviewers.
+        return JSONResponse({
+            "note": "SerpApi response reduced to the fields Nishedh reads; seller names are replaced.",
+            "params": stored.get("params"), "fetched_at": stored.get("fetched_at"),
+            "data": sanitise(engine, stored.get("data", stored)),
+        })
 
     @app.get("/export/{pack}.{fmt}")
     def export(pack: str, fmt: str) -> Response:
         if pack not in PACKS:
             raise HTTPException(404, "unknown category")
         _, rows = findings(pack)
-        public = [{k: r[k] for k in PUBLIC_FIELDS} | {"why": r["checks"][0]["explanation"]} for r in rows]
+        # Every check, not only the most serious one: a finding can have several independent reasons.
+        public = [{k: r[k] for k in PUBLIC_FIELDS} | {
+            "why": " | ".join(c["explanation"] for c in r["checks"]),
+            "evidence": " | ".join(f'{e["field"]}: "{e["text"]}"' for c in r["checks"] for e in c["evidence"]),
+            "sources": " | ".join(dict.fromkeys(sources[c["source"]].url if c["source"] in sources else c["source"]
+                                                for c in r["checks"])),
+            "notes": " | ".join(r["notes"]),
+        } for r in rows]
         if fmt == "json":
             return JSONResponse(public)
         if fmt != "csv":
             raise HTTPException(404, "use .csv or .json")
         buf = io.StringIO()
-        w = csv.DictWriter(buf, fieldnames=[*PUBLIC_FIELDS, "why"])
+        w = csv.DictWriter(buf, fieldnames=[*PUBLIC_FIELDS, "why", "evidence", "sources", "notes"])
         w.writeheader()
         w.writerows(public)
         return Response(buf.getvalue(), media_type="text/csv",
@@ -187,13 +209,13 @@ def headline(f: dict[str, Any]) -> str:
     reason, first = f["reason"], f["checks"][0]["explanation"]
     everything = " ".join(c["explanation"] for c in f["checks"])
     if reason == "clear":
-        return "Nothing wrong found."
+        return "What the listing states matches the official lists."
     if f["pack"] == "radio":
         if reason == "banned_item":
             if first.startswith("Listed as a jammer"):
-                return "Signal jammers are not allowed to be sold online in India."
+                return "Listed as a signal jammer; the 2025 rules say online platforms must not list these."
             if first.startswith("Listed as a mobile signal booster"):
-                return "Mobile signal boosters are not allowed to be sold online in India."
+                return "Listed as a mobile signal booster; the 2025 rules say online platforms must not list these."
             return "Is sold as working on a frequency band that needs a government licence."
         if reason == "information_missing":
             missing = [w for w, k in (("its frequency", "frequency"), ("its government approval (ETA) number", "(ETA)"))
@@ -211,7 +233,7 @@ def headline(f: dict[str, Any]) -> str:
     if reason == "not_in_registry":
         m = re.search(r"\. (\w+) is named in the CCPA", everything)
         if m:
-            return f"The same photo is sold elsewhere as {m.group(1)}, a weed killer the government ordered off sale."
+            return f"A visually matching photo is sold elsewhere as {m.group(1)}, a weed killer the regulator ordered off sale."
         m = re.match(r"(.+?) is in the Schedule", first)
         if m:
             return f"{m.group(1)} is not registered for use in India."
@@ -225,6 +247,8 @@ def headline(f: dict[str, Any]) -> str:
         if f["confidence"] == "low":
             return "The title does not say which chemical is inside."
         return "The listing never says which chemical is inside."
+    if "does not match a registered combination" in first:
+        return "Does not match any registered combination of these chemicals (strength or formulation)."
     return "The chemical's strength does not match any registered product."
 
 
@@ -245,7 +269,7 @@ def lens_photos(cache_dir: Path, f: dict[str, Any]) -> list[dict[str, str]]:
     path = cache_dir / "serpapi" / "google_lens" / f"{f['lens_search_id']}.json"
     if not path.exists():
         return []
-    cited = {e["text"] for c in f["checks"] for e in c["evidence"] if e["field"].startswith("same photo")}
+    cited = {e["text"] for c in f["checks"] for e in c["evidence"] if e["field"].startswith(("visual match", "same photo"))}
     out = []
     raw = json.loads(path.read_text())
     data = raw.get("data", raw)   # cache files wrap the response as {"params", "fetched_at", "data"}

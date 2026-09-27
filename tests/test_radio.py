@@ -132,3 +132,23 @@ def test_exempt_band_without_eta_is_missing_information():
 def test_toys_are_noted():
     f = judge("KGS Red Walkie Talkie with 2 Player System Toy for Kids")
     assert f.reason is Reason.INFORMATION_MISSING and any("toy" in n for n in f.notes)
+
+
+# ---- Short-range-device bands are "needs review", never banned (external review, 27 Sep 2026) ----
+
+@pytest.mark.parametrize("title", ["Low power short range walkie talkie 433.05-434.79 MHz", "LPD walkie talkie 433 MHz",
+                                   "Walkie talkie 865-867 MHz"])
+def test_short_range_device_band_needs_review_not_banned(title):
+    f = assess_radio(extract_radio({"title": title}), {}, title)
+    assert f is not None and f.reason is not Reason.BANNED_ITEM
+    assert any(c.reason is Reason.REGISTRY_MISMATCH and "low-power short-range" in c.explanation for c in f.checks)
+
+
+def test_licensed_band_near_433_is_still_flagged():
+    f = assess_radio(extract_radio({"title": "Walkie talkie 430-440 MHz"}), {}, "")
+    assert f is not None and f.reason is Reason.BANNED_ITEM
+
+
+def test_mains_rating_is_not_a_radio_band():
+    ex = extract_radio({"title": "Motorola T82 PMR446 446.0-446.2 MHz", "specifications": "Charger input: 100-240V 50/60Hz"})
+    assert [(b.low_mhz, b.high_mhz) for b in ex.bands] == [(446.0, 446.2)]
