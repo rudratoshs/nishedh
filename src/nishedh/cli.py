@@ -1,4 +1,4 @@
-"""Command line: `nishedh sweep`, `nishedh report`, `nishedh budget`."""
+"""Command line: `nishedh sweep`, `nishedh demo`, `nishedh report`, `nishedh budget`, `nishedh serve`."""
 
 from __future__ import annotations
 
@@ -18,6 +18,8 @@ from nishedh.sweep import QUERIES, Sweeper
 
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".cache"
+DEMO = ROOT / "demo"
+DEMO_NOTE = "Demo: replaying the saved SerpApi results of the 27 Sep 2026 live run."
 app = typer.Typer(add_completion=False, help="Flag Indian marketplace listings for regulatory review.")
 
 
@@ -40,19 +42,43 @@ def sweep(
     max_lens: int = typer.Option(10, help="most Google Lens label checks"),
 ) -> None:
     """Search one product category, assess every listing, store the findings."""
-    client = SearchClient(_api_key() if live else None, CACHE / "serpapi", offline=not live)
-    eta = EtaRegistry(CACHE / "eta", offline=not live)
-    store = Store(CACHE / "nishedh.sqlite")
+    _sweep(CACHE, pack, live, max_live, max_details, max_lens)
+
+
+def _sweep(cache: Path, pack: str, live: bool = False, max_live: int = 40, max_details: int = 20,
+           max_lens: int = 10) -> None:
+    client = SearchClient(_api_key() if live else None, cache / "serpapi", offline=not live)
+    eta = EtaRegistry(cache / "eta", offline=not live)
+    store = Store(cache / "nishedh.sqlite")
     try:
         r = Sweeper(client, store, load(), eta).run(pack, max_live=max_live if live else 0, max_details=max_details, max_lens=max_lens)
     finally:
         client.close()
+        eta.close()
         store.close()
-    typer.echo(f"run {r.run_id}: {r.listings} listings, {r.judged} in scope; searches: {r.live} live, {r.cached} cached")
+    typer.echo(f"{pack} run {r.run_id}: {r.listings} listings, {r.judged} in scope; searches: {r.live} live, {r.cached} cached")
     for reason, n in sorted(r.by_reason.items(), key=lambda kv: -kv[1]):
         typer.echo(f"  {reason:<22} {n}")
     for s in r.skipped_searches:
         typer.echo(f"  skipped: {s}", err=True)
+
+
+@app.command()
+def demo(port: int = typer.Option(8787), host: str = typer.Option("127.0.0.1"),
+         no_serve: bool = typer.Option(False, "--no-serve", help="only rebuild the demo findings")) -> None:
+    """Replay the 27 Sep 2026 live run from the bundled snapshot (no API key needed), then open the dashboard."""
+    import shutil
+
+    cache = CACHE / "demo"
+    if cache.exists():
+        shutil.rmtree(cache)
+    shutil.copytree(DEMO / "serpapi", cache / "serpapi")
+    if (DEMO / "eta").exists():
+        shutil.copytree(DEMO / "eta", cache / "eta")
+    for pack in QUERIES:
+        _sweep(cache, pack)
+    if not no_serve:
+        _serve(cache, host, port, demo_note=DEMO_NOTE)
 
 
 @app.command()
@@ -93,11 +119,16 @@ def budget() -> None:
 @app.command()
 def serve(port: int = typer.Option(8787), host: str = typer.Option("127.0.0.1")) -> None:
     """Open the local review dashboard."""
+    _serve(CACHE, host, port)
+
+
+def _serve(cache: Path, host: str, port: int, demo_note: str = "") -> None:
     import uvicorn
 
     from nishedh.web.app import create_app
 
-    uvicorn.run(create_app(CACHE), host=host, port=port, log_level="warning")
+    typer.echo(f"Dashboard: http://{host}:{port}")
+    uvicorn.run(create_app(cache, demo_note=demo_note), host=host, port=port, log_level="warning")
 
 
 def main() -> None:

@@ -1,0 +1,42 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HKP6DVZQ",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T10:59:53.808109+00:00",
+ "data": {
+  "product_results": {
+   "description": "Weed and Root Killer 100G Ready to Use is a practical outdoor weed control solution specially formulated to support removal of unwanted weeds and maintain cleaner outdoor spaces during regular gardening and property maintenance routines. The fast-acting liquid formula is designed for convenient application across gardens, lawns, pathways, terraces, pavements, driveways, patios, outdoor corners, parking spaces, and surrounding maintenance areas where visible weed growth may affect outdoor appearance and cleanliness. The deep penetrating liquid consistency supports practical weed management routines by targeting unwanted weed growth across outdoor surfaces. The lightweight formula spreads smoothly during application and supports organized gardening maintenance without complicated preparation or additional mixing procedures before use. Suitable for home gardens, backyard areas, rooftop terraces, pathway edges, landscape maintenance zones, farm surroundings, driveway corners, and outdoor utility spaces, the weed remover helps support practical outdoor cleaning and maintenance schedules throughout seasonal gardening activities. The ready-to-use formulation eliminates the need for complicated dilution methods or additional gardening preparation tools. Simply apply directly onto unwanted weed growth during outdoor maintenance routines for practical weed management support across multiple exterior environments. The compact portable 100ml bottle design supports convenient carrying, controlled dispensing, and practical storage inside garage organizers, utility shelves, gardening cabinets, outdoor maintenance kits, landscape tool collections, and property care storage areas. The secure packaging supports hygienic handling and repeated application convenience during regular outdoor cleaning activities. Designed for modern outdoor maintenance lifestyles, Weed and Root Killer supports organized property care routines during seasonal garden maintenance, driveway upkeep, terrace cleaning, lawn care activities, and outdoor appearance management schedules."
+  },
+  "about_item": [
+   "Ready-to-use weed remover liquid specially designed for practical outdoor weed control and unwanted plant growth maintenance support routines.",
+   "Fast-acting deep penetrating formula supports convenient weed management across gardens lawns driveways pathways terraces and outdoor maintenance areas.",
+   "Suitable for residential gardens backyard spaces rooftop terraces parking zones pavements patios and landscape maintenance cleaning schedules.",
+   "Lightweight liquid consistency supports smooth controlled application during regular outdoor gardening and seasonal property upkeep activities.",
+   "Helps maintain cleaner organized outdoor appearance by supporting removal of visible weed growth across multiple exterior surface environments."
+  ],
+  "item_specifications": {
+   "brand": "GO WELL",
+   "item_weight": "100 Grams",
+   "manufacturer": "Go well",
+   "net_quantity": "100.0 Grams",
+   "number_of_packs": "1"
+  },
+  "product_details": {
+   "brand_name": "GO WELL",
+   "manufacturer": "Go well",
+   "unit_count": "100.0 Grams",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "included_components": "Bag",
+   "item_type_name": "Weed and Root Killer 100G Ready to Use | Fast Acting Deep Penetrating Weed Remover | Kills Weeds from Root for Garden, Lawn, Driveway & Pathways",
+   "model_number": "Weed and Root Remover 0001",
+   "part_number": "Weed and Root Killer",
+   "asin": "B0HKP6DVZQ",
+   "rating": 3.8,
+   "reviews": 1933,
+   "item_weight": "100 Grams"
+  }
+ }
+}

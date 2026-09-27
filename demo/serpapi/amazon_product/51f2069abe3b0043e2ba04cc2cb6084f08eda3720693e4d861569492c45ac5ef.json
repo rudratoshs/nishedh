@@ -1,0 +1,43 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0C7CMWKJ1",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T10:59:46.279739+00:00",
+ "data": {
+  "product_results": {
+   "description": ""
+  },
+  "about_item": [
+   "ABOUT Tricoderma bio Fungicide : Trichoderma viride is a high-efficiency organic biological agent. It produces antibiotics, nutrient competition, parasitic, cell-wall degradation, enzymes, and induced plant resistance mechanisms, which have an antagonistic effect on a variety of plant pathogenic fungi.",
+   "ABOUT tricoderma bio fungicide : Trichoderma viride is a high-efficiency organic biological agent. It produces antibiotics, nutrient competition, parasitic, cell-wall degradation, enzymes, and induced plant resistance mechanisms, which have an antagonistic effect on a variety of plant pathogenic fungi.",
+   "IMPROVES PLANTS IMMUNITY: Trichoderma viridi activates the plant's internal defense system. Hence prevent and control root rot, cataplexy, blight, wilt, verticillium wilt, anthrax, and other soil-borne diseases.",
+   "Trichoderma viride INCREASES CROP YIELD: Trichoderma viridi increases the absorption of nutrients and the effective use of fertilizers by plants. Hence promote root growth, make crop growth more vigorous and increase crop yield.",
+   "APPLICATION: INDIVIDUAL PLANTS - Mix 5g of Trichoderma viridi with 1 liter water and apply directly to plant soil. SEED TREATMENT - Mix 10 g of Trichoderma viride with 1 kg of seeds. ROOT DIPPING: Mix 100 g of Trichoderma viridi with 10 liters of water. POTTING SOIL: Mix 100 g of Trichoderma viride with 15-20 of potting soil"
+  ],
+  "item_specifications": {
+   "item_form": "Powder",
+   "item_weight": "400 Grams",
+   "brand": "Go Garden",
+   "target_species": "Insects",
+   "net_quantity": "1 Pouch"
+  },
+  "product_details": {
+   "brand_name": "Go Garden",
+   "unit_count": "1 Pouch",
+   "country_of_origin": "India",
+   "included_components": "1",
+   "item_type_name": "Outdoor Plants",
+   "manufacturer": "Go Garden, Go Garden - WWW.GOGARDEN.CO.IN - +91 9109307929",
+   "model_number": "tricodarma_450Gm",
+   "part_number": "tricodarma_450Gm",
+   "asin": "B0C7CMWKJ1",
+   "rating": 4.2,
+   "reviews": 2310,
+   "item_form": "Powder",
+   "target_species": "Insects",
+   "item_weight": "400 Grams"
+  }
+ }
+}

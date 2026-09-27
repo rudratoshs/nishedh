@@ -6,7 +6,7 @@ listing came from, so any finding can be re-verified from the raw data later.
 
 The store lives under `.cache/` (git-ignored): it holds seller and merchant names, which the public
 repository does not publish. `findings()` (used by the dashboard, exports and reports) never
-returns them.
+returns them, and removes a store name that a search engine appended to a listing's title.
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from nishedh.listing import Listing
+from nishedh.listing import Listing, strip_seller
 from nishedh.verdict.base import Finding
 
 SCHEMA = """
@@ -28,7 +28,8 @@ CREATE TABLE IF NOT EXISTS runs (
     pack TEXT NOT NULL,
     live_searches INTEGER NOT NULL DEFAULT 0,
     cached_searches INTEGER NOT NULL DEFAULT 0,
-    registry TEXT NOT NULL DEFAULT ''
+    registry TEXT NOT NULL DEFAULT '',
+    data_as_of TEXT NOT NULL DEFAULT ''
 );
 CREATE TABLE IF NOT EXISTS listings (
     run_id INTEGER NOT NULL REFERENCES runs(id),
@@ -54,6 +55,9 @@ class Store:
         self.db = sqlite3.connect(path)
         self.db.row_factory = sqlite3.Row
         self.db.executescript(SCHEMA)
+        columns = {r["name"] for r in self.db.execute("PRAGMA table_info(runs)")}
+        if "data_as_of" not in columns:   # stores created before the column existed
+            self.db.execute("ALTER TABLE runs ADD COLUMN data_as_of TEXT NOT NULL DEFAULT ''")
 
     def close(self) -> None:
         self.db.close()
@@ -66,8 +70,9 @@ class Store:
         self.db.commit()
         return int(cur.lastrowid or 0)
 
-    def finish_run(self, run_id: int, live: int, cached: int) -> None:
-        self.db.execute("UPDATE runs SET live_searches = ?, cached_searches = ? WHERE id = ?", (live, cached, run_id))
+    def finish_run(self, run_id: int, live: int, cached: int, data_as_of: str = "") -> None:
+        self.db.execute("UPDATE runs SET live_searches = ?, cached_searches = ?, data_as_of = ? WHERE id = ?",
+                        (live, cached, data_as_of, run_id))
         self.db.commit()
 
     def add(self, run_id: int, pack: str, listing: Listing, finding: Finding | None) -> None:
@@ -88,7 +93,7 @@ class Store:
 
     def findings(self, run_id: int) -> list[dict[str, Any]]:
         rows = self.db.execute(
-            """SELECT f.*, l.marketplace, l.title, l.url, l.engine, l.price, l.thumbnail,
+            """SELECT f.*, l.marketplace, l.title, l.url, l.engine, l.price, l.thumbnail, l.merchant,
                       l.search_id, l.details_search_id, l.lens_search_id
                FROM findings f JOIN listings l USING (run_id, listing_id) WHERE f.run_id = ?""",
             (run_id,),
@@ -97,6 +102,7 @@ class Store:
         for r in rows:
             d = dict(r)
             d["checks"], d["notes"] = json.loads(d["checks"]), json.loads(d["notes"])
+            d["title"] = strip_seller(d["title"], d.pop("merchant") or "")
             out.append(d)
         return out
 

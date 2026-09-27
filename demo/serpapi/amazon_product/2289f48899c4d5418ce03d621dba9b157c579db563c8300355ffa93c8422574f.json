@@ -1,0 +1,42 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HJ813DMX",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:00:11.236580+00:00",
+ "data": {
+  "product_results": {
+   "description": ""
+  },
+  "about_item": [
+   "🌿 Powerful Herb Removal – Effectively targets and removes all types of unwanted wild herbs for a cleaner and healthier growing area. 🚫🌱",
+   "🌱 Deep Root Action – Works deep into the root zone to help prevent regrowth and provide long-lasting herb control. 🌿💪",
+   "⚡ Fast Visible Results – Quickly dries and controls invasive herbs, helping maintain neat gardens, farms, and landscapes. ⏱️✨",
+   "🌾 Supports Healthy Plant Growth – Reduces competition for nutrients, water, and sunlight, allowing desired plants to thrive. 🌻🍅",
+   "🌍 Organic & Easy to Use – Premium organic formula with simple application, suitable for home gardens, nurseries, and agricultural fields. 🚿🌿"
+  ],
+  "item_specifications": {
+   "brand": "Generic",
+   "item_weight": "200 Grams",
+   "item_form": "Granule",
+   "manufacturer": "UFO ENTERPRISE",
+   "net_quantity": "200 Grams"
+  },
+  "product_details": {
+   "brand_name": "Generic",
+   "manufacturer": "UFO ENTERPRISE",
+   "unit_count": "200 Grams",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "included_components": "Plant Growth Booster",
+   "item_type_name": "Garden Weed Killer",
+   "model_number": "Weed-Rt-UFO-A01",
+   "part_number": "Weed-Rt-UFO-A01",
+   "asin": "B0HJ813DMX",
+   "item_weight": "200 Grams",
+   "item_form": "Granule",
+   "coverage": "non-selective broad spectrum coverage"
+  }
+ }
+}

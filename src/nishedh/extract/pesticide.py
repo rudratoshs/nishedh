@@ -42,6 +42,8 @@ _STRENGTH_AFTER = re.compile(
     rf"^[\s:(\-]*(\d+(?:\.\d+)?)\s*(%|g\s*/\s*l(?:itre)?)\s*(?:w/w|w/v)?\s*(?:\([^)]*\)\s*)?(?:({FORM_CODES})\b)?",
     re.IGNORECASE,
 )
+# "Fipronil 80 WG", "Carbofuran 3G": Indian labels often drop the % before the formulation code.
+_STRENGTH_CODE_ONLY = re.compile(rf"^[\s:(\-]*(\d+(?:\.\d+)?)\s*({FORM_CODES})\b", re.IGNORECASE)
 _STRENGTH_BEFORE = re.compile(r"(\d+(?:\.\d+)?)\s*%\s*(?:w/w|w/v)?\s*$", re.IGNORECASE)
 _UNDISCLOSED_STRENGTH = re.compile(
     r"(\d+(?:\.\d+)?)\s*%\s*(?:active\s*(?:formula|ingredients?|content)?|a\.?\s?i\.?\b)", re.IGNORECASE
@@ -262,13 +264,18 @@ def _strength(text: str, start: int, end: int) -> tuple[float | None, str | None
     """Strength (%), formulation code, and the exact span of name plus strength.
 
     "Glyphosate 41% SL" -> (41, SL); "Quinclorac 250 g/l SC" -> (25, SC) as % w/v;
-    "18.92% Quinclorac" -> (18.92, None).
+    "18.92% Quinclorac" -> (18.92, None); "Fipronil 80 WG" -> (80, None).
     """
     after = _STRENGTH_AFTER.match(text[end : end + 40])
     if after:
         value = float(after.group(1))
         pct = value / 10 if after.group(2).lower().startswith("g") else value
         return pct, after.group(3), (start, end + after.end())
+    code_only = _STRENGTH_CODE_ONLY.match(text[end : end + 20])
+    if code_only and 0 < float(code_only.group(1)) <= 100:   # "500 G" is grams, not a strength
+        # The code is not kept: without the % the label style is loose ("3G" for a registered 3% CG),
+        # so only the strength is compared.
+        return float(code_only.group(1)), None, (start, end + code_only.end())
     window = max(0, start - 16)
     before = _STRENGTH_BEFORE.search(text[window:start])
     if before:

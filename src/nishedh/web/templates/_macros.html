@@ -1,0 +1,9 @@
+{% macro confidence(level) -%}
+<span class="conf" title="{{ CONF_HELP[level] }}"><span class="dots">
+  <i class="on"></i><i class="{{ 'on' if level in ('high', 'medium') }}"></i><i class="{{ 'on' if level == 'high' }}"></i>
+</span>{{ CONF_LABEL[level] }}</span>
+{%- endmacro %}
+
+{% macro photo(src, alt) -%}
+{% if src %}<img class="thumb" src="{{ src | web_url }}" alt="{{ alt }}" loading="lazy" referrerpolicy="no-referrer">{% else %}<div class="noimg">No photo</div>{% endif %}
+{%- endmacro %}

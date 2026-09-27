@@ -1,0 +1,22 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B00D0JHB5K",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T10:59:35.618659+00:00",
+ "data": {
+  "product_results": {
+   "description": ""
+  },
+  "about_item": [],
+  "item_specifications": {
+   "brand": "Southern Ag",
+   "item_weight": "0.01 Ounces",
+   "liquid_volume": "948 Millilitres",
+   "item_form": "Liquid",
+   "active_ingredients": "Triclopyr"
+  },
+  "product_details": {}
+ }
+}

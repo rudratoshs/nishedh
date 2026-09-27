@@ -54,6 +54,17 @@ def display_site(name: str) -> str:
     return OTHER_STORE
 
 
+def strip_seller(title: str, merchant: str) -> str:
+    """Remove a small store's name that Google Shopping appends to a title ("... | Mobile Signal Guru").
+
+    Marketplace names are public and kept; only a trailing store name after a separator is removed,
+    so a brand at the start of a title (which may equal the store's name) stays.
+    """
+    if not merchant or display_site(merchant) != OTHER_STORE:
+        return title
+    return re.sub(rf"\s*[|\-–—:,]\s*(?:by\s+|from\s+)?{re.escape(merchant.strip())}\s*$", "", title, flags=re.IGNORECASE)
+
+
 def marketplace_of(url: str, fallback: str = "") -> str:
     """Display name for where a URL points; a Google redirect falls back to the store name given."""
     host = urlparse(url).netloc.lower().removeprefix("www.").removeprefix("dl.")

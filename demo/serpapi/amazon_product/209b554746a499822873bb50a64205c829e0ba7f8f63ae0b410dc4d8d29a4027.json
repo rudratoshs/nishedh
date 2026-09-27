@@ -1,0 +1,44 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HKPZBPP5",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:01:37.980108+00:00",
+ "data": {
+  "product_results": {
+   "description": "Keep your garden, lawn, driveways, pathways, and outdoor areas free from unwanted weeds with this powerful Weed and Root Remover. This 200g ready-to-use formula is specially designed to act fast and penetrate deep into the soil, targeting weeds right at their roots to ensure they do not grow back. Whether you are dealing with stubborn weeds on your lawn or unsightly growth along your driveway, this product offers a thorough and effective solution. The deep-penetrating formula works efficiently to eliminate weeds from the root, saving you time and effort on repeated treatments. Suitable for a wide range of outdoor surfaces, it is a versatile addition to your gardening toolkit. This pack contains 1 unit of the 200g ready-to-use weed remover, making it convenient to get started right away. Ideal for homeowners and gardening enthusiasts looking to maintain clean and tidy outdoor spaces throughout the year."
+  },
+  "about_item": [
+   "READY TO USE FORMULA: This 200G weed and root remover requires no mixing and is ready to apply straight away.",
+   "FAST ACTING & DEEP PENETRATING: The powerful formula works quickly, penetrating deep into the soil to eliminate weeds from the root.",
+   "REMOVES WEEDS FROM THE ROOT: Targets and destroys weeds at the root level, preventing regrowth for long-lasting results.",
+   "VERSATILE USE: Suitable for use in gardens, lawns, driveways, pathways, and a wide range of outdoor areas.",
+   "PACK OF 1: Includes one 200G bottle of ready-to-use weed and root remover for convenient and effective weed control."
+  ],
+  "item_specifications": {
+   "brand": "GO WELL",
+   "item_weight": "200 Grams",
+   "liquid_volume": "200 Millilitres",
+   "item_form": "Granules",
+   "manufacturer": "go well enterprise"
+  },
+  "product_details": {
+   "brand_name": "GO WELL",
+   "manufacturer": "go well enterprise",
+   "unit_count": "200.0 Grams",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "included_components": "Weed Killer",
+   "item_type_name": "Weed And Root Remover",
+   "model_number": "Pelly-Weed-A25",
+   "part_number": "Pelly-Weed-A22",
+   "asin": "B0HKPZBPP5",
+   "rating": 5.0,
+   "reviews": 2,
+   "item_weight": "200 Grams",
+   "liquid_volume": "200 Millilitres",
+   "item_form": "Granules"
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HB4BLG3Y",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:01:21.894559+00:00",
+ "data": {
+  "product_results": {
+   "description": "Rucira Herbal Weed & Root Killer is a powerful, ready-to-use solution designed to tackle unwanted weeds right from the root. Formulated with a herbal blend, this 100ml liquid herbicide delivers fast, visible results without the need for any mixing or dilution — simply apply and watch it work. It effectively targets a wide range of common weeds including dandelion, crabgrass, clover, chickweed, thistle, and plantain, eliminating them at the root to prevent regrowth. Ideal for use across multiple outdoor areas such as garden paths, driveways, pavements, lawn edges, flower beds, and around fences, this versatile weed killer makes garden maintenance effortless. The convenient flip-top bottle ensures easy, controlled application with minimal wastage. Whether you are dealing with stubborn weeds creeping through paving stones or overtaking your flower beds, this ready-to-use formula offers a natural and effective solution for a cleaner, tidier outdoor space."
+  },
+  "about_item": [
+   "KILLS WEEDS FROM THE ROOT: This powerful herbal weed and root killer liquid targets and eliminates weeds completely from the root, preventing regrowth effectively.",
+   "FAST-ACTING HERBAL FORMULA: Made with a natural herbal formula that delivers fast, visible results, helping you achieve a clean and weed-free outdoor space quickly.",
+   "READY TO USE: No mixing or dilution required — simply apply directly to the target area for immediate action, saving you time and effort.",
+   "VERSATILE OUTDOOR USE: Ideal for use on garden paths, driveways, pavements, lawn edges, flower beds, and around fences; works on common weeds like dandelion, crabgrass, clover, chickweed, thistle, and plantain.",
+   "COMPACT 100ml BOTTLE: Comes in a convenient 100ml bottle that is easy to handle and apply, making it perfect for targeted weed control in gardens and outdoor surfaces."
+  ],
+  "item_specifications": {
+   "brand": "Generic",
+   "item_weight": "100 Grams",
+   "liquid_volume": "100 Millilitres",
+   "item_form": "Liquid",
+   "manufacturer": "Rucira"
+  },
+  "product_details": {
+   "brand_name": "Generic",
+   "manufacturer": "Rucira",
+   "unit_count": "100 Milliliters",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "included_components": "1 X 100ml Bottle Of Herbal Weed And Root Killer",
+   "item_type_name": "Herbal Weed And Root Killer Liquid",
+   "part_number": "Rucira-hwrk-100ml",
+   "asin": "B0HB4BLG3Y",
+   "rating": 5.0,
+   "reviews": 1,
+   "item_weight": "100 Grams",
+   "liquid_volume": "100 Millilitres",
+   "item_form": "Liquid",
+   "coverage": "broad-leaf weeds and grassy weeds",
+   "is_green_purchasing_law_compliant": "Yes"
+  }
+ }
+}

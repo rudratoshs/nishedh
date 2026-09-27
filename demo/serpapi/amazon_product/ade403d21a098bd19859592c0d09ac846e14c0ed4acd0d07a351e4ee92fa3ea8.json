@@ -1,0 +1,43 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B09H2XQ3L4",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:01:45.880159+00:00",
+ "data": {
+  "product_results": {
+   "description": ""
+  },
+  "about_item": [
+   "🌿 Removes Stubborn Weeds – Effectively controls wild herbs and unwanted weeds, helping keep your garden, farm, and landscape clean and healthy. 🌱",
+   "⚡ Fast Acting Formula – Starts working quickly on weed growth, reducing competition for water, nutrients, and sunlight. ☀️",
+   "🌾 Supports Better Crop Growth – Creates a weed-free environment that allows crops and plants to grow stronger and healthier. 🌿",
+   "🛡️ Organic & Plant Friendly – Premium organic formula designed to be effective on weeds while supporting overall soil and plant health. 🌍",
+   "🚜 Easy to Apply & Reliable – Suitable for farms, kitchen gardens, nurseries,"
+  ],
+  "item_specifications": {
+   "brand": "Sansar Green",
+   "item_weight": "50 Grams",
+   "liquid_volume": "0.05 Litres",
+   "item_form": "Powder",
+   "manufacturer": "Sansar Green Mission Ltd (P), Sansar Green Mission Ltd (P)"
+  },
+  "product_details": {
+   "brand_name": "Sansar Green",
+   "manufacturer": "Sansar Green Mission Ltd (P), Sansar Green Mission Ltd (P)",
+   "unit_count": "1.00 Grams",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "item_type_name": "Sansar Green® Herbicide Powder",
+   "part_number": "SG 14",
+   "asin": "B09H2XQ3L4",
+   "rating": 2.2,
+   "reviews": 6,
+   "item_weight": "50 Grams",
+   "liquid_volume": "0.05 Litres",
+   "item_form": "Powder",
+   "coverage": "non-selective broad spectrum"
+  }
+ }
+}

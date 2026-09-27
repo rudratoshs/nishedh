@@ -1,0 +1,40 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HJW12GS3",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:00:33.105155+00:00",
+ "data": {
+  "product_results": {
+   "description": "Reclaim your garden and yard borders with CYCLORA Herbicide Plus Bamboo Killer Granules. Designed with an active 5% original formula, this targeted herbicide tackles aggressive bamboo, dense brush, and hard-to-kill weeds that regular sprays miss. The granule application allows the treatment to sink directly into the soil to attack root systems and rhizomes, preventing regrowth right at the source. Easy to apply without any liquid mixing or messy sprayers, CYCLORA provides long-lasting vegetation control around fence lines, walkways, and garden perimeters."
+  },
+  "about_item": [
+   "POWERFUL 5% ACTIVE FORMULA: Formulated with a 5% active original formula engineered to eliminate tough bamboo shoots, stubborn weeds, and invasive brush.",
+   "READY TO USE GRANULES: Dry granule formulation requires no water mixing or spray pumps; simply spread directly over target root areas for effective control.",
+   "TARGETS ROOTS AT THE SOURCE: Granular formula filters down into the soil to penetrate deep root networks and rhizomes, stopping unwanted regrowth permanently.",
+   "VERSATILE WEED CONTROL: Highly effective against aggressive bamboo, woody shrubs, wild vines, and stubborn garden weeds along borders and fences.",
+   "LONG LASTING YARD PROTECTION: Delivers deep root uptake to keep yard perimeters, fence lines, and garden beds completely clear of unwanted vegetation."
+  ],
+  "item_specifications": {
+   "brand": "Coslasy",
+   "item_weight": "500 Grams",
+   "upc": "604439764566",
+   "manufacturer": "Coslasy",
+   "net_quantity": "10 Grams"
+  },
+  "product_details": {
+   "brand_name": "Coslasy",
+   "upc": "604439764566",
+   "manufacturer": "Coslasy",
+   "unit_count": "10 Grams",
+   "country_of_origin": "India",
+   "included_components": "NO",
+   "item_type_name": "Bamboo Killer",
+   "model_number": "5325",
+   "part_number": "5325",
+   "asin": "B0HJW12GS3",
+   "item_weight": "500 Grams"
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0H7RKLBKW",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:01:03.658284+00:00",
+ "data": {
+  "product_results": {
+   "description": "This Powerful Ready-to-Use Weed & Root Remover Liquid is specially formulated to help control and eliminate unwanted weeds from outdoor spaces. Its fast-acting formula targets weeds at the root level, helping prevent regrowth and keeping your garden, lawn, driveway, and pathways clean and well-maintained. Designed for convenience, this ready-to-use solution requires no mixing and can be easily applied to affected areas. Ideal for home gardens and outdoor surfaces, it helps maintain a neat, weed-free environment with minimal effort. The compact 100ml pack of 2 ensures easy storage and practical usage for regular garden maintenance."
+  },
+  "about_item": [
+   "Fast Acting Weed Control Formula – Helps eliminate weeds quickly and effectively from treated areas.",
+   "Root-Level Action – Targets weed growth at the root to reduce chances of regrowth.",
+   "Ready-to-Use Solution – No dilution or mixing required, easy direct application.",
+   "Suitable for Multiple Surfaces – Ideal for gardens, lawns, driveways, pavements & outdoor areas.",
+   "Convenient Pack of 2 (100ml Each) – Compact and easy to store for regular maintenance use."
+  ],
+  "item_specifications": {
+   "brand": "Generic",
+   "item_weight": "100 Grams",
+   "manufacturer": "Generic",
+   "net_quantity": "1 Grams"
+  },
+  "product_details": {
+   "brand_name": "Generic",
+   "manufacturer": "Generic",
+   "unit_count": "1 Grams",
+   "country_of_origin": "India",
+   "included_components": "No",
+   "item_type_name": "weed remover liquid",
+   "model_number": "weed remover liquid01",
+   "part_number": "sdfsfv01",
+   "asin": "B0H7RKLBKW",
+   "rating": 3.4,
+   "reviews": 30,
+   "item_weight": "100 Grams"
+  }
+ }
+}

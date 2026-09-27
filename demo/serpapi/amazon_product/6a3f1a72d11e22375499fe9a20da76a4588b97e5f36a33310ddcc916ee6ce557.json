@@ -1,0 +1,39 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0GX1RYDTC",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:01:10.858619+00:00",
+ "data": {
+  "product_results": {
+   "description": ""
+  },
+  "about_item": [
+   "🌿 Fast-Acting Formula – Starts working quickly to eliminate unwanted weeds effectively.",
+   "🔥 Kills From The Root – Deep penetrating action ensures complete removal to prevent regrowth.",
+   "💧 Ready-To-Use Solution – No mixing required, convenient and easy application.",
+   "🏡 Multi-Surface Use – Ideal for gardens, lawns, driveways, and pathways.",
+   "💪 Powerful Weed Control – Targets stubborn weeds and keeps your outdoor space clean and tidy."
+  ],
+  "item_specifications": {
+   "brand": "CYUZ",
+   "item_weight": "200 Grams",
+   "manufacturer": "CYUZ",
+   "net_quantity": "50.0 Milliliters"
+  },
+  "product_details": {
+   "brand_name": "CYUZ",
+   "manufacturer": "CYUZ",
+   "unit_count": "50.0 Milliliters",
+   "country_of_origin": "India",
+   "item_type_name": "Deep Root Weed Killer",
+   "model_number": "Root Kill Weed Formula",
+   "part_number": "Garden Weed Control",
+   "asin": "B0GX1RYDTC",
+   "rating": 3.2,
+   "reviews": 6,
+   "item_weight": "200 Grams"
+  }
+ }
+}

@@ -1,29 +1,132 @@
 {% extends "base.html" %}
+{% from "_macros.html" import confidence, photo %}
 {% block title %}{{ f.title[:60] }} – Nishedh{% endblock %}
-{% block body %}
-<p><a href="/?pack={{ pack }}">&larr; All findings</a></p>
-<h2 style="margin:8px 0 4px">{{ f.title }}</h2>
-<p><span class="badge {{ f.reason }}">{{ REASON_LABEL[f.reason] }}</span> <span class="conf">{{ f.confidence }} confidence &middot; {{ f.marketplace }}{{ ' · ' + f.price if f.price }}</span></p>
+{% block head %}
+<style>
+.back { display: inline-block; margin-bottom: 14px; font-size: 14px; text-decoration: none; }
+.head { display: grid; grid-template-columns: 260px 1fr; gap: 26px; padding: 20px; }
+.head h1 { font-size: 24px; margin: 10px 0 8px; }
+.head .full { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; margin-bottom: 16px; }
+.facts span b { font-weight: 600; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 720px) { .head { grid-template-columns: 1fr; } .head .pic { max-width: 220px; } }
 
-<h3>Why was this flagged?</h3>
+h2.sec { font-size: 18px; margin: 30px 0 12px; }
+.compare { padding: 18px; }
+.compare .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.compare figure { margin: 0; }
+.compare figcaption { font-size: 13px; margin-top: 6px; color: var(--ink-2); }
+.compare figcaption b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.compare .this figcaption b { color: var(--accent); }
+.compare .note { margin: 14px 0 0; font-size: 13px; color: var(--muted); }
+@media (max-width: 720px) { .compare .row { grid-template-columns: repeat(2, 1fr); } }
+
+.chain { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+.chain > li { position: relative; padding: 0 0 18px 46px; }
+.chain > li::before { counter-increment: s; content: counter(s); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 8px; background: var(--ink); color: var(--bg); display: grid; place-items: center; font-weight: 700; font-size: 14px; }
+.chain > li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 34px; bottom: 4px; width: 2px; background: var(--line-2); }
+.chain h3 { margin: 4px 0 8px; font-size: 15px; }
+.card { padding: 14px 16px; }
+.quote { margin: 0 0 8px; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--panel-2); border-radius: 0 8px 8px 0; font-size: 14px; }
+.quote small { color: var(--muted); }
+.lbl { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 12px 0 4px; }
+.explain { margin: 6px 0 0; }
+
+.next { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.next .card b { display: block; margin-bottom: 4px; }
+.next .card { font-size: 14px; color: var(--ink-2); }
+@media (max-width: 720px) { .next { grid-template-columns: 1fr; } }
+details.tech { margin-top: 20px; padding: 12px 16px; font-size: 14px; }
+details.tech summary { cursor: pointer; font-weight: 500; }
+details.tech ul { margin: 10px 0 0; padding-left: 20px; }
+</style>
+{% endblock %}
+{% block body %}
+<a class="back" href="/?pack={{ pack }}">← Back to all {{ 'pesticides' if pack == 'pesticides' else 'walkie-talkies' }}</a>
+
+<section class="head panel">
+  <div class="pic">{{ photo(f.thumbnail, f.title) }}</div>
+  <div>
+    <span class="badge {{ f.reason }}">{{ REASON_LABEL[f.reason] }}</span>
+    <h1>{{ headline(f) }}</h1>
+    <p class="full">{{ f.title }}</p>
+    <div class="facts">
+      <span>Store: <b>{{ f.marketplace[0] | upper }}{{ f.marketplace[1:] }}</b></span>
+      {% if f.price %}<span>Price: <b>{{ f.price }}</b></span>{% endif %}
+      <span>Checked: <b>{{ (f.run.data_as_of or f.run.started_at or '')[:10] }}</b></span>
+      <span>{{ confidence(f.confidence) }} <span class="tip" tabindex="0" data-tip="{{ CONF_HELP[f.confidence] }}">?</span></span>
+    </div>
+    <p class="muted small" style="margin:0 0 14px">{{ REASON_HELP[f.reason] }}</p>
+    <div class="actions">
+      <a class="btn primary" href="{{ f.url | web_url }}" target="_blank" rel="noopener">Open the listing ↗</a>
+      {% if f.reason != 'clear' %}<a class="btn" href="/complaint/{{ pack }}/{{ f.listing_id }}">Draft a request for review</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+{% if photos %}
+<h2 class="sec">Same photo, different name</h2>
+<div class="compare panel">
+  <div class="row">
+    <figure class="this">{{ photo(f.thumbnail, f.title) }}<figcaption><b>This listing</b>{{ f.marketplace[0] | upper }}{{ f.marketplace[1:] }}</figcaption></figure>
+    {% for p in photos %}
+    <figure>{{ photo(p.thumbnail, p.title) }}<figcaption><b>Found by Google Lens</b>"{{ p.title[:70] }}" · {{ p.site }}</figcaption></figure>
+    {% endfor %}
+  </div>
+  <p class="note">Google Lens (through SerpApi) looked for the same product photo on other websites. A matching photo is a strong lead, but a person should confirm it is the same product.</p>
+</div>
+{% endif %}
+
+<h2 class="sec">Why was this flagged? Step by step</h2>
 <ol class="chain">
-  <li><div class="step">1 &middot; The listing</div>
-    <a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.title }}</a><br>
-    <span class="muted" style="font-size:13px">Found through SerpApi ({{ f.engine }}) on {{ f.run.started_at[:10] if f.run.started_at }} &middot;
-      <a href="/raw/{{ f.engine }}/{{ f.search_id }}">raw search result</a>
-      {% if f.details_search_id %} &middot; <a href="/raw/amazon_product/{{ f.details_search_id }}">raw product page</a>{% endif %}
-      {% if f.lens_search_id %} &middot; <a href="/raw/google_lens/{{ f.lens_search_id }}">raw Lens label check</a>{% endif %}</span></li>
+  <li>
+    <h3>We found the listing</h3>
+    <div class="card panel">
+      <a href="{{ f.url | web_url }}" target="_blank" rel="noopener">{{ f.title }}</a>
+      <div class="muted small" style="margin-top:4px">Found on {{ f.marketplace }} through a SerpApi {{ f.engine | replace('_', ' ') }} search{% if f.details_search_id %}; we also read its full product page{% endif %}.</div>
+    </div>
+  </li>
   {% for c in f.checks %}
-  <li><div class="step">{{ loop.index + 1 }} &middot; {{ 'What the same product photo is called elsewhere (Google Lens)' if c.evidence and c.evidence[0].field.startswith('same photo') else 'What the listing says' }}</div>
-    {% for e in c.evidence %}<blockquote>“{{ e.text }}” <span class="muted" style="font-size:13px">({{ e.field }})</span></blockquote>{% endfor %}
-    <div class="step" style="margin-top:8px">Checked against</div>
-    {% set s = sources.get(c.source) %}
-    {% if s %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.as_on %} <span class="muted">(as on {{ s.as_on }})</span>{% endif %}{% else %}{{ c.source }}{% endif %}
-    <div class="step" style="margin-top:8px">Result</div>
-    <span class="badge {{ c.reason }}">{{ REASON_LABEL[c.reason] }}</span> <span class="conf">{{ c.confidence }}</span>
-    <p style="margin:6px 0 0">{{ c.explanation }}</p></li>
+  {% set lens = c.evidence and c.evidence[0].field.startswith('same photo') %}
+  {% set s = sources.get(c.source) %}
+  <li>
+    <h3>{{ 'We checked what the same photo is called elsewhere' if lens else 'We read what the listing says' }}</h3>
+    <div class="card panel">
+      {% for e in c.evidence %}
+      <p class="quote">“{{ e.text }}” <small>— {{ e.field | replace('_', ' ') }}</small></p>
+      {% endfor %}
+      <div class="lbl">Compared with</div>
+      {% if s %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title }}</a>{% if s.as_on %} <span class="muted small">(as on {{ s.as_on }})</span>{% endif %}{% else %}{{ c.source }}{% endif %}
+      <div class="lbl">Result</div>
+      <span class="badge {{ c.reason }}">{{ REASON_LABEL[c.reason] }}</span> {{ confidence(c.confidence) }}
+      <p class="explain">{{ c.explanation }}</p>
+    </div>
+  </li>
   {% endfor %}
 </ol>
-{% if f.notes %}<h3>Notes for the reviewer</h3><ul>{% for n in f.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
-{% if f.reason != 'clear' %}<p><a class="btn" href="/complaint/{{ pack }}/{{ f.listing_id }}">Draft a request for review</a></p>{% endif %}
+
+{% if f.notes %}
+<h2 class="sec">Also worth knowing</h2>
+<div class="card panel"><ul style="margin:0;padding-left:20px">{% for n in f.notes %}<li>{{ n }}</li>{% endfor %}</ul></div>
+{% endif %}
+
+{% if f.reason != 'clear' %}
+<h2 class="sec">What can be done?</h2>
+<div class="next">
+  <div class="card panel"><b>1. Check it yourself</b>Open the listing and look at the pack photo and label. Things change, and a person should confirm.</div>
+  <div class="card panel"><b>2. Report it</b>Use "Draft a request for review" for ready-made text, then file it at the National Consumer Helpline (call 1915 or consumerhelpline.gov.in).</div>
+  <div class="card panel"><b>3. For marketplaces</b>The regulator asked stores to audit their own catalogues. Download the full list as CSV from the results page.</div>
+</div>
+{% endif %}
+
+<details class="tech panel">
+  <summary>Technical details and raw data</summary>
+  <ul>
+    <li><a href="/raw/{{ f.engine }}/{{ f.search_id }}">Raw SerpApi search result</a> (the exact data this came from)</li>
+    {% if f.details_search_id %}<li><a href="/raw/amazon_product/{{ f.details_search_id }}">Raw product page data</a></li>{% endif %}
+    {% if f.lens_search_id %}<li><a href="/raw/google_lens/{{ f.lens_search_id }}">Raw Google Lens result</a></li>{% endif %}
+    <li>Listing ID: <code>{{ f.listing_id }}</code> · result code: <code>{{ f.reason }}</code> · confidence: <code>{{ f.confidence }}</code></li>
+  </ul>
+</details>
 {% endblock %}

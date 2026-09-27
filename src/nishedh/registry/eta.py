@@ -126,10 +126,16 @@ class EtaRegistry:
     def __init__(self, cache_dir: Path, http: httpx.Client | None = None, delay: float = 2.0, offline: bool = False) -> None:
         self.cache_dir = cache_dir
         self.offline = offline
+        self._owns_http = http is None
         self._http = http or httpx.Client(timeout=60, headers={"User-Agent": USER_AGENT})
         self._delay = delay
         self._last = 0.0
         cache_dir.mkdir(parents=True, exist_ok=True)
+
+    def close(self) -> None:
+        """Close the HTTP client, unless it was passed in (then its owner closes it)."""
+        if self._owns_http:
+            self._http.close()
 
     def lookup(self, number: str) -> EtaCertificate | None:
         """The certificate for this ETA number; None when offline and not cached."""

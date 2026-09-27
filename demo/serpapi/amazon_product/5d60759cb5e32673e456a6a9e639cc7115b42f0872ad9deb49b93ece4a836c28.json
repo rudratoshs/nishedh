@@ -1,0 +1,43 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HBMGQPWC",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:02:17.606116+00:00",
+ "data": {
+  "product_results": {
+   "description": ""
+  },
+  "about_item": [
+   "🌱 Powerful Weed Control – Effectively eliminates unwanted weeds and targets them from the root level to help prevent regrowth and keep your outdoor areas clean.",
+   "⚡ Fast Acting Formula – Specially designed liquid solution starts working quickly to remove stubborn weeds from gardens, lawns, driveways, and pathways.",
+   "🧴 Ready-to-Use Solution – No mixing or dilution required. Simply apply directly to the weed area for quick and convenient weed removal.",
+   "🌿 Multi-Surface Application – Suitable for use on gardens, patios, sidewalks, fences, and outdoor spaces where unwanted weeds commonly grow.",
+   "📦 Compact & Easy to Use – Comes in a 100gm packet, making it easy to store, handle, and apply whenever weed control is needed.",
+   "🛠️ Ideal for Home Gardening – Perfect for home gardeners and outdoor maintenance, helping maintain a neat, weed-free garden environment."
+  ],
+  "item_specifications": {
+   "brand": "Wixger",
+   "item_weight": "200 Grams",
+   "item_form": "Granule",
+   "upc": "733153703312",
+   "manufacturer": "Wixger"
+  },
+  "product_details": {
+   "brand_name": "Wixger",
+   "upc": "733153703312",
+   "manufacturer": "Wixger",
+   "unit_count": "200.0 Grams",
+   "country_of_origin": "India",
+   "included_components": "AD-NW-WR2",
+   "item_type_name": "AD-NW-WR2",
+   "part_number": "AD-NW-WR2",
+   "asin": "B0HBMGQPWC",
+   "rating": 4.0,
+   "reviews": 25,
+   "item_weight": "200 Grams",
+   "item_form": "Granule"
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}FAQ – Nishedh{% endblock %}
+{% block head %}
+<style>
+.prose { max-width: 820px; }
+.prose h1 { font-size: 28px; margin: 0 0 16px; }
+.prose h2 { font-size: 16px; margin: 28px 0 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+details.q { padding: 0; margin-bottom: 8px; }
+details.q summary { cursor: pointer; padding: 14px 16px; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+details.q summary::-webkit-details-marker { display: none; }
+details.q summary::after { content: "+"; color: var(--muted); font-weight: 400; font-size: 20px; line-height: 1; }
+details.q[open] summary::after { content: "−"; }
+details.q div { padding: 0 16px 14px; color: var(--ink-2); }
+details.q div p { margin: 0 0 8px; }
+</style>
+{% endblock %}
+{% block body %}
+<div class="prose">
+<h1>Frequently asked questions</h1>
+
+<h2>The basics</h2>
+<details class="q panel" open><summary>What is Nishedh?</summary><div>
+  <p>A tool that checks products sold on Indian online stores against the government's own rules. It finds listings through SerpApi, reads what they say, and flags the ones that look like they break a rule, with the evidence.</p>
+  <p>"Nishedh" (निषेध) means "prohibition" in Hindi.</p>
+</div></details>
+<details class="q panel"><summary>Why pesticides and walkie-talkies?</summary><div>
+  <p>Both are real, recent problems that the regulator has already acted on. In September 2026 the Central Consumer Protection Authority (CCPA) fined Amazon, Flipkart and JioMart for selling "Cyclosinone" weed killer, a chemical on no official list. In January 2026 it penalised platforms for selling walkie-talkies on frequencies that need a licence. Both have clear written rules that a computer can check.</p>
+</div></details>
+<details class="q panel"><summary>Who is this for?</summary><div>
+  <p>Regulators and consumer groups looking for listings to review, marketplaces auditing their own catalogues (as the regulator ordered), journalists, and anyone curious whether what they're buying is legal.</p>
+</div></details>
+
+<h2>Reading the results</h2>
+<details class="q panel"><summary>Does a flag mean the seller broke the law?</summary><div>
+  <p><b>No.</b> Every result is a lead for a person to check. Nishedh only sees what the listing shows. The real label might be correct even if the description isn't, and a newly registered product can look unregistered until the government list is updated.</p>
+</div></details>
+<details class="q panel"><summary>What do "Strong evidence", "Good lead" and "Weak signal" mean?</summary><div>
+  <p><b>Strong evidence:</b> the listing's own words break a written rule. For example, it is sold as a mobile signal booster.</p>
+  <p><b>Good lead:</b> clear signs, but a person should confirm. For example, the product photo matches a banned product.</p>
+  <p><b>Weak signal:</b> only the short search-result title was read, not the full product page.</p>
+</div></details>
+<details class="q panel"><summary>Why are so many results "Information missing"?</summary><div>
+  <p>The law says a pesticide label must state the chemical inside and its strength. Many listings only say "weed killer" or "5% active formula". Most of these are "Weak signal", because only the title was read. The full product page might name the chemical. Filter by "Strong evidence" or "Good lead" to see the most important ones.</p>
+</div></details>
+<details class="q panel"><summary>How does the photo match work?</summary><div>
+  <p>For listings that hide their chemical, Nishedh sends the product photo to Google Lens (through SerpApi) and looks at what the same photo is called on other sites. If another seller calls it by a name the regulator has already acted on, like Cyclosinone, that's a strong lead. A matching photo is still not proof: a person should confirm it is the same product.</p>
+</div></details>
+<details class="q panel"><summary>Why are walkie-talkies flagged?</summary><div>
+  <p>In India, walkie-talkies are licence-free only on 446.0–446.2 MHz. Many imported radios use 136–174 MHz or 400–470 MHz, which need a licence from the government. The 2025 rules also require every listing to show its frequency and its government approval (ETA) number.</p>
+</div></details>
+
+<h2>Data and privacy</h2>
+<details class="q panel"><summary>Where does the data come from?</summary><div>
+  <p>Product listings come from SerpApi (Google Shopping, Amazon.in, Google Search and Google Lens). The rules come from official government sources: the CIB&amp;RC pesticide lists, the Insecticides Act and Rules, the CCPA radio-equipment guidelines, and Department of Telecommunications approval certificates. Every result links to its source. <a href="/how-it-works">See the full list.</a></p>
+</div></details>
+<details class="q panel"><summary>Do you name sellers?</summary><div>
+  <p>No. Nishedh shows only major marketplaces by name (Amazon.in, Flipkart, JioMart…). Individual sellers and small shops appear as "another online store". This is a screening tool, not a name-and-shame list.</p>
+</div></details>
+<details class="q panel"><summary>How fresh are the results?</summary><div>
+  <p>Each category page shows when it was last checked. Listings change daily, so always open the listing before acting on a result.</p>
+</div></details>
+
+<h2>Taking action</h2>
+<details class="q panel"><summary>I found something that looks illegal. What do I do?</summary><div>
+  <p>Open the product's page here and click <b>"Draft a request for review"</b>. It writes a ready-to-edit request with the evidence and official sources. Check the listing yourself, then file it with the National Consumer Helpline: call <b>1915</b> or go to <a href="https://consumerhelpline.gov.in" target="_blank" rel="noopener">consumerhelpline.gov.in</a>.</p>
+</div></details>
+<details class="q panel"><summary>Can I run it myself?</summary><div>
+  <p>Yes. It's open source. Get a free SerpApi key (250 searches a month is enough), then follow the steps on <a href="https://github.com/rudratoshs/nishedh">GitHub</a>. Saved search results are reused, so running it again costs nothing.</p>
+</div></details>
+<details class="q panel"><summary>Is it a legal tool?</summary><div>
+  <p>No. It is a screening aid. Only the regulator or a court can decide whether a listing is illegal.</p>
+</div></details>
+</div>
+{% endblock %}

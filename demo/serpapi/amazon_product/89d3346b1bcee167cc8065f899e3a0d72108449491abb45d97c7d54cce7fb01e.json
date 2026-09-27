@@ -1,0 +1,41 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B09GVHLVFX",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:00:41.986240+00:00",
+ "data": {
+  "product_results": {
+   "description": "Herbicide is a premium organic and powerful herb control solution specially formulated to remove all types of unwanted wild herbs from gardens, farms, lawns, nurseries, and agricultural fields. Its advanced deep-action formula targets unwanted herb growth from the roots, helping maintain clean and healthy cultivation areas without affecting the overall appearance of your landscape. The easy-to-use formulation provides fast and visible results, making herb management simple and effective. ✅ Powerful Herb Control – Effectively removes unwanted wild herbs and invasive growth from gardens, farms, and open spaces. 🌱 ✅ Deep Root Action – Penetrates deep into the root zone to help prevent regrowth and provide long-lasting control. 🌿 ✅ Fast & Visible Results – Starts working quickly to dry and eliminate unwanted herbs for a cleaner growing environment. ⚡ ✅ Supports Healthy Crop Growth – Reduces competition for water, nutrients, and sunlight, helping desired plants grow better. 🌾 ✅ Easy Application Formula – Simple to use in home gardens, kitchen gardens, nurseries, vegetable fields, and landscaping areas. 🚿 ✅ Organic & Reliable Solution – Designed for effective herb management with dependable performance and consistent results. 🌍 🌟 Keep your garden, farm, and growing spaces clean, healthy, and free from unwanted wild herbs with Erwon Herbicide Wild Herbs Remover for better plant growth and improved field management. 🌱✨"
+  },
+  "about_item": [
+   "🌿 Powerful Herb Removal – Effectively targets and removes all types of unwanted wild herbs for a cleaner and healthier growing area. 🚫🌱",
+   "🌱 Deep Root Action – Works deep into the root zone to help prevent regrowth and provide long-lasting herb control. 🌿💪",
+   "⚡ Fast Visible Results – Quickly dries and controls invasive herbs, helping maintain neat gardens, farms, and landscapes. ⏱️✨",
+   "🌾 Supports Healthy Plant Growth – Reduces competition for nutrients, water, and sunlight, allowing desired plants to thrive. 🌻🍅",
+   "🌍 Organic & Easy to Use – Premium organic formula with simple application, suitable for home gardens, nurseries, and agricultural fields. 🚿🌿"
+  ],
+  "item_specifications": {
+   "brand": "Erwon",
+   "item_weight": "100 Grams",
+   "item_form": "Powder",
+   "manufacturer": "Erwon Energy Ltd (P), Erwon Energy Ltd (P)",
+   "net_quantity": "100 Grams"
+  },
+  "product_details": {
+   "brand_name": "Erwon",
+   "manufacturer": "Erwon Energy Ltd (P), Erwon Energy Ltd (P)",
+   "unit_count": "100 Grams",
+   "country_of_origin": "India",
+   "item_type_name": "Erwon® Herbicide",
+   "part_number": "Er70",
+   "asin": "B09GVHLVFX",
+   "rating": 3.2,
+   "reviews": 46,
+   "item_weight": "100 Grams",
+   "item_form": "Powder",
+   "coverage": "Non-selective broad spectrum coverage"
+  }
+ }
+}

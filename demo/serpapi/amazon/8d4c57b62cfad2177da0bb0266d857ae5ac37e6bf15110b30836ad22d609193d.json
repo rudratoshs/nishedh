@@ -1,0 +1,492 @@
+{
+ "params": {
+  "engine": "amazon",
+  "amazon_domain": "amazon.in",
+  "k": "insecticide for plants"
+ },
+ "fetched_at": "2026-09-27T10:59:25.636995+00:00",
+ "data": {
+  "organic_results": [
+   {
+    "asin": "B0CPJMTMKH",
+    "title": "UGAOO MealyMagic Mealy Bug & Fungus Killer Spray For Plants - 100% Herbal Actives & No Chemicals - 500 ML",
+    "link_clean": "https://www.amazon.in/dp/B0CPJMTMKH/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9hdGY6MzAwMTE5MTI2ODU2MDMyOjowOjo&url=%2FUGAOO-MealyMagic-Fungus-Killer-Plants%2Fdp%2FB0CPJMTMKH%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-1-spons%26aref%3DLpu8OJWQvj%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=Lpu8OJWQvj&sp_cr=ZAZ",
+    "price": "₹599",
+    "thumbnail": "https://m.media-amazon.com/images/I/51ch4eZs2pL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GLZZZHRQ",
+    "title": "Chipku Pure Cold Pressed Water Soluble Neem Oil Concentrate For Plants & Garden For Indoor And Outdoor Removes Aphids Fungus Thriphs Mildew",
+    "link_clean": "https://www.amazon.in/dp/B0GLZZZHRQ/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9hdGY6MzAxMTg3NjkxMjA3MDMyOjowOjo&url=%2FChipku-Pressed-Soluble-Concentrate-Outdoor%2Fdp%2FB0GLZZZHRQ%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-2-spons%26aref%3D0W5BNFUgQA%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=0W5BNFUgQA&sp_cr=ZAZ",
+    "price": "₹195",
+    "thumbnail": "https://m.media-amazon.com/images/I/718bMqSNhZL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D92VJ1W2",
+    "title": "OrganicDews Metarhizium anisopliae 1 Kg (1x10^8 CFU/g) for Plants 1 Kg",
+    "link_clean": "https://www.amazon.in/dp/B0D92VJ1W2/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9hdGY6MjAxMDU2NTQ0MjY2OTg6OjA6Og&url=%2FOrganicDews-Metarhizium-anisopliae-1x10-Plants%2Fdp%2FB0D92VJ1W2%2Fref%3Dsr_1_3_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-3-spons%26aref%3D1Uz62aFJk8%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=1Uz62aFJk8&sp_cr=ZAZ",
+    "price": "₹303",
+    "thumbnail": "https://m.media-amazon.com/images/I/71M9f7HdJ+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0BHKKFGB3",
+    "title": "Plant Guard Natural Neem Oil Spray(400ml) | Ready to Use Organic Cold Pressed Natural Neem Oil Spray for Indoor and Outdoor Plants | Removes Mealybugs Fungus and Other Pests from plants",
+    "link_clean": "https://www.amazon.in/dp/B0BHKKFGB3/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9hdGY6MzAwNTA5OTAwNTUwNDMyOjowOjo&url=%2FPesticide-Natural-Bottles-Organic-Pressed%2Fdp%2FB0BHKKFGB3%2Fref%3Dsr_1_4_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-4-spons%26aref%3DLr73SJLeld%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=Lr73SJLeld&sp_cr=ZAZ",
+    "price": "₹279",
+    "thumbnail": "https://m.media-amazon.com/images/I/61yTlylW74L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H624D1W8",
+    "title": "Utkarsh Mealy Bug Fix Spray for Plants - 200 ml | Organic Ready-to-Use Pest Control for Mealybugs, Aphids & Spider Mites | Pet Safe Plant Protection for Indoor Plants, Balcony & Home Garden",
+    "link_clean": "https://www.amazon.in/dp/B0H624D1W8/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9hdGY6MzAxMjE1NzYwODczODMyOjowOjo&url=%2FUtkarsh-Mealy-Spray-Plants-Ready%2Fdp%2FB0H624D1W8%2Fref%3Dsr_1_5_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-5-spons%26aref%3Dmj150XZ0Di%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=mj150XZ0Di&sp_cr=ZAZ",
+    "price": "₹279",
+    "thumbnail": "https://m.media-amazon.com/images/I/51wMlkDGA9L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D7T9HN7L",
+    "title": "All insects Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of insects and pests from Plants and soil. (1000 ml)",
+    "link_clean": "https://www.amazon.in/Essential-Powerful-Insecticide-Removing-1000/dp/B0D7T9HN7L/",
+    "link": "https://www.amazon.in/Essential-Powerful-Insecticide-Removing-1000/dp/B0D7T9HN7L/ref=sr_1_6?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-6",
+    "price": "₹325",
+    "thumbnail": "https://m.media-amazon.com/images/I/71ixhYAtfGL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B08P51GM2K",
+    "title": "Ugaoo Neem Oil Spray for Plants & Garden - Highly Effective on Plant Insects (250 ml)",
+    "link_clean": "https://www.amazon.in/Ugaoo-Neem-Spray-Plants-Garden/dp/B08P51GM2K/",
+    "link": "https://www.amazon.in/Ugaoo-Neem-Spray-Plants-Garden/dp/B08P51GM2K/ref=sr_1_7?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-7",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/61Lb5sYOk2L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GHFH8F1R",
+    "title": "Confidor Insecticide 50ml | 1Nos",
+    "link_clean": "https://www.amazon.in/Bayer-Confidor-Insecticide-50ml-1Nos/dp/B0GHFH8F1R/",
+    "link": "https://www.amazon.in/Bayer-Confidor-Insecticide-50ml-1Nos/dp/B0GHFH8F1R/ref=sr_1_8_mod_primary_new?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-8",
+    "price": "₹260",
+    "thumbnail": "https://m.media-amazon.com/images/I/51Zxmgp27LL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0C7CMWKJ1",
+    "title": "Go Garden Trichoderma Bio Fungicide for plants (2 x 10^8 CFU per Gram) Bio Fungicide - Prevents Fungal and Bacterial Diseases in Plants 400 G",
+    "link_clean": "https://www.amazon.in/Go-Garden-Trichoderma-Fungicide-plants/dp/B0C7CMWKJ1/",
+    "link": "https://www.amazon.in/Go-Garden-Trichoderma-Fungicide-plants/dp/B0C7CMWKJ1/ref=sr_1_9?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-9",
+    "price": "₹199",
+    "thumbnail": "https://m.media-amazon.com/images/I/71ntv6JcT8L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D7T9CGY4",
+    "title": "All insects Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of insects and pests from Plants and soil. (500 ml)",
+    "link_clean": "https://www.amazon.in/Essential-Powerful-Insecticide-Removing-500/dp/B0D7T9CGY4/",
+    "link": "https://www.amazon.in/Essential-Powerful-Insecticide-Removing-500/dp/B0D7T9CGY4/ref=sr_1_10?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-10",
+    "price": "₹273",
+    "thumbnail": "https://m.media-amazon.com/images/I/71ixhYAtfGL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0BMGWL92R",
+    "title": "OrganicDews Beauveria bassiana + Verticillium lecanii+ Metarhizium anisopliae Bio for Plants - 1 Kg Each",
+    "link_clean": "https://www.amazon.in/dp/B0BMGWL92R/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MjAxMDU2NTQ0MjcwOTg6OjA6Og&url=%2FOrganicDews-Beauveria-Verticillum-Metarhizium-anisopliae%2Fdp%2FB0BMGWL92R%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-11-spons%26aref%3DDNTUjh8GHn%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=DNTUjh8GHn&sp_cr=ZAZ",
+    "price": "₹836",
+    "thumbnail": "https://m.media-amazon.com/images/I/71CyMBVu64L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0DGTYLPJT",
+    "title": "Heranba Deltaflow Deltamethrin Insecticide Concentrate for Cockroaches, Mosquitoes & Houseflies | Professional Residual Pest Control | WHO Approved | BIS & HACCP Certified | Mix with Water | Indoor & Outdoor Use | 1 Litre",
+    "link_clean": "https://www.amazon.in/dp/B0DGTYLPJT/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MzAxMzMzMjIwMzA3MzMyOjowOjo&url=%2FHeranba-Deltaflow-Cockroaches-Houseflies-Mosquitoes%2Fdp%2FB0DGTYLPJT%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-12-spons%26aref%3DEhAgghF9Ih%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=EhAgghF9Ih&sp_cr=ZAZ",
+    "price": "₹1,630",
+    "thumbnail": "https://m.media-amazon.com/images/I/61ZwuJJoB+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0DN1NB9P3",
+    "title": "IFFCO Urban Gardens - Doctor Mealybug 200 ml - A Ready-to-Use Mealy Bug & Fungus Repellent Spray - 100% Organic plant spray - Safe for all types of Indoor & Outdoor plants",
+    "link_clean": "https://www.amazon.in/dp/B0DN1NB9P3/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MzAwNDExNTY4ODYwMzMyOjowOjo&url=%2FIFFCO-Urban-Gardens-Ready-Use%2Fdp%2FB0DN1NB9P3%2Fref%3Dsr_1_13_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-13-spons%26aref%3DdkoDviVy0c%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=dkoDviVy0c&sp_cr=ZAZ",
+    "price": "₹239",
+    "thumbnail": "https://m.media-amazon.com/images/I/41+qdZ7inlL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D78X9S2X",
+    "title": "Utkarsh Trichoderma Harzianum 1% WP 2 x 10^6 CFU/gm min. for Plants, Crops and Home Gardening - Trichoherz-P (1 Kg; Pack of 1)",
+    "link_clean": "https://www.amazon.in/dp/B0D78X9S2X/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MzAwNDgxMDk2MjczMjMyOjowOjo&url=%2FTrichoherz-P-Trichoderma-Harzianum-Gardening-Pack%2Fdp%2FB0D78X9S2X%2Fref%3Dsr_1_14_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-14-spons%26aref%3Dxna2jzOess%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=xna2jzOess&sp_cr=ZAZ",
+    "price": "₹352",
+    "thumbnail": "https://m.media-amazon.com/images/I/71tje6e9SIL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0B4DX4KCH",
+    "title": "IFFCO Urban Gardens - Doctor Neem+ - 500ml – Mealy Bug & Fungus Repellent Spray - 3in1 Action of Neem, Pongamia, Lemongrass Oil - 100% Organic, Ready to Use for Indoor & Outdoor plants",
+    "link_clean": "https://www.amazon.in/dp/B0B4DX4KCH/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MzAwMDIwNDUzMTI3MTMyOjowOjo&url=%2FIFFCO-Urban-Gardens-Lemongrass-Pesticide%2Fdp%2FB0B4DX4KCH%2Fref%3Dsr_1_15_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-15-spons%26aref%3DRBEi8PJAQi%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=RBEi8PJAQi&sp_cr=ZAZ",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/41HOwnFRgqL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B07K59V299",
+    "title": "Chipku Organic Neem Oil for Plants 1 ltr With Free Spray Gun Concentrate Cold Pressed Water Soluble Formula for Garden & Home Plants For Making 200 Neem Spray Bottles",
+    "link_clean": "https://www.amazon.in/Chipku-Pressed-Water-Soluble-Insects-Plants/dp/B07K59V299/",
+    "link": "https://www.amazon.in/Chipku-Pressed-Water-Soluble-Insects-Plants/dp/B07K59V299/ref=sr_1_16?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-16",
+    "price": "₹714",
+    "thumbnail": "https://m.media-amazon.com/images/I/61sETgi66mL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D798NXYB",
+    "title": "Garden Genie Mealy Bug Spray for Plants, 250ml Plant Protection Spray",
+    "link_clean": "https://www.amazon.in/Garden-Genie-Mealy-Bug-Spray/dp/B0D798NXYB/",
+    "link": "https://www.amazon.in/Garden-Genie-Mealy-Bug-Spray/dp/B0D798NXYB/ref=sr_1_17?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-17",
+    "price": "₹297.99",
+    "thumbnail": "https://m.media-amazon.com/images/I/61M+UB7wiDL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GLZZZHRQ",
+    "title": "Chipku Pure Cold Pressed Water Soluble Neem Oil Concentrate For Plants & Garden For Indoor And Outdoor Removes Aphids Fungus Thriphs Mildew",
+    "link_clean": "https://www.amazon.in/Chipku-Pressed-Soluble-Concentrate-Outdoor/dp/B0GLZZZHRQ/",
+    "link": "https://www.amazon.in/Chipku-Pressed-Soluble-Concentrate-Outdoor/dp/B0GLZZZHRQ/ref=sr_1_18?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-18",
+    "price": "₹195",
+    "thumbnail": "https://m.media-amazon.com/images/I/718bMqSNhZL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0DG2Y2CF5",
+    "title": "Garden Genie Ready to Use Neem Oil Spray for Plants Home Garden, 250ml",
+    "link_clean": "https://www.amazon.in/Garden-Genie-Organic-Pressed-Protect/dp/B0DG2Y2CF5/",
+    "link": "https://www.amazon.in/Garden-Genie-Organic-Pressed-Protect/dp/B0DG2Y2CF5/ref=sr_1_19?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-19",
+    "price": "₹210",
+    "thumbnail": "https://m.media-amazon.com/images/I/51B0yKZPZgL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GHXHWT8V",
+    "title": "Admire 2gm x 3Nos | Imidacloprid 70% WG insecticide | protect your plants from pests+ 2 Nos Gloves",
+    "link_clean": "https://www.amazon.in/Admire-Imidacloprid-insecticide-protect-plants/dp/B0GHXHWT8V/",
+    "link": "https://www.amazon.in/Admire-Imidacloprid-insecticide-protect-plants/dp/B0GHXHWT8V/ref=sr_1_20?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-20",
+    "price": "₹200",
+    "thumbnail": "https://m.media-amazon.com/images/I/61uyhjaKr9L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H39C1JLL",
+    "title": "LoveLeaf Organic Neem Oil Spray 250ml |3000 PPM Cold Pressed | Ready to Use",
+    "link_clean": "https://www.amazon.in/dp/B0H39C1JLL/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MzAxMzQ2NTEwNDQyMjMyOjowOjo&url=%2FLoveLeaf-Organic-Spray-250ml-Pressed%2Fdp%2FB0H39C1JLL%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-21-spons%26aref%3DZ5Utfyfwe1%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=Z5Utfyfwe1&sp_cr=ZAZ",
+    "price": "₹159",
+    "thumbnail": "https://m.media-amazon.com/images/I/511a7PhQeyL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0FP46V2MX",
+    "title": "KATHAROS Herbal Fogging Liquid 5 Ltr | Citronella Mosquito Repellent Fogger",
+    "link_clean": "https://www.amazon.in/dp/B0FP46V2MX/",
+    "link": "https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo5OTQ3OTI5NjExOTMzMzI6MTc5MDUwNjc2NDpzcF9tdGY6MzAxMDYwMTc3NDk0ODMyOjowOjo&url=%2FKatharos-Mosquito-Repellent-Citronella-Sandalwood%2Fdp%2FB0FP46V2MX%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg%26dib_tag%3Dse%26keywords%3Dinsecticide%2Bfor%2Bplants%26qid%3D1790506764%26sr%3D8-22-spons%26aref%3DeTKx6IMfsK%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&aref=eTKx6IMfsK&sp_cr=ZAZ",
+    "price": "₹1,599",
+    "thumbnail": "https://m.media-amazon.com/images/I/51FppWbiImL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0B4DX4KCH",
+    "title": "IFFCO Urban Gardens - Doctor Neem+ - 500ml – Mealy Bug & Fungus Repellent Spray - 3in1 Action of Neem, Pongamia, Lemongrass Oil - 100% Organic, Ready to Use for Indoor & Outdoor plants",
+    "link_clean": "https://www.amazon.in/IFFCO-Urban-Gardens-Lemongrass-Pesticide/dp/B0B4DX4KCH/",
+    "link": "https://www.amazon.in/IFFCO-Urban-Gardens-Lemongrass-Pesticide/dp/B0B4DX4KCH/ref=sr_1_23?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-23",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/41HOwnFRgqL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CPJHN86D",
+    "title": "UGAOO MealyMagic Mealy Bug & Fungus Killer Spray For Plants - 100% Herbal Actives & No Chemicals - 250 ML",
+    "link_clean": "https://www.amazon.in/UGAOO-MealyMagic-Fungus-Killer-Plants/dp/B0CPJHN86D/",
+    "link": "https://www.amazon.in/UGAOO-MealyMagic-Fungus-Killer-Plants/dp/B0CPJHN86D/ref=sr_1_24?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-24",
+    "price": "₹329",
+    "thumbnail": "https://m.media-amazon.com/images/I/61uNhzeRjtL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CT8VW52V",
+    "title": "UGAOO Neemguard - Ready To Use Neem Oil Herbal Insect Repellent Spray (500 Ml) | Keeps Mealy Bug, Aphids, Spider Mites Away",
+    "link_clean": "https://www.amazon.in/UGAOO-Neemguard-Herbal-Insect-Repellent/dp/B0CT8VW52V/",
+    "link": "https://www.amazon.in/UGAOO-Neemguard-Herbal-Insect-Repellent/dp/B0CT8VW52V/ref=sr_1_25?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-25",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/71kNYVcub+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GR94LZP5",
+    "title": "Actara Insecticide 5gm X 3 Nos(Thiamethoxam 25% WG) for Sucking & Chewing Pests+ 2 Nos Hand Gloves",
+    "link_clean": "https://www.amazon.in/Actara-Insecticide-Thiamethoxam-Sucking-Chewing/dp/B0GR94LZP5/",
+    "link": "https://www.amazon.in/Actara-Insecticide-Thiamethoxam-Sucking-Chewing/dp/B0GR94LZP5/ref=sr_1_26?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-26",
+    "price": "₹149",
+    "thumbnail": "https://m.media-amazon.com/images/I/31ltpAM8g3L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B07DBPMZ89",
+    "title": "DIVINE TREE Nicotox-D Tobacco Dust Powder for Plants (900g) | Natural Soil & Root Insecticide for Plants | Organic Pest Control for Garden, Lawn, Pots & Home Plants",
+    "link_clean": "https://www.amazon.in/Nicotox-D-Insecticides-Flowerbed-Agriculture-Gardening/dp/B07DBPMZ89/",
+    "link": "https://www.amazon.in/Nicotox-D-Insecticides-Flowerbed-Agriculture-Gardening/dp/B07DBPMZ89/ref=sr_1_27?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-27",
+    "price": "₹179",
+    "thumbnail": "https://m.media-amazon.com/images/I/71G03xpAQIS._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B08QDDK99T",
+    "title": "Bayer Cropscience Solomon Insecticide For Aphids | Jassids And Shoot | Fruit Borer Control - 100Ml, Pack Of 1",
+    "link_clean": "https://www.amazon.in/Solomon-Insecticide-Aphids-Jassids-Control/dp/B08QDDK99T/",
+    "link": "https://www.amazon.in/Solomon-Insecticide-Aphids-Jassids-Control/dp/B08QDDK99T/ref=sr_1_28?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-28",
+    "price": "₹399",
+    "thumbnail": "https://m.media-amazon.com/images/I/61BfD4TUMYL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09156K5Q3",
+    "title": "Syngenta Actara 5G X 10 Sachets, Quickly penetrates the leaf surface, Powder",
+    "link_clean": "https://www.amazon.in/syngenta-Actara-5g-10-Sachets/dp/B09156K5Q3/",
+    "link": "https://www.amazon.in/syngenta-Actara-5g-10-Sachets/dp/B09156K5Q3/ref=sr_1_29_mod_primary_new?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-29",
+    "price": "₹130",
+    "thumbnail": "https://m.media-amazon.com/images/I/51JxQAf-5wL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B097P734MM",
+    "title": "Exodus Plant Protector, Organic Pesticide for Insects - 100ml",
+    "link_clean": "https://www.amazon.in/Takat-Exodus-Plant-Protector-Pesticide/dp/B097P734MM/",
+    "link": "https://www.amazon.in/Takat-Exodus-Plant-Protector-Pesticide/dp/B097P734MM/ref=sr_1_30?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-30",
+    "price": "₹440",
+    "thumbnail": "https://m.media-amazon.com/images/I/71GyR4G1LTS._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GQZXH3N7",
+    "title": "Insecticide confidor for sucking pest 50ml",
+    "link_clean": "https://www.amazon.in/Insecticide-confidor-sucking-pest-50ml/dp/B0GQZXH3N7/",
+    "link": "https://www.amazon.in/Insecticide-confidor-sucking-pest-50ml/dp/B0GQZXH3N7/ref=sr_1_31?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-31",
+    "price": "₹267",
+    "thumbnail": "https://m.media-amazon.com/images/I/51sTS5zi9IL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D8LBKDDG",
+    "title": "Insecticide Plant Care Spray, Essential Organic Powerful Liquid for Removing all types of insects and pests from Plants and soil. (100 ml)",
+    "link_clean": "https://www.amazon.in/Sansar-Organics%C2%AE-Insecticide-Essential-100/dp/B0D8LBKDDG/",
+    "link": "https://www.amazon.in/Sansar-Organics%C2%AE-Insecticide-Essential-100/dp/B0D8LBKDDG/ref=sr_1_32?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-32",
+    "price": "₹150",
+    "thumbnail": "https://m.media-amazon.com/images/I/71rIPCuTwkL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HHRZCQV6",
+    "title": "Mealy Bug & Fungus Killer Spray For Plants | Mealybug Control Sprays for Indoor & Outdoor Plants, Leaves, Stems, Garden & Potted Plants | Flower Protection Spray for Home Garden | Easy to Use 200ml",
+    "link_clean": "https://www.amazon.in/Fungus-Mealybug-Control-Outdoor-Protection/dp/B0HHRZCQV6/",
+    "link": "https://www.amazon.in/Fungus-Mealybug-Control-Outdoor-Protection/dp/B0HHRZCQV6/ref=sr_1_33?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-33",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/51Dv8h8tpvL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0BP6Q9ZW8",
+    "title": "Rimi Garden® Liquid Fungus remover, Essential Organic Liquid for removing all types of Fungal Infections from Plants. (500 ml)",
+    "link_clean": "https://www.amazon.in/Rimi-Garden%C2%AE-Essential-Removing-Infections/dp/B0BP6Q9ZW8/",
+    "link": "https://www.amazon.in/Rimi-Garden%C2%AE-Essential-Removing-Infections/dp/B0BP6Q9ZW8/ref=sr_1_34?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-34",
+    "price": "₹255",
+    "thumbnail": "https://m.media-amazon.com/images/I/71mfutvfglL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0FH56T16Y",
+    "title": "Organic Neem Oil Based Plant Guard Concentate – Natural Pest Repellent for Indoor & Outdoor Plants | Eco-Friendly Insecticide for Home Garden | 250ml",
+    "link_clean": "https://www.amazon.in/Organic-Based-Plant-Guard-Concentate/dp/B0FH56T16Y/",
+    "link": "https://www.amazon.in/Organic-Based-Plant-Guard-Concentate/dp/B0FH56T16Y/ref=sr_1_35?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-35",
+    "price": "₹189",
+    "thumbnail": "https://m.media-amazon.com/images/I/612u329g08L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09X5T7HST",
+    "title": "IFFCO Urban Gardens Doctor Neem+ 500ml – Organic Pest Repellent - Triple Action of Neem Oil, Pongamia Oil, Lemongrass Oil - 100% Water Soluble",
+    "link_clean": "https://www.amazon.in/IFFCO-Urban-Gardens-Doctor-500ml/dp/B09X5T7HST/",
+    "link": "https://www.amazon.in/IFFCO-Urban-Gardens-Doctor-500ml/dp/B09X5T7HST/ref=sr_1_36?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-36",
+    "price": "₹389",
+    "thumbnail": "https://m.media-amazon.com/images/I/51svOJKQ3tL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H8JRKL3C",
+    "title": "Solomon Insecticide For Aphids | Jassids And Shoot | Fruit Borer Control - 100Ml, Pack Of 1",
+    "link_clean": "https://www.amazon.in/Solomon-Insecticide-Aphids-Jassids-Control/dp/B0H8JRKL3C/",
+    "link": "https://www.amazon.in/Solomon-Insecticide-Aphids-Jassids-Control/dp/B0H8JRKL3C/ref=sr_1_37?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-37",
+    "price": "₹399",
+    "thumbnail": "https://m.media-amazon.com/images/I/519Tn1tw+yL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HG9YW5NC",
+    "title": "Pest Guard Plant Protect Spray 50ml | Ready-to-Use Plant Protection Spray | Helps Maintain Healthy Indoor & Outdoor Plants | Easy Application Formula for Gardens, Houseplants & Decorative Plants",
+    "link_clean": "https://www.amazon.in/Pest-Guard-Plant-Protect-Spray/dp/B0HG9YW5NC/",
+    "link": "https://www.amazon.in/Pest-Guard-Plant-Protect-Spray/dp/B0HG9YW5NC/ref=sr_1_38?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-38",
+    "price": "₹229",
+    "thumbnail": "https://m.media-amazon.com/images/I/71erQC7UbQL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GWWLVK53",
+    "title": "Bacillus Thuringiensis (BT) Liquid Bio Insecticide | Effective Worm & Caterpillar Control for Vegetables, Fruits & Crops | Safe Organic Pest Solution (Pack of 250ml)",
+    "link_clean": "https://www.amazon.in/Gardenbe-Thuringiensis-Insecticide-Caterpillar-Vegetables/dp/B0GWWLVK53/",
+    "link": "https://www.amazon.in/Gardenbe-Thuringiensis-Insecticide-Caterpillar-Vegetables/dp/B0GWWLVK53/ref=sr_1_39?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-39",
+    "price": "₹240",
+    "thumbnail": "https://m.media-amazon.com/images/I/61xQ7mscdvL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B00VAQNFL4",
+    "title": "OrganicDews Neem Oil 1500 PPM (Water Soluble) Concentrate for Plants 250 ml with Measuring Cup 25 ml - Controls Garden Insects and Fungus",
+    "link_clean": "https://www.amazon.in/OrganicDews-Neem-Concentrate-Plants-Measuring/dp/B00VAQNFL4/",
+    "link": "https://www.amazon.in/OrganicDews-Neem-Concentrate-Plants-Measuring/dp/B00VAQNFL4/ref=sr_1_40?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-40",
+    "price": "₹286",
+    "thumbnail": "https://m.media-amazon.com/images/I/61mQ4m5RpIL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0DN1NB9P3",
+    "title": "IFFCO Urban Gardens - Doctor Mealybug 200 ml - A Ready-to-Use Mealy Bug & Fungus Repellent Spray - 100% Organic plant spray - Safe for all types of Indoor & Outdoor plants",
+    "link_clean": "https://www.amazon.in/IFFCO-Urban-Gardens-Ready-Use/dp/B0DN1NB9P3/",
+    "link": "https://www.amazon.in/IFFCO-Urban-Gardens-Ready-Use/dp/B0DN1NB9P3/ref=sr_1_41?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-41",
+    "price": "₹239",
+    "thumbnail": "https://m.media-amazon.com/images/I/41+qdZ7inlL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H3C95J8H",
+    "title": "Safe Plant Spray for Indoor and Outdoor Plants, Pest Control Solution, 100ml, Pack of 02",
+    "link_clean": "https://www.amazon.in/Indoor-Outdoor-Control-Solution-100ml/dp/B0H3C95J8H/",
+    "link": "https://www.amazon.in/Indoor-Outdoor-Control-Solution-100ml/dp/B0H3C95J8H/ref=sr_1_42?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-42",
+    "price": "₹186",
+    "thumbnail": "https://m.media-amazon.com/images/I/71-5QMo2Y+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CQQSW51X",
+    "title": "Bacillus Thuringiensis Kurstaki Liquid Insecticide for Plants (2×10⁹ CFU/ml) - 500 ml | Organic Pesticides for Plants for Caterpillar Control for Veggies, Fruits & Gardens",
+    "link_clean": "https://www.amazon.in/PLANTS-BUDDY-Thuringiensis-Lepidopteran-Bio-Insecticide/dp/B0CQQSW51X/",
+    "link": "https://www.amazon.in/PLANTS-BUDDY-Thuringiensis-Lepidopteran-Bio-Insecticide/dp/B0CQQSW51X/ref=sr_1_43?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-43",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/51QkZHyMUvL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HDYLWH82",
+    "title": "Pest Guard Plant Protect Spray 50ml | Ready-to-Use Plant Protection Spray | Helps Maintain Healthy Indoor & Outdoor Plants | Easy Application Formula for Gardens, Houseplants & Decorative Plants",
+    "link_clean": "https://www.amazon.in/Protection-Maintain-Application-Houseplants-Decorative/dp/B0HDYLWH82/",
+    "link": "https://www.amazon.in/Protection-Maintain-Application-Houseplants-Decorative/dp/B0HDYLWH82/ref=sr_1_44?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-44",
+    "price": "₹349",
+    "thumbnail": "https://m.media-amazon.com/images/I/41kF-1qsn4L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D7TC32R3",
+    "title": "Pest Plant Remover, Essential Organic Powerful Liquid Pesticide for Removing All Types of Pests Infection from Plants. (1000 ml)",
+    "link_clean": "https://www.amazon.in/Essential-Powerful-Pesticide-Infection-1000/dp/B0D7TC32R3/",
+    "link": "https://www.amazon.in/Essential-Powerful-Pesticide-Infection-1000/dp/B0D7TC32R3/ref=sr_1_45?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-45",
+    "price": "₹366",
+    "thumbnail": "https://m.media-amazon.com/images/I/71IJ+J4nolL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CQQXK2QB",
+    "title": "Metarhizium Anisopliae Liquid (2×10⁹ CFU/ml) - 500ml | Organic Bio Insecticide Pest Control for Plants for Soil & Foliar Pests | Kills Root Grubs, Weevils, Termites, Borers",
+    "link_clean": "https://www.amazon.in/PLANTS-BUDDY-Metarhizium-Anisopliae-Bio-Insecticide/dp/B0CQQXK2QB/",
+    "link": "https://www.amazon.in/PLANTS-BUDDY-Metarhizium-Anisopliae-Bio-Insecticide/dp/B0CQQXK2QB/ref=sr_1_46?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-46",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/51eW-uAFv2L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0FF56FKP2",
+    "title": "Garden Genie Trichoderma Viride Powder (2x106 CFU/gm) 500 Gm",
+    "link_clean": "https://www.amazon.in/Garden-Genie-Trichoderma-Viride-Powder/dp/B0FF56FKP2/",
+    "link": "https://www.amazon.in/Garden-Genie-Trichoderma-Viride-Powder/dp/B0FF56FKP2/ref=sr_1_47?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-47",
+    "price": "₹177.98",
+    "thumbnail": "https://m.media-amazon.com/images/I/71+HiIdUYgL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0FR391NCC",
+    "title": "EKKA Acetamiprid 20% SP Insecticide 100gm | Systemic Contact Insect Killer for Aphids, Jassids, Whiteflies & Thrips | (Shipping Cost Included)",
+    "link_clean": "https://www.amazon.in/Acetamiprid-Insecticide-100gm-Systemic-Whiteflies/dp/B0FR391NCC/",
+    "link": "https://www.amazon.in/Acetamiprid-Insecticide-100gm-Systemic-Whiteflies/dp/B0FR391NCC/ref=sr_1_48?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-48",
+    "price": "₹250",
+    "thumbnail": "https://m.media-amazon.com/images/I/41LOPd4xDzL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0F9YHTDFJ",
+    "title": "Utkarsh Verticillium Lecanii 1.15% W.P. 1 x 10 ^ 8 CFU/gm min. for Plants, Crops and Home Gardening - Verticoz-P (250 gm; Pack of 1)",
+    "link_clean": "https://www.amazon.in/Utkarsh-Verticillium-Lecanii-Plants-Gardening/dp/B0F9YHTDFJ/",
+    "link": "https://www.amazon.in/Utkarsh-Verticillium-Lecanii-Plants-Gardening/dp/B0F9YHTDFJ/ref=sr_1_49?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-49",
+    "price": "₹161",
+    "thumbnail": "https://m.media-amazon.com/images/I/81uHkC5ZjSL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B08S59ZZMT",
+    "title": "Bayer Jump, Fipronil 80 WG (80% w/w), Insecticide (2gm x 10)",
+    "link_clean": "https://www.amazon.in/Bayer-Jump-Fipronil-80-Insecticide/dp/B08S59ZZMT/",
+    "link": "https://www.amazon.in/Bayer-Jump-Fipronil-80-Insecticide/dp/B08S59ZZMT/ref=sr_1_50?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-50",
+    "price": "₹550",
+    "thumbnail": "https://m.media-amazon.com/images/I/41n2lV0Nz2L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D7TDXYRG",
+    "title": "Red Ant Remover, Essential Organic Powerful Liquid Insecticide for Removing all types of red ants and insects from Plants and soil. (500 ml)",
+    "link_clean": "https://www.amazon.in/Essential-Powerful-Insecticide-Removing-500/dp/B0D7TDXYRG/",
+    "link": "https://www.amazon.in/Essential-Powerful-Insecticide-Removing-500/dp/B0D7TDXYRG/ref=sr_1_51_mod_primary_new?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-51",
+    "price": "₹251",
+    "thumbnail": "https://m.media-amazon.com/images/I/71rCkjI5kgL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HDZ4HDQB",
+    "title": "Pest Guard Plant Protect Spray 50ml | Ready-to-Use Plant Protection Spray | Helps Maintain Healthy Indoor & Outdoor Plants | Easy Application Formula for Gardens, Houseplants Plants",
+    "link_clean": "https://www.amazon.in/Protect-Protection-Maintain-Application-Houseplants/dp/B0HDZ4HDQB/",
+    "link": "https://www.amazon.in/Protect-Protection-Maintain-Application-Houseplants/dp/B0HDZ4HDQB/ref=sr_1_52?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-52",
+    "price": "₹399",
+    "thumbnail": "https://m.media-amazon.com/images/I/41vlqhX95yL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09NTR9M2C",
+    "title": "Go Garden Neem Oil for Plants Insects Spray | Cold-Pressed Neem Oil for Healthy Growth | Ideal for Indoor & Outdoor Plants, Flowers & Home Gardening | Effective Against Plant Insects (100 ml)",
+    "link_clean": "https://www.amazon.in/Go-Garden-Cold-Pressed-Gardening-100/dp/B09NTR9M2C/",
+    "link": "https://www.amazon.in/Go-Garden-Cold-Pressed-Gardening-100/dp/B09NTR9M2C/ref=sr_1_53?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-53",
+    "price": "₹155",
+    "thumbnail": "https://m.media-amazon.com/images/I/61cdb7-hMKL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0D78WKBVT",
+    "title": "Utkarsh Trichoderma Viride 1.5% W.P.: 2 x 10^6 CFU/gm min. for Plants, Crops and Home Gardening - Trichoz-P (1 Kg; Pack of 1)",
+    "link_clean": "https://www.amazon.in/Utkarsh-Trichoz-P-Trichoderma-Viride-1-5/dp/B0D78WKBVT/",
+    "link": "https://www.amazon.in/Utkarsh-Trichoz-P-Trichoderma-Viride-1-5/dp/B0D78WKBVT/ref=sr_1_54?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-54",
+    "price": "₹321",
+    "thumbnail": "https://m.media-amazon.com/images/I/61kXemfYXeL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HDCCVGL2",
+    "title": "Pack Of 1 Pest Guard Plant Protect Spray 50ml Ready Plant Protection Spray",
+    "link_clean": "https://www.amazon.in/Guard-Plant-Protect-Spray-Protection/dp/B0HDCCVGL2/",
+    "link": "https://www.amazon.in/Guard-Plant-Protect-Spray-Protection/dp/B0HDCCVGL2/ref=sr_1_55?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-55",
+    "price": "₹79",
+    "thumbnail": "https://m.media-amazon.com/images/I/51WB6FyDn+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CCLC2V6V",
+    "title": "Bio Verticill (Verticillium Lecanii (2 x 10^8 spores/ml)) Liquid | Bio Pesticide | Insecticide for Plants (500ml)",
+    "link_clean": "https://www.amazon.in/WET-TREE-Verticill-Verticillium-Insecticide/dp/B0CCLC2V6V/",
+    "link": "https://www.amazon.in/WET-TREE-Verticill-Verticillium-Insecticide/dp/B0CCLC2V6V/ref=sr_1_56?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-56",
+    "price": "₹342",
+    "thumbnail": "https://m.media-amazon.com/images/I/51VvkNJJgGL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CCL9C5QN",
+    "title": "Bio Larvicide (Bacillus Thuringiensis Var Kurstaki) Liquid | Bio Pesticide | Insecticide for Plants 500ml",
+    "link_clean": "https://www.amazon.in/WET-TREE-Larvicide-Thuringiensis-Insecticide/dp/B0CCL9C5QN/",
+    "link": "https://www.amazon.in/WET-TREE-Larvicide-Thuringiensis-Insecticide/dp/B0CCL9C5QN/ref=sr_1_57?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-57",
+    "price": "₹351",
+    "thumbnail": "https://m.media-amazon.com/images/I/51BbAjQRVwL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CV7M2T7M",
+    "title": "Garden Genie 100% Natural Diatomaceous Earth Powder for Pests, Insects 800g",
+    "link_clean": "https://www.amazon.in/Garden-Genie-Diatomaceous-Effective-Cockroach/dp/B0CV7M2T7M/",
+    "link": "https://www.amazon.in/Garden-Genie-Diatomaceous-Effective-Cockroach/dp/B0CV7M2T7M/ref=sr_1_58?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-58",
+    "price": "₹252.99",
+    "thumbnail": "https://m.media-amazon.com/images/I/716zyCSiYIL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0CQRDWXCY",
+    "title": "Plant’s Buddy – Beauveria Bassiana + Verticillium Lecanii Liquid (2×10⁹ CFU/ml) – Bio-Insecticide for Chewing & Sucking Pests – Safe for All Indoor & Outdoor Plants – 500 ml",
+    "link_clean": "https://www.amazon.in/PLANTS-BUDDY-Beauveria-Verticillium-Bio-Insecticide/dp/B0CQRDWXCY/",
+    "link": "https://www.amazon.in/PLANTS-BUDDY-Beauveria-Verticillium-Bio-Insecticide/dp/B0CQRDWXCY/ref=sr_1_59?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-59",
+    "price": "₹330",
+    "thumbnail": "https://m.media-amazon.com/images/I/51zsM8IZmLL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0DZDCQPT2",
+    "title": "Beauveria Bassiana Liquid For Plants (2 * 10^9 CFU/ml) - Effective Against Leaf Eating Insects - Bio-Insecticide for All Indoor and Outdoor Plants (250 ml)",
+    "link_clean": "https://www.amazon.in/PLANTS-BUDDY-Beauveria-Effective-Bio-Insecticide/dp/B0DZDCQPT2/",
+    "link": "https://www.amazon.in/PLANTS-BUDDY-Beauveria-Effective-Bio-Insecticide/dp/B0DZDCQPT2/ref=sr_1_60?dib=eyJ2IjoiMSJ9.4A5zbE_utA1xajvX8A1v57tSRaSVEpibpDTYYWPaJEJP_HS60Lyrn7zUzKfQjdXm8lFG0_dVdvginuz3mG8g4FI8kNGNkLIuLvdxjN2Exu25MGgIdHIOivDTPBCL04ykiY4qLIdFdZBdzIKK4k4ZRCxXBXS1CVux44VpMQKqPKMBPdZwOoSFlvTdGxP6P-g8dv-cYVRFWAOiYG2KwGJwKcZd7DaF7PZFwe2CUsSwqVNFSjdweGYeypLhCLuZNBSuJsBE6WPAoPm9M7qhclSXrqSl0CQrey5pASvbi_V1bjI.I7xARhkmYOAB-TQANaRbzhSReP7C2Bt-F0OI4UPWJRg&dib_tag=se&keywords=insecticide+for+plants&qid=1790506764&sr=8-60",
+    "price": "₹215",
+    "thumbnail": "https://m.media-amazon.com/images/I/71gP0H8GbjL._AC_UL320_.jpg"
+   }
+  ]
+ }
+}

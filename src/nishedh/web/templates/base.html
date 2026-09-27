@@ -3,61 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}Nishedh{% endblock %}</title>
+<title>{% block title %}Nishedh – is it legal to sell this online?{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
 :root {
-  --bg: #fbfbf9; --panel: #ffffff; --ink: #1c1c1a; --muted: #6b6b66; --line: #e4e3de;
-  --red: #b42318; --red-bg: #fdecea; --amber: #a15c07; --amber-bg: #fdf3e2;
-  --green: #1d7a46; --green-bg: #e7f5ec; --blue: #1f5fbf; --blue-bg: #e8f0fb;
+  --bg: #f6f5f1; --panel: #ffffff; --panel-2: #faf9f6; --ink: #191917; --ink-2: #3d3c38; --muted: #6f6e68;
+  --line: #e5e3dc; --line-2: #d6d4cb;
+  --red: #b42318; --red-bg: #fdecea; --amber: #9a5708; --amber-bg: #fdf1dc;
+  --green: #1d7a46; --green-bg: #e5f4ea; --blue: #1f5fbf; --blue-bg: #e8f0fb;
+  --accent: #c2410c; --accent-bg: #fff1e8;
+  --shadow: 0 1px 2px rgba(20, 20, 15, .05), 0 4px 16px rgba(20, 20, 15, .05);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #a09f98; --line: #34332f;
-    --red: #f08b80; --red-bg: #3a1f1c; --amber: #f0b35a; --amber-bg: #3a2c16;
-    --green: #74c995; --green-bg: #1b3325; --blue: #8fb5f0; --blue-bg: #1c2a40;
+    --bg: #131312; --panel: #1c1c1a; --panel-2: #222220; --ink: #efeee9; --ink-2: #d4d3cc; --muted: #a09f98;
+    --line: #302f2b; --line-2: #3d3c37;
+    --red: #f39a90; --red-bg: #3b1f1b; --amber: #f2b865; --amber-bg: #3a2b15;
+    --green: #7dd09e; --green-bg: #183021; --blue: #93b8f2; --blue-bg: #1b2940;
+    --accent: #fb923c; --accent-bg: #3a2415;
+    --shadow: none;
   }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, "Segoe UI", system-ui, sans-serif; }
-header { border-bottom: 1px solid var(--line); background: var(--panel); }
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-header .wrap { display: flex; align-items: baseline; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
-header h1 { font-size: 18px; margin: 0; }
-header .tag { color: var(--muted); font-size: 13px; }
-nav a { margin-right: 14px; color: var(--ink); text-decoration: none; font-weight: 500; }
-nav a.on { border-bottom: 2px solid var(--ink); }
-main { padding: 24px 0 48px; }
-a { color: var(--blue); }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 Inter, -apple-system, "Segoe UI", system-ui, sans-serif; }
+a { color: var(--blue); text-underline-offset: 2px; }
+h1, h2, h3 { line-height: 1.25; letter-spacing: -.01em; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
 .muted { color: var(--muted); }
-.cards { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 20px; }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; min-width: 150px; text-decoration: none; color: var(--ink); }
-.card b { display: block; font-size: 22px; }
-.card.sel { outline: 2px solid var(--ink); }
-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
-th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
-tr:last-child td { border-bottom: 0; }
-.badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.small { font-size: 13px; }
+
+/* Header */
+header.top { background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+header.top .wrap { display: flex; align-items: center; gap: 20px; height: 60px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand .mark { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 15px; }
+.brand b { font-size: 17px; }
+.brand span { color: var(--muted); font-size: 13px; }
+.mainnav { display: flex; gap: 4px; margin-left: auto; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.mainnav::-webkit-scrollbar { display: none; }
+.mainnav a { flex: none; white-space: nowrap; padding: 7px 12px; border-radius: 8px; color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 14px; }
+.mainnav a:hover { background: var(--panel-2); }
+.mainnav a.on { background: var(--ink); color: var(--bg); }
+@media (max-width: 720px) {
+  .brand span, .brand b { display: none; }
+  .wrap { padding: 0 16px; }
+  header.top .wrap { gap: 10px; }
+  .mainnav a { padding: 6px 8px; font-size: 13px; }
+}
+
+main { padding: 28px 0 56px; }
+
+/* Shared pieces */
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+.badge::before { content: ""; width: 7px; height: 7px; border-radius: 2px; background: currentColor; }
 .banned_item { color: var(--red); background: var(--red-bg); }
-.not_in_registry, .information_missing, .registry_mismatch { color: var(--amber); background: var(--amber-bg); }
+.not_in_registry { color: var(--accent); background: var(--accent-bg); }
+.information_missing, .registry_mismatch { color: var(--amber); background: var(--amber-bg); }
 .clear { color: var(--green); background: var(--green-bg); }
-.conf { font-size: 12px; color: var(--muted); }
-.filters { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 14px; }
-.chain { list-style: none; padding: 0; margin: 0; }
-.chain li { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; position: relative; }
-.chain li + li::before { content: "\2193"; position: absolute; top: -21px; left: 22px; color: var(--muted); }
-.step { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
-blockquote { margin: 6px 0; padding: 4px 10px; border-left: 3px solid var(--line); }
-.btn { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--ink); text-decoration: none; font-size: 14px; }
-.foot { margin-top: 28px; font-size: 13px; color: var(--muted); }
+.conf { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); }
+.dots { display: inline-flex; gap: 2px; }
+.dots i { width: 6px; height: 6px; border-radius: 2px; background: var(--line-2); }
+.dots i.on { background: var(--ink-2); }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border: 1px solid var(--line-2); border-radius: 8px; background: var(--panel); color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 500; cursor: pointer; font-family: inherit; }
+.btn:hover { background: var(--panel-2); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.tip { position: relative; display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 5px; border: 1px solid var(--line-2); color: var(--muted); font-size: 11px; font-weight: 600; cursor: help; vertical-align: middle; }
+.tip:hover::after, .tip:focus::after { content: attr(data-tip); position: absolute; left: 50%; bottom: 125%; transform: translateX(-50%); width: 240px; padding: 8px 10px; background: var(--ink); color: var(--bg); font-size: 12px; font-weight: 400; line-height: 1.45; border-radius: 8px; z-index: 5; white-space: normal; text-align: left; }
+.thumb { width: 100%; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: 8px; display: block; }
+.noimg { width: 100%; aspect-ratio: 1; border-radius: 8px; background: var(--panel-2); display: grid; place-items: center; color: var(--muted); font-size: 12px; border: 1px dashed var(--line-2); }
+body.blur .thumb { filter: blur(9px); }
+.disclaimer { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 10px; background: var(--blue-bg); color: var(--ink-2); font-size: 13px; margin-top: 32px; }
+
+.demo { margin: -8px 0 20px; padding: 8px 12px; border-radius: 8px; background: var(--amber-bg); color: var(--amber); font-size: 13px; font-weight: 500; }
+footer { border-top: 1px solid var(--line); padding: 20px 0 32px; font-size: 13px; color: var(--muted); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+footer label { margin-left: auto; display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
 </style>
+{% block head %}{% endblock %}
 </head>
 <body>
-<header><div class="wrap">
-  <h1>Nishedh</h1><span class="tag">marketplace listings checked against India's official registries</span>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><span class="mark">N</span><b>Nishedh</b><span>Is it legal to sell this online?</span></a>
+  <nav class="mainnav">
+    <a href="/?pack=pesticides" class="{{ 'on' if pack == 'pesticides' and not page_name }}">Pesticides</a>
+    <a href="/?pack=radio" class="{{ 'on' if pack == 'radio' and not page_name }}">Walkie-talkies</a>
+    <a href="/how-it-works" class="{{ 'on' if page_name == 'how' }}">How it works</a>
+    <a href="/faq" class="{{ 'on' if page_name == 'faq' }}">FAQ</a>
+  </nav>
 </div></header>
-<main><div class="wrap">{% block body %}{% endblock %}
-<p class="foot">Every result is a prompt for human review, never a legal finding. Sources: CIB&amp;RC pesticide lists, CCPA radio-equipment guidelines, DoT Equipment Type Approval certificates. Data via SerpApi.</p>
+<main><div class="wrap">{% if DEMO_NOTE %}<div class="demo">{{ DEMO_NOTE }}</div>{% endif %}{% block body %}{% endblock %}
+<div class="disclaimer"><span>ⓘ</span><span>Every result here is a <b>lead for a person to check</b>, never a legal finding or an accusation against any seller. Sources: India's official pesticide lists (CIB&amp;RC), the consumer regulator's (CCPA) radio-equipment rules, and the Department of Telecommunications' approval certificates. Listing data via SerpApi.</span></div>
 </div></main>
+<footer><div class="wrap">
+  <span>Nishedh · open source (MIT)</span>
+  <a href="https://github.com/rudratoshs/nishedh">GitHub</a>
+  <a href="/faq">FAQ</a>
+  <label><input type="checkbox" id="blur"> Blur product photos</label>
+</div></footer>
+<script>
+(function () {
+  var box = document.getElementById("blur"), on = false;
+  try { on = localStorage.getItem("nishedh-blur") === "1"; } catch (e) {}
+  if (/[?&]blur=1\b/.test(location.search)) on = true;   // for screenshots
+  box.checked = on; document.body.classList.toggle("blur", on);
+  box.addEventListener("change", function () {
+    document.body.classList.toggle("blur", box.checked);
+    try { localStorage.setItem("nishedh-blur", box.checked ? "1" : "0"); } catch (e) {}
+  });
+  document.querySelectorAll("img.thumb").forEach(function (img) {
+    img.addEventListener("error", function () {
+      var d = document.createElement("div"); d.className = "noimg"; d.textContent = "No photo";
+      img.replaceWith(d);
+    });
+  });
+})();
+</script>
 </body>
 </html>

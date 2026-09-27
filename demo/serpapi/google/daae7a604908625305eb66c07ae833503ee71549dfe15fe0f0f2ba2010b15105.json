@@ -1,0 +1,62 @@
+{
+ "params": {
+  "engine": "google",
+  "gl": "in",
+  "hl": "en",
+  "google_domain": "google.co.in",
+  "q": "site:jiomart.com herbicide"
+ },
+ "fetched_at": "2026-09-27T09:46:22+00:00",
+ "data": {
+  "organic_results": [
+   {
+    "link": "https://sen.jiomart.com/",
+    "title": "Seller Enablement Network",
+    "snippet": "Connecting Sellers and Trusted Service Providers. One of India's fastest growing online retail platforms. HERBAVEDIC EXPORTS. Expand Business Grow your ...",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://identity.seller.jiomart.com/seller_interest_form",
+    "title": "Terms & Conditions For JioMart Seller Registration",
+    "snippet": "Planning to register as a JioMart Seller? Know about the Terms and Conditions in details! Start Selling Your Products on JioMart. write to us at Seller.Support ...",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://identity.seller.jiomart.com/",
+    "title": "Seller Portal | JioMart",
+    "snippet": "For any queries, please write to us at Seller.Support@jiomart.com. You can also reach us during business hours through our IVR number for a quick resolution ...",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://seller.ads.jiomart.com/",
+    "title": "ad-seller-ui",
+    "snippet": "We're sorry but ad-seller-ui doesn't work properly without JavaScript enabled. Login to JioMart Ads User Name Password Login | Forgot Password?",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://www.jiomart.com/c/groceries/2",
+    "title": "JioMart: India's online shopping",
+    "snippet": "JioMart: India's online shopping.",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://www.jiomart.com/c/electronics/4",
+    "title": "Electronics",
+    "snippet": "JioMart: India's online shopping.",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://www.jiomart.com/collection/undefined",
+    "title": "Undefined",
+    "snippet": "JioMart: India's online shopping.",
+    "source": "JioMart"
+   },
+   {
+    "link": "https://www.jiomart.com/sections/gm-home-overall",
+    "title": "GM Home Overall",
+    "snippet": "JioMart: India's online shopping.",
+    "source": "JioMart"
+   }
+  ]
+ }
+}

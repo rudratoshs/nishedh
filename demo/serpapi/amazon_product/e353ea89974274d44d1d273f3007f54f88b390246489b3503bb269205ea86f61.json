@@ -1,0 +1,43 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HJZ2YJYF",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:01:28.822499+00:00",
+ "data": {
+  "product_results": {
+   "description": "Eliminate unwanted weeds quickly and effectively with this powerful ready-to-use Weed & Root Remover. Specially formulated for fast action, this herbicide penetrates deep into the plant system to destroy weeds from the root, helping prevent regrowth. Ideal for use on driveways, patios, garden beds, walkways, and around fences, it ensures a clean and well-maintained outdoor space. The compact 50ml bottle is easy to handle and perfect for targeted application, reducing waste while maximizing efficiency. Its ready-to-use formula requires no mixing—simply apply directly to unwanted vegetation. Designed for homeowners and gardening enthusiasts alike, this solution offers professional-grade weed control in a convenient size."
+  },
+  "about_item": [
+   "Fast-Acting Formula: Starts working immediately to kill weeds and unwanted plants, delivering visible results within a short time after application.",
+   "Root-Level Elimination: Penetrates deep into the root system to ensure complete removal and prevent regrowth for long-lasting results.",
+   "Ready-to-Use Convenience: No mixing or dilution required—simply apply directly for quick and easy weed control.",
+   "Time-Saving Solution: Reduces manual effort such as pulling or digging weeds, making garden maintenance easier.",
+   "Suitable for Outdoor Use: Designed to tackle a wide range of common weeds in residential outdoor spaces.",
+   "User-Friendly Design: Easy-to-handle bottle ensures controlled application for safe and effective weed removal."
+  ],
+  "item_specifications": {
+   "brand": "OM SHAKTI WITH DEVICE OF S",
+   "item_weight": "100 Grams",
+   "manufacturer": "OM SHAKTI WITH DEVICE OF S",
+   "net_quantity": "100.0 Milliliters",
+   "number_of_packs": "1"
+  },
+  "product_details": {
+   "brand_name": "OM SHAKTI WITH DEVICE OF S",
+   "manufacturer": "OM SHAKTI WITH DEVICE OF S",
+   "unit_count": "100.0 Milliliters",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "included_components": "Weed & Root Killer Liquid",
+   "item_type_name": "Ready to use liquid weed and root remover for gardens lawns patios driveways outdoor surfaces fast acting herbicide solution",
+   "model_number": "Powerful Ready-to-Use Weed & Root",
+   "part_number": "root remover for gardens lawns",
+   "asin": "B0HJZ2YJYF",
+   "rating": 3.6,
+   "reviews": 5,
+   "item_weight": "100 Grams"
+  }
+ }
+}

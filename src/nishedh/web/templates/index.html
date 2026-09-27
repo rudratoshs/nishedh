@@ -1,42 +1,200 @@
 {% extends "base.html" %}
+{% from "_macros.html" import confidence, photo %}
+{% block head %}
+<style>
+.hero > *, .story > *, .filters > * { min-width: 0; }
+.hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; align-items: center; margin-bottom: 28px; }
+.hero h1 { font-size: 30px; margin: 0 0 10px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p { margin: 0; color: var(--ink-2); font-size: 16px; max-width: 560px; }
+.steps { display: grid; gap: 10px; }
+.step { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; }
+.step .n { flex: none; width: 26px; height: 26px; border-radius: 7px; background: var(--accent-bg); color: var(--accent); display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+.step b { display: block; font-size: 14px; }
+.step span { font-size: 13px; color: var(--muted); }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .hero h1 { font-size: 24px; } }
+
+.packhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 8px 0 4px; }
+.packhead h2 { margin: 0; font-size: 22px; }
+.packintro { margin: 0 0 16px; color: var(--ink-2); max-width: 760px; }
+
+.story { display: grid; grid-template-columns: 110px 1fr auto; gap: 18px; align-items: center; padding: 16px; margin-bottom: 18px; border-left: 4px solid var(--accent); }
+.story .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); }
+.story h3 { margin: 2px 0 4px; font-size: 17px; }
+.story p { margin: 0; font-size: 14px; color: var(--ink-2); }
+@media (max-width: 720px) { .story { grid-template-columns: 80px 1fr; } .story .btn { grid-column: 1 / -1; justify-content: center; } }
+
+.tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 18px; }
+.tile { padding: 12px 14px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 6px; transition: border-color .15s; }
+.tile:hover { border-color: var(--line-2); }
+.tile.sel { outline: 2px solid var(--ink); outline-offset: -1px; }
+.tile b { font-size: 26px; line-height: 1; }
+.tile small { color: var(--muted); font-size: 12px; line-height: 1.4; }
+@media (max-width: 900px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.filters { display: grid; grid-template-columns: 2fr repeat(4, 1fr) auto; gap: 8px; padding: 12px; margin-bottom: 12px; }
+.filters label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 500; color: var(--muted); }
+.filters input, .filters select { font: inherit; font-size: 14px; color: var(--ink); background: var(--panel-2); border: 1px solid var(--line-2); border-radius: 8px; padding: 8px 10px; width: 100%; min-width: 0; }
+.filters .actions { display: flex; gap: 6px; align-items: flex-end; }
+@media (max-width: 900px) { .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } .filters label:first-child { grid-column: 1 / -1; } .filters .actions { grid-column: 1 / -1; } }
+
+.resultbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 4px 0 14px; font-size: 14px; color: var(--muted); }
+.resultbar .spacer { flex: 1; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr)); gap: 14px; }
+.item { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); overflow: hidden; transition: transform .12s, border-color .12s; }
+.item:hover { transform: translateY(-2px); border-color: var(--line-2); }
+.item .pic { padding: 12px 12px 0; position: relative; }
+.item .pic .badge { position: absolute; top: 20px; left: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.item .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.item .why { font-weight: 600; font-size: 14px; line-height: 1.4; }
+.item .title { font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.item .meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--line); font-size: 13px; }
+.item .more { color: var(--blue); font-weight: 500; font-size: 13px; }
+.empty { padding: 40px; text-align: center; color: var(--muted); }
+
+.pager { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 22px; }
+.pager a, .pager span { min-width: 38px; text-align: center; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); text-decoration: none; font-size: 14px; }
+.pager .on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.pager .off { color: var(--muted); opacity: .5; }
+</style>
+{% endblock %}
 {% block body %}
-<nav>
-  <a href="/?pack=pesticides" class="{{ 'on' if pack == 'pesticides' }}">Pesticides</a>
-  <a href="/?pack=radio" class="{{ 'on' if pack == 'radio' }}">Radio equipment</a>
-</nav>
-{% if not run %}
-  <p class="muted">No sweep yet for this pack. Run <code>nishedh sweep {{ pack }}</code>.</p>
+{% set q = params %}
+{% macro link(page=1) -%}
+/?{% for k, v in q.items() %}{{ k }}={{ v | urlencode }}&{% endfor %}page={{ page }}
+{%- endmacro %}
+
+<section class="hero">
+  <div>
+    <h1>We checked <em>{{ overview.checked }}</em> products on India's online stores. <em>{{ overview.strong }}</em> need a closer look.</h1>
+    <p>Nishedh reads what online sellers say about pesticides and walkie-talkies, and compares it with the government's own lists and rules. When something doesn't add up, it shows you exactly why.</p>
+  </div>
+  <div class="steps">
+    <div class="step panel"><span class="n">1</span><div><b>Find</b><span>Search Amazon, Flipkart, JioMart and other stores through SerpApi.</span></div></div>
+    <div class="step panel"><span class="n">2</span><div><b>Read</b><span>Pick out the chemical, its strength, the radio frequency, the approval number.</span></div></div>
+    <div class="step panel"><span class="n">3</span><div><b>Check</b><span>Compare with the official government lists and explain every result in plain words.</span></div></div>
+  </div>
+</section>
+
+<div class="packhead">
+  <h2>{{ 'Pesticides and weed killers' if pack == 'pesticides' else 'Walkie-talkies and signal boosters' }}</h2>
+  {% if run %}<span class="muted small">Checked {{ (run_info.data_as_of or run_info.started_at or '')[:10] }} · {{ total }} products</span>{% endif %}
+</div>
+<p class="packintro">
+{% if pack == 'pesticides' %}
+  In India every pesticide must be registered, and its label must name the chemical inside and how strong it is. Banned chemicals cannot be sold at all.
 {% else %}
-  <p class="muted">Run {{ run }} &middot; {{ run_info.started_at[:16].replace('T', ' ') if run_info.started_at }} UTC &middot;
-    {{ total }} listings in scope &middot; searches: {{ run_info.live_searches }} live, {{ run_info.cached_searches }} cached</p>
-  <div class="cards">
-    {% for r in reason_order %}
-      <a class="card {{ 'sel' if reason == r }}" href="/?pack={{ pack }}&reason={{ r }}{{ '&show_clear=1' if r == 'clear' }}">
-        <span class="badge {{ r }}">{{ REASON_LABEL[r] }}</span><b>{{ counts.get(r, 0) }}</b></a>
-    {% endfor %}
-  </div>
-  <div class="filters">
-    <span class="muted">Confidence:</span>
-    {% for c in ['', 'high', 'medium', 'low'] %}
-      <a class="btn" href="/?pack={{ pack }}&reason={{ reason }}&confidence={{ c }}{{ '&show_clear=1' if show_clear }}">{{ c or 'any' }}</a>
-    {% endfor %}
-    <span style="flex:1"></span>
-    <a class="btn" href="/export/{{ pack }}.csv">Export CSV</a>
-    <a class="btn" href="/export/{{ pack }}.json">Export JSON</a>
-  </div>
-  <p class="muted" style="font-size:13px">Flagged by marketplace:
-    {% for m, n in marketplaces %}{{ m }} {{ n }}{{ ' · ' if not loop.last }}{% endfor %}</p>
-  <table>
-    <tr><th>Result</th><th>Listing</th><th>Why</th></tr>
-    {% for f in rows %}
-    <tr>
-      <td><span class="badge {{ f.reason }}">{{ REASON_LABEL[f.reason] }}</span><br><span class="conf">{{ f.confidence }} confidence</span></td>
-      <td><a href="/finding/{{ pack }}/{{ f.listing_id }}">{{ f.title[:110] }}</a><br><span class="muted" style="font-size:13px">{{ f.marketplace }}{{ ' · ' + f.price if f.price }}</span></td>
-      <td style="font-size:14px">{{ f.checks[0].explanation[:180] }}</td>
-    </tr>
-    {% else %}
-    <tr><td colspan="3" class="muted">Nothing matches these filters.</td></tr>
-    {% endfor %}
-  </table>
+  Online stores may not sell mobile signal boosters or jammers. Walkie-talkies are only licence-free on 446 MHz, and every listing must show its frequency and its government approval (ETA) number.
 {% endif %}
+  <a href="/how-it-works">How we check →</a>
+</p>
+
+{% if not run %}
+  <div class="panel empty">No results yet for this category. Run <code>nishedh sweep {{ pack }}</code> to fetch them.</div>
+{% else %}
+
+{% if story %}
+<div class="story panel">
+  {{ photo(story.thumbnail, story.title) }}
+  <div>
+    <div class="label">{{ 'Case to look at first' }}</div>
+    <h3>{{ headline(story) }}</h3>
+    <p>{% if pack == 'pesticides' %}In September 2026 the regulator fined Amazon, Flipkart and JioMart for selling "Cyclosinone" weed killer, whose chemical is on no official list. This {{ (story.marketplace + ' ') if story.marketplace != 'another online store' }}listing never names its chemical, but Google Lens finds the same photo sold as Cyclosinone.{% else %}The regulator's 2025 rules say online stores "shall not allow listing or sale of mobile signal boosters". These were on sale when we checked ({{ (run_info.data_as_of or run_info.started_at or '')[:10] }}).{% endif %}</p>
+  </div>
+  <a class="btn primary" href="/finding/{{ pack }}/{{ story.listing_id }}">See the evidence →</a>
+</div>
+{% endif %}
+
+<div class="tiles">
+  {% for r in REASON_ORDER %}
+  <a class="tile panel {{ 'sel' if q.reason == r }}" href="/?pack={{ pack }}&reason={{ r }}">
+    <span><span class="badge {{ r }}">{{ REASON_LABEL[r] }}</span></span>
+    <b>{{ counts.get(r, 0) }}</b>
+    <small>{{ REASON_HELP[r] }}</small>
+  </a>
+  {% endfor %}
+</div>
+
+<form class="filters panel" method="get" action="/" id="filters">
+  <input type="hidden" name="pack" value="{{ pack }}">
+  <label>Search product names
+    <input type="search" name="q" value="{{ q.q }}" placeholder="e.g. weed killer, glyphosate, baofeng">
+  </label>
+  <label>Result
+    <select name="reason">
+      <option value="review" {{ 'selected' if q.reason == 'review' }}>Needs a look (all)</option>
+      {% for r in REASON_ORDER %}<option value="{{ r }}" {{ 'selected' if q.reason == r }}>{{ REASON_LABEL[r] }}</option>{% endfor %}
+      <option value="all" {{ 'selected' if q.reason == 'all' }}>Everything, incl. clear</option>
+    </select>
+  </label>
+  <label><span>How sure <span class="tip" tabindex="0" data-tip="Strong evidence: the listing's own words break a rule. Good lead: clear signs, a person should confirm. Weak signal: only the search title was read.">?</span></span>
+    <select name="confidence">
+      <option value="">Any</option>
+      {% for c in ['high', 'medium', 'low'] %}<option value="{{ c }}" {{ 'selected' if q.confidence == c }}>{{ CONF_LABEL[c] }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Store
+    <select name="market">
+      <option value="">All stores</option>
+      {% for m in markets %}<option value="{{ m }}" {{ 'selected' if q.market == m }}>{{ m[0] | upper }}{{ m[1:] }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Sort
+    <select name="sort">
+      {% for k, v in sorts.items() %}<option value="{{ k }}" {{ 'selected' if q.sort == k }}>{{ v }}</option>{% endfor %}
+    </select>
+  </label>
+  <div class="actions">
+    <button class="btn primary" type="submit">Apply</button>
+    <a class="btn" href="/?pack={{ pack }}">Reset</a>
+  </div>
+</form>
+
+<div class="resultbar">
+  <span>Showing <b>{{ rows | length }}</b> of <b>{{ matched }}</b> products{% if pages > 1 %} · page {{ page }} of {{ pages }}{% endif %}</span>
+  <span class="spacer"></span>
+  <a class="btn" href="/export/{{ pack }}.csv">⬇ Download CSV</a>
+  <a class="btn" href="/export/{{ pack }}.json">⬇ JSON</a>
+</div>
+
+{% if rows %}
+<div class="grid">
+  {% for f in rows %}
+  <a class="item panel" href="/finding/{{ pack }}/{{ f.listing_id }}">
+    <div class="pic">{{ photo(f.thumbnail, f.title) }}<span class="badge {{ f.reason }}">{{ REASON_LABEL[f.reason] }}</span></div>
+    <div class="body">
+      <div class="why">{{ headline(f) }}</div>
+      <div class="title">{{ f.title }}</div>
+      <div class="meta">
+        <span>{{ f.marketplace[0] | upper }}{{ f.marketplace[1:] }}{{ ' · ' + f.price if f.price }}</span>
+        {{ confidence(f.confidence) }}
+      </div>
+      <span class="more">See why →</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<div class="panel empty">No products match these filters. <a href="/?pack={{ pack }}">Clear the filters</a></div>
+{% endif %}
+
+{% if pages > 1 %}
+<nav class="pager" aria-label="Pages">
+  {% if page > 1 %}<a href="{{ link(page - 1) }}">← Previous</a>{% else %}<span class="off">← Previous</span>{% endif %}
+  {% for p in range(1, pages + 1) %}
+    {% if p == page %}<span class="on">{{ p }}</span>
+    {% elif p == 1 or p == pages or (p - page) | abs <= 2 %}<a href="{{ link(p) }}">{{ p }}</a>
+    {% elif (p - page) | abs == 3 %}<span class="off">…</span>{% endif %}
+  {% endfor %}
+  {% if page < pages %}<a href="{{ link(page + 1) }}">Next →</a>{% else %}<span class="off">Next →</span>{% endif %}
+</nav>
+{% endif %}
+{% endif %}
+
+<script>
+document.querySelectorAll("#filters select").forEach(function (s) {
+  s.addEventListener("change", function () { document.getElementById("filters").submit(); });
+});
+</script>
 {% endblock %}

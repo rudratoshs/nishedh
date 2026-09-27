@@ -1,0 +1,41 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B0HKNZFFW8",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:02:01.879529+00:00",
+ "data": {
+  "product_results": {
+   "description": "SERA 71 is a systemic, non-selective, post-emergence herbicide containing Ammonium Salt of Glyphosate 71% SG. It is designed for weed management and is specified on the label for controlling annual, perennial, broadleaf and grassy weeds in tea and non-crop areas. The formulation works through foliar application and translocation within the weed plant. For best results, follow the manufacturer's label instructions regarding application, dilution, target area and safety precautions"
+  },
+  "about_item": [
+   "SERA 71 – GLYPHOSATE 71% SG SERA 71 में Ammonium Salt of Glyphosate 71% SG है और यह एक systemic herbicide है। पैकेट पर दिए label के अनुसार annual, perennial, broadleaf और grassy weeds के लिए उपयोग किया जाता है।",
+   "SILSTICK – SILICON SURFACTANT Silstick एक non-ionic spray adjuvant है, जिसे product label के अनुसार spraying में wetting, spreading और penetrating में सहायता के लिए formulated किया गया है।",
+   "AMMONIUM SALT OF GLYPHOSATE 71% SG SERA 71 contains Ammonium Salt of Glyphosate 71% SG and is formulated as a systemic herbicide for weed management",
+   "BROAD-SPECTRUM WEED CONTROL Suitable for controlling a range of annual, perennial, broadleaf and grassy weeds as specified on the product label."
+  ],
+  "item_specifications": {
+   "brand": "Vedic Agro Science Pvt.Ltd.",
+   "item_weight": "105 Grams",
+   "item_form": "Granule",
+   "active_ingredients": "Ammonium Salt of Glyphosate 71% SG",
+   "manufacturer": "VEDIC AGRO SCIENCE PVT LTD"
+  },
+  "product_details": {
+   "brand_name": "Vedic Agro Science Pvt.Ltd.",
+   "manufacturer": "VEDIC AGRO SCIENCE PVT LTD",
+   "item_highlight": "Glyphosate 71% SG Systemic Herbicide Adjuvant Combo Pack | Weed Management",
+   "unit_count": "1 Grams",
+   "number_of_packs": "1",
+   "country_of_origin": "India",
+   "included_components": "SERA 71 Herbicide 100 g + Silstick Silicon Surfactant 5 ml",
+   "item_type_name": "SERA 71 Herbicide 100 g + Silstick Silicon Surfactant 5 ml",
+   "part_number": "Sera 71 plus Silstic",
+   "asin": "B0HKNZFFW8",
+   "item_weight": "105 Grams",
+   "item_form": "Granule",
+   "active_ingredients": "Ammonium Salt of Glyphosate 71% SG"
+  }
+ }
+}

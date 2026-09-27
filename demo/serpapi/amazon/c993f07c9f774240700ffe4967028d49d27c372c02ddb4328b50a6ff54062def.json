@@ -1,0 +1,395 @@
+{
+ "params": {
+  "engine": "amazon",
+  "amazon_domain": "amazon.in",
+  "k": "herbicide weed killer"
+ },
+ "fetched_at": "2026-09-27T09:46:17+00:00",
+ "data": {
+  "organic_results": [
+   {
+    "asin": "B0HJW9JXXN",
+    "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn Bamboo, Heavy Brush & Invasive Plants,",
+    "link_clean": "https://www.amazon.in/Coslasy-Herbicide-Bamboo-Killer-Granules/dp/B0HJW9JXXN/",
+    "link": "https://www.amazon.in/Coslasy-Herbicide-Bamboo-Killer-Granules/dp/B0HJW9JXXN/ref=sr_1_1?keywords=herbicide+weed+killer&qid=1790502378&sr=8-1",
+    "price": "₹399",
+    "thumbnail": "https://m.media-amazon.com/images/I/71JLSZKxHBL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HKP6DVZQ",
+    "title": "Go well Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn Bamboo, Heavy Brush & Invasive Plants,",
+    "link_clean": "https://www.amazon.in/dp/B0HKP6DVZQ/",
+    "link": "https://www.amazon.in/dp/B0HKP6DVZQ/ref=sr_1_2?keywords=herbicide+weed+killer&qid=1790502378&sr=8-2",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/71KtP42TkHL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJRL38JN",
+    "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Lawn, Driveways, Pathways & Outdoor Areas (PACK OF 2)",
+    "link_clean": "https://www.amazon.in/Weed-Root-Remover-Penetrating-Driveways/dp/B0HJRL38JN/",
+    "link": "https://www.amazon.in/Weed-Root-Remover-Penetrating-Driveways/dp/B0HJRL38JN/ref=sr_1_3?keywords=herbicide+weed+killer&qid=1790502378&sr=8-3",
+    "price": "₹279",
+    "thumbnail": "https://m.media-amazon.com/images/I/51BjmMRHBrL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJ813DMX",
+    "title": "Lawn Weed Remover 200g | Ready to Use Weed Removal Powder | Fast-Acting Formula for Lawn, Garden, Driveway, Pathway & Outdoor Areas | Helps Remove Weeds from Roots",
+    "link_clean": "https://www.amazon.in/Remover-Removal-Fast-Acting-Formula-Driveway/dp/B0HJ813DMX/",
+    "link": "https://www.amazon.in/Remover-Removal-Fast-Acting-Formula-Driveway/dp/B0HJ813DMX/ref=sr_1_4?keywords=herbicide+weed+killer&qid=1790502378&sr=8-4",
+    "price": "₹199",
+    "thumbnail": "https://m.media-amazon.com/images/I/51A4eNdLuiL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJVZ86L8",
+    "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn Bamboo, Heavy Brush & Invasive Plants",
+    "link_clean": "https://www.amazon.in/Coslasy-Herbicide-Bamboo-Killer-Granules/dp/B0HJVZ86L8/",
+    "link": "https://www.amazon.in/Coslasy-Herbicide-Bamboo-Killer-Granules/dp/B0HJVZ86L8/ref=sr_1_5?keywords=herbicide+weed+killer&qid=1790502378&sr=8-5",
+    "price": "₹599",
+    "thumbnail": "https://m.media-amazon.com/images/I/51MeJTQFFsL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJW12GS3",
+    "title": "Herbicide Plus Bamboo Killer Granules – 5% Active Formula Weed Killer – Root Targeting Granular Herbicide for Stubborn Bamboo, Heavy Brush & Invasive Plants,",
+    "link_clean": "https://www.amazon.in/Coslasy-Herbicide-Bamboo-Killer-Granules/dp/B0HJW12GS3/",
+    "link": "https://www.amazon.in/Coslasy-Herbicide-Bamboo-Killer-Granules/dp/B0HJW12GS3/ref=sr_1_6?keywords=herbicide+weed+killer&qid=1790502378&sr=8-6",
+    "price": "₹699",
+    "thumbnail": "https://m.media-amazon.com/images/I/71i1mOrJ3ZL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09GVHLVFX",
+    "title": "Erwon® Herbicide, Wild Herbs Remover, Organic Essential Powerful Organic Herbicide for Removing all types of Wild Herbs (100 gm)",
+    "link_clean": "https://www.amazon.in/Herbicide-Remover-Essential-Powerful-Removing/dp/B09GVHLVFX/",
+    "link": "https://www.amazon.in/Herbicide-Remover-Essential-Powerful-Removing/dp/B09GVHLVFX/ref=sr_1_7?keywords=herbicide+weed+killer&qid=1790502378&sr=8-7",
+    "price": "₹215",
+    "thumbnail": "https://m.media-amazon.com/images/I/41zQXtWGGAL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H3VPKSCX",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Remove Weeds from Root Permanently (Pack of 1)",
+    "link_clean": "https://www.amazon.in/Powerful-Ready-Weed-Root-Remover/dp/B0H3VPKSCX/",
+    "link": "https://www.amazon.in/Powerful-Ready-Weed-Root-Remover/dp/B0H3VPKSCX/ref=sr_1_8?keywords=herbicide+weed+killer&qid=1790502378&sr=8-8",
+    "price": "₹199",
+    "thumbnail": "https://m.media-amazon.com/images/I/51RAABvEu8L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H7RKLBKW",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Helps Remove (1)",
+    "link_clean": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0H7RKLBKW/",
+    "link": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0H7RKLBKW/ref=sr_1_9?keywords=herbicide+weed+killer&qid=1790502378&sr=8-9",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/61hKIHJRUZL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GX1RYDTC",
+    "title": "Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden, Lawn, Driveway & Pathways – Kills Weeds from Root (Pack)",
+    "link_clean": "https://www.amazon.in/CYUZ-Weed-Root-Killer-Ready/dp/B0GX1RYDTC/",
+    "link": "https://www.amazon.in/CYUZ-Weed-Root-Killer-Ready/dp/B0GX1RYDTC/ref=sr_1_10?keywords=herbicide+weed+killer&qid=1790502378&sr=8-10",
+    "price": "₹167",
+    "thumbnail": "https://m.media-amazon.com/images/I/51AuTYNnnML._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HB4BLG3Y",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Helps Remove",
+    "link_clean": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HB4BLG3Y/",
+    "link": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HB4BLG3Y/ref=sr_1_11?keywords=herbicide+weed+killer&qid=1790502378&sr=8-11",
+    "price": "₹149",
+    "thumbnail": "https://m.media-amazon.com/images/I/51s8P6kuk+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H55KCXN6",
+    "title": "Generic 2,4-D Amine Salt 58% SL Herbicide - 48 Hour Weed Killer for Lawn/Garden/Outdoor - Non Selective",
+    "link_clean": "https://www.amazon.in/Generic-4-D-Amine-Salt-Herbicide/dp/B0H55KCXN6/",
+    "link": "https://www.amazon.in/Generic-4-D-Amine-Salt-Herbicide/dp/B0H55KCXN6/ref=sr_1_12?keywords=herbicide+weed+killer&qid=1790502378&sr=8-12",
+    "price": "₹900",
+    "thumbnail": "https://m.media-amazon.com/images/I/41cRz1IU-pL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJZ2YJYF",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid 100ml – Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Remove Weeds from Root Permanently (3 counts)",
+    "link_clean": "https://www.amazon.in/Powerful-Ready-Weed-Root-Remover/dp/B0HJZ2YJYF/",
+    "link": "https://www.amazon.in/Powerful-Ready-Weed-Root-Remover/dp/B0HJZ2YJYF/ref=sr_1_13?keywords=herbicide+weed+killer&qid=1790502378&sr=8-13",
+    "price": "₹289",
+    "thumbnail": "https://m.media-amazon.com/images/I/61fe7rKU95L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HKPZBPP5",
+    "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Lawn, Pathways & Outdoor Areas pack of 2",
+    "link_clean": "https://www.amazon.in/dp/B0HKPZBPP5/",
+    "link": "https://www.amazon.in/dp/B0HKPZBPP5/ref=sr_1_14?keywords=herbicide+weed+killer&qid=1790502378&sr=8-14",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/51BjmMRHBrL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09H2XQ3L4",
+    "title": "Sansar Green® Herbicide Powder, Premium Organic Powerful Herbicide for Removing Wild Herbs & Weeds (50 gm)",
+    "link_clean": "https://www.amazon.in/Sansar-Herbicide-Premium-Powerful-Removing/dp/B09H2XQ3L4/",
+    "link": "https://www.amazon.in/Sansar-Herbicide-Premium-Powerful-Removing/dp/B09H2XQ3L4/ref=sr_1_15?keywords=herbicide+weed+killer&qid=1790502378&sr=8-15",
+    "price": "₹155",
+    "thumbnail": "https://m.media-amazon.com/images/I/81uJcMnIGCL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HDZQ8XYJ",
+    "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Lawn, Driveways, Pathways & Outdoor Areas 100gm Pack Of 1",
+    "link_clean": "https://www.amazon.in/Remover-Penetrating-Formula-Driveways-Pathways/dp/B0HDZQ8XYJ/",
+    "link": "https://www.amazon.in/Remover-Penetrating-Formula-Driveways-Pathways/dp/B0HDZQ8XYJ/ref=sr_1_16?keywords=herbicide+weed+killer&qid=1790502378&sr=8-16",
+    "price": "₹199",
+    "thumbnail": "https://m.media-amazon.com/images/I/61xkp5eIHkL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HKNZFFW8",
+    "title": "Vedic SERA 71 Herbicide 100 g + Silstick Silicon Surfactant 5 ml",
+    "link_clean": "https://www.amazon.in/dp/B0HKNZFFW8/",
+    "link": "https://www.amazon.in/dp/B0HKNZFFW8/ref=sr_1_17?keywords=herbicide+weed+killer&qid=1790502378&sr=8-17",
+    "price": "₹140",
+    "thumbnail": "https://m.media-amazon.com/images/I/61+PlYNrERL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H4VTJB2Z",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Helps Remove (2)",
+    "link_clean": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0H4VTJB2Z/",
+    "link": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0H4VTJB2Z/ref=sr_1_18?keywords=herbicide+weed+killer&qid=1790502378&sr=8-18",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/71nrrYNJYoL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HBMGQPWC",
+    "title": "Weed and Root Remover 100G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Lawn, Driveways, Pathways & Outdoor Area (Pack of 2)",
+    "link_clean": "https://www.amazon.in/Wixger-Remover-Penetrating-Driveways-Pathways/dp/B0HBMGQPWC/",
+    "link": "https://www.amazon.in/Wixger-Remover-Penetrating-Driveways-Pathways/dp/B0HBMGQPWC/ref=sr_1_19?keywords=herbicide+weed+killer&qid=1790502378&sr=8-19",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/71Qg7tsryRL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJN6ZYPY",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Helps Remove (PACk OF 3)",
+    "link_clean": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HJN6ZYPY/",
+    "link": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HJN6ZYPY/ref=sr_1_20?keywords=herbicide+weed+killer&qid=1790502378&sr=8-20",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/715dsFr4w5L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H7SB8Y8D",
+    "title": "Weed & Grass Killer | Remove Weeds and Grass Down to the Root | Ready-to-Use | for Garden, Lawn, Driveways, Pathways & Outdoor Areas | Visible Results in 6 Hours | 250ml",
+    "link_clean": "https://www.amazon.in/Driveways-Pathways-Outdoor-Visible-Results/dp/B0H7SB8Y8D/",
+    "link": "https://www.amazon.in/Driveways-Pathways-Outdoor-Visible-Results/dp/B0H7SB8Y8D/ref=sr_1_21?keywords=herbicide+weed+killer&qid=1790502378&sr=8-21",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/51tlqiRjBVL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GX1272CQ",
+    "title": "DHYANI Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden, Lawn, Driveway & Pathways – Kills Weeds from Root (Pack Of 1)",
+    "link_clean": "https://www.amazon.in/DHYANI-Weed-Root-Killer-Ready/dp/B0GX1272CQ/",
+    "link": "https://www.amazon.in/DHYANI-Weed-Root-Killer-Ready/dp/B0GX1272CQ/ref=sr_1_22?keywords=herbicide+weed+killer&qid=1790502378&sr=8-22",
+    "price": "₹149",
+    "thumbnail": "https://m.media-amazon.com/images/I/51QgB2vc+7L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09GYB9T4L",
+    "title": "Erwon® Herbicide, Organic Powerful Liquid Herbicide for Removing Wild Herbs (100 ml)",
+    "link_clean": "https://www.amazon.in/Herbicide-Premium-Essential-Powerful-Removing/dp/B09GYB9T4L/",
+    "link": "https://www.amazon.in/Herbicide-Premium-Essential-Powerful-Removing/dp/B09GYB9T4L/ref=sr_1_23_mod_primary_new?keywords=herbicide+weed+killer&qid=1790502378&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-23",
+    "price": "₹156",
+    "thumbnail": "https://m.media-amazon.com/images/I/71HL1htuf+L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HG22197D",
+    "title": "Root Stop Herbicid Granular Weed With Active Ingredient Low Toxicity Formula For Lawn Garden And Farm Use Fast-Acting Safe Weed Terminator Lawns Gardens",
+    "link_clean": "https://www.amazon.in/DCCREATION-Herbicid-Ingredient-Fast-Acting-Terminator/dp/B0HG22197D/",
+    "link": "https://www.amazon.in/DCCREATION-Herbicid-Ingredient-Fast-Acting-Terminator/dp/B0HG22197D/ref=sr_1_24?keywords=herbicide+weed+killer&qid=1790502378&sr=8-24",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/416iJ6jwVOL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B07DBPMZ89",
+    "title": "DIVINE TREE Nicotox-D Tobacco Dust Powder for Plants (900g) | Natural Soil & Root Insecticide for Plants | Organic Pest Control for Garden, Lawn, Pots & Home Plants",
+    "link_clean": "https://www.amazon.in/Nicotox-D-Insecticides-Flowerbed-Agriculture-Gardening/dp/B07DBPMZ89/",
+    "link": "https://www.amazon.in/Nicotox-D-Insecticides-Flowerbed-Agriculture-Gardening/dp/B07DBPMZ89/ref=sr_1_25?keywords=herbicide+weed+killer&qid=1790502378&sr=8-25",
+    "price": "₹179",
+    "thumbnail": "https://m.media-amazon.com/images/I/71G03xpAQIS._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H7SKRC7G",
+    "title": "Weed Remover Spray for Unwanted Grass & Weeds | Ready to Use Weed Destroyer Spray | Plants Remover for Driveways, Pathways, Walls, Garden Edges & Outdoor Areas | 250ml",
+    "link_clean": "https://www.amazon.in/Remover-Unwanted-Destroyer-Driveways-Pathways/dp/B0H7SKRC7G/",
+    "link": "https://www.amazon.in/Remover-Unwanted-Destroyer-Driveways-Pathways/dp/B0H7SKRC7G/ref=sr_1_26?keywords=herbicide+weed+killer&qid=1790502378&sr=8-26",
+    "price": "₹285",
+    "thumbnail": "https://m.media-amazon.com/images/I/51JlwgTRVmL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HCVNNLYX",
+    "title": "Power Weed Control Liquid 50ml | Ready-to-Use Herbicide | Outdoor Weed & Root Management for Gardens, Lawns, Pathways & Driveways",
+    "link_clean": "https://www.amazon.in/Weed-Herbicide-Root-Management-Driveways/dp/B0HCVNNLYX/",
+    "link": "https://www.amazon.in/Weed-Herbicide-Root-Management-Driveways/dp/B0HCVNNLYX/ref=sr_1_27?keywords=herbicide+weed+killer&qid=1790502378&sr=8-27",
+    "price": "₹269",
+    "thumbnail": "https://m.media-amazon.com/images/I/61NWGR5CBgL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJRVB6D2",
+    "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Lawn, Driveways, Pathways & Outdoor Areas (PACK OF 1)",
+    "link_clean": "https://www.amazon.in/Remover-Penetrating-Formula-Driveways-Pathways/dp/B0HJRVB6D2/",
+    "link": "https://www.amazon.in/Remover-Penetrating-Formula-Driveways-Pathways/dp/B0HJRVB6D2/ref=sr_1_28?keywords=herbicide+weed+killer&qid=1790502378&sr=8-28",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/71Atn4Od+VL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HHZ8FPM1",
+    "title": "Herbal Weed & Root Killer Liquid for Garden & Outdoor Use | Ready-to-Use Natural Weed Control Solution | Fast-Acting Formula for Unwanted Grass Weeds & Roots (Pack Of 1)",
+    "link_clean": "https://www.amazon.in/Outdoor-Natural-Solution-Fast-Acting-Unwanted/dp/B0HHZ8FPM1/",
+    "link": "https://www.amazon.in/Outdoor-Natural-Solution-Fast-Acting-Unwanted/dp/B0HHZ8FPM1/ref=sr_1_29?keywords=herbicide+weed+killer&qid=1790502378&sr=8-29",
+    "price": "₹249",
+    "thumbnail": "https://m.media-amazon.com/images/I/51dE3WQzh7L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HDC6K61Z",
+    "title": "TRESOL 2,4-D Amine Salt 58% SL Selective Systemic Herbicide (500ml)",
+    "link_clean": "https://www.amazon.in/TRESOL-Amine-Selective-Systemic-Herbicide/dp/B0HDC6K61Z/",
+    "link": "https://www.amazon.in/TRESOL-Amine-Selective-Systemic-Herbicide/dp/B0HDC6K61Z/ref=sr_1_30?keywords=herbicide+weed+killer&qid=1790502378&sr=8-30",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/41SktzUvQZL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09GXJRPHM",
+    "title": "Erwon® Herbicide, Organic Essential Powerful Liquid Spray for Removing all types of Wild Herbs (100 ml)",
+    "link_clean": "https://www.amazon.in/Herbicide-Premium-Essential-Powerful-Removing/dp/B09GXJRPHM/",
+    "link": "https://www.amazon.in/Herbicide-Premium-Essential-Powerful-Removing/dp/B09GXJRPHM/ref=sr_1_31?keywords=herbicide+weed+killer&qid=1790502378&sr=8-31",
+    "price": "₹150",
+    "thumbnail": "https://m.media-amazon.com/images/I/617UJ4HPLcL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GSQS64VW",
+    "title": "Weed & Root Killer – Ready-to-Use, Fast-Acting, Deep Penetrating Formula (Pack of 2)",
+    "link_clean": "https://www.amazon.in/Weed-Root-Killer-Ready-Use/dp/B0GSQS64VW/",
+    "link": "https://www.amazon.in/Weed-Root-Killer-Ready-Use/dp/B0GSQS64VW/ref=sr_1_32?keywords=herbicide+weed+killer&qid=1790502378&sr=8-32",
+    "price": "₹399",
+    "thumbnail": "https://m.media-amazon.com/images/I/61ajhQzud-L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HHRHQZQL",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Helps Remove (PACK OF 3)",
+    "link_clean": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HHRHQZQL/",
+    "link": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HHRHQZQL/ref=sr_1_33?keywords=herbicide+weed+killer&qid=1790502378&sr=8-33",
+    "price": "₹299",
+    "thumbnail": "https://m.media-amazon.com/images/I/715dsFr4w5L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HCX4CJ9W",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid | Fast Acting Herbicide for Gardens, Lawns, Driveways, Patios & Outdoor Surfaces | Helps Remove Weeds & Roots | No Mixing Required | Pack of 1",
+    "link_clean": "https://www.amazon.in/Powerful-Herbicide-Driveways-Surfaces-Required/dp/B0HCX4CJ9W/",
+    "link": "https://www.amazon.in/Powerful-Herbicide-Driveways-Surfaces-Required/dp/B0HCX4CJ9W/ref=sr_1_34?keywords=herbicide+weed+killer&qid=1790502378&sr=8-34",
+    "price": "₹259",
+    "thumbnail": "https://m.media-amazon.com/images/I/51X-1EPBiZL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HFFCLJS9",
+    "title": "Weed and Root 100ml Ready to Use – Fast Acting Deep Penetrating Weed Remover – Kills Weeds from Root for Garden, Lawn, Driveway, Pathways) (Pack Of 3)",
+    "link_clean": "https://www.amazon.in/Weed-Root-100ml-Ready-Use/dp/B0HFFCLJS9/",
+    "link": "https://www.amazon.in/Weed-Root-100ml-Ready-Use/dp/B0HFFCLJS9/ref=sr_1_35?keywords=herbicide+weed+killer&qid=1790502378&sr=8-35",
+    "price": "₹298",
+    "thumbnail": "https://m.media-amazon.com/images/I/71bvvUBYnQL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HCVTCSJ7",
+    "title": "Ready-to-Use Weed & Root Remover Liquid | Fast-Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Areas | Easy Spray Formula | (Pack of 2)",
+    "link_clean": "https://www.amazon.in/Remover-Fast-Acting-Herbicide-Gardens-Driveways/dp/B0HCVTCSJ7/",
+    "link": "https://www.amazon.in/Remover-Fast-Acting-Herbicide-Gardens-Driveways/dp/B0HCVTCSJ7/ref=sr_1_36?keywords=herbicide+weed+killer&qid=1790502378&sr=8-36",
+    "price": "₹349",
+    "thumbnail": "https://m.media-amazon.com/images/I/71wzIevXbyL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GWNV4B4X",
+    "title": "Weed and Root Killer 50ml – Ready-to-Use Fast-Acting Deep Penetrating Formula – Powerful Weed Remover for Garden, Lawn, Driveway & Pathways – Kills Weeds from Root (PACK OF 1)",
+    "link_clean": "https://www.amazon.in/Device-SKINGO-Weed-Killer-Ready/dp/B0GWNV4B4X/",
+    "link": "https://www.amazon.in/Device-SKINGO-Weed-Killer-Ready/dp/B0GWNV4B4X/ref=sr_1_37?keywords=herbicide+weed+killer&qid=1790502378&sr=8-37",
+    "price": "₹199",
+    "thumbnail": "https://m.media-amazon.com/images/I/51otGNatvsL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0H7WQKX3J",
+    "title": "Weed Remover Spray 250ml for Unwanted Grass & Weeds | Fast Acting Weed Destroyer Liquid | Grass & Plant Remover For Garden Edges, Parking Areas, Walls & Pavements",
+    "link_clean": "https://www.amazon.in/Remover-Unwanted-Destroyer-Parking-Pavements/dp/B0H7WQKX3J/",
+    "link": "https://www.amazon.in/Remover-Unwanted-Destroyer-Parking-Pavements/dp/B0H7WQKX3J/ref=sr_1_38?keywords=herbicide+weed+killer&qid=1790502378&sr=8-38",
+    "price": "₹289",
+    "thumbnail": "https://m.media-amazon.com/images/I/51TOSSh6-lL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HGL84F6J",
+    "title": "Powerful Ready-to-Use Weed & Root Remover Liquid Fast Acting Herbicide for Gardens, Lawns, Driveways & Outdoor Surfaces Helps Remove (PACk OF 1)",
+    "link_clean": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HGL84F6J/",
+    "link": "https://www.amazon.in/Powerful-Remover-Herbicide-Driveways-Surfaces/dp/B0HGL84F6J/ref=sr_1_39?keywords=herbicide+weed+killer&qid=1790502378&sr=8-39",
+    "price": "₹199",
+    "thumbnail": "https://m.media-amazon.com/images/I/61d41vFIeYL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B00D0JHB5K",
+    "title": "Southern Ag Crossbow Specialty Herbicide 2 4 D & Triclopyr Weed & Brush Killer, 32oz - 1 Quart",
+    "link_clean": "https://www.amazon.in/Southern-Crossbow-Specialty-Herbicide-Triclopyr/dp/B00D0JHB5K/",
+    "link": "https://www.amazon.in/Southern-Crossbow-Specialty-Herbicide-Triclopyr/dp/B00D0JHB5K/ref=sr_1_40?keywords=herbicide+weed+killer&qid=1790502378&sr=8-40",
+    "price": "₹15,892.45",
+    "thumbnail": "https://m.media-amazon.com/images/I/81PUeYBJ-SL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HKJMQRH3",
+    "title": "Paraquat Dichloride 24% SL Non-Selective Contact Herbicide for Vegetation Management, 500 ml",
+    "link_clean": "https://www.amazon.in/dp/B0HKJMQRH3/",
+    "link": "https://www.amazon.in/dp/B0HKJMQRH3/ref=sr_1_41?keywords=herbicide+weed+killer&qid=1790502378&sr=8-41",
+    "price": "₹399",
+    "thumbnail": "https://m.media-amazon.com/images/I/614DU-ES+cL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0DQXCLQ2L",
+    "title": "Clodinafop Propargyl 15% WP Herbicide for Grassy Weed Control in Wheat Crops | Post-Emergence Selective Weed Killer |",
+    "link_clean": "https://www.amazon.in/Clodinafop-Propargyl-Herbicide-Post-Emergence-Selective/dp/B0DQXCLQ2L/",
+    "link": "https://www.amazon.in/Clodinafop-Propargyl-Herbicide-Post-Emergence-Selective/dp/B0DQXCLQ2L/ref=sr_1_42?keywords=herbicide+weed+killer&qid=1790502378&sr=8-42",
+    "thumbnail": "https://m.media-amazon.com/images/I/418Co2yru6L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B00934GEPE",
+    "title": "Triple Threat Selective Weed Killer Herbicide for Lawns and Turf - 1 Gallon Jug (Makes 64 Gallons)",
+    "link_clean": "https://www.amazon.in/Triple-Threat-Selective-Killer-Herbicide/dp/B00934GEPE/",
+    "link": "https://www.amazon.in/Triple-Threat-Selective-Killer-Herbicide/dp/B00934GEPE/ref=sr_1_43?keywords=herbicide+weed+killer&qid=1790502378&sr=8-43",
+    "price": "₹15,125.25",
+    "thumbnail": "https://m.media-amazon.com/images/I/71WeYz8u3NL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09GXLYZTY",
+    "title": "Erwon® Herbicide- X, Organic Essential Powerful Herbicide for Removing all Wild Herbs (50 gm)",
+    "link_clean": "https://www.amazon.in/Herbicide-Essential-Powerful-Herbicide-Removing/dp/B09GXLYZTY/",
+    "link": "https://www.amazon.in/Herbicide-Essential-Powerful-Herbicide-Removing/dp/B09GXLYZTY/ref=sr_1_44?keywords=herbicide+weed+killer&qid=1790502378&sr=8-44",
+    "price": "₹175",
+    "thumbnail": "https://m.media-amazon.com/images/I/51hg6JHK0vL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0HJHB9RJ8",
+    "title": "Weed and Root Remover 200G Ready to Use | Fast Acting Deep Penetrating Formula | Removes Weeds from Root for Garden, Lawn, Driveways, Pathways & Outdoor Areas (Pack Of 01)",
+    "link_clean": "https://www.amazon.in/Remover-Penetrating-Formula-Driveways-Pathways/dp/B0HJHB9RJ8/",
+    "link": "https://www.amazon.in/Remover-Penetrating-Formula-Driveways-Pathways/dp/B0HJHB9RJ8/ref=sr_1_45?keywords=herbicide+weed+killer&qid=1790502378&sr=8-45",
+    "price": "₹279",
+    "thumbnail": "https://m.media-amazon.com/images/I/71YXQraacvL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B09GXG7CWL",
+    "title": "Erwon® Weeds- X, Premium Essential Powerful Weedicide Powder for removing all wild Weeds (100 gm)",
+    "link_clean": "https://www.amazon.in/Weedicide-Essential-Powerful-Weedicide-removing/dp/B09GXG7CWL/",
+    "link": "https://www.amazon.in/Weedicide-Essential-Powerful-Weedicide-removing/dp/B09GXG7CWL/ref=sr_1_46?keywords=herbicide+weed+killer&qid=1790502378&sr=8-46",
+    "price": "₹169",
+    "thumbnail": "https://m.media-amazon.com/images/I/51gtdIVLxhL._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GWDSR2L4",
+    "title": "TRESOL 2,4-D Sodium Salt 80% WP Selective Post Emergence Herbicide 500gm",
+    "link_clean": "https://www.amazon.in/TRESOL-Selective-Emergence-Herbicide-Management/dp/B0GWDSR2L4/",
+    "link": "https://www.amazon.in/TRESOL-Selective-Emergence-Herbicide-Management/dp/B0GWDSR2L4/ref=sr_1_47?keywords=herbicide+weed+killer&qid=1790502378&sr=8-47",
+    "price": "₹256",
+    "thumbnail": "https://m.media-amazon.com/images/I/4102fivs22L._AC_UL320_.jpg"
+   },
+   {
+    "asin": "B0GW4W24B7",
+    "title": "Crop Warrior Herbicide, Metribuzin 70% WP, Premium Quality, Wettable Powder, Pack of (2)",
+    "link_clean": "https://www.amazon.in/Warrior-Herbicide-Metribuzin-Premium-Wettable/dp/B0GW4W24B7/",
+    "link": "https://www.amazon.in/Warrior-Herbicide-Metribuzin-Premium-Wettable/dp/B0GW4W24B7/ref=sr_1_48?keywords=herbicide+weed+killer&qid=1790502378&sr=8-48",
+    "price": "₹749",
+    "thumbnail": "https://m.media-amazon.com/images/I/71tI2UZKbjL._AC_UL320_.jpg"
+   }
+  ]
+ }
+}

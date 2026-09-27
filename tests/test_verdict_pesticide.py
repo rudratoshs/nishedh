@@ -74,6 +74,24 @@ def test_brand_next_to_a_named_chemical_is_ignored(judge):
     assert f.reason is Reason.CLEAR
 
 
+def test_widely_sold_brand_alone_is_matched_to_its_chemical(judge):
+    # A registered glyphosate brand sold without the chemical named must not be flagged.
+    f = judge(title="Roundup 41% SL Herbicide 1 Litre")
+    assert f.reason is Reason.CLEAR and "Glyphosate" in f.checks[0].explanation
+
+
+@pytest.mark.parametrize("title", ["Bayer Jump, Fipronil 80 WG (80% w/w)", "Carbofuran 3G granules",
+                                   "Chlorpyrifos 20 EC 1 litre"])
+def test_strength_without_percent_sign_is_read(judge, title):
+    f = judge(title=title)
+    assert f.reason is not Reason.REGISTRY_MISMATCH and "states no strength" not in f.checks[0].explanation, title
+
+
+def test_grams_are_not_a_strength(judge):
+    f = judge(title="Thimet 500 G")
+    assert "500" not in f.checks[0].explanation
+
+
 def test_unregistered_strength_is_only_a_low_confidence_mismatch(judge):
     f = judge(title="Glyphosate 99% SL herbicide")
     assert (f.reason, f.confidence) == (Reason.REGISTRY_MISMATCH, "low")

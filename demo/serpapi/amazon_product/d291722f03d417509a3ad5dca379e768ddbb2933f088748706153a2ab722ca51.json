@@ -1,0 +1,42 @@
+{
+ "params": {
+  "engine": "amazon_product",
+  "asin": "B092QDGSPX",
+  "amazon_domain": "amazon.in"
+ },
+ "fetched_at": "2026-09-27T11:05:55.246778+00:00",
+ "data": {
+  "product_results": {
+   "description": "Specification:Weight: 10g (1 pcs)Color:BlackCompatible Part Number:For Baofeng BL-9 BatteryCompatible with Radio:For Baofeng A58S BF-A58SPackage Include:10x Belt clip"
+  },
+  "about_item": [
+   "Compatible Part Number: For Baofeng BL-9 Battery",
+   "Compatible with Radio: For Baofeng A58S BF-A58S",
+   "Package Include: 10x Belt clip"
+  ],
+  "item_specifications": {
+   "brand": "Vineyuan",
+   "colour": "Black",
+   "special_feature": "Waterproof",
+   "talking_range_maximum": "5 Mile",
+   "water_resistance_level": "Waterproof"
+  },
+  "product_details": {
+   "additional_features": "Waterproof",
+   "talking_range_maximum": "5 Mile",
+   "water_resistance_level": "Waterproof",
+   "compatible_devices": "Baofeng A58S",
+   "connectivity_protocol": "DMR, FM",
+   "colour": "Black",
+   "brand_name": "Vineyuan",
+   "model_number": "A58S A58B",
+   "unit_count": "10 Count",
+   "number_of_packs": "10",
+   "manufacturer": "Vineyuan",
+   "country_of_origin": "USA",
+   "asin": "B092QDGSPX",
+   "rating": 5.0,
+   "reviews": 2
+  }
+ }
+}

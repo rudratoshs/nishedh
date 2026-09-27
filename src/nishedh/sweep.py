@@ -72,6 +72,7 @@ class SweepResult:
     cached: int = 0
     skipped_searches: list[str] = field(default_factory=list)
     by_reason: dict[str, int] = field(default_factory=dict)
+    data_as_of: str = ""          # when the newest search result used was fetched (a replay keeps the original date)
 
 
 class Sweeper:
@@ -112,6 +113,7 @@ class Sweeper:
         except (CacheMiss, BudgetExceeded, SearchError) as e:
             result.skipped_searches.append(f"{params.get('q') or params.get('k') or params.get('asin')}: {e}")
             return None
+        result.data_as_of = max(result.data_as_of, r.fetched_at)
         if r.cached:
             result.cached += 1
         else:
@@ -186,5 +188,5 @@ class Sweeper:
                 result.judged += 1
                 result.by_reason[f.reason.value] = result.by_reason.get(f.reason.value, 0) + 1
         result.listings = len(listings)
-        self.store.finish_run(result.run_id, result.live, result.cached)
+        self.store.finish_run(result.run_id, result.live, result.cached, result.data_as_of)
         return result
