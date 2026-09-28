@@ -37,5 +37,14 @@ for name, params in PILOT.items():
     path.write_text(json.dumps({"params": params, "fetched_at": fetched_iso, "data": data}, ensure_ascii=False))
     ledger.append(json.dumps({"t": fetched_iso, "engine": params["engine"], "id": h}))
     print("imported", name, "->", path.relative_to(ROOT))
-(CACHE / "ledger.jsonl").write_text("\n".join(ledger) + "\n")
-print("ledger:", len(ledger), "searches")
+# Merge into the ledger by id: never clobber real searches recorded since (re-running is then safe).
+ledger_path = CACHE / "ledger.jsonl"
+existing = {}
+if ledger_path.exists():
+    for line in ledger_path.read_text().splitlines():
+        if line.strip():
+            existing[json.loads(line)["id"]] = line
+for line in ledger:
+    existing[json.loads(line)["id"]] = line
+ledger_path.write_text("\n".join(existing.values()) + "\n")
+print("ledger:", len(ledger), "pilot searches;", len(existing), "total in ledger")

@@ -89,3 +89,36 @@ def test_evidence_records_the_field(ex):
 def test_ordinary_products_are_not_pesticides(ex):
     for title in ("Walkie Talkie BF-888S 16 Channels", "Garden Hose Pipe 20m", "Organic Neem Soap 100g"):
         assert not ex.extract({"title": title}).is_pesticide, title
+
+
+# ---- Bugs 2 & 3: ALL-CAPS unknown claims; packaging words / >100% rejected (bug review, 28 Sep 2026) ----
+
+def test_all_caps_unknown_chemical_claim_is_caught():
+    from nishedh.extract.pesticide import PesticideExtractor
+    from nishedh.registry.pesticides import load
+
+    E = PesticideExtractor(load())
+    up = E.extract({"title": "CYCLOSINONE 20% SC HERBICIDE WEED KILLER"}).unrecognised
+    assert up and up[0].text.startswith("CYCLOSINONE 20% SC")
+
+
+def test_short_all_caps_code_is_not_a_claim():
+    from nishedh.extract.pesticide import PesticideExtractor
+    from nishedh.registry.pesticides import load
+
+    E = PesticideExtractor(load())
+    assert E.extract({"title": "NPK 19% SC plant food"}).unrecognised == []
+
+
+@pytest.mark.parametrize("title", [
+    "Herbicide Granules 20% SC for Lawn",
+    "Insecticide Powder 50% WP Multipack",
+    "Premium Quality 20% SC Herbicide",
+    "Weed Killer Spray Bottle 500% SC",
+])
+def test_packaging_words_and_impossible_strengths_are_not_claimed_as_chemicals(title):
+    from nishedh.extract.pesticide import PesticideExtractor
+    from nishedh.registry.pesticides import load
+
+    E = PesticideExtractor(load())
+    assert E.extract({"title": title}).unrecognised == [], title

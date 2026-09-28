@@ -66,3 +66,14 @@ def test_directory_title_is_hidden_but_still_matched():
     data = {"visual_matches": [{"title": "Cyclosinone 20% SC - Wholesaler in Pune", "link": "https://x.in/p", "source": "x"}]}
     ev = read_lens(data, "s", NoChemicals(), [item])
     assert ev.matches[0].title == DIRECTORY_TITLE and len(ev.watchlist_hits) == 1
+
+
+def test_other_stores_note_has_no_leading_gap_or_plural_error():
+    from nishedh.sweep import _other_stores_note
+
+    assert _other_stores_note([], 1) == "Visually matching photos also appear on 1 other online store."
+    assert _other_stores_note([], 2) == "Visually matching photos also appear on 2 other online stores."
+    assert _other_stores_note(["Flipkart"], 2) == \
+        "Visually matching photos also appear on Flipkart and 2 other online stores."
+    assert " on  and" not in _other_stores_note([], 3)
+    assert _other_stores_note([], 0) == ""

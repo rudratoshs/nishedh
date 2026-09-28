@@ -78,6 +78,17 @@ class SweepResult:
     searches: dict[str, tuple[str, str, str]] = field(default_factory=dict)
 
 
+
+def _other_stores_note(named: list[str], small: int) -> str:
+    """Reviewer note listing where else the photo appears. Named marketplaces first, then a count of
+    small stores, joined with " and " with correct singular/plural and no leading gap."""
+    parts = []
+    if named:
+        parts.append(", ".join(named))
+    if small:
+        parts.append(f"{small} other online store{'s' if small > 1 else ''}")
+    return f"Visually matching photos also appear on {' and '.join(parts)}." if parts else ""
+
 class Sweeper:
     def __init__(self, client: SearchClient, store: Store, pesticides: PesticideRegistry,
                  eta: EtaRegistry | None = None) -> None:
@@ -153,9 +164,9 @@ class Sweeper:
                          "this listing itself does not name it.")
         others = [site for site in ev.named_sites if site != listing.marketplace]
         small = len({m.link for m in ev.matches if m.site not in ev.named_sites})
-        if others or small:
-            where = ", ".join(others) + (f" and {small} other online stores" if small else "")
-            notes.append(f"Visually matching photos also appear on {where.removeprefix(', ')}.")
+        note = _other_stores_note(others, small)
+        if note:
+            notes.append(note)
         return with_extra(finding, checks, notes) if checks or notes else finding
 
     def run(self, pack: str, max_live: int = 40, max_details: int = 20, max_lens: int = 10) -> SweepResult:

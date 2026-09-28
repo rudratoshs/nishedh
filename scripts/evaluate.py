@@ -39,6 +39,9 @@ def main() -> None:
         # a pass (or a milder reason) where the reviewer expected a flag is a missed flag.
         if acceptable:
             kind = "agree"
+        elif reason in ("clear", "out_of_scope"):
+            # Nishedh did not flag: if the reviewer expected a flag this is a miss, otherwise agreement.
+            kind = "agree" if expected in ("clear", "out_of_scope") else "missed_or_understated"
         elif expected in ("clear", "out_of_scope") or (
             reason in SEVERITY and expected in SEVERITY and SEVERITY.index(reason) < SEVERITY.index(expected)
         ):

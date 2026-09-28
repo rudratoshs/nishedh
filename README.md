@@ -10,7 +10,7 @@
 **Nishedh searches India's online stores, checks what listings claim against the government's own rulebooks, and shows a human reviewer exactly what doesn't add up.**
 
 [![CI](https://github.com/rudratoshs/nishedh/actions/workflows/ci.yml/badge.svg)](https://github.com/rudratoshs/nishedh/actions/workflows/ci.yml)
-![tests](https://img.shields.io/badge/tests-284%20passing-2ea44f)
+![tests](https://img.shields.io/badge/tests-297%20passing-2ea44f)
 ![python](https://img.shields.io/badge/python-3.12-3776ab)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![powered by SerpApi](https://img.shields.io/badge/data-SerpApi-orange)
@@ -107,7 +107,7 @@ A tool that accuses people has to be right. Nishedh is built so that it is caref
 - **Evidence receipts.** Every SerpApi response a verdict used is recorded with its fetch time and the SHA-256 of the saved response file, so anyone can check it with `sha256sum`. In the demo, that is the reduced public copy in `demo/`.
 - **Respects privacy.** Sellers and small shops are never named, only major marketplaces. The public demo data keeps only the fields Nishedh reads: no reviewer names, no contact details.
 - **Cheap to run.** Every search result is cached and never paid for twice, and a monthly cap protects the free plan. The API key never touches disk, logs or error messages.
-- **Tested.** 284 tests, `ruff`, `mypy --strict`, CI on every push.
+- **Tested.** 297 tests, `ruff`, `mypy --strict`, CI on every push.
 
 ## Run it live
 

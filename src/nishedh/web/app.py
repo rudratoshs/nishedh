@@ -306,9 +306,11 @@ def complaint_text(f: dict[str, Any], sources: dict[str, Any]) -> str:
         "Concerns:",
     ]
     cited: dict[str, Any] = {}
-    for i, c in enumerate(f["checks"], 1):
+    i = 0
+    for c in f["checks"]:
         if c["reason"] == "clear":
             continue
+        i += 1
         lines.append(f"  {i}. {c['explanation']}")
         for e in c["evidence"]:
             lines.append(f'     Listing text ({e["field"]}): "{e["text"]}"')

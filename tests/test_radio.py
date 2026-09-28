@@ -158,3 +158,23 @@ def test_a_booster_gets_no_walkie_talkie_band_checks():
     t = "Mobile Signal Booster 400-470MHz UHF Repeater GSM 900 MHz"
     f = assess_radio(extract_radio({"title": t}), {}, t)
     assert f is not None and f.reason is Reason.BANNED_ITEM and len(f.checks) == 1
+
+
+# ---- Bug 1: booster veto is per-match, not per-title (bug review, 28 Sep 2026) ----
+
+@pytest.mark.parametrize("title", [
+    "Mobile Signal Booster for All Networks 2G 3G 4G with 10m Cable",
+    "GSM Mobile Signal Booster Repeater with Antenna and Charger",
+    "4G LTE Signal Booster Kit with Indoor Antenna Cable",
+])
+def test_booster_with_a_bundled_accessory_is_still_flagged(title):
+    assert extract_radio({"title": title}).booster, title
+
+
+@pytest.mark.parametrize("title", [
+    "TP-Link AC750 WiFi Range Extender Signal Booster",
+    "5 PCS Phone Signal Booster Sticker for Outdoor",
+    "Router with 4G Signal Booster",
+])
+def test_bundle_fix_still_vetoes_non_boosters(title):
+    assert not extract_radio({"title": title}).booster, title

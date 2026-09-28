@@ -50,8 +50,11 @@ _UNDISCLOSED_STRENGTH = re.compile(
     r"(\d+(?:\.\d+)?)\s*%\s*(?:active\s*(?:formula|ingredients?|content)?|a\.?\s?i\.?\b)", re.IGNORECASE
 )
 _UNDISCLOSED_PHRASE = re.compile(r"\bactive\s+ingredients?\b|\bspecial\s+formula\b|\bsecret\s+formula\b", re.IGNORECASE)
+# A capitalised or ALL-CAPS name (marketplace titles are often all caps), 5+ letters so short codes
+# like "NPK" can't match, then a strength and a formulation code.
 _UNKNOWN_CLAIM = re.compile(
-    rf"\b([A-Z][a-z]{{4,}}(?:[\s-][A-Z]?[a-z]+){{0,2}})\s+(\d+(?:\.\d+)?)\s*%\s*(?:w/w|w/v)?\s*({FORM_CODES})\b"
+    rf"\b([A-Z][a-z]{{4,}}(?:[\s-][A-Z]?[a-z]+){{0,2}}|[A-Z]{{5,}}(?:[\s-][A-Z]{{2,}}){{0,2}})"
+    rf"\s+(\d+(?:\.\d+)?)\s*%\s*(?:w/w|w/v)?\s*({FORM_CODES})\b"
 )
 _TOKEN = re.compile(r"[A-Za-z0-9][A-Za-z0-9,\-.']*")
 _GLUED = re.compile(r"(?<=[A-Za-z]{3})(?=\d+(?:\.\d+)?\s*%)")   # "Glyphosate41%" -> "Glyphosate 41%"
@@ -71,10 +74,21 @@ NOT_A_PESTICIDE = re.compile(
     re.IGNORECASE,
 )
 # Generic words around a product name; not part of a chemical name.
-_GENERIC = r"(?:herbicide|insecticide|weedicide|fungicide|pesticide|weed|killer|systemic|selective|contact|premium|organic)"
+_GENERIC = r"(?:herbicide|insecticide|weedicide|fungicide|pesticide|weed|killer|systemic|selective|contact|premium|organic|granules?|powder|spray|bottle|liquid|dust|quality|multipack|pack)"
 _TRAILING_GENERIC = re.compile(rf"(?:\s+{_GENERIC})+$", re.IGNORECASE)
 _LEADING_GENERIC = re.compile(rf"^(?:{_GENERIC}\s+)+", re.IGNORECASE)
 _NOT_CHEMICAL = {"formula", "active", "concentrate", "solution", "strength", "pure", "organic", "natural", "power"}
+# Words that never name a chemical on their own: pesticide categories, packaging and marketing.
+_GENERIC_WORDS = {"herbicide", "insecticide", "weedicide", "fungicide", "pesticide", "weed", "killer",
+                  "systemic", "selective", "contact", "premium", "organic", "granules", "granule", "powder",
+                  "spray", "bottle", "liquid", "dust", "quality", "multipack", "pack", "combo", "kit",
+                  "ready", "use", "lawn", "garden", "plant", "plants"} | _NOT_CHEMICAL
+
+
+def _is_all_generic(word: str) -> bool:
+    """True when every token of a stripped claim name is a generic/packaging word (so it names nothing)."""
+    toks = re.split(r"[\s-]+", word.lower())
+    return all(t in _GENERIC_WORDS for t in toks if t)
 # First words of registered names that are elements or organisms, never an active on their own.
 _GENERIC_HEADS = {
     "hydrogen", "aluminum", "magnesium", "bacillus", "ethylene", "dichloro", "potassium", "calcium",
@@ -199,7 +213,9 @@ class PesticideExtractor:
             for m in _UNKNOWN_CLAIM.finditer(text):
                 word = _LEADING_GENERIC.sub("", _TRAILING_GENERIC.sub("", m.group(1))).strip()
                 overlaps = any(m.start() < e and s < m.end() for s, e in spans)
-                if (not overlaps and word and key(word) not in self.vocab and key(word) not in self.brands
+                strength = float(m.group(2))
+                if (not overlaps and word and not _is_all_generic(word) and 0 < strength <= 100
+                        and key(word) not in self.vocab and key(word) not in self.brands
                         and word.lower() not in _NOT_CHEMICAL):
                     out.unrecognised.append(Found(name, f"{word} {m.group(2)}% {m.group(3)}"))
             out.undisclosed.extend(Found(name, m.group(0).strip()) for m in _UNDISCLOSED_STRENGTH.finditer(text))

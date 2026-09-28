@@ -37,7 +37,7 @@ def main() -> None:
 
     chosen = (
         pick("pesticides", lambda r: r["reason"] != "clear" and r["confidence"] != "low")
-        + pick("pesticides", lambda r: r["reason"] == "registry_mismatch")
+        + pick("pesticides", lambda r: r["reason"] == "registry_mismatch" and r["confidence"] == "low")
         + pick("pesticides", lambda r: r["reason"] == "information_missing" and r["confidence"] == "low", 8)
         + pick("pesticides", lambda r: r["reason"] == "clear", 10)
         + pick("radio", lambda r: r["reason"] == "banned_item", 8)

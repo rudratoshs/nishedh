@@ -142,8 +142,17 @@ def extract_radio(fields: dict[str, str]) -> RadioExtraction:
             # Product type is decided by the title: a specification saying "with belt clip" or a
             # description mentioning a phone does not change what is being sold.
             out.not_radio.extend(Found(name, m.group(0)) for m in NOT_RADIO.finditer(text))
-            if not NOT_BOOSTER.search(text):
-                out.booster.extend(Found(name, m.group(0)) for m in BOOSTER.finditer(text))
+            # Veto per booster match, not per title: a veto word before the booster phrase, or after
+            # it with no bundling word ("with"/"kit"/"and") in between, still vetoes; a veto word that
+            # comes after a bundling word is a bundled accessory ("Signal Booster with 10m Cable").
+            vetoes = [v.start() for v in NOT_BOOSTER.finditer(text)]
+            for m in BOOSTER.finditer(text):
+                blocked = any(
+                    v < m.start() or not _BUNDLED.search(text[m.end():v])
+                    for v in vetoes
+                )
+                if not blocked:
+                    out.booster.append(Found(name, m.group(0)))
             if not NOT_JAMMER.search(text):
                 out.jammer.extend(Found(name, m.group(0)) for m in JAMMER.finditer(text))
             # Where the product itself is named: a walkie-talkie or a booster. Accessory words after it
